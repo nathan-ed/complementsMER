@@ -1,0 +1,61 @@
+
+
+\begin{tikzpicture}
+
+{\scriptsize
+\begin{scope}[rotate=-5]
+\coordinate[](T) at (0,0);
+\coordinate[](R) at (3,0);
+\coordinate[](O) at (3,3);
+\coordinate[](P) at (0,3);
+
+\tkzMarkRightAngle(T,R,O) ;
+\tkzMarkRightAngle(R,O,P) ;
+\tkzMarkRightAngle(O,P,T) ;
+\tkzMarkRightAngle(P,T,R) ;
+
+\draw (T)--node[sloped]{$|$} (R) --node[sloped]{$|$} (O) --node[sloped]{$|$} (P) --node[sloped]{$|$} cycle;
+\draw[<->, >=latex] (3.5,0) -- (3.5,3);
+\node[right] at (3.5,1.5) {1,8 cm} ;
+
+%\node at (1.5,0) {$/$} ;
+%\node at (3,1.5) {$/$} ;
+%\node at (0,1.5) {$/$} ;
+%\node at (1.5,3) {$/$} ;
+
+\node[left] at (T) {T};
+\node[right] at (R) {R};
+\node[right] at (O) {O};
+\node[left] at (P) {P};
+\end{scope}
+
+
+\begin{scope}[xshift=7cm, rotate=10]
+
+{\scriptsize
+\coordinate[](C) at (0,0);
+\coordinate[](H) at (4,0);
+\coordinate[](A) at (4,2);
+\coordinate[](R) at (0,2);
+
+\tkzMarkRightAngle(C,H,A) ;
+\tkzMarkRightAngle(H,A,R) ;
+\tkzMarkRightAngle(A,R,C) ;
+\tkzMarkRightAngle(R,C,H) ;
+
+\draw (C)-- (H) -- (A) -- (R) -- cycle;
+\draw[<->, >=latex] (4.5,0) -- (4.5,2);
+\node[right] at (4.5,2) {2,5 cm} ;
+\draw[<->, >=latex] (4,2.5) -- (0,2.5) ;
+\node[above] at (2,2.5) {3,7 cm} ;
+
+
+\node[left] at (C) {C};
+\node[right] at (H) {H};
+\node[right] at (A) {A};
+\node[left] at (R) {R};
+}
+
+\end{scope}
+}
+\end{tikzpicture}

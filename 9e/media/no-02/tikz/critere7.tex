@@ -1,0 +1,26 @@
+
+
+
+
+\begin{tikzpicture}[scale=1]
+% définition des styles
+%\tikzstyle{estun}=[->,>=latex,very thick,dotted]
+% les nœuds
+\node[rectangle, draw] (A) at (0,0) {Entrer l'entier $N$};
+\node[rectangle, draw] (B) at (0,-1.5) {Supprimer le dernier chiffre};
+\node[rectangle, draw,,text width=6.5cm] (C) at (0,-3.5) {Soustraire le double du chiffre qu'on vient de supprimer};
+\node[ellipse, draw, text width=5.5cm] (D) at (0,-6) {Le résultat obtenu est-il supérieur à 70 ?};
+\node[ellipse, draw, text width=5.5cm] (E) at (0,-9) {Le résultat obtenu est-il 0 ou un multiple de 7 ?};
+\node[rectangle, draw, fill=red!50, text width=3cm] (N) at (8,-9) {$N$ n'est pas un multiple de 7};
+\node[rectangle, draw, fill=green!50] (O) at (0,-11.5) {$N$ est un multiple de 7};
+% les flèches
+\draw[>=latex, ->, very thick] (A)--(B);
+\draw[>=latex, ->, very thick] (B)--(C);
+\draw[>=latex, ->, very thick] (C)--(D);
+\draw[>=latex, ->, very thick] (D)--(-6,-6)node[midway,above]{oui} ;
+\draw[>=latex, ->, very thick] (-6,-6)|-(B) ;
+\draw[>=latex, ->, very thick] (D)--(E)node[midway,right]{non};
+\draw[>=latex, ->, very thick] (E)--(O)node[midway,right]{oui};
+\draw[>=latex, ->, very thick] (E)--(N)node[midway,above]{non};
+
+\end{tikzpicture}

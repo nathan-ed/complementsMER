@@ -1,0 +1,543 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+%\usepackage{pst-circ,pstricks-add}
+%\usepackage{psfrag}
+%\usepackage{auto-pst-pdf}
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Fonctions et algèbre}
+\newcommand{\serieName}{Situations proportionnelles}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Généralités (page 55)}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resolu}{Une situation proportionnelle~?}{
+Ce tableau traduit-il une situation de proportionnalité~? Justifie ta réponse par des calculs.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}\hline
+Longueur du côté du carré (en cm) & 2 & 3 & 5 & 8 & 10 \\\hline
+Périmètre du carré (en cm) & 8 & 12 & 20 & 32 & 40\\\hline
+\end{tabular}
+\end{center}
+Pour vérifier si le tableau traduit une situation proportionnelle ou non, on doit calculer les rapports entre les deux nombres de chaque colonne. S'ils sont tous égaux, alors la situation est proportionnelle. Sinon elle ne l'est pas.
+\begin{tasks}(3)
+\task[] $8 \div 2 = 4$
+\task[] $12 \div 3 =4$
+\task[] $20 \div 5 = 4$
+\task[] $32 \div 8 = 4$
+\task[] $40 \div 10 = 4$
+\end{tasks}
+Comme tous les rapports sont égaux, cette situation est proportionnelle.
+}{1}
+\end{resolu}
+
+\begin{resolu}{Encore une situation proportionnelle~?}{
+Ce tableau traduit-il une situation de proportionnalité~? Justifie ta réponse par des calculs.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}\hline
+Nombre d'avocats achetés & 2 & 3 & 5 & 8 & 10 \\\hline
+Prix à payer (\tunit{}{\fr}) & 5 & 7,5 & 12,5 & 20 & 24\\\hline
+\end{tabular}
+\end{center}
+Pour vérifier si le tableau traduit une situation proportionnelle ou non, on doit calculer les rapports entre les deux nombres de chaque colonne. S'ils sont tous égaux, alors la situation est proportionnelle. Sinon elle ne l'est pas.
+\begin{tasks}(3)
+\task[] $5 \div 2 = 2,5$
+\task[] $7,5 \div 3 =2,5$
+\task[] $12,5 \div 5 =2,5$
+\task[]$20 \div 8 =2,5$
+\task[] $24 \div 10 =2,4$
+\end{tasks}
+Comme tous les rapports ne sont pas égaux, cette situation n'est pas proportionnelle.
+}{1}
+\end{resolu}
+
+%\begin{exo}{
+%Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+%\begin{tasks}(2)
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 2& 4 &7 & 10 \\\hline
+%Grandeur 2 & 6& 12 &21 & 30 \\\hline
+%\end{tabular}
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 20& 40& 50& 60  \\\hline
+%Grandeur 2 & 30 & 60 & 75 & 80 \\\hline
+%\end{tabular}
+%\end{tasks}
+%\medskip}{1}
+%\end{exo}
+%
+%\begin{exo}{
+%Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+%\begin{tasks}(2)
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 5 & 10 & 20 & 25  \\\hline
+%Grandeur 2 & 8 & 16  & 32 & 36  \\\hline
+%\end{tabular}
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 2 & 4& 6& 8 \\\hline
+%Grandeur 2 &10 & 20&30 & 40 \\\hline
+%\end{tabular}
+%\end{tasks}
+%\medskip}{1}
+%\end{exo}
+%\begin{exo}{
+%Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+%\begin{tasks}(2)
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 6 & 8 & 12 & 20  \\\hline
+%Grandeur 2 &12 & 16 & 24 & 36 \\\hline
+%\end{tabular}
+%\task 
+%\begin{tabular}{|l|c|c|c|}\hline
+%Grandeur 1 & 7 & 14 & 20  \\\hline
+%Grandeur 2 & 49 & 98 & 120 \\\hline
+%\end{tabular}
+%\end{tasks}
+%\medskip}{1}
+%\end{exo}
+%\begin{exo}{
+%Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+%\begin{tasks}(2)
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 1 & 2 & 3 & 5 \\\hline
+%Grandeur 2 & 8 & 16 & 24 & 40 \\\hline
+%\end{tabular}
+%\task 
+%\begin{tabular}{|l|c|c|c|c|}\hline
+%Grandeur 1 & 1 & 2 & 3 & 4 \\\hline
+%Grandeur 2 & 10 &20 & 30 & 40  \\\hline
+%\end{tabular}
+%\end{tasks}
+%\medskip}{1}
+%\end{exo}
+\begin{exo}{
+Ce tableau traduit-il une situation de proportionnalité ? Justifie ta réponse par des calculs.
+
+\begin{tasks}(2)
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Poires (Kg) & 2& 4 &7 & 10 \\\hline
+Prix (\tunit{}{\fr}) & 6& 12 &21 & 30 \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Nb de cahiers & 20& 40& 50& 60  \\\hline
+Prix (\tunit{}{\fr}) & 30 & 60 & 75 & 80 \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+\begin{exo}{
+Ce tableau traduit-il une situation de proportionnalité ? Justifie ta réponse par des calculs.
+
+\begin{tasks}(2)
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Nb de stylos & 5 & 10 & 20 & 25  \\\hline
+Prix (\tunit{}{\fr}) & 8 & 16  & 32 & 36  \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Nb de T-shirt & 2 & 4& 6& 8 \\\hline
+Prix (\tunit{}{\fr}) &10 & 20&30 & 40 \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+\begin{exo}{
+Ces tableaux de nombres sont-ils des tableaux de proportionnalité ? Justifie ta réponse par des calculs.
+
+\begin{tasks}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Grandeurs 1 & 1 & 2 & 3 & 5 \\\hline
+Grandeurs 2 & 8 & 16 & 24 & 40 \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Grandeurs 1 & 10 & 20 & 30 & 40 \\\hline
+Grandeurs 2 & 1 &2 & 3 & 4  \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+\begin{exo}{
+Ces tableaux de nombres sont-ils des tableaux de proportionnalité ? Justifie ta réponse par des calculs.
+
+\begin{tasks}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Grandeurs 1 & 12 & 16 & 20 & 30  \\\hline
+Grandeurs 2 &6 & 8 & 12 & 20 \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|c|}\hline
+Grandeurs 1 & 49 & 98 & 120 & 150 \\\hline
+Grandeurs 2 & 7 & 14 & 20 & 25  \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+
+
+
+%\begin{exo}{
+%Pour chaque tableau, indique si les deux grandeurs considérées sont proportionnelles ou non. Justifie tes réponses.
+%\begin{tasks}
+%\task Prix des stylos
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|}\hline
+%Nombre de stylos & 3 & 5 & 7 \\\hline
+%Prix payé (\tunit{}{\fr}) & 12 & 20 & 28 \\\hline
+%\end{tabular}
+%\end{center}
+%\task Prix des photos de classe
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|}\hline
+%Nombre de photos & 2 & 5 & 10 \\\hline
+%Prix payé (\tunit{}{\fr}) & 16 & 40 & 60 \\\hline
+%\end{tabular}
+%\end{center}
+%\task Quantité de béton nécessaire à la fabrication de ciment
+%\begin{center}
+%\begin{tabular}{|l|c|c|c|}\hline
+%Nombre de stylos & 1 & 4 & 6 \\\hline
+%Prix payé \tunit{}{\fr} & 350 & 1400 & 2100 \\\hline
+%\end{tabular}
+%\end{center}
+%
+%\end{tasks}}{1}
+\begin{exo}{
+Pour chaque tableau, indique si les deux grandeurs considérées sont proportionnelles ou non. Justifie tes réponses.
+\begin{tasks}(2)
+\task Prix des stylos
+\vspace{-0.3cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Nb de stylos & 3 & 5 & 7 \\\hline
+Prix (\tunit{}{\fr}) & 12 & 20 & 28 \\\hline
+\end{tabular}
+\end{center}
+\task Prix des photos de classe
+\vspace{-0.3cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Nb de photos & 2 & 5 & 10 \\\hline
+Prix (\tunit{}{\fr}) & 16 & 40 & 60 \\\hline
+\end{tabular}
+\end{center}
+\task Quantité de ciment nécessaire à la fabrication du béton
+\vspace{-0.3cm}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Béton (m$^3$) & 1 & 4 & 6 \\\hline
+Ciment (\tunit{}{\kg}) & 350 & 1400 & 2100 \\\hline
+\end{tabular}
+\end{center}
+\vspace{-0.3cm}
+\end{tasks}}{1}
+
+\end{exo}
+\begin{exo}{
+Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+\begin{tasks}(2)
+\task 
+\begin{tabular}{|l|c|c|c|}\hline
+Grandeur 1 & 2 & 2 & 7  \\\hline
+Grandeur 2 & 8 & 12 & 28  \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|}\hline
+Grandeur 1 & 2 & 4 & 5  \\\hline
+Grandeur 2 & 7 &14 & 17,5  \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+\begin{exo}{
+Ces tableaux de nombres sont-ils des tableaux de proportionnalité~?
+\begin{tasks}(2)
+\task 
+\begin{tabular}{|l|c|c|c|}\hline
+Grandeur 1 & 2 & 3 & 4  \\\hline
+Grandeur 2 & 15 & 21 & 28  \\\hline
+\end{tabular}
+\task 
+\begin{tabular}{|l|c|c|c|}\hline
+Grandeur 1 & 2 & 5 & 9  \\\hline
+Grandeur 2 & 3,2 &8 & 15  \\\hline
+\end{tabular}
+\end{tasks}
+\medskip}{1}
+\end{exo}
+
+\begin{resolu}
+{Des fruits et des légumes}{Dans un stand de fruits et légumes, il est affiché qu'une grenade coûte \tunit{1,55}{\fr}  et le lot de deux coûte \tunit{3}{\fr}. Le prix des grenades est-il proportionnel à la quantité achetée~?
+
+Le prix n'est pas proportionnel au nombre de grenade achetés car sinon les deux grenades devrait coûter \tunit{3,10}{\fr}  
+\[2\cdot 1,55 = 3,1 \]
+\vspace{-1cm}
+}{1}
+\end{resolu}
+
+
+
+\begin{exo}{
+	Pour les pamplemousses, il est affiché \tunit{1,20}{\fr} l'unité, \tunit{2}{\fr} les deux. Le prix des pamplemousses est-il proportionnel à la quantité achetée~? Pourquoi~?}{1}
+\end{exo}
+
+\begin{exo}{
+	Sur une attraction d'une fête foraine, on peut lire~: 4 tickets pour \tunit{10}{\fr}, 10 tickets pour \tunit{18}{\fr} Les prix sont-ils proportionnels au nombre de tickets achetés~? Justifie ta réponse.}{1}
+\end{exo}
+
+\begin{exo}{
+	Pour les pommes, il est affiché \tunit{2,85}{\fr} le kilo. Le prix des pommes est-il proportionnel à la quantité achetée~? Justifie.}{1}
+\end{exo}
+
+
+\begin{exo}{
+Un cinéma propose les tarifs suivants~:
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+Nombre de séances & 1 & 4 & 12  \\\hline
+Prix à payer (\tunit{}{\fr}) & 13 &48 & 135  \\\hline
+\end{tabular}
+\end{center}
+
+Le prix à payer est-il proportionnel au nombre de séances ? Justifie ta réponse par des calculs.
+
+}{1}
+\end{exo}
+
+\begin{exo}
+	{À 2 ans, un enfant mesurait \tunit{88}{\cm}. À 3 ans, il mesurait 102 \tunit{}{\cm}. La taille de cet enfant est-elle proportionnelle à son âge~? Justifie ta réponse.}{1}
+\end{exo}
+
+%\begin{exo}
+%{Les dimensions du premier rectangle (en bleu) sont-elles proportionnelles aux dimensions du second rectangle (en rouge)~? Justifie ta réponse.
+%\begin{center}
+%\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+%\begin{pspicture*}(-4.46,-0.42)(10.3,4.84)
+%\pspolygon[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)(1.2,0.)(1.2,3.)
+%\pspolygon[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)(10.,4.)(10.,0.)
+%\psline[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)
+%\psline[linewidth=2.pt,linecolor=blue](-2.8,0.)(1.2,0.)
+%\psline[linewidth=2.pt,linecolor=blue](1.2,0.)(1.2,3.)
+%\psline[linewidth=2.pt,linecolor=blue](1.2,3.)(-2.8,3.)
+%\psline[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)
+%\psline[linewidth=2.pt,linecolor=red](4.,4.)(10.,4.)
+%\psline[linewidth=2.pt,linecolor=red](10.,4.)(10.,0.)
+%\psline[linewidth=2.pt,linecolor=red](10.,0.)(4.,0.)
+%\rput[tl](-1.1,3.54){\blue{\tunit{4}{\cm}}}
+%\rput[tl](-4.4,1.64){\blue{\tunit{3,5}{\cm}}}
+%\rput[tl](6.62,4.46){\red{\tunit{6}{\cm}}}
+%\rput[tl](2.3,2.14){\red{\tunit{4,5}{cm}}}
+%\end{pspicture*}
+%\end{center}
+%}{1}
+%\end{exo}
+
+
+\begin{exol}{FA17}{69}{1}\end{exol}
+\begin{exol}{FA18}{70}{1}\end{exol}
+\begin{exol}{FA19}{70}{1}\end{exol}
+
+
+\begin{resolu}{Deux rectangles}{Les dimensions d'un rectangle sont de \tunit{6}{\cm} de longueur et \tunit{4}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{12}{\cm} et une largeur de \tunit{8}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+
+\psset{unit=0.6cm}
+\begin{pspicture}(0,0)(16,12)
+    % dessiner le premier rectangle
+    \psframe(1,1)(7,5)
+    % ajouter les dimensions sur les côtés
+    \rput(0,3){\tunit{4}{\cm}}
+    \rput(4,0.5){\tunit{6}{\cm}}
+    % dessiner le deuxième rectangle
+    \psframe(9,2)(21,10)
+    % ajouter les dimensions sur les côtés
+    \rput(7.9,6){\tunit{8}{\cm}}
+    \rput(15,1.5){\tunit{12}{\cm}}
+\end{pspicture}
+
+Pour déterminer si le deuxième rectangle est un agrandissement du premier, il faut vérifier si les rapports des longueurs et des largeurs sont égaux. On a~:
+
+\[
+	\frac{\tunit{12}{\cm}}{\tunit{6}{\cm}} = 2 \text{ et }
+\frac{\tunit{8}{\cm}}{\tunit{4}{\cm}} = 2
+\]
+
+Les rapports sont égaux et valent 2. Par conséquent, le deuxième rectangle est bien un agrandissement du premier.
+
+
+
+}{1}
+\end{resolu}
+
+\begin{exo}
+{Les dimension du premier rectangle (en bleu) sont-elles proportionnelles aux dimensions du second rectangle (en rouge)~? Justifie ta réponse.
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.46,-0.42)(10.3,4.84)
+\pspolygon[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)(1.2,0.)(1.2,3.)
+\pspolygon[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)(10.,4.)(10.,0.)
+\psline[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)
+\psline[linewidth=2.pt,linecolor=blue](-2.8,0.)(1.2,0.)
+\psline[linewidth=2.pt,linecolor=blue](1.2,0.)(1.2,3.)
+\psline[linewidth=2.pt,linecolor=blue](1.2,3.)(-2.8,3.)
+\psline[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)
+\psline[linewidth=2.pt,linecolor=red](4.,4.)(10.,4.)
+\psline[linewidth=2.pt,linecolor=red](10.,4.)(10.,0.)
+\psline[linewidth=2.pt,linecolor=red](10.,0.)(4.,0.)
+\rput[tl](-1.1,3.54){\tunit{4}{\cm}}
+\rput[tl](-4.4,1.64){\tunit{3,5}{\cm}}
+\rput[tl](6.62,4.46){\tunit{6}{\cm}}
+\rput[tl](2.3,2.14){\tunit{4,5}{\cm}}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 22
+	{Les dimensions d'un rectangle sont de \tunit{5}{\cm} de longueur et \tunit{3}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{15}{\cm} et une largeur de \tunit{9}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 23
+	{Les dimensions d'un rectangle sont de \tunit{8}{\cm} de longueur et \tunit{5}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{40}{\cm} et une largeur de \tunit{25}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 24
+	{Les dimensions d'un rectangle sont de \tunit{9}{\cm} de longueur et \tunit{3}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{18}{\cm} et une largeur de \tunit{9 }{cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 25
+	{Les dimensions d'un triangle rectangle sont \tunit{3 }{cm}, \tunit{4}{cm} et \tunit{5}{cm} pour les côtés. Un deuxième triangle rectangle a des côtés mesurant \tunit{6}{\cm}, \tunit{8}{\cm} et \tunit{10}{\cm}. Le deuxième triangle est-il un agrandissement du premier~?
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 26
+	{Les dimensions d'un triangle rectangle sont \tunit{5}{\cm}, \tunit{12}{\cm} et \tunit{13}{\cm} pour les côtés. Un deuxième triangle rectangle a des côtés mesurant \tunit{10}{\cm}, \tunit{24}{\cm} et \tunit{28}{\cm}. Le deuxième triangle est-il un agrandissement du premier~?
+}{1}
+\end{exo}
+
+\exol{FA29}{73}{1} % Image non déformation 4e proportionnel
+\exol{FA30}{73}{1} % Image non déformation 4e proportionnel
+
+
+
+
+
+
+%\begin{exol}{NO100}{158}{2}
+%\end{exol}
+%
+%\begin{exof}{NO100}{158}{2}
+%\end{exof}
+%
+%\begin{FLP}{51}{1}
+%\end{FLP}
+%\begin{QSJ}{158}{2}
+%\end{QSJ}
+%
+%\begin{FLP}{51}{1}
+%\end{FLP}
+%
+%\begin{exop}{
+%Complète afin d'obtenir une égalité.
+%\begin{enumerate}
+%\begin{multicols}{3}
+%    \item $\dfrac{2}{7}=\dfrac{\ldots\ldots}{14}$\\
+%    \item $\dfrac{6}{8}=\dfrac{24}{\ldots\ldots}$\\
+%    \item $\dfrac{11}{10}=\dfrac{\ldots\ldots}{70}$\\
+%    \item $\dfrac{45}{30}=\dfrac{15}{\ldots\ldots}$\\
+%    \item $\dfrac{33}{11}=\dfrac{\ldots\ldots}{1}$\\
+%    \item $\dfrac{21}{8}=\dfrac{42}{\ldots\ldots}$\\
+%\end{multicols}
+% \vspace{1pt}
+%
+%\end{enumerate}
+%}{1}
+%\end{exop}
+%
+%\begin{exo}{
+%Ecris quatre fractions équivalentes à:
+%\begin{enumerate}
+%\begin{multicols}{5}
+%\item $\dfrac{1}{4}$
+%\item $\dfrac{2}{5}$
+%\item $\dfrac{3}{4}$
+%\item $\dfrac{1}{2}$
+%\item $\dfrac{6}{10}$
+%\end{multicols}
+% \vspace{1pt}
+%\end{enumerate}
+%}{1}
+%\end{exo}
+%
+%
+%
+%\begin{resolu}{Comparaison de fractions}{Laquelle des deux fractions est la plus grand? Justifie ta réponse.
+%
+%	{\color{blue} Il y a deux méthodes pour résoudre cet exercice:\begin{enumerate}
+%			\item[1.] Afin de comparer des fractions, on doit les mettre sur un dénominateur commun. La fraction qui a ensuite le plus grand numérateur est la plus grande.
+%			\item[2.] On transforme la fraction en nombre décimal et on compare les deux nombres obtenus.
+%\end{enumerate}}
+%\begingroup
+%\setlength{\lineskip}{4pt}
+%\begin{enumerate}
+%	\item $\dfrac{1}{4}$ ou $\dfrac{3}{4}$? Les deux fractions ont le même dénominateur. On compare les numérateurs et on a que $\dfrac{1}{4}<\dfrac{3}{4}$.
+%	\item $\dfrac{3}{5}$ ou $\dfrac{3}{7}$? Le plus petit commun multiple de $5$ et $7$ est $\text{ppmc}(5;7)=35$. Il faut donc amplifier $\dfrac{3}{5}$ par $7$ pour obtenir $\dfrac{21}{35}$ et amplifier $\dfrac{3}{7}$ par $5$ pour obtenir $\dfrac{15}{35}$. $\dfrac{3}{5}=\dfrac{21}{35}$ et $\dfrac{3}{7}=\dfrac{15}{35}$, donc $\dfrac{3}{5}>\dfrac{3}{7}$.
+%	\item $\dfrac{5}{6}$ ou $\dfrac{2}{4}$? En utilisant la deuxième méthode, $\dfrac{5}{6}=0,8\overline{3}$ et $\dfrac{2}{4}=0,5$. Ainsi $\dfrac{5}{6}>\dfrac{2}{4}$.
+% \vspace{1pt}
+%\end{enumerate}
+%\endgroup
+%}{1}
+%\end{resolu}
+
+
+
+\end{document}

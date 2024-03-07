@@ -1,0 +1,34 @@
+
+
+\begin{tikzpicture}
+
+{\scriptsize
+\coordinate[](E) at (0,0);
+\coordinate[](F) at (3,0);
+\coordinate[](G) at (3,3);
+\coordinate[](H) at (0,3);
+
+\tkzMarkRightAngle(E,F,G) ;
+\tkzMarkRightAngle(F,G,H) ;
+\tkzMarkRightAngle(G,H,E) ;
+\tkzMarkRightAngle(H,E,F) ;
+
+\draw (E)--node[sloped]{$//$} (F) --node[]{$//$} (G) --node[sloped]{$//$} (H) --node[]{$//$} cycle;
+
+\draw[<->, >=latex] (3.5,0) --node[right]{$$\tunit{3,7}{\cm}$$} (3.5,3);
+
+
+\draw[dotted] (G) -- ++(0.5,0);
+\draw[dotted] (F) -- ++(0.5,0);
+%\node[sloped] at (1.5,0) {$//$} ;
+%\node[sloped] at (3,1.5) {$//$} ;
+%\node[sloped] at (0,1.5) {$//$} ;
+%\node[sloped] at (1.5,3) {$//$} ;
+
+\node[below left] at (E) {$E$};
+\node[below right] at (F) {$F$};
+\node[above right] at (G) {$G$};
+\node[above left] at (H) {$H$};
+}
+
+\end{tikzpicture}

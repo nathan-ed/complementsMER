@@ -1,0 +1,76 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Chapitre test}
+\newcommand{\serieName}{Une série type}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Volume d'un solide (généralités) (page 169)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exol}{GM54}{154}{1}
+\end{exol}
+\begin{exof}{GM55}{154}{1}
+\end{exof}
+
+\begin{QSJ}{197}{1}
+\end{QSJ}
+
+\begin{resolu}{Titre de l'exo résolu}{
+		\begin{itemize}
+			\item Ne pas utiliser \$\$ formule \$\$ pour une formule, mais 
+utiliser à la place \textbackslash[ formule \textbackslash].
+\item Ne pas utiliser \textbackslash\textbackslash~  pour des retours à la ligne, mais le faire manuellement en laissant une ligne vide.
+\item Regarder dans les séries de 9e pour des commandes utiles.
+\item Utiliser \textbackslash dfrac\{3\}\{4\} pour écrire des fractions.
+\item Pour les médias, créer un sous-dossier dans le dossier media avec le nom raccourci de votre serie ex. no-10 (en minuscule), puis y ajouter les médias. 
+\item Si vous avez l'impression que vous devez un peu bricoler pour faire quelque chose, en discuter ensemble pour voir si une solution plus pratique existe (package ou command que l'on peut écrire).
+\end{itemize}
+}{1}
+\end{resolu}
+
+\begin{exo}{
+Un exo à faire sur la feuille.
+\begin{center}
+\includegraphics[scale=0.5]{media/serieType/test.pdf}
+\end{center}
+}{1}
+\end{exo}
+
+\begin{exop}{
+Un exo à faire sur la feuille.
+\begin{tasks}(3)
+	\task item 1
+	\task item 2
+	\task item 3
+	\task $\tunit{450}{\deca m}$
+	\task $\tunit{10}{\fr}$
+	\task pour diviser $\div$
+\end{tasks}
+}{1}
+\end{exop}
+
+\end{document}

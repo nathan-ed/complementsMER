@@ -1,0 +1,725 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage{frcursive}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\settasks{after-item-skip = 0.5em}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Lire et écrire des nombres décimaux}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Chiffres et nombres (page 11)
+\item Nombres naturels (page 12)
+\item Nombres décimaux (page 21)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{resolu}{Nombres ou chiffres~?}{Complète  par {\color{blue}chiffre(s)} ou {\color{blue}nombre(s)}.
+\begin{tasks}[after-item-skip = 0.5em]
+\task 75 et 234 sont des {nombres}.
+\task 1 et 2 sont les {\color{blue}chiffres} qui permettent d'écrire, par exemple,  les {\color{blue}nombres}  12 et 21. 
+\task Les {\color{blue}nombres} 567 et 765 sont composés des {\color{blue}chiffres} 5 , 6 et 7.
+\task Le {\color{blue}nombre} 7 est composé d'un seul {\color{blue}chiffre}.
+\task Les {\color{blue}chiffres} 2 et 8 composent le {\color{blue}nombre} 28.
+\task 9 est à la fois un {\color{blue}chiffre} et un {\color{blue}nombre}.
+\end{tasks}}{1}
+\end{resolu}
+
+\begin{exop}{
+Complète par {\color{blue}chiffre(s)} ou {\color{blue}nombre(s)}.
+
+\begin{tasks}[after-item-skip = 0.5em]
+\task Le $\;$\hrulefill$\;$ 432 est composé des $\;$\hrulefill$\;$ 2, 3 et 4.
+\task Les $\;$\hrulefill$\;$ 9 et 7 composent le $\;$\hrulefill$\;$ 97.
+\task Le $\;$\hrulefill$\;$ 501 est composé des $\;$\hrulefill$\;$ 5, 0 et 1.
+\task Les $\;$\hrulefill$\;$ 8 et 2 composent le $\;$\hrulefill$\;$ 82.
+\task 8 peut être à la fois un $\;$\hrulefill$\;$ et un $\;$\hrulefill$\;$.
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Complète les phrases suivantes.
+\begin{tasks}[after-item-skip = 0.5em]
+\task Le $\;$\hrulefill$\;$ 678 est composé des $\;$\hrulefill$\;$ 6, 7 et 8.
+\task Les $\;$\hrulefill$\;$ 2 et 8 composent le $\;$\hrulefill$\;$ 28.
+\task Le $\;$\hrulefill$\;$ 981 est composé des $\;$\hrulefill$\;$ 9, 8 et 1.
+\task Le $\;$\hrulefill$\;$ 4 et 5 composent le $\;$\hrulefill$\;$ 54.
+\task 7 peut être à la fois un $\;$\hrulefill$\;$ et un $\;$\hrulefill$\;$.
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exo}{
+Aline prétend que 6 est un chiffre mais aussi un nombre. Carlos lui rétorque que c'est faux car, dit-il, les nombres commencent à partir de dix. Qui a raison~: Carlos ou Aline~? Justifie ta réponse.
+}{1}\end{exo}
+
+\begin{resolu}{Écriture de nombres en chiffres}
+{Écris les nombres suivants en chiffres en t'aidant du tableau ci-dessous si nécessaire.
+
+\begin{tasks}[after-item-skip = 0.5em]
+\task dix mille dix .
+\task cinq millions deux cent quarante-sept mille neuf .
+\task deux cent un milliards six cent trente-cinq mille cinquante-trois.
+\task neuf cent trois virgule septante-quatre.
+\task zéro virgule deux mille huit.
+\task deux mille vingt-deux virgule zéro vingt-huit.
+\end{tasks}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|}
+\hline
+\multicolumn{12}{|c||}{Partie entière} & \multicolumn{6}{|c|}{Partie décimale}\\
+\hline
+\multicolumn{3}{|c|}{milliards} & \multicolumn{3}{|c|}{millions} & \multicolumn{3}{|c|}{milliers} &
+\multicolumn{3}{|c||}{unités} &  &  &  &   &  &  \\
+\cline{1-12} 
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaines\ }} & {\rotatebox{90}{dizaines\ }} &  {\rotatebox{90}{unités\ }} &
+{\rotatebox{90}{dixièmes\ }} & {\rotatebox{90}{centièmes\ }} &  {\rotatebox{90}{millièmes\ }} &
+{\rotatebox{90}{dix millièmes\ }} & {\rotatebox{90}{cent millièmes\ }} &  {\rotatebox{90}{millionièmes\ }} \\
+\hline
+  &  &  &  &  &  &  & {\cursive{{\color{blue}1}}}  & {\cursive{{\color{blue}0'}}}  & {\cursive{{\color{blue}0}}}  & {\cursive{{\color{blue}1}}}   & {\cursive{{\color{blue}0,}}} &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  & {\cursive{{\color{blue}5'}}}  & {\cursive{{\color{blue}2}}}  & {\cursive{{\color{blue}4}}}  & {\cursive{{\color{blue}7'}}}   & {\cursive{{\color{blue}0}}}   & {\cursive{{\color{blue}0}}}  &{\cursive{{\color{blue}9,}}}   &  &  &  &  &  &  \\
+\hline 
+ {\cursive{{\color{blue}2}}} &{\cursive{{\color{blue}0}}}  & {\cursive{{\color{blue}1'}}}  &{\cursive{{\color{blue}0}}}  &  {\cursive{{\color{blue}0}}} & {\cursive{{\color{blue}0'}}}  & {\cursive{{\color{blue}6}}}  & {\cursive{{\color{blue}3}}} &  {\cursive{{\color{blue}5'}}}& {\cursive{{\color{blue}0}}}  &{\cursive{{\color{blue}5}}}  & {\cursive{{\color{blue}3,}}}  &  &  &  &  &  &  \\
+\hline  
+  &  &  &  &  &  &  &  &  & {\cursive{{\color{blue}9}}}  & {\cursive{{\color{blue}0}}} & {\cursive{{\color{blue}3,}}} & {\cursive{{\color{blue}7}}} & {\cursive{{\color{blue}4}}}  &  &  &  &  \\
+\hline  
+  &  &  &  &  &  &  &  &  &  &  & {\cursive{{\color{blue}0,}}} & {\cursive{{\color{blue}2}}}  & {\cursive{{\color{blue}0}}}  & {\cursive{{\color{blue}0}}}  & {\cursive{{\color{blue}8}}}  &  &  \\
+\hline  
+  &  &  &  &  &  &  &  &  {\cursive{{\color{blue}2'}}} &  {\cursive{{\color{blue}0}}}  &  {\cursive{{\color{blue}2}}} &  {\cursive{{\color{blue}2,}}} &  {\cursive{{\color{blue}0}}}  &  {\cursive{{\color{blue}2}}} &  {\cursive{{\color{blue}8}}}  &  &  &  \\
+\hline 
+ % &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%\hline 
+\end{tabular}
+\end{center}
+{\bf Voici donc les réponses~:}
+{\color{blue}
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 10'010
+\task 5'247'009
+\task 201'000'635'053
+\task 903,74
+\task 0,2008
+\task 2'022,028
+\end{tasks}}
+}{1}
+\end{resolu}
+
+\begin{exo}{ Écris un nombre, en lettres puis en chiffres, en utilisant une seul fois chacun des mots mille, cent(s), trente et cinq.
+}{1}\end{exo}
+\begin{exo}{ Écris les nombres suivants en chiffres.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task Cinquante-trois
+\task Trente-six
+\task Vingt-huit
+\task Septante-cinq
+\task Quarante-neuf
+\task Nonante et un
+\task Dix-sept
+\task Trois cent vingt-deux
+\task Quatre-vingt deux
+\task Quarante-quatre
+\task Mille trente-six
+\task Quatorze
+\end{tasks}
+
+}{1}\end{exo}
+\begin{exo}{ Écris les nombres suivants en chiffres.
+\begin{tasks}[after-item-skip = 0.5em]
+\task  sept cent septante sept mille septante 
+\task cent dix-neuf millions quatre-vingt trois 
+\task vingt-neuf mille nonante
+\task cent huitante                             
+\task dix-neuf cent quatre-vingt-dix-neuf 
+\task soixante-douze mille septante-sept 
+\task trois millions et demi
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{ Écris les nombres suivants en chiffres.
+\begin{tasks}[after-item-skip = 0.5em]
+\task mille quatorze 
+\task  trois mille trente-huit
+\task deux mille quatre cent vingt-huit          
+\task six cent mille cent quatre-vingts 
+\task treize millions cent treize mille douze    
+\task sept cent deux mille trois cent un 
+\task cent un milliard cent mille vingt           
+\task cinq cent cinquante-cinq mille cinq cents 
+\task quatre-vingt mille cent quarante            
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{ Écris les nombres suivants en lettres.
+\begin{tasks}[after-item-skip = 0.5em](4)
+\task 456     \task  36    \task 244     \task 801
+\task 904     \task 372   \task 1210    \task 623
+\task 3450    \task 5842 \task 33601  \task 57200
+\task 600234 \task 13   \task 802032 \task 16230000
+\task 236     \task 1024    \task 19000005     \task 316484
+\task 6021349517     \task 470   \task 6732    \task 430015
+\end{tasks}
+
+}{1}\end{exo}
+
+\exol{NO161}{48}{1}
+
+
+\begin{exo}{ Nomme la position occupée par chacun des chiffres dans les nombres ci-dessous, en t'aidant du tableau à la fin de la série, si nécessaire.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 3456
+\task 2598
+\task 25892164
+\task115698
+\end{tasks}
+
+}{1}\end{exo}
+\begin{exop}{ Pour chaque nombre ci-dessous, entoure en rouge le chiffre des dizaine de milliers.
+\begin{tasks}[after-item-skip = 0.5em](3)
+\task 43567
+\task 1234
+\task 89054
+\task 333333
+\task 4579230
+\end{tasks}
+
+}{1}\end{exop}
+\begin{exop}{ Pour chaque nombre ci-dessous, entoure en rouge le chiffre des  unités et en bleu le chiffre des centaines.
+\begin{tasks}[after-item-skip = 0.5em](3)
+\task 43567
+\task 1234
+\task 89054
+\task 333333
+\task 4579230
+\end{tasks}
+
+}{1}\end{exop}
+
+
+\begin{exo}{ Nomme la position occupée par chacun des chiffres dans les nombres ci-dessous.
+\begin{tasks}[after-item-skip = 0.5em](3)
+\task 7421
+\task 1982
+\task 1230932
+\task 12084353
+\end{tasks}
+
+}{1}\end{exo}
+\begin{exop}{ Pour chaque nombre ci-dessous, entoure en rouge le chiffre des dizaine de milliers.
+\begin{tasks}[after-item-skip = 0.5em](3)
+\task 235632
+\task 345345
+\task 23435434
+\task 34545654
+\task 11134535
+\end{tasks}
+
+}{1}\end{exop}
+\begin{exop}{ Pour chaque nombre ci-dessous, entoure en rouge le chiffre des  unités et en bleu le chiffre des centaines.
+\begin{tasks}[after-item-skip = 0.5em](3)
+\task 3254
+\task 120983
+\task 892310
+\task 4444444
+\task 9080701
+\end{tasks}
+
+}{1}\end{exop}
+\begin{exo}{ Sur un compteur électrique, on peut lire les nombres suivants.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 000147312
+\task 001020080
+\task 4000000000001
+\task 000082302
+\task 1230000000
+\task 00002030
+\end{tasks}
+
+Supprime les zéros inutiles.
+}{1}\end{exo}
+
+\begin{exop}{ Sur un compteur électrique, on peut lire les nombres suivants.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 000000344
+\task 0010234340
+\task 400000000000002
+\task 000034454000
+\task 3454650000
+\task 0000200300
+\end{tasks}
+
+Supprime les zéros inutiles.
+}{1}\end{exop}
+
+
+\begin{exop}{ Le professeur a dicté le nombre . "trois cent quatre millièmes" Entoure la bonne réponse.
+
+		\[304000 \qquad ;\qquad 0,00304 \qquad ;\qquad 0,304 \qquad ;\qquad 3004,00\]
+
+}{1}\end{exop}
+\begin{exo}{ Réponds aux questions suivantes.
+\begin{tasks}[after-item-skip = 0.5em]
+\task Où doit-on ajouter ou supprimer un zéro pour que le nombre 3,0005 devienne plus petit que 3,0004~?
+\task Où doit-on ajouter ou supprimer un zéro pour que le nombre 12,01 devient plus grand que 12,02~?
+\end{tasks}
+}{1}\end{exo}
+
+
+
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, entoure en bleu la partie entière et en rouge la partie décimale.
+\begin{tasks}[after-item-skip = 0.5em](4)
+\task $51,\!15$
+\task $22,\!643$
+\task $102,\!001$
+\task $17$
+\task $0,0201$
+\task $10,\!40801$
+\task $98,\!99$
+\task $3,\!2$
+\task $2,\!3$
+\task $0,\!00002$
+\task $120,\!$
+\task $0,\!1111$
+\end{tasks}
+}{1}\end{exop}
+
+
+
+
+\begin{exop}{ 
+\begin{tasks}[after-item-skip = 0.5em]
+\task Dans le nombre 15'630,9
+\begin{enumerate}
+\item 156 est le nombre de \hrulefill
+\item 1 est le nombre de  \hrulefill
+\item 1563 est le nombre de \hrulefill
+\item 15 est le nombre de  \hrulefill
+\end{enumerate}
+\task Dans le nombre 123,4
+\begin{enumerate}
+\item le nombre d'unités est~: \hrulefill
+\item le nombre de centaines est~: \hrulefill
+\item le nombre de dizaines  est~: \hrulefill
+\item le nombre de milliers est~: \hrulefill
+\end{enumerate}
+\end{tasks}
+}{1}\end{exop}
+
+\newpage
+\begin{exop}{
+\begin{tasks}[after-item-skip = 0.5em]
+\task Dans le nombre 4 091,807
+\begin{enumerate}[itemsep=7pt]
+\item 409 est le nombre de \hrulefill
+\item 4091 807 est le nombre de     \hrulefill
+\item 40 est le nombre de \hrulefill
+\item 40918 est le nombre de  \hrulefill
+\end{enumerate}
+\task Dans le nombre 738,59
+\begin{enumerate}[itemsep=7pt]
+\item le nombre de dixièmes est~: \hrulefill
+\item le nombre de centaines est~: \hrulefill
+\item le nombre de centièmes  est~: \hrulefill
+\item le nombre de millièmes est~: \hrulefill
+\end{enumerate}
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+\begin{tasks}[after-item-skip = 0.5em]
+\task Dans le nombre 472 613,95
+\begin{enumerate}
+\item 9 est le chiffre des \hrulefill
+\item 7 est le chiffre  \hrulefill
+\item 5 est le chiffre \hrulefill
+\item 3 est le chiffre  \hrulefill
+\end{enumerate}
+\task Dans le nombre 129,8
+\begin{enumerate}
+\item le chiffre des dixièmes est~: \hrulefill
+\item le chiffre des unités est~: \hrulefill
+\item le chiffre des dizaines est~: \hrulefill
+\item le chiffre des centaines est~: \hrulefill
+\end{enumerate}
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+\begin{tasks}[after-item-skip = 0.5em]
+\task Dans le nombre 124 738,59
+\begin{enumerate}
+\item 9 est le chiffre des \hrulefill
+\item 7 est le chiffre  \hrulefill
+\item 5 est le chiffre \hrulefill
+\item 3 est le chiffre  \hrulefill
+\end{enumerate}
+\task Dans le nombre 84,735
+\begin{enumerate}
+\item le chiffre des dixièmes est~: \hrulefill
+\item le chiffre des unités est~: \hrulefill
+\item le chiffre des millièmes est~: \hrulefill
+\item le chiffre des centaines est~: \hrulefill
+\end{enumerate}
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de dizaines}.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 4'432~: \hrulefill
+\task 21'092~: \hrulefill
+\task 19'237~: \hrulefill
+\task 754,2~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de centaines de milliers}.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 54'987~: \hrulefill
+\task 409'710~: \hrulefill
+\task 4'378'129~: \hrulefill
+\task 8'987'397,7~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre d'unités}.
+\begin{tasks}[after-item-skip = 0.5em](2)
+\task 21,5~: \hrulefill
+\task 2002,002~: \hrulefill
+\task 120~: \hrulefill
+\task 876,3~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+
+
+
+
+\begin{exop}{
+Donne l'écriture décimale des nombres
+\begin{tasks}[before-skip=-0.7em]
+\task Quinze unités et trois dixièmes~: \hrulefill
+\task Six cent six unités et douze centièmes~: \hrulefill
+\task Neuf unités et onze millièmes~: \hrulefill
+\task Trois centaines et un dixième~: \hrulefill
+\task Douze dizaines et quinze millièmes~: \hrulefill
+\task Quatre dizaines et onze dixipmes~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+
+\exol{NO160}{48}{1}
+
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de dizaines}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 3'659~: \hrulefill
+\task 17'543~: \hrulefill
+\task 20'173~: \hrulefill
+\task 852,2~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de centaines de milliers}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 12'345~: \hrulefill
+\task 320'476~: \hrulefill
+\task 3'976'932~: \hrulefill
+\task 1'243'876,3~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre d'unités}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 13,5~: \hrulefill
+\task 1001,001~: \hrulefill
+\task 23~: \hrulefill
+\task 853,32~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de dixièmes}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 0,123~: \hrulefill
+\task 5,43~: \hrulefill
+\task 15,3~: \hrulefill
+\task 25~: \hrulefill
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf nombre de centièmes}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 0,12~: \hrulefill
+\task 5,4~: \hrulefill
+\task 4,3~: \hrulefill
+\task 12~: \hrulefill
+\end{tasks}
+
+}{1}\end{exop}
+
+\begin{exop}{
+Pour chaque nombre ci-dessous, donne le {\bf chiffre des centièmes}.
+\begin{tasks}[before-skip=-0.7em](2)
+\task 0,12~: \hrulefill
+\task 5,41~: \hrulefill
+\task 4,013~: \hrulefill
+\task 1,02~: \hrulefill
+\end{tasks}
+
+
+}{1}\end{exop}
+
+	\begin{qmoodle}{Lire un nombre décimal}{2}{
+	\begin{center}	
+		Q-1
+
+\includegraphics[scale=1]{media/qr/ndlend1}
+
+\tiny{{https://edu.ge.ch/qr/ndlend1}}
+\end{center}
+	\begin{center}	
+		Q-2
+
+\includegraphics[scale=1]{media/qr/ndlend2}
+
+\tiny{{https://edu.ge.ch/qr/ndlend2}}
+\end{center}
+}
+\end{qmoodle}
+
+	\begin{qmoodle}{Écrire un nombre décimal}{3}{
+	\begin{center}	
+		Q-1
+
+\includegraphics[scale=1]{media/qr/ndlend3}
+
+\tiny{{https://edu.ge.ch/qr/ndlend3}}
+\end{center}
+	\begin{center}	
+		Q-2
+
+\includegraphics[scale=1]{media/qr/ndlend4}
+
+\tiny{{https://edu.ge.ch/qr/ndlend4}}
+\end{center}
+	\begin{center}	
+		Q-3
+
+\includegraphics[scale=1]{media/qr/ndlend5}
+
+\tiny{{https://edu.ge.ch/qr/ndlend5}}
+\end{center}
+}
+\end{qmoodle}
+
+
+%27
+\begin{exo}{
+Dans le nombre 123 987, place la virgule  et/ ou le(s) zéro(s) si besoin pour que
+\begin{tasks}[after-skip=-0.7em,before-skip=-0.7em, after-item-skip=0.18em](2)
+\task 3 soit le chiffre des unités  
+\task 7 soit le chiffre des dixièmes  
+\task 3 soit le chiffre des dizaines 
+\task 7 soit le chiffre des centaines 
+%\task 1 soit le chiffre des dizaines 
+\end{tasks}
+
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+Dans le nombre 314159, place la virgule  et/ ou le(s) zéro(s) , si besoin pour que
+\begin{tasks}[after-skip=-0.7em,before-skip=-0.7em, after-item-skip=0.18em](2)
+\task 4 soit le chiffre des unités.  
+\task 5 soit le chiffre des dixièmes. 
+\task 3 soit le chiffre des dizaines. 
+\task 4 soit le chiffre des millièmes. 
+\task 9 soit le chiffre des dizaines.
+\task 9 soit le chiffre des centièmes.
+\end{tasks}
+
+}{1}\end{exo}
+
+\begin{exo}{
+\begin{tasks}[before-skip=-0.7em, after-item-skip=0.18em]
+\task Quel est le nombre dont le chiffre des dizaines et des centièmes est 8, le chiffre des centaines et des dixièmes est 5 et tous les autres chiffres sont nuls~?
+\task Donne un nombre dont le nombre de dizaines est 13 et le chiffre des dixièmes est 5.
+\end{tasks}
+}{1}\end{exo}
+
+\exol{NO90}{31}{2}
+
+\newpage
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|}
+\hline
+\multicolumn{12}{|c||}{Partie entière} & \multicolumn{6}{|c|}{Partie décimale}\\
+\hline
+\multicolumn{3}{|c|}{milliards} & \multicolumn{3}{|c|}{millions} & \multicolumn{3}{|c|}{milliers} &
+\multicolumn{3}{|c||}{unités} &  &  &  &   &  &  \\
+\cline{1-12} 
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaines\ }} & {\rotatebox{90}{dizaines\ }} &  {\rotatebox{90}{unités\ }} &
+{\rotatebox{90}{dixièmes\ }} & {\rotatebox{90}{centièmes\ }} &  {\rotatebox{90}{millièmes\ }} &
+{\rotatebox{90}{dix millièmes\ }} & {\rotatebox{90}{cent millièmes\ }} &  {\rotatebox{90}{millionièmes\ }} \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+
+
+ % &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%\hline 
+\end{tabular}
+\end{center}
+
+\newpage
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c||c|c|c|c|c|c|}
+\hline
+\multicolumn{12}{|c||}{Partie entière} & \multicolumn{6}{|c|}{Partie décimale}\\
+\hline
+\multicolumn{3}{|c|}{milliards} & \multicolumn{3}{|c|}{millions} & \multicolumn{3}{|c|}{milliers} &
+\multicolumn{3}{|c||}{unités} &  &  &  &   &  &  \\
+\cline{1-12} 
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaine de ...\ }} & {\rotatebox{90}{dizaine de ...\ }} &  {\rotatebox{90}{unités de ...\ }} &
+{\rotatebox{90}{centaines\ }} & {\rotatebox{90}{dizaines\ }} &  {\rotatebox{90}{unités\ }} &
+{\rotatebox{90}{dixièmes\ }} & {\rotatebox{90}{centièmes\ }} &  {\rotatebox{90}{millièmes\ }} &
+{\rotatebox{90}{dix millièmes\ }} & {\rotatebox{90}{cent millièmes\ }} &  {\rotatebox{90}{millionièmes\ }} \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+  &  &  &  &  &  &  &   &   &   &    &  &  &  &  &  &  &  \\
+\hline
+
+
+ % &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%\hline 
+\end{tabular}
+\end{center}
+
+
+
+\end{document}

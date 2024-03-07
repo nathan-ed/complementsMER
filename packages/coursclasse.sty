@@ -1,0 +1,791 @@
+\NeedsTeXFormat{LaTeX2e}
+ 
+\ProvidesClass{coursclasse}
+ 
+\RequirePackage{kvoptions}
+\DeclareBoolOption[true]{showexo}
+\DeclareBoolOption[true]{showcorr}
+\DeclareBoolOption[true]{showdegree}
+\ExecuteOptions{showexo=true,showcorr=false, showdegree=false} % par défaut
+\ProcessKeyvalOptions{coursclasse}
+
+\usepackage{version}
+%\RequirePackage{helvet}
+\RequirePackage{avant}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.5}
+\RequirePackage[utf8]{inputenc}
+%\RequirePackage[latin1]{inputenc}
+%\RequirePackage[french]{babel}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[fontsize=13pt]{scrextend}
+\RequirePackage{arev}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{afterpage}
+%\RequirePackage[french=guillemets]{csquotes}
+%\MakeAutoQuote{«}{»}
+\newcommand{\fquote}[1]{«~#1~»}
+\RequirePackage{amssymb}
+\RequirePackage{graphicx}
+%\RequirePackage{epstopdf}
+\RequirePackage{bm}
+\RequirePackage{multicol}
+\RequirePackage{etoolbox}
+\RequirePackage[skins]{tcolorbox}
+\tcbuselibrary{listings,breakable}
+\RequirePackage{float}
+\RequirePackage{lscape}
+\RequirePackage[toc,page]{appendix}
+\RequirePackage{framed}
+\RequirePackage{fontawesome5}
+\RequirePackage{color}
+%\RequirePackage{pst-circ}
+%\RequirePackage{pstricks-add}
+%\RequirePackage{auto-pst-pdf}
+\RequirePackage{fancybox}
+%\RequirePackage{psfrag}
+\RequirePackage[Glenn]{fncychap}
+\ChNameVar{\bfseries\Large\sf} 
+\ChNumVar{\Huge} 
+\ChTitleVar{\bfseries\Large\rm} 
+\ChRuleWidth{1pt}
+\ChNameUpperCase
+\ChTitleUpperCase
+\RequirePackage{niceframe}
+\RequirePackage{qrcode}
+\qrset{link, height=2cm}
+%\RequirePackage{psfrag}
+\RequirePackage[top=3cm, bottom=3cm, left=2cm , right=2cm]{geometry}
+\setlength{\parindent}{0pt}
+\RequirePackage{fancyhdr}
+\RequirePackage[compact]{titlesec}
+\RequirePackage{tasks}
+\RequirePackage{xparse}
+\RequirePackage{pgf,tikz,pgfplots}
+\RequirePackage{tikz-3dplot}
+\RequirePackage{tikz-cd}
+\RequirePackage{icomma}
+\usepackage{hhline}
+\usepackage{array}
+\newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+\usepackage{svg}
+\usepackage{ytableau}
+
+\usetikzlibrary{arrows,calc, shapes.misc, intersections,decorations.markings, patterns, shapes.geometric, calc,positioning,fit,backgrounds,angles, perspective,tikzmark}
+\RequirePackage{tkz-euclide}
+
+\usetikzlibrary{calc, 3D,math}
+
+\settasks{
+  % the next two should be set to the same value so labels are aligned to the
+  % left
+  label-width = 1em ,
+  item-indent = 2em ,
+  %before-skip = -\parskip , % undo paragraph skip
+  after-skip = -\parskip , % undo paragraph skip
+  label-offset=0.666em,
+  after-item-skip = 1em % undo paragraph skip
+}
+
+\newcounter{nexo}           % déclaration du numéro d'exo
+\setcounter{nexo}{0}        % initialisation du numero
+
+\newcounter{ncorr}           % déclaration du numéro d'exo
+\setcounter{ncorr}{0}        % initialisation du numero
+
+\RequirePackage{paralist}
+\setdefaultenum{(a)}{i.}{a.}{}
+\setdefaultleftmargin{0em}{0em}{.1em}{}{}{}
+\newcommand{\bbr}{{\mathbb{R}}}
+\newcommand{\bbc}{{\mathbb{C}}}
+\newcommand{\bbk}{{\mathbb{K}}}
+\newcommand{\bbz}{{\mathbb{Z}}}
+\newcommand{\bbq}{{\mathbb{Q}}}
+\newcommand{\bbn}{{\mathbb{N}}}
+\newcommand{\bbh}{{\mathbb{H}}}
+\newcommand{\bbl}{{\mathbb{L}}}
+\newcommand{\bbs}{{\mathbb{S}}}
+\newcommand{\bbp}{{\mathbb{P}}}
+\newcommand{\bbpr}{{\mathbb{P}\mathbb{R}}}
+\newcommand{\bbpc}{{\mathbb{P}\mathbb{C}}}
+\newcommand{\calq}{{\mathcal{Q}}}
+\newcommand{\paral}{\mathbin{\;\!/\mkern-5mu/\!}}
+
+%%%% Declaration des unités %%%%%
+
+\RequirePackage{siunitx}
+\sisetup{locale = FR, per-mode = symbol, range-phrase=--, range-units=single, product-units=single}
+\newcommand{\da}[1]{\SI[mode=text]{#1}{}}
+\newcommand{\tunit}[2]{\SI[mode=text]{#1}{#2}}
+\newcommand{\nunit}[1]{\SI[mode=text]{}{#1}}
+\DeclareSIUnit\fr{fr.}
+
+\usepackage{ulem}
+\usepackage{cancel}
+\usepackage{pst-circ,pstricks-add}
+\usepackage{psfrag}
+\usepackage{pst-eucl}
+\usepackage{pst-all}
+%\usepackage[crop=off,pspdf={-dNOSAFER -dALLOWPSTRANSPARENCY}]{auto-pst-pdf}
+\usepackage[pspdf={-dNOSAFER -dALLOWPSTRANSPARENCY}]{auto-pst-pdf}
+
+
+
+%%%% ENVIRONNEMENT TCOLORBOX &&&&&&&
+
+
+\usetikzlibrary{decorations.pathmorphing, angles,quotes}
+\pgfdeclaredecoration{complete zigzag}{initial}{
+\state{initial}[
+        width=+0pt,
+        next state=half up,
+        persistent precomputation={\pgfmathsetmacro\matchinglength{
+            \pgfdecoratedinputsegmentlength / int(\pgfdecoratedinputsegmentlength/\pgfdecorationsegmentlength)}
+            \setlength{\pgfdecorationsegmentlength}{\matchinglength pt}
+        }] {}
+  \state{half up}[
+        width=+.25\pgfdecorationsegmentlength,
+        next state=big down]
+        {\pgfpathlineto{\pgfqpoint{.25\pgfdecorationsegmentlength}{\pgfdecorationsegmentamplitude}}
+    }
+  \state{big down}[switch if less than=+.5\pgfdecorationsegmentlength to center finish,
+                   width=+.5\pgfdecorationsegmentlength,
+                   next state=big up]
+  {
+    \pgfpathlineto{\pgfqpoint{.5\pgfdecorationsegmentlength}{-\pgfdecorationsegmentamplitude}}
+  }
+  \state{big up}[switch if less than=+.5\pgfdecorationsegmentlength to center finish,
+                 width=+.5\pgfdecorationsegmentlength,
+                 next state=big down]
+  {
+    \pgfpathlineto{\pgfqpoint{.5\pgfdecorationsegmentlength}{\pgfdecorationsegmentamplitude}}
+  }
+  \state{center finish}[width=0pt, next state=final]{
+  }
+  \state{final}
+  {
+    \pgfpathlineto{\pgfpointdecoratedpathlast}
+  }
+}
+\newtcolorbox{mesexosnotbreak}{
+    enhanced,
+  %colframe=blue,
+  interior style={top color=white, bottom color=white, middle color=white},
+  breakable=false,
+bottomrule at break=4mm}
+
+\newtcolorbox{mesexos}{
+    enhanced,
+  %colframe=blue,
+  interior style={top color=white, bottom color=white, middle color=white},
+  breakable=true,
+  bottomrule at break=4mm,
+  %title after break={Theorem \themytheorem\ Continued}, % works, but not great
+  overlay first={%
+
+	  \path[font=\small\itshape] (frame.south) node (cont) {{\footnotesize (L'exercice continue sur la page suivante)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,-0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.south west) -- (cont.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.south east) -- (cont.east);
+      \end{scope} 
+  },
+  overlay middle={%
+	  \path[font=\small\itshape] (frame.south) node (cont) {{\footnotesize (Suite de l'exercice)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,-0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.south west) -- (cont.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.south east) -- (cont.east);
+      \end{scope} 
+      \path[font=\small\itshape] (frame.north) node (thm) {{\footnotesize (Suite de l'exercice)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,-0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.north west) -- (thm.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.north east) -- (thm.east);
+      \end{scope} 
+  },
+  overlay last={%
+	  \path[font=\small\itshape] (frame.north) node (thm) {{\footnotesize (Suite de l'exercice)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,-0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.north west) -- (thm.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.north east) -- (thm.east);
+      \end{scope} 
+  },
+}
+
+\newtcolorbox{mescorr}{
+    enhanced,
+  %colframe=blue,
+  interior style={top color=white, bottom color=white, middle color=white},
+  breakable=true,
+  bottomrule at break=4mm,
+  %title after break={Theorem \themytheorem\ Continued}, % works, but not great
+  overlay first={%
+
+	  \path[font=\small\itshape] (frame.south) node (cont) {{\footnotesize (Le corrigé continue sur la page suivante)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,-0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.south west) -- (cont.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.south east) -- (cont.east);
+      \end{scope} 
+  },
+  overlay middle={%
+	  \path[font=\small\itshape] (frame.south) node (cont) {{\footnotesize (Suite du corrigé)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.south west) -- (cont.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.south east) -- (cont.east)} --++
+        (0,-0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.south west) -- (cont.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.south east) -- (cont.east);
+      \end{scope} 
+      \path[font=\small\itshape] (frame.north) node (thm) {{\footnotesize (Suite du corrigé)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,-0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.north west) -- (thm.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.north east) -- (thm.east);
+      \end{scope} 
+  },
+  overlay last={%
+	  \path[font=\small\itshape] (frame.north) node (thm) {{\footnotesize (Suite du corrigé)}};
+      \begin{scope}[decoration={complete zigzag,amplitude=0.5mm}]
+       \path[fill=white]  decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,-0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,-0.5ex) -| cycle;
+       \path[fill=white]
+        decorate {([xshift=1.2pt]frame.north west) -- (thm.west)} --++
+        (0,0.5ex) -| cycle
+        decorate {([xshift=-1.2pt]frame.north east) -- (thm.east)} --++
+        (0,0.5ex) -| cycle;
+       \draw[thick,black,decorate] ([xshift=1.2pt]frame.north west) -- (thm.west);
+       \draw[thick,black,decorate] ([xshift=-1.2pt]frame.north east) -- (thm.east);
+      \end{scope} 
+  },
+}
+
+%%%%%%% LOGO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bclivre}{ \includegraphics[scale=.075]{media/modele/livre9e.eps}}
+\newcommand{\bcfichier}{ \includegraphics[scale=.075]{media/modele/fichier9e.eps}}
+\newcommand{\bcaidememoire}{ \includegraphics[scale=.025]{media/modele/am-front}}
+
+
+%%%%%%%% CHAPITRE ET SECTION %%%%%%%%%%
+
+\titleformat{\chapter}[block]
+  {\Huge\bfseries\filcenter}
+  {\vspace{-2cm} \thechapter}
+  {20pt}
+  {}
+\titlespacing{\chapter}{0pt}{-50pt}{10pt}
+
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\titlespacing{\section}{0pt}{-10pt}{14pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% En-Tête%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\regroupement}{9e}
+
+\let\CLASSchapter\chapter
+
+\RenewDocumentCommand{\chapter}{som}{%
+  \IfBooleanTF{#1}
+   {% there's a *
+    \CLASSchapter*{#3}\markboth{#3}{}%
+   }
+   {% no *
+    \IfNoValueTF{#2}
+     {% no opt arg
+      \CLASSchapter{#3}%
+     }
+     {% opt arg
+      \CLASSchapter[#2]{#3}%
+     }%
+   }%
+}
+
+\let\CLASSsection\section
+
+\RenewDocumentCommand{\section}{som}{%
+  \IfBooleanTF{#1}
+   {% there's a *
+    \CLASSsection*{#3}\markright{#3}{}%
+   }
+   {% no *
+    \IfNoValueTF{#2}
+     {% no opt arg
+      \CLASSsection{#3}%
+     }
+     {% opt arg
+      \CLASSsection[#2]{#3}%
+     }%
+   }%
+}
+
+
+\pagestyle{fancy}    
+
+\renewcommand{\chaptermark}[1]{\markright{#1}{}}
+\renewcommand{\sectionmark}[1]{\markleft{#1}}
+
+\newenvironment{refdegree}[1]{\begin{small} #1 \end{small}\vspace{-\baselineskip}}
+
+\lhead{\begin{small}
+CO Genève
+\end{small}} 
+\chead{}  
+\rhead{\begin{small} Mathématiques \end{small} \begin{refdegree}{\regroupement}\nolinebreak[4]\end{refdegree}} 
+\lfoot{\begin{small}
+ \leftmark \end{small}}  
+\cfoot{\begin{small}
+\thepage
+\end{small}}  
+\rfoot{\begin{small}
+\rightmark
+\end{small}}  
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancypagestyle{firstPage}{
+\lhead{\begin{small}
+CO Genève
+\end{small}} 
+\chead{\bfseries Série \ligne{4}}  
+\rhead{\begin{small} Mathématiques \end{small} \begin{refdegree}{\regroupement}\nolinebreak[4]\end{refdegree}} 
+\lfoot{\begin{small}
+ \leftmark \end{small}}  
+\cfoot{\begin{small}
+\thepage
+\end{small}}  
+\rfoot{\begin{small}
+\rightmark
+\end{small}}  
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%% LIGNE DE REPONSE %%%%%%%%%%%%%%%%%%
+\newcommand{\ligne}[1]{\makebox[#1cm]{\hrulefill}} 
+\newcommand{\points}[1]{\makebox[#1cm]{\dotfill}} 
+
+
+%%%%%%%%%%%%%% ENVIRONNEMENT POUR LES EXOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Définition de la variable pour montrer les niveaux
+\newtoggle{montrerNiveaux}
+
+
+% Liste initiale de l'aide-mémoire
+\newenvironment{amL}[2]{
+
+	\section*{#1}
+
+	\vspace{1cm}
+	\centering
+	{\Large \bfseries Série \ligne{4}}
+
+	\vspace{1cm}
+	\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{tcolorbox}[breakable]{\bcaidememoire \quad \bfseries \large À consulter dans ton aide-mémoire} 
+
+Voici une liste des notions à consulter dans ton aide-mémoire.
+\begin{itemize}
+#2
+\end{itemize}
+\smallskip
+    \end{tcolorbox}
+\newpage\null\thispagestyle{empty}\newpage}
+
+
+% Exercice résolu
+\newenvironment{resolu}[3]{\tcbset{colframe=black,colback=white,colupper=black, coltext=blue,fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mesexos}{\faLightbulb\quad \bfseries Exercice résolu} \hfill \iftoggle{montrerNiveaux}{Niveau #3}{}  \hspace{2cm}  $\square\quad$\makebox[0pt][l]{$\checkmark$}$\square$\\
+	 { \bfseries  #1}
+    
+#2
+\smallskip
+    \end{mesexos}
+    \smallskip}
+
+
+%Exercice à faire dans le cahier
+    \newenvironment{exo}[2]{\refstepcounter{nexo}\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mesexos}{\faBookOpen \quad \bfseries Exercice \thenexo}  \hfill \iftoggle{montrerNiveaux}{Niveau #2}{}   \hspace{2cm}  $\square\quad\square$
+    
+#1
+\smallskip
+    \end{mesexos}
+    \smallskip}
+
+%Quiz Wiris
+    \newenvironment{qmoodle}[3]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mesexosnotbreak}{\faDesktop \quad \bfseries Quiz Moodle -- #1} \hfill \iftoggle{montrerNiveaux}{}{}  \hspace{2cm}  %$\square\quad\square$
+
+\begin{multicols}{#2}
+#3
+\end{multicols}
+    \end{mesexosnotbreak}
+    \smallskip}
+
+   %Quiz Wiris
+\newenvironment{qmun}[2]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mesexosnotbreak}{\faDesktop \quad \bfseries Quiz Moodle -- #1} \hfill \iftoggle{montrerNiveaux}{}{}  \hspace{2cm}  %$\square\quad\square$
+	    \vspace{-0.5em}
+#2
+\vspace{-1em}
+    \end{mesexosnotbreak}
+    }
+
+% Exercice à faire sur la feuille
+    \newenvironment{exop}[2]{\refstepcounter{nexo}\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mesexos}{\bfseries Exercice \thenexo} \hfill \iftoggle{montrerNiveaux}{Niveau #2}{}  \hspace{2cm}  $\square\quad\square$
+
+#1
+\smallskip
+    \end{mesexos}
+    \smallskip}
+
+% Exercice corrigé
+\newenvironment{exoc}[1]{\refstepcounter{ncorr}\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{mescorr}{\bfseries Corrigé \thencorr \hfill} 
+
+#1
+\smallskip
+    \end{mescorr}
+    \smallskip}
+
+
+% Exercice Livre
+    \newenvironment{exol}[3]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{tcolorbox}{\bfseries #1} -- Livre 9e -- p.~#2 \hfill \iftoggle{montrerNiveaux}{Niveau #3}{} \hspace{2cm} $\square\quad\square$
+\end{tcolorbox}}
+
+% Exercice Fichier
+\newenvironment{exof}[3]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+\begin{tcolorbox}{\bfseries #1} -- Fichier 9e  -- p.~#2 \hfill \iftoggle{montrerNiveaux}{Niveau #3}{}  \hspace{2cm} $\square\quad\square$
+\end{tcolorbox}}
+    
+% Faire le point
+\newenvironment{FLP}[2]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+\begin{tcolorbox}{\bfseries Faire le point} -- Fichier 9e  -- p.~#1 \hfill \iftoggle{montrerNiveaux}{Niveau #2}{}  \hspace{2cm}  $\square\quad\square$
+\end{tcolorbox}}
+
+% Que sais-je
+\newenvironment{QSJ}[2]{\tcbset{colframe=black,colback=white,colupper=black, fonttitle=\bfseries,arc=2mm,boxrule=0.2mm}
+    \centering
+    \begin{tcolorbox}{\bfseries  Que sais-je ?} Fichier 9e  -- p.~#1 \hfill \iftoggle{montrerNiveaux}{Niveau #2}{}  \hspace{2cm} $\square\quad\square$
+\end{tcolorbox}}
+
+\ifcoursclasse@showexo
+  \includeversion{amL}
+  \includeversion{resolu}
+  \includeversion{exo}
+  \includeversion{exop}
+\else
+  \excludeversion{amL}
+  \excludeversion{resolu}
+  \excludeversion{exo}
+  \excludeversion{exop}
+\fi
+
+\ifcoursclasse@showdegree
+  \includeversion{exol}
+  \includeversion{exof}
+  \includeversion{FLP}
+  \includeversion{refdegree}
+  \includeversion{QSJ}
+\else
+  \excludeversion{exol}
+  \excludeversion{exof}
+  \excludeversion{FLP}
+  \excludeversion{refdegree}
+  \excludeversion{QSJ}
+\fi
+
+\ifcoursclasse@showcorr
+   \includeversion{exoc}
+\else
+   \excludeversion{exoc}
+\fi
+
+\newenvironment{solve}
+ {%
+\begin{equation*}
+  \renewcommand{\arraystretch}{1.2}%
+  \setlength{\arraycolsep}{0pt}%
+  \begin{array}{
+    >{\displaystyle}r   % right aligned
+    >{\displaystyle{}}l % left aligned
+    @{\hspace{4em}}     % spacing
+    |                   % vertical rule
+    @{\hspace{2em}}     % spacing
+    >{\displaystyle}l   % comments
+  }%
+ }%
+ {\end{array}
+\end{equation*}}
+\newenvironment{expli}
+ {%
+	 $
+  \renewcommand{\arraystretch}{1.2}%
+  \setlength{\arraycolsep}{0pt}%
+  \begin{array}[t]{
+    >{\displaystyle}r   % right aligned
+    >{\displaystyle{}}l % left aligned
+    @{\hspace{1.5em}}     % spacing
+    >{\displaystyle}l   % comments
+  }%
+ }%
+ {\end{array}
+	 $
+}
+ \newenvironment{numberlined}[8]{
+
+  \begin{center}
+    \begin{tikzpicture}[x=0.85\textwidth/(#2-#1+(#2-#1)/20] % Adjust the scaling factor as needed
+	    \draw[thick,-{Triangle[angle=90:5pt 2]}] (#1,0) -- ({#2+(#2-#1)/20},0); % Line spanning the 75% of text width
+
+      \pgfmathsetmacro{\stt}{#1}
+      \pgfmathsetmacro{\ed}{#2}
+      \pgfmathsetmacro{\stp}{#3}
+      \pgfmathsetmacro{\stps}{#4}
+      \pgfmathsetmacro{\stn}{\stt+\stp}
+      \pgfmathsetmacro{\stnn}{\stt+\stps}
+
+      
+      \foreach \i in {\stt,\stn,...,\ed} % numbers on line
+      \draw[very thick] (\i,0.15) -- + (0,-0.3); % tick and their labels
+
+      \ifnum#7=1
+      \foreach \x in {\stt, \stnn,...,\ed} % smaller ticks
+        \draw[thick] (\x,0.1) -- + (0,-0.2);
+	\fi
+
+   \foreach \i/\j in {#5} % points on line
+% \foreach \i [count=\n] in {#5} % points on line
+   \draw[thick] (\i,0.1) -- + (0,-0.2) node[below] {$\j$};
+   %\draw[thick,-{Triangle[angle=90:1pt 2]}] (\i,-#6) node[below] {$\j$} -- (\i,0); 
+   \foreach \i/\j in {#8} % points on line
+% \foreach \i [count=\n] in {#5} % points on line
+   \draw[thick,{Triangle[angle=90:3pt 2]}-] (\i,0) -- (\i,#6) node[above] {$\j$}; 
+    \end{tikzpicture}
+  \end{center}
+}{}
+
+\renewcommand{\div}{ : }
+
+\newcommand{\udensdot}[1]{%
+    \tikz[baseline=(todotted.base)]{
+        \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
+        \draw[densely dotted] (todotted.south west) -- (todotted.south east);
+    }%
+}%
+
+\newcommand{\savedx}{0}
+\newcommand{\savedy}{0}
+\newcommand{\savedz}{0}
+
+\newcommand{\somedrawing}%
+{   \coordinate (a) at (-2,-2,-2);
+    \coordinate (b) at (-2,-2,2);
+    \coordinate (c) at (-2,2,-2);
+    \coordinate (d) at (-2,2,2);
+    \coordinate (e) at (2,-2,-2);
+    \coordinate (f) at (2,-2,2);
+    \coordinate (g) at (2,2,-2);
+    \coordinate (h) at (2,2,2);
+    \draw (a)--(b) (a)--(c) (a)--(e) (b)--(d) (b)--(f) (c)--(d) (c)--(g) (d)--(h) (e)--(f) (e)--(g) (f)--(h) (g)--(h);
+    \fill (a) circle (0.1cm);
+    \fill (d) ++(0.1cm,0.1cm) rectangle ++(-0.2cm,-0.2cm);
+}
+
+\newcommand{\rotateRPY}[4][0/0/0]% point to be saved to \savedxyz, roll, pitch, yaw
+{   \pgfmathsetmacro{\rollangle}{#2}
+    \pgfmathsetmacro{\pitchangle}{#3}
+    \pgfmathsetmacro{\yawangle}{#4}
+
+    % to what vector is the x unit vector transformed, and which 2D vector is this?
+    \pgfmathsetmacro{\newxx}{cos(\yawangle)*cos(\pitchangle)}% a
+    \pgfmathsetmacro{\newxy}{sin(\yawangle)*cos(\pitchangle)}% d
+    \pgfmathsetmacro{\newxz}{-sin(\pitchangle)}% g
+    \path (\newxx,\newxy,\newxz);
+    \pgfgetlastxy{\nxx}{\nxy};
+
+    % to what vector is the y unit vector transformed, and which 2D vector is this?
+    \pgfmathsetmacro{\newyx}{cos(\yawangle)*sin(\pitchangle)*sin(\rollangle)-sin(\yawangle)*cos(\rollangle)}% b
+    \pgfmathsetmacro{\newyy}{sin(\yawangle)*sin(\pitchangle)*sin(\rollangle)+ cos(\yawangle)*cos(\rollangle)}% e
+    \pgfmathsetmacro{\newyz}{cos(\pitchangle)*sin(\rollangle)}% h
+    \path (\newyx,\newyy,\newyz);
+    \pgfgetlastxy{\nyx}{\nyy};
+
+    % to what vector is the z unit vector transformed, and which 2D vector is this?
+    \pgfmathsetmacro{\newzx}{cos(\yawangle)*sin(\pitchangle)*cos(\rollangle)+ sin(\yawangle)*sin(\rollangle)}
+    \pgfmathsetmacro{\newzy}{sin(\yawangle)*sin(\pitchangle)*cos(\rollangle)-cos(\yawangle)*sin(\rollangle)}
+    \pgfmathsetmacro{\newzz}{cos(\pitchangle)*cos(\rollangle)}
+    \path (\newzx,\newzy,\newzz);
+    \pgfgetlastxy{\nzx}{\nzy};
+
+    % transform the point given by #1
+    \foreach \x/\y/\z in {#1}
+    {   \pgfmathsetmacro{\transformedx}{\x*\newxx+\y*\newyx+\z*\newzx}
+        \pgfmathsetmacro{\transformedy}{\x*\newxy+\y*\newyy+\z*\newzy}
+        \pgfmathsetmacro{\transformedz}{\x*\newxz+\y*\newyz+\z*\newzz}
+        \xdef\savedx{\transformedx}
+        \xdef\savedy{\transformedy}
+        \xdef\savedz{\transformedz}     
+    }
+}
+
+\tikzset{RPY/.style={x={(\nxx,\nxy)},y={(\nyx,\nyy)},z={(\nzx,\nzy)}}}
+
+\makeatletter
+\renewcommand*\env@matrix[1][\arraystretch]{%
+  \edef\arraystretch{#1}%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols c}}
+\makeatother
+
+\newcommand{\degre}{\ensuremath{^\circ}}
+
+
+\newcount\segmentsleft
+\tikzset{pics/.cd,
+  circle fraction/.style args={#1/#2}{code={%
+\segmentsleft=#1\relax
+\pgfmathloop
+\ifnum\segmentsleft<1\else
+\ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
+\begin{scope}[shift={(\pgfmathcounter*0.85,0)}]
+\foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
+  \fill[fill=gray!70] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
+\draw circle [radius=3/8];
+\ifnum#2>1
+  \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
+    \draw (0,0) -- (90+\a:3/8);
+\fi
+\end{scope}
+\advance\segmentsleft by-#2
+\repeatpgfmathloop
+  }}
+}
+
+
+\newcommand{\un}[1]{\ensuremath{\,\mathrm{#1}}}
+
+\newcommand{\drawbox}[4]{
+    \pgfmathsetmacro \angle {30}
+    \pgfmathsetmacro \xd {{2/3*cos(\angle)}}
+    \pgfmathsetmacro \yd {{2/3*sin(\angle)}}
+    \pgfmathsetmacro \x {{#1-1+(#2-1)*(\xd)}}
+    \pgfmathsetmacro \y {{#3-1+(#2-1)*(\yd)}}
+
+    \draw[fill=gray!25] (\x,\y) -- (\x+1,\y) -- (\x+1,\y+1) -- (\x,\y+1) -- cycle;
+    \draw[fill=gray!10] (\x,\y+1) -- (\x+\xd,\y+1+\yd) -- (\x+1+\xd,\y+1+\yd) -- (\x+1,\y+1) -- cycle;
+    \draw[fill=gray!50] (\x+1,\y+1) -- (\x+1+\xd,\y+1+\yd) -- (\x+1+\xd,\y+\yd) -- (\x+1,\y) -- cycle;
+}
+
+\usepackage{ulem}
+
+\tikzset{
+  thermometer/.style={insert path={
+    (280.0313,169.3125) .. controls (263.9888,169.3125) and (250.6461,179.3446) ..
+    (247.8125,192.5625) -- 
+    (247.3438,563.7500) .. controls (235.7346,573.2243) and (228.3438,587.6282) ..
+    (228.3438,603.7813) .. controls (228.3438,632.3161) and (251.4651,655.4688) ..
+    (280.0000,655.4688) .. controls (308.5349,655.4688) and (331.6563,632.3161) ..
+    (331.6563,603.7813) .. controls (331.6563,587.6282) and (324.2654,573.2243) ..
+    (312.6563,563.7500) -- 
+    (312.2500,192.5625) .. controls 
+    (309.4164,179.3446) and (296.0737,169.3125) .. (280.0313,169.3125) -- cycle
+}}}
+
+
+\newcommand{\vfracrect}[3][]{\tikz[rotate=270,baseline, #1]{
+    \foreach \n in {1,...,#2}{\draw[thick, fill=gray!70] ({(\n-1)/#3},0) rectangle (\n/#3,1);}
+    \foreach \n in {#2,...,#3} {\draw[thick] ({(\n-1)/#3},0) rectangle (\n/#3,1);}}}
+
+    \newcommand{\vemptyfracrect}[2][]{\tikz[rotate=270,baseline, #1]{
+    \foreach \n in {1,...,1}{\draw[thick] ({(\n-1)/#2},0) rectangle (\n/#2,1);}
+    \foreach \n in {1,...,#2} {\draw[thick] ({(\n-1)/#2},0) rectangle (\n/#2,1);}}}
+
+\newcommand{\fracrect}[3][]{\tikz[baseline, #1]{
+    \foreach \n in {1,...,#2}{\draw[thick, fill=gray!70] ({(\n-1)/#3},0) rectangle (\n/#3,1);}
+    \foreach \n in {#2,...,#3} {\draw[thick] ({(\n-1)/#3},0) rectangle (\n/#3,1);}}}
+
+    \newcommand{\emptyfracrect}[2][]{\tikz[baseline, #1]{
+    \foreach \n in {1,...,1}{\draw[thick] ({(\n-1)/#2},0) rectangle (\n/#2,1);}
+    \foreach \n in {1,...,#2} {\draw[thick] ({(\n-1)/#2},0) rectangle (\n/#2,1);}}}
+
+
+
+\newcommand{\emptyfrac}[1][]{\tikz[baseline=-.6ex,#1]{\draw (0,0)--
+    node[above=1pt, fill=gray!20, minimum size=7mm]{}
+    node[below=1pt, fill=gray!20, minimum size=7mm]{}(.5,0);}}
+

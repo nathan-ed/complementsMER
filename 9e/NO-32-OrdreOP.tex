@@ -1,0 +1,189 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Priorités des opérations}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Priorités des opérations (page 26)
+\item Effectuer un calcul avec ou sans parenthèses (page 27)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}{Qui est prioritaire~?}{Souligne l'opération prioritaire dans chaque situation.
+\begin{tasks}(2)
+    \task ${\color{blue}\uline{{\color{black}5\cdot 4}}} \div  2$
+    \task $14+{\color{blue}\uline{{\color{black}7\cdot 21}}}$
+    \task $5+{\color{blue}\uline{{\color{black}2^3}}}-4$
+    \task ${\color{blue}\uline{{\color{black}64 \div  16}}} \div  4 $
+    \task $64 \div  {\color{blue}\uline{{\color{black}(16 \div  4)}}}$
+    \task $45\div {\color{blue}\uline{{\color{black}3^2}}}-2$
+    \task ${\color{blue}\uline{{\color{black}35-7}}}+21-14$
+    \task $35-{\color{blue}\uline{{\color{black}(7+21}}}-14)$
+\end{tasks}}{1}
+\end{resolu}
+
+\begin{exop}{
+Souligne l'opération prioritaire.
+\begin{tasks}(2)
+\task $7+25\cdot 2-9$
+\task $17-2\cdot3+5$
+\task $28-(5+6\cdot3)$
+\task $7\cdot\left[4+(1+2)\cdot 5\right]$
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Souligne l'opération prioritaire.
+\begin{tasks}(2)
+\task $2+33\div  11-5$
+\task $17-18\div 6\cdot3$
+\task $28-(25-6\cdot3)$
+\task $9\cdot\left[5+(3+3)\div  3\right]$
+\end{tasks}
+}{1}\end{exop}
+
+\newpage
+
+\begin{resolu}{Appliquons les priorités des opérations}
+{
+Effectue les calculs ci-dessous en soulignant à chaque étape l'opération prioritaire et en expliquant brièvement ton choix.
+\begin{tasks}
+\task $A=35-10\div 5$
+
+{\color{blue}
+\begin{center}
+\begin{tabular}{|ccccccc|cp{7.7cm}|}\hline
+$A$&$=$&$35$&$-$&$10$&$ \div $& $5$ & $\rightarrow$ & D'abord la division.\\\cline{5-7}
+&&&&&&&&\\
+$A$&$=$&$35$&$-$&\multicolumn{3}{c|}{$2$} & $\rightarrow$ & Ensuite la soustraction.\\\cline{3-6}
+&&&&&&&&\\
+$A$&$=$&\multicolumn{5}{c|}{$33$} & $\rightarrow$ & Le résultat est donc $A=33$.\\\hline
+\end{tabular}
+\end{center}}
+\task $B=7+2\cdot 5+7-5$
+
+{\color{blue}
+\begin{center}
+\begin{tabular}{|ccccccccccc|cp{5cm}|}\hline
+$B$&$=$&$7$&$+$&$2$&$\cdot$&$5$&$+$&$7$&$-$&$5$&$\rightarrow$& Ici, d'abord la \\\cline{5-7}
+& & & & & & & & & & & & multiplication.\\
+&&&&&&&&&&&&\\
+$B$&$=$&$7$&$+$&\multicolumn{3}{c}{$10$}&$+$&$7$&$-$&$5$&$\rightarrow$& Ensuite les $+$ et les $-$\\\cline{3-6}
+& & & & & & & & & & & &  de gauche à droite.\\
+&&&&&&&&&&&&\\
+$B$&$=$&\multicolumn{5}{c}{$17$}&$+$&$7$&$-$&$5$&$\rightarrow$& Ensuite les $+$ et les $-$\\\cline{5-9}
+& & & & & & & & & & & & de gauche à droite.\\
+&&&&&&&&&&&&\\
+$B$&$=$&\multicolumn{7}{c}{$24$}&$-$&$5$&$\rightarrow$& Ensuite les $+$ et les $-$\\\cline{6-11}
+& & & & & & & & & & & & de gauche à droite.\\
+&&&&&&&&&&&&\\
+$B$&$=$&\multicolumn{9}{c|}{$19$}&$\rightarrow$& Le résultat est donc $B=19$.\\\hline
+\end{tabular}
+\end{center}}
+\end{tasks}}{1}
+\end{resolu}
+
+\newpage
+
+\begin{resolu}{Appliquons encore les priorités des opérations}
+{
+Effectue les calculs ci-dessous en soulignant à chaque étape l'opération prioritaire et en expliquant brièvement ton choix.
+\vspace{-0.5cm}
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1em]
+    \task  $C=7+2\cdot (5+7)-5$
+\vspace{-0.3cm}
+{\color{blue}
+\begin{center}
+\begin{tabular}{|ccccccccccc|cp{5cm}|}\hline
+$C$&$=$&$7$&$+$&$2$&$\cdot$&$(5$&$+$&$7)$&$-$&$5$&$\rightarrow$& D'abord les calculs \\\cline{7-9}
+& & & & & & & & & & & &  entre parenthèses.\\
+& & & & & & & & & & & & \\
+$C$&$=$&$7$&$+$&$2$&$\cdot$&\multicolumn{3}{c}{$12$}&$-$&$5$&$\rightarrow$& Ensuite,\\
+\cline{5-8}
+& & & & & & & & & & & &  la multiplication.\\
+& & & & & & & & & & & & \\
+$C$&$=$&$7$&$+$&\multicolumn{5}{c}{$24$}&$-$&$5$&$\rightarrow$&  Les $+$ et les $-$\\
+\cline{3-7}
+& & & & & & & & & & & & de gauche à droite.\\
+& & & & & & & & & & & & \\
+$C$&$=$&\multicolumn{7}{c}{$31$}&$-$&$5$&$\rightarrow$&  Les $+$ et les $-$\\
+\cline{6-11}
+& & & & & & & & & & & &  de gauche à droite.\\
+& & & & & & & & & & & & \\
+$C$&$=$&\multicolumn{9}{c|}{$26$}&$\rightarrow$&  Le résultat est donc $C=26$.\\\hline
+\end{tabular}
+\end{center}}
+\task $D=80\div (4+24\div 2)$
+\vspace{-0.3cm}
+\begin{center}
+\begin{tabular}{|ccccccccc|cp{5cm}|}\hline
+$D$&$=$&$80$&$\div $&$(4$&$+$&$24$& $\div $ & $2)$&$\rightarrow$ & D'abord la division \\\cline{7-9}
+& & & & & & & & & &entre parenthèses.\\
+$D$&$=$&$80$&$\div $&$(4$&$+$&\multicolumn{3}{c|}{$12)$}&$\rightarrow$& Puis l'addition  \\\cline{5-8}
+& & & & & & & & & &dans la parenthèse.\\
+$D$&$=$&$80$&$\div $&\multicolumn{5}{c|}{$16$}&$\rightarrow$& On termine par  \\\cline{3-7}
+& & & & & & & & & &la division.\\
+$D$&$=$&\multicolumn{7}{c|}{$5$}&$\rightarrow$& On obtient $D=5$. \\\hline
+\end{tabular}
+\end{center}
+\end{tasks}
+}{1}
+\end{resolu}
+
+\begin{exo}{
+Calcule les expressions suivantes en soulignant les calculs en cours.
+\begin{tasks}(2)
+\task $(3+4)\cdot5\cdot(6-4)$
+\task $45-3\cdot7$
+\task $(4+3\cdot2)\div 2-3$
+\task $120-(4+5\cdot7)$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Calcule les expressions suivantes en soulignant les calculs en cours.
+\begin{tasks}(2)
+\task $12^2-4+10$
+\task $4\cdot(5+8-3)$
+\task $4\cdot5 +3\cdot 0$
+\task $(3+1\cdot 7) + 2\cdot 5$
+\end{tasks}
+}{1}\end{exo}
+
+
+\exol{NO77}{28}{1}
+\exof{NO78}{26}{1}
+\exof{NO79}{27-28}{1}
+\exof{NO80}{29}{1}
+\exof{NO81}{29}{1}
+
+
+\end{document}

@@ -1,0 +1,199 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%\usepackage{sansmathfonts}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Décomposition en produit\\de facteurs premiers
+}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Nombre premier (page 13)
+\item Décomposition en produit de facteurs premiers (page 14)
+
+}
+\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{exof}{NO45}{15}{2}
+\end{exof}
+\begin{exof}{NO46}{16}{3}
+\end{exof}
+
+\begin{exol}{NO50}{21}{2}
+\end{exol}
+\begin{exol}{NO51}{21}{3}
+\end{exol}
+
+
+%-------------------------------------------------------------
+%-----------------------NB PREMIERS---------------------------
+%-------------------------------------------------------------
+
+
+
+
+
+\begin{exo}{
+    Énumère les diviseurs des entiers suivants. 
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](4)
+    \task $7$
+    \task $13$
+    \task $31$
+    \task $51$
+\end{tasks}
+}{2}\end{exo}
+    
+
+
+
+
+
+%-------------------------------------------------------------
+\begin{exo}{ %seymath
+    Parmi les nombres suivants, lesquels ne sont pas premiers et pourquoi~? Utilise les critères de divisibilité.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](5)
+    \task $258$
+    \task $109$
+    \task $605$
+    \task $4731$
+    \task $654219$
+\end{tasks}
+}{2}\end{exo}
+
+
+
+
+%-------------------------------------------------------------
+%-----------------------DECOMPOSITION-------------------------
+%-------------------------------------------------------------
+
+
+
+\begin{exof}{NO48}{16}{2}
+\end{exof}
+\begin{exof}{NO49}{16}{3}
+\end{exof}
+
+
+%-------------------------------------------------------------
+\begin{exo}{ %seymath
+    Écris chaque nombre sous la forme d'une multiplication de deux facteurs.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](4)
+    \task $48$
+    \task $32$
+    \task $68$
+    \task $117$
+\end{tasks}
+}{2}\end{exo}
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------
+\begin{exo}{
+    Décompose les nombres suivants en produit de facteurs premiers.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](5)
+    \task $12$
+    \task $49$
+    \task $54$
+    \task $84$
+    \task $150$
+    \task $180$
+    \task $525$
+    \task $528$
+    \task $600$
+    \task $630$
+    \end{tasks}
+}{2}\end{exo}
+
+
+
+%-------------------------------------------------------------
+\begin{exo}{ %seymath
+    Décompose les nombres suivants en produit de facteurs premiers.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](3)
+    \task $4200$
+    \task $4700$
+    \task $3600$
+    \task $150000$
+    \task $10200$
+    \task $81900$
+    \end{tasks}
+}{2}\end{exo}
+
+
+%------------------------------------------------------
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Calcule le pgdc des entiers suivants en utilisant la décomposition en produit de facteurs premiers.
+
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](2)
+    \task $45$ et $60$
+    \task $36$ et $42$
+    \task $126$ et $180$
+    \task $176$, $112$ et $208$
+    \task $90$, $125$ et $605$
+    \task $\begin{aligned}
+		    A&=2^2\cdot3^3\cdot5^3 \text{ et}\\
+		    B&= 2\cdot3^2\cdot5\cdot7^2
+	\end{aligned}$
+\end{tasks}
+}{2}\end{exo}
+
+
+%------------------------------------------------------
+\begin{exo}{
+Calcule le ppmc des entiers suivants en utilisant la décomposition en produit de facteurs premiers.
+
+
+
+\begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em](2)
+    \task $500$ et $625$
+    \task $180$ et $84$
+    \task $214$ et $216$
+    \task $256$ et $1024$
+    \task $135$, $675$ et $63$
+    \task $\begin{aligned}A &= 5^2\cdot7^5\cdot11^3 \text{ et}\\ B&= 3^2\cdot7\cdot11^3\cdot13^2
+	    \end{aligned}$
+\end{tasks}
+}{2}\end{exo}
+
+\end{document}

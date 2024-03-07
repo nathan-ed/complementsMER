@@ -1,0 +1,36 @@
+
+
+\begin{tikzpicture}
+
+{\scriptsize
+\coordinate[](A) at (0,0);
+\coordinate[](B) at (2,0);
+\coordinate[](C) at (2,4);
+\coordinate[](D) at (0,4);
+
+\tkzMarkRightAngle(A,B,C) ;
+\tkzMarkRightAngle(B,C,D) ;
+\tkzMarkRightAngle(C,D,A) ;
+\tkzMarkRightAngle(D,A,B) ;
+
+\draw (A)-- (B) -- (C) -- (D) -- cycle;
+
+\draw[<->, >=latex] (2.5,0) -- (2.5,4);
+\node[right] at (2.5,2) {5,2 cm} ;
+
+\draw[<->, >=latex] (2,4.5) --node[above]{$\tunit{4,1}{\cm}$} (0,4.5) ;
+%\node[above] at (1,4.5) {4,7 cm} ;
+
+
+\draw[dotted] (B) -- ++(0.5,0) ;
+\draw[dotted] (C) -- ++(0.5,0) ;
+\draw[dotted] (D) -- ++(0,0.5) ;
+\draw[dotted] (C) -- ++(0,0.5) ;
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+}
+
+\end{tikzpicture}

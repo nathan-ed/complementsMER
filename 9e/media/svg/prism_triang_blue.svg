@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.78042mm"
+   height="84.74604mm"
+   viewBox="0 0 105.78042 84.74604"
+   version="1.1"
+   id="svg1430"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="prism_triang_blue.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1432"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="328.63754"
+     inkscape:cy="481.63744"
+     inkscape:window-width="1723"
+     inkscape:window-height="999"
+     inkscape:window-x="212"
+     inkscape:window-y="448"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1427" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-18.116439,57.163853)">
+    <g
+       id="g59"
+       transform="matrix(0.26458333,0,0,0.26458333,-228.8721,-79.494686)">
+      <polygon
+         fill="#c8e9fb"
+         points="1184.5,243.1 1325.3,300.3 1228.5,94.6 "
+         id="polygon47" />
+      <polygon
+         fill="#c8e9fb"
+         points="1224,90.8 994.7,145.6 1048.8,283.5 1179.1,242.5 "
+         id="polygon49" />
+      <polygon
+         fill="#c8e9fb"
+         points="1094.1,398.7 1323.5,305.3 1181.1,247.5 1050.8,288.5 "
+         id="polygon51" />
+      <polygon
+         fill="#c8e9fb"
+         points="991.4,151.8 940.3,317.6 1043.7,285.1 "
+         id="polygon53" />
+      <polygon
+         fill="#c8e9fb"
+         points="943.2,322.3 1087.5,396.5 1045.7,290.1 "
+         id="polygon55" />
+      <path
+         fill="#6b91ae"
+         d="m 1333.1,304.2 c 0,0 0,0 0,0 L 1230.4,86 c 0,0 0,0 0,-0.1 -0.1,-0.1 -0.1,-0.2 -0.2,-0.3 -0.1,-0.2 -0.3,-0.4 -0.4,-0.5 -0.1,-0.1 -0.2,-0.1 -0.3,-0.2 -0.2,-0.1 -0.4,-0.2 -0.6,-0.3 -0.1,0 -0.1,-0.1 -0.2,-0.1 -0.1,0 -0.1,0 -0.2,0 -0.2,0 -0.4,-0.1 -0.6,-0.1 -0.1,0 -0.3,0 -0.4,0 -0.1,0 -0.1,0 -0.2,0 L 990.4,141 c -0.1,0 -0.2,0.1 -0.3,0.1 -0.2,0.1 -0.4,0.2 -0.6,0.3 -0.1,0.1 -0.2,0.2 -0.3,0.3 -0.2,0.1 -0.3,0.3 -0.4,0.5 0,0.1 -0.1,0.1 -0.2,0.2 0,0.1 0,0.1 -0.1,0.2 0,0.1 -0.1,0.1 -0.1,0.2 l -54.8,178 c 0,0.1 0,0.2 0,0.3 0,0.1 0,0.3 -0.1,0.4 0,0.2 0,0.4 0.1,0.6 0,0.1 0,0.2 0,0.3 0,0 0,0.1 0.1,0.1 0,0.1 0.1,0.2 0.2,0.3 0.1,0.2 0.2,0.3 0.3,0.4 0.1,0.1 0.2,0.2 0.3,0.3 0.1,0.1 0.3,0.2 0.4,0.3 0.1,0 0.1,0.1 0.1,0.1 l 156.4,80.5 c 0,0 0.1,0 0.1,0 0,0 0.1,0 0.1,0.1 0.3,0.1 0.7,0.2 1,0.2 0,0 0,0 0,0 v 0 c 0,0 0,0 0,0 0.3,0 0.7,-0.1 1,-0.2 l 238.1,-96.9 c 0.1,0 0.2,-0.1 0.3,-0.2 0.1,-0.1 0.2,-0.1 0.3,-0.2 0.4,-0.3 0.7,-0.6 0.8,-1 0,0 0,0 0,-0.1 0,0 0,0 0,0 0,0 0,0 0,0 0,-0.1 0,-0.2 0.1,-0.4 0.1,-0.2 0.1,-0.5 0.1,-0.7 0,-0.1 -0.1,-0.2 -0.1,-0.3 0,0 0,-0.2 -0.1,-0.5 z M 1224,90.8 1179,242.5 1048.7,283.4 994.6,145.5 Z m -232.6,61 52.3,133.2 -103.4,32.5 z m -48.2,170.5 102.4,-32.2 41.8,106.5 z m 150.9,76.4 -43.3,-110.2 130.4,-41 142.4,57.8 z m 90.4,-155.6 44,-148.5 96.8,205.6 z"
+         id="path57" />
+    </g>
+  </g>
+</svg>

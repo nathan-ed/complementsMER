@@ -1,0 +1,29 @@
+
+
+\begin{tikzpicture}
+
+{\scriptsize
+\coordinate[](C) at (0,0);
+\coordinate[](H) at (4,0);
+\coordinate[](A) at (4,2);
+\coordinate[](R) at (0,2);
+
+\tkzMarkRightAngle(C,H,A) ;
+\tkzMarkRightAngle(H,A,R) ;
+\tkzMarkRightAngle(A,R,C) ;
+\tkzMarkRightAngle(R,C,H) ;
+
+\draw (C)-- (H) -- (A) -- (R) -- cycle;
+\draw[<->, >=latex] (4.5,0) -- (4.5,2);
+\node[right] at (4.5,2) {2,5 cm} ;
+\draw[<->, >=latex] (4,2.5) -- (0,2.5) ;
+\node[above] at (2,2.5) {3,7 cm} ;
+
+
+\node[left] at (C) {C};
+\node[right] at (H) {H};
+\node[right] at (A) {A};
+\node[left] at (R) {R};
+}
+
+\end{tikzpicture}

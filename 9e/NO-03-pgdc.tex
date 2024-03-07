@@ -1,0 +1,494 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[showexo=true,showcorr=false, showdegree=true]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Le plus grand diviseur commun}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Multiple, diviseur (page 12)
+\item Diviseur commun, pgdc (page 16)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{exol}{NO27}{17}{1}
+\end{exol}
+
+\begin{exol}{NO36}{18}{1}
+\end{exol}
+
+\begin{exol}{NO38}{19}{2}
+\end{exol}
+
+\begin{exol}{NO39}{19}{1}
+\end{exol}
+
+\begin{exof}{NO44}{15}{2}
+\end{exof}
+
+
+%----------------------------------------------------------------
+
+
+%L'élève apprend à lister les diviseurs d'un nombre connu 
+\begin{exop}{
+    Complète les multiplications à trous par un nombre entier, puis liste tous les diviseurs de $32$. 
+    \begin{tasks}(3)
+	    \task[] $1\cdot$\hrulefill$=32$
+	    \task[] $2\cdot$\hrulefill$=32$
+	    \task[] $4\cdot$\hrulefill$=32$
+    \end{tasks}
+
+$D_{32}=\{\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill\}$
+}{1}\end{exop}
+
+
+\begin{exop}{
+    Complète les multiplications à trous par un nombre entier, puis liste tous les diviseurs de $36$. 
+    \begin{tasks}(5)
+    \task[] $1\cdot$\hrulefill$=36$
+    \task[] $2\cdot$\hrulefill$=36$
+    \task[] $3\cdot$\hrulefill$=36$
+    \task[] $4\cdot$\hrulefill$=36$
+    \task[] $6\cdot$\hrulefill$=36$
+    \end{tasks}   
+$D_{36}=\{\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill\}$
+}{1}\end{exop}
+
+
+%L'élève apprend à utiliser sa calculatrice pour rechercher les diviseurs d'un nombre
+\begin{exop}{
+    Complète les multiplications à trous par un nombre entier, puis liste tous les diviseurs de $156$. 
+    \vspace{-0.1cm}
+    \begin{tasks}[after-item-skip=0.2em](3)
+\task[] $1\cdot$\hrulefill$=156$ 
+\task[] $2\cdot$\hrulefill$=156$ 
+\task[] $3\cdot$\hrulefill$=156$ 
+\task[] $4\cdot$\hrulefill$=156$ 
+\task[] $6\cdot$\hrulefill$=156$ 
+\task[] $12\cdot$\hrulefill$=156$
+    \end{tasks}   
+    \vspace{-0.1cm}
+$D_{156}=\{\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill;\hrulefill\}$
+}{1}\end{exop}
+
+
+
+
+
+%L'élève est capable d'énumérer les diviseurs de n<20
+\begin{exo}{
+    Énumère les éléments des ensembles suivants.
+    \vspace{-0.3cm}
+\begin{tasks}[after-item-skip=0.2em](5)
+    \task $D_6$
+    \task $D_4$
+    \task $D_{12}$
+    \task $D_7$
+    \task $D_8$
+    \task $D_5$
+    \task $D_{10}$
+    \task $D_{15}$
+    \task $D_{16}$
+    \task $D_9$
+\end{tasks}
+}{1}\end{exo}
+
+%L'élève est capable d'énumérer les diviseurs d'un nombre connu des tables de multiplications >20
+\begin{exo}{
+    Énumère les éléments des ensembles suivants.
+    \vspace{-0.3cm}
+\begin{tasks}[after-item-skip=0.2em](5)
+    \task $D_{63}$
+    \task $D_{42}$
+    \task $D_{72}$
+    \task $D_{80}$
+    \task $D_{108}$
+    \task $D_{56}$
+    \task $D_{45}$
+    \task $D_{27}$
+    \task $D_{33}$
+    \task $D_{50}$
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exop}{
+    Parmi les nombres suivants, entoure les diviseurs de $48$.
+    \vspace{-0.3cm}
+    \begin{tasks}[after-item-skip=0.2em](9)
+\task[] $6$ 
+\task[] $42$ 
+\task[] $15$ 
+\task[] $1$ 
+\task[] $3$ 
+\task[] $12$ 
+\task[] $96$ 
+\task[] $2$ 
+\task[] $20$ 
+\task[] $16$  
+\task[] $8$  
+\task[] $0$ 
+\task[] $48$ 
+\task[] $7$ 
+\task[] $5$ 
+\task[] $4$  
+\task[] $72$ 
+\task[] $24$ 
+    \end{tasks}
+}{1}\end{exop} %1, 2, 3, 4, 6, 8, 12, 16, 24, 48
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{exo}{
+    Trouve les 12 diviseurs de 200. \\ Combien sont multiples de 2~? Combien sont multiples de 5~?
+}{2}\end{exo}
+
+
+
+
+
+
+
+
+%------------------------------------------------------
+%-------------------------DIVISEURS COMMUNS------------
+%------------------------------------------------------
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    \begin{tasks}[after-item-skip=0.2em]
+    \task Liste les diviseurs de $12$.
+            % 1, 2, 3, 4, 6, 12 
+    \task Liste les diviseurs de $40$.
+            % 1, 2, 4, 5, 8, 10, 20, 40
+    \task Quels sont les diviseurs communs que tu retrouves dans les deux listes~?
+            % 1, 2, 4
+    \task Les diviseurs communs de $12$ et $40$ forment la liste des diviseurs d'un nombre. Lequel~?
+    \task Quel est le plus grand diviseur commun de $12$ et de $40$~?
+\end{tasks}
+}{2}\end{exo}
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+		\vspace{-0.3cm}
+\begin{tasks}[after-item-skip=0.2em]
+    \task Liste les diviseurs de $24$.
+            % 1, 2, 3, 4, 6, 8, 12, 24
+    \task Liste les diviseurs de $30$.
+            % 1, 2, 3, 5, 6, 10, 15, 30
+    \task Quels sont les diviseurs communs que tu retrouves dans les deux listes~?
+            % 1, 2, 3, 6
+    \task Les diviseurs communs de $24$ et $30$ forment la liste des diviseurs d'un nombre. Lequel~?
+    \task Quel est le plus grand diviseur commun de $24$ et de $30$~?
+\end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{exol}{NO53}{21}{2}
+\end{exol}
+
+%------------------------------------------------------
+\begin{exo}{
+    Énumère les diviseurs des entiers suivants, puis détermine leur plus grand diviseur commun (pgdc).
+\begin{tasks}[after-item-skip=0.2em](4)
+    \task $12$ et $38$
+    \task $15$ et $9$
+    \task $4$ et $6$
+    \task $8$ et $20$
+    \task $5$ et $7$
+    \task $10$ et $15$
+    \task $2$ et $6$
+    \task $10$ ; $12$ et $16$
+\end{tasks}
+}{2}\end{exo}
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Détermine le plus grand diviseur commun (pgdc) des entiers suivants.
+\begin{tasks}(4)
+        \task $36$ et $12$
+        \task $10$ et $20$
+        \task $15$ et $60$
+        \task $450$ et $900$
+\end{tasks}
+
+Qu'observes-tu~?
+}{2}\end{exo}
+
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Détermine le plus grand diviseur commun (pgdc) des entiers suivants.
+\begin{tasks}(4)
+        \task $25$ et $16$
+        \task $27$ et $32$
+        \task $36$ et $35$
+        \task $75$ et $24$
+\end{tasks}
+Qu'observes-tu~?
+}{2}\end{exo}
+
+
+\begin{qmun}{Calcul du pgdc de deux nombres}{
+		\begin{center}
+\includegraphics[scale=1]{media/qr/nepgdc1 }
+
+\tiny{{https://edu.ge.ch/qr/nepgdc1}}
+		\end{center}
+	}
+\end{qmun}
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Les nombres donnés ont-ils des diviseurs communs~?
+    \begin{tasks}(4)
+        \task 21 et 45 ;
+        \task 55 et 18 ;
+        \task 6 et 723 ;
+        \task 12 et 16.
+    \end{tasks}
+}{2}\end{exo}
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Les nombres donnés ont-ils des diviseurs communs~?
+    \begin{tasks}(2)
+        \task 1999 et 1789 ;
+        \task 895 et 450 ;
+        \task 560 et 702 ;
+        \task 1944 et 1715.
+    \end{tasks}
+}{3}\end{exo}
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Trouve, si possible:
+
+    \begin{tasks}
+    \task Deux nombres dont le pgdc est 5.
+    \task Deux nombres pairs dont le pgdc est 1.
+    \task Deux nombres impairs dont le pgdc est 1.
+    \task Deux multiples de 9 dont le pgdc est 1.
+    \task Deux nombres dont le pgdc est le plus petit des deux nombres.
+    \task Deux nombres premiers entre eux dont le pgdc n'est pas 1.
+    \end{tasks}
+}{3}\end{exo}
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Une seule réponse ci-dessous est vraie. Trouve-la sans faire de calcul et explique pourquoi les autres sont fausses.
+    
+    \begin{tasks}
+        \task 20 est le pgdc de 120 et 140.
+        \task 3 est le pgdc de 33 et 66.
+        \task 63 est le pgdc de 6 et 9.
+        \task 18 est le pgdc de 54 et 38.
+        \task 38 et 26 sont premiers entre eux.
+    \end{tasks}
+
+}{2}\end{exo}
+
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Trouve deux nombres dont le pgdc est 36. \\ Ce problème a-t-il plusieurs solutions~?
+}{3}\end{exo}
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Trouve deux nombres entiers qui ont pour somme 81 et dont le pgdc est 27.
+}{3}\end{exo}
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Le pgdc de deux nombres est 54. Le plus grand des deux nombres est 378. Quel peut être l'autre nombre~?
+}{3}\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------------------------------------
+%----------------------PROBLEMES----------------------
+%-----------------------------------------------------
+
+
+\begin{resolu}{Résolution de problème}{Un centre aéré organise une sortie à la mer pour 105 enfants accompagnés de 42 adultes. 
+
+Comment peut-on constituer des groupes comportant le même nombre d'enfants et d'accompagnateurs~? Décris la composition des groupes. Donne toutes les possibilités.
+
+{{\bfseries Réponse:} \color{blue} 
+    Concentrons-nous sur les 105 enfants. On peut constituer~:
+
+    \begin{center}
+{\raggedright
+        \begin{multicols}{2}
+            1 groupe de 105 enfants. \\
+            3 groupes de 35 enfants. \\
+            5 groupes de 21 enfants. \\
+            7 groupes de 15 enfants. \\
+            15 groupe de 7 enfants. \\
+            21 groupes de 5 enfants. \\
+            35 groupes de 3 enfants. \\
+            105 groupes de 1 enfant. \\
+\end{multicols}}
+\end{center}
+
+Cela revient à lister les diviseurs de 105~: 
+\[D_{105}=\{1~;~3~;~5~;~7~;~15~;~21~;~35~;~105\}\]
+
+    À présent, concentrons-nous sur les 42 adultes. On peut constituer:
+    \begin{center}
+
+{\raggedright
+        \begin{multicols}{2}
+		            1 groupe de 42 adultes.\\ 
+        2 groupes de 21 adultes.\\ 
+    3 groupes de 14 adultes.\\
+ 6 groupes de 7 adultes.\\
+ 7 groupe de 6 adultes.\\
+ 14 groupes de 3 adultes.\\
+  21 groupes de 2 adultes.\\
+ 42 groupes de 1 adulte.\\
+\end{multicols}}
+    \end{center}
+
+    Cela revient à lister les diviseurs de 42~: 
+    \[D_{42}=\{1~;~2~;~3~;~6~;~7~;~14~;~21~;~42\}\]
+    Si l'on compare nos résultat, on remarque que l'on peut former: 
+    \begin{center}
+	    {\raggedright
+ 1 groupe de 105 enfants et 42 adultes.\\ 
+ 3 groupes de 35 enfants et 14 adultes.\\
+ 7 groupes de 15 enfants et 6 adultes. \\ 
+21 groupes de 5 enfants et 2 adultes. \\}
+    \end{center}
+
+    Cela revient à lister les diviseurs communs de 105 et 42.
+
+}
+
+}{2}\end{resolu}
+
+
+
+
+
+\begin{exo}{ %force la liste
+    Julien a fait des biscuits pour les vendre à la fête du quartier. Il a fait 72 biscuits au chocolat et 84 biscuits au sucre. Il veut les mettre dans des boîtes contenant chacune exactement les mêmes biscuits et il veut utiliser tous les biscuits. \\
+    Combien de boîtes Julien peut-il faire~? Décris le contenu des boîtes.    Donne toutes les solutions possibles.
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+		Une boulangère confectionne de la pizza sur une grande plaque rectangulaire de \tunit{90}{\cm} sur \tunit{54}{\cm}.
+
+    Pour la vente de parts individuelles, elle doit découper la pizza en carrés dont les dimensions sont des nombres entiers de centimètres. 
+    \begin{tasks}
+        \task Quelles seront les mesures d'une part de pizza~?
+        \task Combien de parts peut-elle découper sans perte~?
+        \task Y a-t-il d'autres possibilités~?
+    \end{tasks}
+}{2}\end{exo}
+
+
+
+\begin{exo}{
+    Nedjma plante 9 plants de tomates et 12 plants de rhubarbes dans son jardin. \\ Elle voudrait planter ces plants en rangées contenant chacune le même nombre de plants de tomates et de plants de rhubarbes.
+    \begin{tasks}
+        \task Quel est le plus grand nombre de rangées que Nejma peut planter~? Réponds à l'aide d'un croquis.
+        \task Nejma décide d'augmenter sa production pour ouvrir son commerce. Elle souhaite à présent planter 63 plants de tomates et 81 plants de rhubarbes. Quel est le plus grand nombre de rangées que Nejma peut planter~?
+        \task Nejma souhaite se diversifier et augmente la taille de son terrain. Elle plante 120 plants de tomates, 360 plants de rhubarbes et 150 plants de courgettes. Quel est le plus grand nombre de rangées que Nejma peut planter~?
+    \end{tasks}
+}{2}\end{exo}
+
+\end{document}

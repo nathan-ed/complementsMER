@@ -1,0 +1,511 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+\usetikzlibrary{arrows.meta}
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Encadrer et arrondir}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item  Approximation d’un nombre décimal (page 22)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resolu}{Encadrer le nombre 235,867}{Encadre le nombre 235,867 à la précision demandée en t'aidant des droites graduées ci-dessous~:
+\begin{tasks}
+\task Encadre le nombre {\bf 235,867} à l'unité près.
+\begin{center}
+\begin{numberlined}{230}{240}{1}{0.1}{230/230, 231/231, 232/232, 233/233, 234/234, 235/235, 236/236, 237/237, 238/238, 239/239, 240/240}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement à l'unité près de {\bf 235,867}~: 
+
+$235  < \bm{235,867} < 236.$
+\task Encadre le nombre {\bf 235,867} à la dizaine près.
+\begin{center}
+\begin{numberlined}{200}{250}{10}{0.1}{200/200, 210/210, 220/220, 230/230, 240/240, 250/250}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement à la dizaine près de {\bf 235,867}~: 
+
+$230  < \bm{235,867} <  240.$
+\task Encadre le nombre {\bf 235,867} à la centaine près.
+\begin{center}
+\begin{numberlined}{100}{500}{100}{0.1}{100/100,200/200,300/300,400/400,500/500}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement à la centaine près de {\bf 235,867}~: 
+
+$200  < \bm{235,867} <  300.$
+\task Encadre le nombre {\bf 235,867} au dixième près.
+\begin{center}
+\begin{numberlined}{232}{238}{1}{0.1}{232/232,233/233,234/234,235/235,236/236,237/237,238/238}{0.5}{1}{235.867/{235,867}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement au dixième près de {\bf 235,867}~: 
+
+$235,8  < \bm{235,867} <  235,9.$
+\end{tasks}
+}{1}
+\end{resolu}
+
+\begin{exop}{
+Encadre le nombre 82,576 à la précision demandée en t'aidant des droites graduées ci-dessous : 
+\begin{tasks}
+\task Encadre le nombre {\bf 82,576} à l'unité près.
+\begin{center}
+\begin{numberlined}{80}{90}{1}{0.1}{80/80, 81/81, 82/82, 83/83, 84/84, 85/85, 86/86, 87/87, 88/88, 89/89, 90/90}{0.5}{0}{82.576/{82,576}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement à l'unité près de {\bf 82,576}~: 
+
+\makebox[.8in]{\hrulefill} $ < \bm{82,576} < $ \makebox[.8in]{\hrulefill} .
+\task Encadre le nombre {\bf 82,576} à la dizaine près.
+\begin{center}
+\begin{numberlined}{50}{100}{10}{0.1}{50/50, 60/60, 70/70, 80/80, 90/90, 100/100}{0.5}{0}{82.576/{82,576}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'encadrement à la dizaine près de {\bf 82,576}~: 
+
+\makebox[.8in]{\hrulefill} $  < \bm{82,576} <  $ \makebox[.8in]{\hrulefill} .
+\task Encadre le nombre {\bf 82,576} au dixième près.
+\begin{center}
+\begin{numberlined}{80}{86}{1}{0.1}{80/80,81/81,82/82,83/83,84/84,85/85,86/86}{0.5}{1}{82.576/{82,576}}\end{numberlined}
+\end{center}
+
+{\bf Réponse~:} Voici l'encadrement au dixième près de {\bf 82,576}~: 
+
+ \makebox[.8in]{\hrulefill} $ < \bm{82,576} < $  \makebox[.8in]{\hrulefill} .
+\end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}
+{Encadre chacun des nombres suivants à l'unité près, en t'aidant de la droite numérique ci-dessous si nécessaire~:
+\begin{center}
+\vspace*{0.2cm}
+\begin{numberlined}{20}{30}{1}{0.1}{20/20,21/21,22/22,23/23,24/24,25/25,26/26,27/27,28/28,29/29,30/30}{0.5}{0}{}\end{numberlined}
+\vspace*{0.2cm}
+\end{center}
+\begin{tasks}[after-item-skip = 0.1em, after-skip=-2em](2)
+\task \makebox[.8in]{\hrulefill} $<$ 26,18 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 27,9 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 29,83 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 28,29 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 21,4 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 24,65 $<$ \makebox[.8in]{\hrulefill}
+\end{tasks}
+}{1}
+\end{exop}
+
+
+
+\begin{exop}{
+Encadre chacun des nombres suivants à l'unité près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.15em, after-skip=-2em](2)
+\task \makebox[.8in]{\hrulefill} $<$ 6,58 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 17,9 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 29,83 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 108,49 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 999,4 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 0,65 $<$ \makebox[.8in]{\hrulefill}
+\end{tasks}
+}{1}\end{exop}
+
+
+\begin{exop}{
+Encadre chacun des nombres suivants à la dizaine près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.15em, after-skip=-2em](2)
+\task \makebox[.8in]{\hrulefill} $<$ 18 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 42,8 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 1094 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 4,02 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 193,4 $<$ \makebox[.8in]{\hrulefill}\\
+\task \makebox[.8in]{\hrulefill} $<$ 0,6 $<$ \makebox[.8in]{\hrulefill}
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Encadre chacun des nombres suivants au dixième près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.15em, after-skip=-2em](2)
+\task \makebox[.7in]{\hrulefill} $<$ 6,58 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 0,503 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 29,83 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 11,93 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 1,49999 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 0,04 $<$ \makebox[.7in]{\hrulefill}\\
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Encadre chacun des nombres suivants à la centaine près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.15em, after-skip=-2em](2)
+\task \makebox[.7in]{\hrulefill} $<$ 284 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 42,3 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 183,7 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 1903 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 836'780 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 0,8 $<$ \makebox[.7in]{\hrulefill}\\
+\end{tasks}
+}{1}\end{exop}
+\begin{exop}{
+Encadre chacun des nombres suivants au centième près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.15em, after-skip=-2em](2)
+\task \makebox[.7in]{\hrulefill} $<$ 6,58 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 0,503 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 3,0048 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 11,993 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 0,0073 $<$ \makebox[.7in]{\hrulefill}\\
+\task \makebox[.7in]{\hrulefill} $<$ 26,548 $<$ \makebox[.7in]{\hrulefill}\\
+\end{tasks}
+}{1}\end{exop}
+
+
+\begin{exo}{
+Encadre chacun des nombres suivants par deux entiers successifs, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em](3)
+\task 10,8
+\task 0,72
+\task 1,08
+\task 4,25
+\task 99,3
+\task1309,5
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{
+Encadre chacun des nombres suivants à la dizaine près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em](3)
+\task 27
+\task 31,6
+\task 708,2
+\task 134
+\task 96,5
+\task 0,45
+\end{tasks}
+}{1}\end{exo}
+\begin{exo}{
+Encadre chacun des nombres suivants au dixième près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em](3)
+\task 8,12
+\task 0,65
+\task 0,07
+\task 14,909
+\task 3,94
+\task 200,21
+\end{tasks}
+}{1}\end{exo}
+\begin{exo}{
+Encadre chacun des nombres suivants à la centaine près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}(3)
+\task 6728
+\task 394,52
+\task 14,5
+\task 8428
+\task4 232 390
+\task 6934,2
+\end{tasks}
+}{1}\end{exo}
+\begin{exo}{
+Encadre chacun des nombres suivants à la centième près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}(3)
+\task 4,252
+\task 6,694
+\task 3,0085
+\task 2,092
+\task 0,0056
+\task 3,283
+\end{tasks}
+}{1}\end{exo}
+\begin{exo}{
+Encadre chacun des nombres suivants au dixième près, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}(3)
+\task 623,48
+\task 0,0475
+\task 52,625
+\task 82,98
+\task 23,0052
+\task 5,208
+\end{tasks}
+}{1}\end{exo}
+\begin{exo}{
+Encadre chacun des nombres suivants par deux entiers successifs, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}(3)
+\task 6 289,3
+\task 9 999,9
+\task 100,04
+\task 620,92
+\task 319,57
+\task 889,3
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{resolu}{Arrondir le nombre 235,867}{Arrondis le nombre 235,867 à la précision demandée en t'aidant des droites graduées ci-dessous~:
+\begin{tasks}
+\task Arrondis le nombre {\bf 235,867} à l'unité près.
+\begin{center}
+\begin{numberlined}{230}{240}{1}{0.1}{230/230, 231/231, 232/232, 233/233, 234/234, 235/235, 236/236, 237/237, 238/238, 239/239, 240/240}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+%\begin{center}
+%\begin{DroiteGraduee}{15}{230}{240}{1}{1}{0}{0}
+%\AfficheFleche{235.867}{.5}[\bm{235,867}]
+%\end{DroiteGraduee} 
+%\end{center}
+{\bf Réponse~:} Voici l'arrondi à l'unité près de {\bf 235,867}~: 
+
+$\bm{235,867 } \approx 236.$
+\task Arrondis le nombre {\bf 235,867} à la dizaine près.
+\begin{center}
+\begin{numberlined}{200}{250}{10}{0.1}{200/200, 210/210, 220/220, 230/230, 240/240, 250/250}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+%\begin{center}
+%\begin{DroiteGraduee}{15}{200}{250}{1}{10}{0}{0}
+%\AfficheFleche{235.867}{.5}[\bm{235,867}]
+%\end{DroiteGraduee} 
+%\end{center}
+{\bf Réponse~:} Voici l'arrondi à la dizaine près de {\bf 235,867}~: 
+
+$\bm{235,867 } \approx 240.$
+\task Arrondis le nombre {\bf 235,867} à la centaine près.
+\begin{center}
+\begin{numberlined}{100}{500}{100}{0.1}{100/100,200/200,300/300,400/400,500/500}{0.5}{0}{235.867/{235,867}}\end{numberlined}
+\end{center}
+%\begin{center}
+%\begin{DroiteGraduee}{15}{100}{500}{1}{100}{0}{0}
+%\AfficheFleche{235.867}{.5}[\bm{235,867}]
+%\end{DroiteGraduee} 
+%\end{center}
+{\bf Réponse~:} Voici l'arrondi à la centaine près de {\bf 235,867}~: 
+
+$\bm{235,867 } \approx 200.$
+\task Arrondis le nombre {\bf 235,867} au dixième près.
+\begin{center}
+\begin{numberlined}{232}{238}{1}{0.1}{232/232,233/233,234/234,235/235,236/236,237/237,238/238}{0.5}{1}{235.867/{235,867}}\end{numberlined}
+\end{center}
+%\begin{center}
+%\begin{DroiteGraduee}{15}{232}{238}{10}{1}{0}{0}
+%\AfficheFleche{235.867}{.5}[\bm{235,867}]
+%\end{DroiteGraduee} 
+%\end{center}
+{\bf Réponse~:} Voici l'arrondi au dixième près de {\bf 235,867}~: 
+
+$\bm{235,867 } \approx 235,9.$
+\end{tasks}
+}{1}
+\end{resolu}
+
+
+\begin{exop}{
+Arrondis le nombre 82,576 à la précision demandée en t'aidant des droites graduées ci-dessous~: 
+\begin{tasks}
+\task Arrondis le nombre {\bf 82,576} à l'unité près.
+\begin{center}
+\begin{numberlined}{80}{90}{1}{0.1}{80/80, 81/81, 82/82, 83/83, 84/84, 85/85, 86/86, 87/87, 88/88, 89/89, 90/90}{0.5}{0}{82.576/{82,576}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'arrondi à l'unité près de {\bf 82,576}~: 
+
+{\bf 82,576} $\approx$ \makebox[.8in]{\hrulefill} .
+\task Arrondis le nombre {\bf 82,576} à la dizaine près.
+\begin{center}
+\begin{numberlined}{50}{100}{10}{0.1}{50/50, 60/60, 70/70, 80/80, 90/90, 100/100}{0.5}{0}{82.576/{82,576}}\end{numberlined}
+\end{center}
+{\bf Réponse~:} Voici l'arrondi à la dizaine près de {\bf 82,576}~: 
+
+{\bf 82,576} $\approx$ \makebox[.8in]{\hrulefill} .
+\task Arrondis le nombre {\bf 82,576} au dixième près.
+\begin{center}
+\begin{numberlined}{80}{86}{1}{0.1}{80/80,81/81,82/82,83/83,84/84,85/85,86/86}{0.5}{1}{82.576/{82,576}}\end{numberlined}
+\end{center}
+
+{\bf Réponse~:} Voici l'arrondi au dixième près de {\bf 82,576}~: 
+
+{\bf 82,576} $\approx$ \makebox[.8in]{\hrulefill} .
+\end{tasks}
+}{1}
+\end{exop}
+
+
+\begin{exop}
+{Arrondis chacun des nombres suivants à l'unité près, en t'aidant de la droite numérique ci-dessous si nécessaire~:
+\begin{center}
+\vspace*{0.1cm}
+\begin{numberlined}{20}{30}{1}{0.1}{20/20,21/21,22/22,23/23,24/24,25/25,26/26,27/27,28/28,29/29,30/30}{0.5}{0}{}\end{numberlined}
+\vspace*{0.1cm}
+\end{center}
+\begin{tasks}[after-item-skip = 0em, after-skip=-2em](2)
+\task  26,18 $\approx$ \hrulefill \\
+\task   27,9 $\approx$ \hrulefill \\
+\task   29,83 $\approx$ \hrulefill \\
+\task   28,29 $\approx$ \hrulefill \\
+\task   21,4 $\approx$ \hrulefill \\
+\task   24,65 $\approx$ \hrulefill \\
+\end{tasks}
+}{1}
+\end{exop}
+
+
+\begin{exop}{
+Arrondis à l'unité la plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.12em, after-skip=-1.5em](2)
+\bigskip\task 109,75 $\approx$\hrulefill 
+\bigskip\task 46,8 $\approx$ \hrulefill 
+\bigskip\task 1,3 $\approx$ \hrulefill 
+\bigskip\task 0,09 $\approx$\hrulefill 
+\bigskip\task 234,08 $\approx$\hrulefill 
+\bigskip\task 0,7 $\approx$\hrulefill 
+\bigskip\task 3,14 $\approx$\hrulefill 
+\bigskip\task 4087,63 $\approx$ \hrulefill 
+\end{tasks}
+
+}{1}\end{exop}
+
+\begin{exop}{
+Arrondis à la dizaine  la plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1.5em](2)
+\bigskip\task 109,75 $\approx$ \hrulefill 
+\bigskip\task 47,8 $\approx$ \hrulefill 
+\bigskip\task 1,3 $\approx$ \hrulefill 
+\bigskip\task 0,09 $\approx$ \hrulefill 
+\bigskip\task 234,2 $\approx$ \hrulefill 
+\bigskip\task 0,7 $\approx$ \hrulefill 
+\bigskip\task 3,14 $\approx$\hrulefill 
+\bigskip\task 4087,63 $\approx$\hrulefill 
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Arrondis au dixième le plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1.5em](2)
+\bigskip\task 8,372$\approx$ \hrulefill 
+\bigskip\task 50,64 $\approx$\hrulefill 
+\bigskip\task 3000,088 $\approx$\hrulefill 
+\bigskip\task 43,725 $\approx$ \hrulefill 
+\bigskip\task 0,02 $\approx$ \hrulefill
+\bigskip\task 1,09 $\approx$ \hrulefill 
+\bigskip\task 0,98 $\approx$ \hrulefill 
+\bigskip\task 78,66 $\approx$ \hrulefill 
+\end{tasks}
+}{1}\end{exop}
+
+
+\begin{exop}{
+Arrondis à l'unité la plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1.5em](2)
+\bigskip\task 149,75 $\approx$\hrulefill  
+\bigskip\task 446,8 $\approx$ \hrulefill  
+\bigskip\task 13,3 $\approx$ \hrulefill  
+\bigskip\task 3,09 $\approx$\hrulefill  
+\bigskip\task 264,08 $\approx$\hrulefill  
+\bigskip\task 0,88 $\approx$\hrulefill  
+\bigskip\task 3,15 $\approx$\hrulefill  
+\bigskip\task 4787,43 $\approx$ \hrulefill  
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Arrondis à la dizaine  la plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1.5em](2)
+\bigskip\task 139,75 $\approx$ \hrulefill  
+\bigskip\task 447,8 $\approx$ \hrulefill  
+\bigskip\task 44,3 $\approx$ \hrulefill  
+\bigskip\task 191,09 $\approx$ \hrulefill  
+\bigskip\task 232,2 $\approx$ \hrulefill  
+\bigskip\task 42,997 $\approx$ \hrulefill  
+\bigskip\task 423,14 $\approx$\hrulefill  
+\bigskip\task 4437,63 $\approx$\hrulefill  
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Arrondis au dixième le plus proche les nombres suivants, en t'aidant d'une droite numérique si nécessaire~:
+\begin{tasks}(2)
+\bigskip\task 148,482 $\approx$ \hrulefill  
+\bigskip\task 55,94 $\approx$\hrulefill  
+\bigskip\task 35,179 $\approx$\hrulefill  
+\bigskip\task 45,745 $\approx$ \hrulefill  
+\bigskip\task 0,92 $\approx$ \hrulefill  
+\bigskip\task 1,99 $\approx$ \hrulefill  
+\bigskip\task 0,18 $\approx$ \hrulefill  
+\bigskip\task 78,76 $\approx$ \hrulefill  
+\end{tasks}
+}{1}\end{exop}
+
+\newpage 
+
+\begin{qmoodle}{Arrondir un nombre décimal}{2}{
+	\begin{center}	
+		Q-1
+
+\includegraphics[scale=1]{media/qr/ndeea1}
+
+\tiny{{https://edu.ge.ch/qr/ndeea1}}
+\end{center}
+	\begin{center}	
+		Q-2
+
+\includegraphics[scale=1]{media/qr/ndeea2}
+
+\tiny{{https://edu.ge.ch/qr/ndeea2}}
+\end{center}
+}
+\end{qmoodle}
+
+\begin{resolu}
+{Le plus proche}{Pour chaque question ci-dessous, justifie tes réponses par des calculs.
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em]
+\task Le nombre le plus proche de 1 est-il 1,3 ou 0,8~?
+
+{\bf Réponse :} On calcule les écarts entre 1,3 et 1 et entre 1 et 0,8. $$1,3-1=0,3\qquad 1-0,8 = 0,2.$$
+Ainsi le nombre le plus proche est le nombre qui a l'écart le plus petit de 1. Donc le nombre le plus proche de 1 est 0,8.
+ 
+\task Le nombre le plus proche de 5 est-il 4,73 ou 5,265~?
+
+{\bf Réponse :} On calcule les écarts entre 5 et 4,73 et entre 5,265 et 5. $$5-4,73=0,27 \qquad 5,265-5=0,265.$$
+
+Ainsi le nombre le plus proche est le nombre qui a l'écart le plus petit. Donc le nombre le plus proche de 5 est 5,265.
+\end{tasks}
+}{1}
+\end{resolu}
+
+\begin{exo}{
+Pour chaque question ci-dessous, justifie tes réponses par des calculs.
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em,before-skip=-0.5em]
+
+\task Le nombre le plus proche de 6 est-il 5,64 ou 5,642~?
+\task Le nombre le plus proche de 8 est-il 8,28 ou 8,32~?
+\task Le nombre le plus proche de 11 est-il 11,001 ou 10,99~?
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{
+Pour chaque question ci-dessous, justifie tes réponses par des calculs.
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em, before-skip=-0.5em]
+
+\task Le nombre le plus proche de 4 est-il 3,75 ou 3,82~?
+\task Le nombre le plus proche de 9 est-il 9,58 ou 9,43~?
+\task Le nombre le plus proche de 14 est-il 13,459 ou 14,54~?
+\end{tasks}
+}{1}\end{exo}
+
+\end{document}

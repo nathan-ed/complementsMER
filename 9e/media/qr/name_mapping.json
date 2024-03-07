@@ -1,0 +1,21 @@
+{
+    "topics": {
+        "no0ng":"Nombres naturels -- généralités",
+        "no1ne": "Nombres décimaux",
+        "no2nd": "Nombres entiers relatifs",
+        "no3fractions": "Fractions",
+        "noop1": "Nombres entiers relatifs"
+    },
+    "subtopics": {
+        "derfq": "Dire, écrire et représenter des fractions",
+        "feq" : "Fractions équivalentes",
+        "ptpq": "Pourcentage et partie d'un tout",
+        "eepdq": "Estimer, encadrer et placer des fractions",
+        "asfq": "Addition et soustraction de fractions",
+        "ndeea": "Encadrer et arrondir",
+        "ndlend":"Lire et écrire des nombres décimaux",
+        "necd":"Critères de divisibilité",
+        "neppmc":"Plus petit multiple commun",
+        "nepgdc":"Plus grand diviseur commun",
+    }   "nerop" : "Opération avec les entiers relatifs"
+}

@@ -1,0 +1,1257 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+%\usepackage{pst-all}
+%\usepackage[pspdf={-dNOSAFER -dALLOWPSTRANSPARENCY}]{auto-pst-pdf}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Géométrie}
+\newcommand{\serieName}{Droites remarquables}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Médiatrice d'un segment (page 96)
+\item Construire la médiatrice d'un segment avec une règle non graduée et un compas (page 97)
+\item Bissectrice d'un angle (page 105)
+\item Construire la bissectrice d'un angle avec une règle et un compas (page 106)
+\item Cercle circonscrit à un triangle et médiatrices (page 116)
+\item Cercle inscrit dans un triangle et bissectrices (page 117)
+\item Hauteurs d'un triangle et orthocentre (page 117)
+\item Tracer une hauteur d'un triangle avec une équerre (page 118)
+\item Médianes et centre de gravité (page 119)
+ }
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resolu}{Une médiatrice d'un triangle}{Trace en bleu la médiatrice du côté AB du triangle ABC à la règle et  au compas.
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.16,-4.45)(9.14,3.63)
+\psline[linewidth=2pt](0.8,2.67)(-4.6,-2.17)
+\psline[linewidth=2pt](-4.6,-2.17)(5.92,-3.45)
+\psline[linewidth=2pt](5.92,-3.45)(0.8,2.67)
+\parametricplot[linewidth=1.2pt]{-0.07130746478529026}{0.18763977180436628}{1*4.781183988411362*cos(t)+0*4.781183988411362*sin(t)+-4.6|0*4.781183988411362*cos(t)+1*4.781183988411362*sin(t)+-2.17}
+\parametricplot[linewidth=1.2pt]{1.3147405739507192}{1.587531166069238}{1*4.781183988411363*cos(t)+0*4.781183988411363*sin(t)+-4.6|0*4.781183988411363*cos(t)+1*4.781183988411363*sin(t)+-2.17}
+\parametricplot[linewidth=1.2pt]{4.490971530208667}{4.703914606981719}{1*4.781183988411362*cos(t)+0*4.781183988411362*sin(t)+0.8|0*4.781183988411362*cos(t)+1*4.781183988411362*sin(t)+2.67}
+\parametricplot[linewidth=1.2pt]{3.0440310354857676}{3.276930470122202}{1*4.781183988411361*cos(t)+0*4.781183988411361*sin(t)+0.8|0*4.781183988411361*cos(t)+1*4.781183988411361*sin(t)+2.67}
+\psplot[linewidth=3.2pt,linecolor=blue]{-6.16}{9.14}{(-9.05-5.4*x)/4.84}
+\begin{scriptsize}
+\psdots[dotstyle=x](0.8,2.67)
+\rput[bl](0.88,2.87){\large A}
+\psdots[dotstyle=x](-4.6,-2.17)
+\rput[bl](-5,-2.55){\large B}
+\psdots[dotstyle=x](5.92,-3.45)
+\rput[bl](6.16,-3.61){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Trace la médiatrice du segment AC du triangle ABC.
+\begin{center}  
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](8.44,5.04)(-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](8.44,5.04)(-3.46,1.28)
+\psline[linewidth=2pt](-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(8.44,5.04)
+\begin{scriptsize}
+\psdots[dotstyle=x](8.44,5.04)
+\rput[bl](8.26,5.4){\large A}
+\psdots[dotstyle=x](-3.46,1.28)
+\rput[bl](-3.76,1.6){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace la médiatrice du segment BC du triangle ABC.
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](2.8,5.5)(-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](2.8,5.5)(-3.36,1.24)
+\psline[linewidth=2pt](-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(2.8,5.5)
+\begin{scriptsize}
+\psdots[dotstyle=x](2.8,5.5)
+\rput[bl](2.62,5.82){\large A}
+\psdots[dotstyle=x](-3.36,1.24)
+\rput[bl](-3.66,1.56){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{exop}
+
+\begin{exop}
+{
+ \begin{tasks}
+\task Trace la médiatrice du segment BC du triangle ABC.
+\task Trace la médiatrice du segment DE du triangle DEF.
+\end{tasks}
+
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-4.2)(11.62,6.3)
+\pspolygon[linewidth=2pt](-0.46,5.4)(-3.1,-0.26)(2.44,-0.84)
+\pspolygon[linewidth=2pt](6.94,-3.08)(11.12,3.28)(3.98,5.5)
+\psline[linewidth=2pt](-0.46,5.4)(-3.1,-0.26)
+\psline[linewidth=2pt](-3.1,-0.26)(2.44,-0.84)
+\psline[linewidth=2pt](2.44,-0.84)(-0.46,5.4)
+\psline[linewidth=2pt](6.94,-3.08)(11.12,3.28)
+\psline[linewidth=2pt](11.12,3.28)(3.98,5.5)
+\psline[linewidth=2pt](3.98,5.5)(6.94,-3.08)
+\begin{scriptsize}
+\psdots[dotstyle=x](-0.46,5.4)
+\rput[bl](-0.56,5.68){\large A}
+\psdots[dotstyle=x](-3.1,-0.26)
+\rput[bl](-3.38,-0.78){\large B}
+\psdots[dotstyle=x](2.44,-0.84)
+\rput[bl](2.62,-1.2){\large C}
+\psdots[dotstyle=x](6.94,-3.08)
+\rput[bl](6.88,-3.54){\large D}
+\psdots[dotstyle=x](11.12,3.28)
+\rput[bl](11.2,3.48){\large E}
+\psdots[dotstyle=x](3.98,5.5)
+\rput[bl](3.82,5.78){\large F}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{resolu}{Les trois médiatrices}{Pour le triangle ABC ci-dessous, trace à la règle et compas,
+\begin{tasks}
+\task en bleu la médiatrice du côté AB ;
+\task en rouge la médiatrice du côté BC ;
+\task en vert la médiatrice du côté AC.
+\begin{center}
+\newrgbcolor{ccqqqq}{0.8 0 0}
+\newrgbcolor{qqwuqq}{0 0.39215686274509803 0}
+\psset{xunit=0.7cm,yunit=0.7cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.16,-6.67)(7.4,3.63)
+\psline[linewidth=2pt](0.8,2.67)(-5.4,-3.79)
+\psline[linewidth=2pt](-5.4,-3.79)(4.98,-2.89)
+\psline[linewidth=2pt](4.98,-2.89)(0.8,2.67)
+\parametricplot[linewidth=1.2pt]{-0.07130746478529026}{0.18763977180436628}{1*5.903537348655382*cos(t)+0*5.903537348655382*sin(t)+-5.4|0*5.903537348655382*cos(t)+1*5.903537348655382*sin(t)+-3.79}
+\parametricplot[linewidth=1.2pt]{1.3147405739507192}{1.5875311660692382}{1*5.903537348655382*cos(t)+0*5.903537348655382*sin(t)+-5.4|0*5.903537348655382*cos(t)+1*5.903537348655382*sin(t)+-3.79}
+\parametricplot[linewidth=1.2pt]{4.490971530208667}{4.703914606981719}{1*5.903537348655381*cos(t)+0*5.903537348655381*sin(t)+0.8|0*5.903537348655381*cos(t)+1*5.903537348655381*sin(t)+2.67}
+\parametricplot[linewidth=1.2pt]{3.0440310354857676}{3.276930470122202}{1*5.903537348655382*cos(t)+0*5.903537348655382*sin(t)+0.8|0*5.903537348655382*cos(t)+1*5.903537348655382*sin(t)+2.67}
+\psplot[linewidth=3.2pt,linecolor=blue]{-6.16}{7.4}{(-17.8776-6.2*x)/6.46}
+\psplot[linewidth=3.2pt,linecolor=ccqqqq]{-6.16}{7.4}{(--5.1858--10.38*x)/-0.9}
+\psplot[linewidth=3.2pt,linecolor=green]{-6.16}{7.4}{(--12.6918-4.18*x)/-5.56}
+\parametricplot[linewidth=1.2pt]{4.514993420534809}{4.674906543693028}{1*4.832084210861527*cos(t)+0*4.832084210861527*sin(t)+0.8|0*4.832084210861527*cos(t)+1*4.832084210861527*sin(t)+2.67}
+\parametricplot[linewidth=1.2pt]{5.99410286518486}{6.274955040341721}{1*4.832084210861527*cos(t)+0*4.832084210861527*sin(t)+0.8|0*4.832084210861527*cos(t)+1*4.832084210861527*sin(t)+2.67}
+\parametricplot[linewidth=1.2pt]{2.8172243041258334}{3.08332535062026}{1*4.8320842108615265*cos(t)+0*4.8320842108615265*sin(t)+4.98|0*4.8320842108615265*cos(t)+1*4.8320842108615265*sin(t)+-2.89}
+\parametricplot[linewidth=1.2pt]{1.2845105283909855}{1.6362763517183623}{1*4.832084210861527*cos(t)+0*4.832084210861527*sin(t)+4.98|0*4.832084210861527*cos(t)+1*4.832084210861527*sin(t)+-2.89}
+\parametricplot[linewidth=1.2pt]{0.3296244074207428}{0.5929383976211072}{1*5.5824081992135275*cos(t)+0*5.5824081992135275*sin(t)+-5.4|0*5.5824081992135275*cos(t)+1*5.5824081992135275*sin(t)+-3.79}
+\parametricplot[linewidth=1.2pt]{5.932871094944184}{6.157497572417896}{1*5.582408199213528*cos(t)+0*5.582408199213528*sin(t)+-5.4|0*5.582408199213528*cos(t)+1*5.582408199213528*sin(t)+-3.79}
+\parametricplot[linewidth=1.2pt]{2.7537285497215134}{2.963010204908184}{1*5.582408199213528*cos(t)+0*5.582408199213528*sin(t)+4.98|0*5.582408199213528*cos(t)+1*5.582408199213528*sin(t)+-2.89}
+\parametricplot[linewidth=1.2pt]{3.439565130894522}{3.7044243407375212}{1*5.582408199213528*cos(t)+0*5.582408199213528*sin(t)+4.98|0*5.582408199213528*cos(t)+1*5.582408199213528*sin(t)+-2.89}
+\begin{scriptsize}
+\psdots[dotstyle=x](0.8,2.67)
+\rput[bl](0.88,2.87){\large A}
+\psdots[dotstyle=x](-5.4,-3.79)
+\rput[bl](-5.8,-4.17){\large B}
+\psdots[dotstyle=x](4.98,-2.89)
+\rput[bl](5.22,-3.05){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+\end{tasks}
+
+Réponds aux questions suivantes :
+\begin{tasks}
+\task Qu'observes-tu après avoir tracé les trois médiatrices du triangle ABC ?
+
+{\color{blue} Les trois médiatrices sont concourantes, elles se croisent en un même point.}
+\task Comment nomme-t-on le point d'intersection des trois médiatrices du triangle ABC ?
+
+{\color{blue} On l'appelle le centre du cercle circonscrit au triangle ABC. }
+\end{tasks}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Trace les trois médiatrices du triangle ABC ci-dessous.
+\begin{center}  % Triangle 1 
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=x,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](1.6,6.54)(-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](1.6,6.54)(-3.64,1.68)
+\psline[linewidth=2.pt](-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](7.02,2.84)(1.6,6.54)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.6,6.54)
+\rput[bl](1.08,6.6){\large A}
+\psdots[dotstyle=x](-3.64,1.68)
+\rput[bl](-3.8,1.1){ \large B}
+\psdots[dotstyle=x](7.02,2.84)
+\rput[bl](6.9,2.2){\large  C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médiatrices du triangle ABC ci-dessous.
+\begin{center}  % Triangle 2
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](6.,6.)(-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,6.)(-3.,2.)
+\psline[linewidth=2.pt](-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,2.)(6.,6.)
+\begin{scriptsize}
+\psdots[dotstyle=x](6.,6.)
+\rput[bl](5.88,6.3){\large  A}
+\psdots[dotstyle=x](-3.,2.)
+\rput[bl](-3.16,1.4){\large B}
+\psdots[dotstyle=x](6.,2.)
+\rput[bl](5.86,1.4){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médiatrices du triangle ABC ci-dessous.
+\begin{center}  % Triangle 3
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,0.88)(7.18,6.92)
+\psline[linewidth=2.pt](-1.92,4.34)(6.32,1.24)
+\psline[linewidth=2.pt](-1.92,4.34)(6.594706034255406,6.577717844191843)
+\psline[linewidth=2.pt](6.32,1.24)(6.594706034255406,6.577717844191843)
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.92,4.34)
+\rput[bl](-1.84,4.54){\large A}
+\psdots[dotstyle=x](6.32,1.24)
+\rput[bl](6.56,1.24){\large B}
+\psdots[dotstyle=x](6.594706034255406,6.577717844191843)
+\rput[bl](6.84,6.44){\large C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médiatrices du triangle ABC ci-dessous.
+\begin{center}  % Triangle 4
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,3.32)(7.18,6.92)
+\psline[linewidth=2.pt](1.2,6.38)(-3.8,4.18)
+\psline[linewidth=2.pt](1.2,6.38)(6.127998501498274,4.023131151457347)
+\psline[linewidth=2.pt](-3.8,4.18)(6.127998501498274,4.023131151457347)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.2,6.38)
+\rput[bl](1.28,6.58){\large A}
+\psdots[dotstyle=x](-3.8,4.18)
+\rput[bl](-3.86,3.5){\large B}
+\psdots[dotstyle=x](6.127998501498274,4.023131151457347)
+\rput[bl](6.14,3.4){\large C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{resolu}{Cercle circonscrit}{Trace le cercle  circonscrit du triangle ABC en t'aidant des médiatrices.
+\begin{center}
+\newrgbcolor{ccqqqq}{0.8 0 0}
+\newrgbcolor{qqwuqq}{0 0.39215686274509803 0}
+\newrgbcolor{zzttff}{0.6 0.2 1}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.16,-7.99)(7.4,3.63)
+\psline[linewidth=2pt](0.8,2.67)(-5.4,-3.79)
+\psline[linewidth=2pt](-5.4,-3.79)(4.98,-2.89)
+\psline[linewidth=2pt](4.98,-2.89)(0.8,2.67)
+\psplot[linewidth=3.2pt,linecolor=blue]{-6.16}{7.4}{(-17.8776-6.2*x)/6.46}
+\psplot[linewidth=3.2pt,linecolor=ccqqqq]{-6.16}{7.4}{(--5.1858--10.38*x)/-0.9}
+\psplot[linewidth=3.2pt,linecolor=green]{-6.16}{7.4}{(--12.6918-4.18*x)/-5.56}
+\pscircle[linewidth=3.2pt,linecolor=zzttff](-0.2832124382673876,-2.49561654531613){5.277967741438075}
+\begin{scriptsize}
+\psdots[dotstyle=x](0.8,2.67)
+\rput[bl](0.88,2.87){\large A}
+\psdots[dotstyle=x](-5.4,-3.79)
+\rput[bl](-5.8,-4.17){\large B}
+\psdots[dotstyle=x](4.98,-2.89)
+\rput[bl](5.22,-3.05){\large C}
+\psdots[dotstyle=x](-0.2832124382673876,-2.49561654531613)
+\rput[bl](0.16,-2.61){\large I}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+{\color{blue} {\bf Remarque :} Le centre du cercle circonscrit du triangle ABC est le point d'intersection I. Pour tracer le cercle circonscrit, il faut planter le compas sur I et le crayon du compas sur l'un des sommet (A ou B ou C) du triangle.  }
+}{2}
+\end{resolu}
+
+\begin{exop}
+{Trace le cercle circonscrit du triangle ABC en t'aidant des médiatrices.
+\begin{center} % Triangle 5
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.72,5.98)(-3.32,1.44)(4.66,0.8)
+\psline[linewidth=2.pt](2.72,5.98)(-3.32,1.44)
+\psline[linewidth=2.pt](-3.32,1.44)(4.66,0.8)
+\psline[linewidth=2.pt](4.66,0.8)(2.72,5.98)
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(-10.4016-1.94*x)/-5.18}
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(--15.0314-6.04*x)/4.54}
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(-4.6298--7.98*x)/0.64}
+%\pscircle[linewidth=2.pt](0.7641736085477419,2.2942271815796564){4.172550556015757}
+\psdots[dotstyle=x](2.72,5.98)
+\rput[bl](2.6,6.36){A}
+\psdots[dotstyle=x](-3.32,1.44)
+\rput[bl](-3.76,1.02){B}
+\psdots[dotstyle=x](4.66,0.8)
+\rput[bl](4.74,0.34){C}
+\end{pspicture*}
+\end{center}
+}{2}
+\end{exop}
+
+\begin{exop}
+{Trace le cercle circonscrit au triangle ABC.
+\begin{center} % Triangle 6
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.76,6.24)(-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](2.76,6.24)(-3.,4.46)
+\psline[linewidth=2.pt](-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](5.06,2.32)(2.76,6.24)
+%\pscircle[linewidth=2.pt](0.7784618268524212,2.442617908612391){4.283293625194562}
+\psdots[dotstyle=x](2.76,6.24)
+\rput[bl](2.64,6.6){A}
+\psdots[dotstyle=x](-3.,4.46)
+\rput[bl](-3.44,4.04){B}
+\psdots[dotstyle=x](5.06,2.32)
+\rput[bl](5.14,1.86){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\begin{exop}
+{Trace le cercle circonscrit au triangle ABC.
+\begin{center} % Triangle 7
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-5.68)(8.2,6.92)
+\pspolygon[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)
+\psline[linewidth=2.pt](-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](7.12,3.52)(0.66,6.22)
+\psdots[dotstyle=x](0.66,6.22)
+\rput[bl](0.54,6.6){A}
+\psdots[dotstyle=x](-3.5,-1.68)
+\rput[bl](-3.94,-2.1){B}
+\psdots[dotstyle=x](7.12,3.52)
+\rput[bl](7.2,3.06){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+
+\exof{ES59}{124}{1}
+
+\begin{resolu}
+{Une bissectrice d'un triangle}{Trace en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ à la règle et au compas.
+\begin{center}
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.55,-4.95)(7.99,4.71)
+\psline[linewidth=2pt](-0.64,2.93)(-5.54,-3.49)
+\psline[linewidth=2pt](-5.54,-3.49)(6.96,-1.79)
+\psline[linewidth=2pt](6.96,-1.79)(-0.64,2.93)
+\psplot[linewidth=4pt,linecolor=blue]{-6.55}{7.99}{(-0.23002292774083388--0.5029625738867708*x)/0.8643081911385513}
+\parametricplot[linewidth=1.2pt]{-0.19739555984988044}{0.35595773816798554}{1*1.6466019942399448*cos(t)+0*1.6466019942399448*sin(t)+-5.54|0*1.6466019942399448*cos(t)+1*1.6466019942399448*sin(t)+-3.49}
+\parametricplot[linewidth=1.2pt]{0.7099116184635246}{1.1992784716481881}{1*1.6466019942399448*cos(t)+0*1.6466019942399448*sin(t)+-5.54|0*1.6466019942399448*cos(t)+1*1.6466019942399448*sin(t)+-3.49}
+\parametricplot[linewidth=1.2pt]{-0.043336062160194366}{0.3611585323596424}{1*1.646601994239945*cos(t)+0*1.646601994239945*sin(t)+-4.540982692194987|0*1.646601994239945*cos(t)+1*1.646601994239945*sin(t)+-2.181083445692207}
+\parametricplot[linewidth=1.2pt]{0.525741646034359}{1.1434564852971092}{1*1.6466019942399446*cos(t)+0*1.6466019942399446*sin(t)+-3.908417745381425|0*1.6466019942399446*cos(t)+1*1.6466019942399446*sin(t)+-3.268104813371874}
+\begin{scriptsize}
+\psdots[dotstyle=x](-0.64,2.93)
+\rput[bl](-0.55,3.13){\large A}
+\psdots[dotstyle=x](-5.54,-3.49)
+\rput[bl](-5.69,-4.1){\large B}
+\psdots[dotstyle=x](6.96,-1.79)
+\rput[bl](7.21,-1.95){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Trace en bleu la bissectrice de l'angle $\widehat{\mbox{CAB}}$ à la règle et au compas.
+\begin{center}  
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](8.44,5.04)(-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](8.44,5.04)(-3.46,1.28)
+\psline[linewidth=2pt](-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(8.44,5.04)
+\begin{scriptsize}
+\psdots[dotstyle=x](8.44,5.04)
+\rput[bl](8.26,5.4){\large A}
+\psdots[dotstyle=x](-3.46,1.28)
+\rput[bl](-3.76,1.6){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace en bleu la bissectrice de l'angle $\widehat{\mbox{BCA}}$ à la règle et au compas.
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](2.8,5.5)(-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](2.8,5.5)(-3.36,1.24)
+\psline[linewidth=2pt](-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(2.8,5.5)
+\begin{scriptsize}
+\psdots[dotstyle=x](2.8,5.5)
+\rput[bl](2.62,5.82){\large A}
+\psdots[dotstyle=x](-3.36,1.24)
+\rput[bl](-3.66,1.56){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{exop}
+
+\begin{resolu}{Les trois bissectrices}{Pour le triangle ABC ci-dessous, trace à la règle et au compas,
+\begin{tasks}
+\task en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ ;
+\task en vert la bissectrice de l'angle $\widehat{\mbox{BCA}}$ ;
+\task en rouge la bissectrice de l'angle $\widehat{\mbox{CAB}}$ ;
+\end{tasks}
+
+\begin{center}
+\newrgbcolor{qqwuqq}{0 0.39215686274509803 0}
+\newrgbcolor{ccqqqq}{0.8 0 0}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.55,-4.95)(7.99,4.71)
+\psline[linewidth=2pt](0.01,3.83)(-5.54,-3.49)
+\psline[linewidth=2pt](-5.54,-3.49)(7.13,-3.13)
+\psline[linewidth=2pt](7.13,-3.13)(0.01,3.83)
+\psplot[linewidth=4pt,linecolor=blue]{-6.55}{7.99}{(-0.5684246320909252--0.4575500215742132*x)/0.8891838829834001}
+\parametricplot[linewidth=1.2pt]{-0.19739555984988044}{0.3559577381679857}{1*1.6544392094274054*cos(t)+0*1.6544392094274054*sin(t)+-5.54|0*1.6544392094274054*cos(t)+1*1.6544392094274054*sin(t)+-3.49}
+\parametricplot[linewidth=1.2pt]{0.7099116184635247}{1.1992784716481881}{1*1.6544392094274056*cos(t)+0*1.6544392094274056*sin(t)+-5.54|0*1.6544392094274056*cos(t)+1*1.6544392094274056*sin(t)+-3.49}
+\parametricplot[linewidth=1.2pt]{-0.043336062160194366}{0.3611585323596424}{1*1.6544392094274054*cos(t)+0*1.6544392094274054*sin(t)+-4.540434110669618|0*1.6544392094274054*cos(t)+1*1.6544392094274054*sin(t)+-2.171653637856145}
+\parametricplot[linewidth=1.2pt]{0.5257416460343587}{1.143456485297109}{1*1.6544392094274054*cos(t)+0*1.6544392094274054*sin(t)+-3.886228226718612|0*1.6544392094274054*cos(t)+1*1.6544392094274054*sin(t)+-3.4430104310669853}
+\psplot[linewidth=4pt,linecolor=green]{-6.55}{7.99}{(--0.3179699386649846--0.36423807042043543*x)/-0.9313058724481436}
+\psplot[linewidth=4pt,linecolor=ccqqqq]{-6.55}{7.99}{(--0.29320068540191346-0.9972619586981945*x)/0.07394988663575236}
+\parametricplot[linewidth=1.2pt]{3.415760104709452}{4.3714100268883405}{1*1.329661611087573*cos(t)+0*1.329661611087573*sin(t)+0.01|0*1.329661611087573*cos(t)+1*1.329661611087573*sin(t)+3.83}
+\parametricplot[linewidth=1.2pt]{5.270988295728252}{6.041829816604182}{1*1.3296616110875732*cos(t)+0*1.3296616110875732*sin(t)+0.01|0*1.3296616110875732*cos(t)+1*1.3296616110875732*sin(t)+3.83}
+\parametricplot[linewidth=1.2pt]{5.184886738975639}{5.827150508763644}{1*1.3296616110875732*cos(t)+0*1.3296616110875732*sin(t)+-0.7933443496876578|0*1.3296616110875732*cos(t)+1*1.3296616110875732*sin(t)+2.7704539387903324}
+\parametricplot[linewidth=1.2pt]{3.6229708994980028}{4.456506374404277}{1*1.329661611087573*cos(t)+0*1.329661611087573*sin(t)+0.9608355878078834|0*1.329661611087573*cos(t)+1*1.329661611087573*sin(t)+2.9005315040529682}
+\parametricplot[linewidth=1.2pt]{2.3675576374566356}{3.1699985862772055}{1*2.099939365226106*cos(t)+0*2.099939365226106*sin(t)+7.13|0*2.099939365226106*cos(t)+1*2.099939365226106*sin(t)+-3.13}
+\parametricplot[linewidth=1.2pt]{2.7684148844700878}{3.5984357278722396}{1*2.099939365226106*cos(t)+0*2.099939365226106*sin(t)+5.6283419359888756|0*2.099939365226106*cos(t)+1*2.099939365226106*sin(t)+-1.6620870610228335}
+\parametricplot[linewidth=1.2pt]{2.0138183392707942}{2.7511355630599317}{1*2.0999393652261054*cos(t)+0*2.0999393652261054*sin(t)+5.14014482316585|0*2.0999393652261054*cos(t)+1*2.0999393652261054*sin(t)+-3.1865389000521147}
+\begin{scriptsize}
+\psdots[dotstyle=x](0.01,3.83)
+\rput[bl](0.09,4.03){\large A}
+\psdots[dotstyle=x](-5.54,-3.49)
+\rput[bl](-5.69,-4.1){\large B}
+\psdots[dotstyle=x](7.13,-3.13)
+\rput[bl](7.37,-3.1){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Pour le triangle ABC ci-dessous, trace à la règle et au compas,
+\begin{tasks}
+\task en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ ;
+\task en rouge la bissectrice de l'angle $\widehat{\mbox{BCA}}$ ;
+\task en vert la bissectrice de l'angle $\widehat{\mbox{CAB}}$ ;
+\end{tasks}
+\begin{center}  % Triangle 1 
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=x,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](1.6,6.54)(-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](1.6,6.54)(-3.64,1.68)
+\psline[linewidth=2.pt](-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](7.02,2.84)(1.6,6.54)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.6,6.54)
+\rput[bl](1.08,6.6){\large A}
+\psdots[dotstyle=x](-3.64,1.68)
+\rput[bl](-3.8,1.1){ \large B}
+\psdots[dotstyle=x](7.02,2.84)
+\rput[bl](6.9,2.2){\large  C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Pour le triangle ABC ci-dessous, trace à la règle et au compas,
+\begin{tasks}
+\task en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ ;
+\task en rouge la bissectrice de l'angle $\widehat{\mbox{BCA}}$ ;
+\task en vert la bissectrice de l'angle $\widehat{\mbox{CAB}}$ ;
+\end{tasks}
+\begin{center}  % Triangle 2
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](6.,6.)(-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,6.)(-3.,2.)
+\psline[linewidth=2.pt](-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,2.)(6.,6.)
+\begin{scriptsize}
+\psdots[dotstyle=x](6.,6.)
+\rput[bl](5.88,6.3){\large  A}
+\psdots[dotstyle=x](-3.,2.)
+\rput[bl](-3.16,1.4){\large B}
+\psdots[dotstyle=x](6.,2.)
+\rput[bl](5.86,1.4){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+
+\begin{exop}
+{Pour le triangle ABC ci-dessous, trace à la règle et au compas,
+\begin{tasks}
+\task en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ ;
+\task en rouge la bissectrice de l'angle $\widehat{\mbox{BCA}}$ ;
+\task en vert la bissectrice de l'angle $\widehat{\mbox{CAB}}$ ;
+\end{tasks}
+\begin{center}  % Triangle 3
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\psline[linewidth=2.pt](-1.92,4.34)(6.32,1.24)
+\psline[linewidth=2.pt](-1.92,4.34)(6.594706034255406,6.577717844191843)
+\psline[linewidth=2.pt](6.32,1.24)(6.594706034255406,6.577717844191843)
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.92,4.34)
+\rput[bl](-1.84,4.54){\large A}
+\psdots[dotstyle=x](6.32,1.24)
+\rput[bl](6.56,1.24){\large B}
+\psdots[dotstyle=x](6.594706034255406,6.577717844191843)
+\rput[bl](6.84,6.44){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+
+\begin{exop}
+{Pour le triangle ABC ci-dessous, trace à la règle et au compas,
+\begin{tasks}
+\task en bleu la bissectrice de l'angle $\widehat{\mbox{ABC}}$ ;
+\task en rouge la bissectrice de l'angle $\widehat{\mbox{BCA}}$ ;
+\task en vert la bissectrice de l'angle $\widehat{\mbox{CAB}}$ ;
+\end{tasks}
+\begin{center}  % Triangle 4
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,3.32)(7.18,6.92)
+\psline[linewidth=2.pt](1.2,6.38)(-3.8,4.18)
+\psline[linewidth=2.pt](1.2,6.38)(6.127998501498274,4.023131151457347)
+\psline[linewidth=2.pt](-3.8,4.18)(6.127998501498274,4.023131151457347)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.2,6.38)
+\rput[bl](1.28,6.58){\large A}
+\psdots[dotstyle=x](-3.8,4.18)
+\rput[bl](-3.86,3.5){\large B}
+\psdots[dotstyle=x](6.127998501498274,4.023131151457347)
+\rput[bl](6.14,3.5){\large C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+
+
+\begin{resolu}{Cercle inscrit}{Trace le cercle inscrit du triangle ABC en t'aidant des trois bissectrices.
+\begin{center}
+\newrgbcolor{qqwuqq}{0 0.39215686274509803 0}
+\newrgbcolor{ccqqqq}{0.8 0 0}
+\newrgbcolor{fuqqzz}{0.9568627450980393 0 0.6}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.55,-4.95)(7.99,4.71)
+\psline[linewidth=2pt](-2.75,3.77)(-5.46,-3.73)
+\psline[linewidth=2pt](-5.46,-3.73)(7.33,-0.71)
+\psline[linewidth=2pt](7.33,-0.71)(-2.75,3.77)
+\psplot[linewidth=2pt,linecolor=blue]{-6.55}{7.99}{(--0.8482834322090893--0.6653540036381772*x)/0.7465279966904446}
+\psplot[linewidth=2pt,linecolor=green]{-6.55}{7.99}{(--0.024937574786811245--0.09303993363119153*x)/-0.9956623778921765}
+\psplot[linewidth=2pt,linecolor=ccqqqq]{-6.55}{7.99}{(-1.0515474456774092-0.9199206418732682*x)/0.3921045940249544}
+\psline[linewidth=1.2pt,linestyle=dashed,dash=1pt 1pt,linecolor=fuqqzz](-1.1793840305983743,0.0851616361414141)(-0.07088582865524957,2.5792825905134444)
+\psline[linewidth=1.2pt,linestyle=dashed,dash=1pt 1pt,linecolor=fuqqzz](-1.1793840305983743,0.0851616361414141)(-3.7463122208592194,1.012678355555666)
+\psline[linewidth=1.2pt,linestyle=dashed,dash=1pt 1pt,linecolor=fuqqzz](-1.1793840305983743,0.0851616361414141)(-0.5521696821712028,-2.57115343550876)
+\pscircle[linewidth=3.2pt,linecolor=fuqqzz](-1.1793840305983743,0.0851616361414141){2.7293602911211257}
+\begin{scriptsize}
+\psdots[dotstyle=x](-2.75,3.77)
+\rput[bl](-2.67,3.97){\large A}
+\psdots[dotstyle=x](-5.46,-3.73)
+\rput[bl](-5.61,-4.3){\large B}
+\psdots[dotstyle=x](7.33,-0.71)
+\rput[bl](7.57,-1.3){\large C}
+\psdots[dotstyle=x](-1.1793840305983743,0.0851616361414141)
+\psdots[dotstyle=x](-0.07088582865524957,2.5792825905134444)
+\psdots[dotstyle=x](-0.5521696821712028,-2.57115343550876)
+\psdots[dotstyle=x](-3.7463122208592194,1.012678355555666)
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+\vspace*{.4cm}
+
+{\color{blue} {\bf Remarque :} Pour pouvoir tracer  le cercle inscrit dans le triangle, on doit d'abord trouver un point de ce cercle, en traçant  la perpendiculaire à l'un des côtés passant par le point d'intersection des bissectrices, qui est le centre du cercle inscrit dans le triangle. Pour tracer le cercle, on faut planter le compas sur le point d'intersection des bissectrices et le crayon sur le point d'intersection entre la perpendiculaire et le côté choisi.}
+}{2}
+\end{resolu}
+
+\begin{exop}
+{Trace le cercle inscrit dans le triangle ABC en t'aidant des trois bissectrices.
+\begin{center}
+
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.76,6.24)(-3.,4.46)(6.82,-1.36)
+\psline[linewidth=2.pt](2.76,6.24)(-3.,4.46)
+\psline[linewidth=2.pt](-3.,4.46)(6.82,-1.36)
+\psline[linewidth=2.pt](6.82,-1.36)(2.76,6.24)
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(--4.077045868475909-0.11737503265488382*x)/0.993087660636897}
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(-3.988165969308768--0.7226189618352766*x)/-0.6912465811822196}
+\psplot[linewidth=2.pt,linecolor=green]{-4.26}{7.78}{(--0.17887998765247026-0.9248258010619113*x)/-0.38039090116641094}
+%\pscircle[linewidth=2.pt](1.7947750902801423,3.8932958659122563){1.9571034330017092}
+\psdots[dotstyle=x](2.76,6.24)
+\rput[bl](2.5,6.6){A}
+\psdots[dotstyle=x](-3.,4.46)
+\rput[bl](-3.44,4.04){B}
+\psdots[dotstyle=x](6.82,-1.36)
+\rput[bl](6.6,-1.9){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\newpage
+
+\begin{exop}
+{Trace le cercle inscrit dans le triangle ABC.
+
+\begin{center} % Triangle 6
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.76,6.24)(-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](2.76,6.24)(-3.,4.46)
+\psline[linewidth=2.pt](-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](5.06,2.32)(2.76,6.24)
+\psdots[dotstyle=x](2.76,6.24)
+\rput[bl](2.64,6.6){A}
+\psdots[dotstyle=x](-3.,4.46)
+\rput[bl](-3.44,4.04){B}
+\psdots[dotstyle=x](5.06,2.32)
+\rput[bl](5.14,1.86){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\begin{exop}
+{Trace le cercle inscrit dans le triangle ABC.
+\begin{center} % Triangle 7
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-5.68)(8.2,6.92)
+\pspolygon[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)
+\psline[linewidth=2.pt](-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](7.12,3.52)(0.66,6.22)
+\psdots[dotstyle=x](0.66,6.22)
+\rput[bl](0.54,6.6){A}
+\psdots[dotstyle=x](-3.5,-1.68)
+\rput[bl](-3.94,-2.1){B}
+\psdots[dotstyle=x](7.12,3.52)
+\rput[bl](7.2,3.06){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\exof{ES60}{125}{1}
+
+\begin{resolu}{Une hauteur}{Trace, en bleu, la droite perpendiculaire à BC passant par le point A. 
+\begin{center}%hauteur 1
+\psset{xunit=0.8cm,yunit=0.7cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-3.58)(11.48,6.3)
+\psline[linewidth=2.pt](3.52,4.96)(-3.2,-1.76)
+\psline[linewidth=2.pt](-3.2,-1.76)(9.16,-0.48)
+\psline[linewidth=2.pt](9.16,-0.48)(3.52,4.96)
+\psplot[linewidth=2.8pt,linecolor=blue]{-4.3}{11.48}{(-49.856--12.36*x)/-1.28}
+\begin{scriptsize}
+\psdots[dotstyle=x](3.52,4.96)
+\rput[bl](3.6,5.2){\large A}
+\psdots[dotstyle=x](-3.2,-1.76)
+\rput[bl](-3.7,-2.12){\large B}
+\psdots[dotstyle=x](9.16,-0.48)
+\rput[bl](9.46,-0.68){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+Comment nomme-t-on la droite bleue que tu viens de trace~~?
+
+{\color{blue} {\bf Réponse :} La droite bleue est la hauteur relative au côté BC issue de A.}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Trace, en bleu, la droite perpendiculaire à BC passant par le point A. 
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](2.8,5.5)(-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](2.8,5.5)(-3.36,1.24)
+\psline[linewidth=2pt](-3.36,1.24)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(2.8,5.5)
+\begin{scriptsize}
+\psdots[dotstyle=x](2.8,5.5)
+\rput[bl](2.62,5.82){\large A}
+\psdots[dotstyle=x](-3.36,1.24)
+\rput[bl](-3.66,1.56){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+Comment nomme-t-on la droite bleue que tu viens de tracer ?
+
+{\bf Réponse :} \hrulefill
+}{1}
+\end{exop}
+
+\begin{exop}
+{Trace la hauteur relative au segment BC issue de A.
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.4)(11.62,6.3)
+\pspolygon[linewidth=2pt](8.44,5.04)(-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](8.44,5.04)(-3.46,1.28)
+\psline[linewidth=2pt](-3.46,1.28)(9.74,1.06)
+\psline[linewidth=2pt](9.74,1.06)(8.44,5.04)
+\begin{scriptsize}
+\psdots[dotstyle=x](8.44,5.04)
+\rput[bl](8.26,5.4){\large A}
+\psdots[dotstyle=x](-3.46,1.28)
+\rput[bl](-3.76,1.6){\large B}
+\psdots[dotstyle=x](9.74,1.06)
+\rput[bl](10.16,0.9){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{1}
+\end{exop}
+
+\begin{exop}
+{
+ \begin{tasks}
+\task Trace la hauteur relative au segment BC du triangle ABC.
+\task Trace la hauteur issue de F du triangle DEF.
+\end{tasks}
+
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-4.2)(11.62,6.3)
+\pspolygon[linewidth=2pt](-0.46,5.4)(-3.1,-0.26)(2.44,-0.84)
+\pspolygon[linewidth=2pt](6.94,-3.08)(11.12,3.28)(3.98,5.5)
+\psline[linewidth=2pt](-0.46,5.4)(-3.1,-0.26)
+\psline[linewidth=2pt](-3.1,-0.26)(2.44,-0.84)
+\psline[linewidth=2pt](2.44,-0.84)(-0.46,5.4)
+\psline[linewidth=2pt](6.94,-3.08)(11.12,3.28)
+\psline[linewidth=2pt](11.12,3.28)(3.98,5.5)
+\psline[linewidth=2pt](3.98,5.5)(6.94,-3.08)
+\begin{scriptsize}
+\psdots[dotstyle=x](-0.46,5.4)
+\rput[bl](-0.56,5.68){\large A}
+\psdots[dotstyle=x](-3.1,-0.26)
+\rput[bl](-3.38,-0.78){\large B}
+\psdots[dotstyle=x](2.44,-0.84)
+\rput[bl](2.62,-1.2){\large C}
+\psdots[dotstyle=x](6.94,-3.08)
+\rput[bl](6.88,-3.7){\large D}
+\psdots[dotstyle=x](11.12,3.28)
+\rput[bl](11.2,3.48){\large E}
+\psdots[dotstyle=x](3.98,5.5)
+\rput[bl](3.82,5.78){\large F}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+
+
+
+\begin{resolu}{Les trois hauteurs}{\begin{tasks}
+\task Trace, en bleu, la hauteur relative au côté BC issue de A.
+\task Trace, en rouge, la hauteur relative au côté AC issue de B.
+\task Trace, en vert, la hauteur relative au côté AB issue de C.
+\begin{center}
+
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-3.48)(7.4,6.3)
+\psline[linewidth=2.pt](5.42,4.46)(-3.5,1.32)
+\psline[linewidth=2.pt](-3.5,1.32)(5.52,-2.54)
+\psline[linewidth=2.pt](5.52,-2.54)(5.42,4.46)
+\psplot[linewidth=2.8pt,linecolor=blue]{-4.3}{7.4}{(-31.6728--9.02*x)/3.86}
+\psplot[linewidth=2.8pt,linecolor=red]{-4.3}{7.4}{(-9.59-0.1*x)/-7.}
+\psplot[linewidth=2.8pt,linecolor=green]{-4.3}{7.4}{(--41.2628-8.92*x)/3.14}
+\begin{scriptsize}
+\psdots[dotstyle=x](5.42,4.46)
+\rput[bl](5.1,4.7){\large A}
+\psdots[dotstyle=x](-3.5,1.32)
+\rput[bl](-4.,0.8){\large B}
+\psdots[dotstyle=x](5.52,-2.54)
+\rput[bl](5.82,-2.74){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+\task Comment nomme-t-on le point d'intersection des trois hauteurs du triangle ABC ?
+
+{\color{blue}{\bf Réponse :} On nomme le point d'intersection des hauteurs d'un triangle l'orthocentre. }
+\end{tasks}
+}{1}
+\end{resolu}
+
+\newpage
+
+\begin{exop}
+{\begin{tasks}[after-item-skip = 0.4em]
+\task Trace, en bleu, la hauteur relative au côté BC issue de A.
+\task Trace, en rouge, la hauteur relative au côté AC issue de B.
+\task Trace, en vert, la hauteur relative au côté AB issue de C.
+\begin{center}\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-3.48)(7.4,6.3)
+\psline[linewidth=2.pt](6.94,4.96)(-3.38,3.42)
+\psline[linewidth=2.pt](-3.38,3.42)(5.28,-2.92)
+\psline[linewidth=2.pt](5.28,-2.92)(6.94,4.96)
+\begin{scriptsize}
+\psdots[dotstyle=x](6.94,4.96)
+\rput[bl](6.98,5.28){\large A}
+\psdots[dotstyle=x](-3.38,3.42)
+\rput[bl](-3.96,3.32){\large B}
+\psdots[dotstyle=x](5.28,-2.92)
+\rput[bl](5.56,-3.22){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+\task Comment nomme-t-on le point d'intersection des trois hauteurs du triangle ABC ?
+
+\bigskip\hrulefill
+\end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois hauteurs du triangle ABC ci-dessous.
+\begin{center}  % Triangle 1 
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=x,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](1.6,6.54)(-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](1.6,6.54)(-3.64,1.68)
+\psline[linewidth=2.pt](-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](7.02,2.84)(1.6,6.54)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.6,6.54)
+\rput[bl](1.08,6.6){\large A}
+\psdots[dotstyle=x](-3.64,1.68)
+\rput[bl](-3.8,1.1){ \large B}
+\psdots[dotstyle=x](7.02,2.84)
+\rput[bl](6.9,2.2){\large  C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois hauteurs du triangle ABC ci-dessous.
+\begin{center}  % Triangle 2
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](6.,6.)(-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,6.)(-3.,2.)
+\psline[linewidth=2.pt](-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,2.)(6.,6.)
+\begin{scriptsize}
+\psdots[dotstyle=x](6.,6.)
+\rput[bl](5.88,6.3){\large  A}
+\psdots[dotstyle=x](-3.,2.)
+\rput[bl](-3.16,1.4){\large B}
+\psdots[dotstyle=x](6.,2.)
+\rput[bl](5.86,1.4){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois hauteurs du triangle ABC ci-dessous.
+\begin{center}  % Triangle 3
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\psline[linewidth=2.pt](-1.92,4.34)(6.32,1.24)
+\psline[linewidth=2.pt](-1.92,4.34)(6.594706034255406,6.577717844191843)
+\psline[linewidth=2.pt](6.32,1.24)(6.594706034255406,6.577717844191843)
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.92,4.34)
+\rput[bl](-1.84,4.54){\large A}
+\psdots[dotstyle=x](6.32,1.24)
+\rput[bl](6.56,1.24){\large B}
+\psdots[dotstyle=x](6.594706034255406,6.577717844191843)
+\rput[bl](6.84,6.44){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois hauteurs du triangle ABC ci-dessous.
+\begin{center}  % Triangle 4
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,3.32)(7.18,6.92)
+\psline[linewidth=2.pt](1.2,6.38)(-3.8,4.18)
+\psline[linewidth=2.pt](1.2,6.38)(6.127998501498274,4.023131151457347)
+\psline[linewidth=2.pt](-3.8,4.18)(6.127998501498274,4.023131151457347)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.2,6.38)
+\rput[bl](1.28,6.58){\large A}
+\psdots[dotstyle=x](-3.8,4.18)
+\rput[bl](-3.86,3.55){\large B}
+\psdots[dotstyle=x](6.127998501498274,4.023131151457347)
+\rput[bl](6.14,3.45){\large C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Détermine géométriquement l'orthocentre du triangle ABC.
+\begin{center} % Triangle 6
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.76,6.24)(-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](2.76,6.24)(-3.,4.46)
+\psline[linewidth=2.pt](-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](5.06,2.32)(2.76,6.24)
+%\pscircle[linewidth=2.pt](0.7784618268524212,2.442617908612391){4.283293625194562}
+\psdots[dotstyle=x](2.76,6.24)
+\rput[bl](2.64,6.6){A}
+\psdots[dotstyle=x](-3.,4.46)
+\rput[bl](-3.44,4.04){B}
+\psdots[dotstyle=x](5.06,2.32)
+\rput[bl](5.14,1.86){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\begin{exop}
+{Détermine géométriquement l'orthocentre du triangle ABC.
+\begin{center} % Triangle 7
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-5.68)(8.2,6.92)
+\pspolygon[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)
+\psline[linewidth=2.pt](-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](7.12,3.52)(0.66,6.22)
+\psdots[dotstyle=x](0.66,6.22)
+\rput[bl](0.54,6.6){A}
+\psdots[dotstyle=x](-3.5,-1.68)
+\rput[bl](-3.94,-2.1){B}
+\psdots[dotstyle=x](7.12,3.52)
+\rput[bl](7.2,3.06){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\exof{ES58}{123}{1}
+
+\begin{resolu}{Une médiane}{Trace, en bleu, le segment dont l'un des extrémités  est le milieu du segment BC et l'autre  est le point A.%Mediane0
+\begin{center}
+    \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-14.88,0.27)(-0.62,7.91)
+\psline[linewidth=2pt](-7.02,6.91)(-13.98,0.87)
+\psline[linewidth=2pt](-13.98,0.87)(-1.26,5.47)
+\psline[linewidth=2pt](-1.26,5.47)(-7.02,6.91)
+\psline[linewidth=3.2pt,linecolor=blue](-7.02,6.91)(-7.62,3.17)
+\begin{scriptsize}
+\psdots[dotstyle=x](-7.02,6.91)
+\rput[bl](-7.04,7.23){\large A}
+\psdots[dotstyle=x](-13.98,0.87)
+\rput[bl](-14.6,0.67){\large B}
+\psdots[dotstyle=x](-1.26,5.47)
+\rput[bl](-1.1,5.25){\large C}
+%\psdots[dotstyle=x,linecolor=darkgray](-10.5,3.89)
+\psdots[dotstyle=x,linecolor=darkgray](-7.62,3.17)
+%\psdots[dotstyle=x,linecolor=darkgray](-4.14,6.19)
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}{2}
+\end{resolu}
+
+\begin{exop}
+    {\begin{tasks}
+        \task Trace la médiane relative au côté AC relative à B.
+        \task Trace la médiane relative au côté IJ relative à H.
+        %mediane2
+        \begin{center}
+            \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-14.88,0.27)(-0.62,7.91)
+\psline[linewidth=2pt](-7.02,6.91)(-14.48,6.77)
+\psline[linewidth=2pt](-14.48,6.77)(-1.28,4.01)
+\psline[linewidth=2pt](-1.28,4.01)(-7.02,6.91)
+\psline[linewidth=2pt](-14.3,5.53)(-12.6,0.95)
+\psline[linewidth=2pt](-12.6,0.95)(-2.34,0.93)
+\psline[linewidth=2pt](-2.34,0.93)(-14.3,5.53)
+\begin{scriptsize}
+\psdots[dotstyle=x](-7.02,6.91)
+\rput[bl](-7.04,7.23){\large A}
+\psdots[dotstyle=x](-14.48,6.77)
+\rput[bl](-14.58,6.25){\large B}
+\psdots[dotstyle=x](-1.28,4.01)
+\rput[bl](-1.12,3.79){\large C}
+\psdots[dotstyle=x](-14.3,5.53)
+\rput[bl](-14.8,5.1){\large H}
+\psdots[dotstyle=x](-12.6,0.95)
+\rput[bl](-13.2,1.15){\large I}
+\psdots[dotstyle=x](-2.34,0.93)
+\rput[bl](-2.26,1.13){\large J}
+\end{scriptsize}
+\end{pspicture*}
+        \end{center}
+    \end{tasks}}{2}
+\end{exop}
+
+
+\begin{exop}
+    {\begin{tasks}
+        \task Trace la médiane relative au côté AC relative à B.
+        \task Trace la médiane relative au côté IJ relative à H.
+        %mediane2
+        \begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-14.88,0.27)(-0.62,7.91)
+\psline[linewidth=2pt](-10.1,7.03)(-4.26,3.15)
+\psline[linewidth=2pt](-4.26,3.15)(-1.24,5.19)
+\psline[linewidth=2pt](-1.24,5.19)(-10.1,7.03)
+\psline[linewidth=2pt](-9.14,4.93)(-12.6,0.95)
+\psline[linewidth=2pt](-12.6,0.95)(-2.34,0.93)
+\psline[linewidth=2pt](-2.34,0.93)(-9.14,4.93)
+\begin{scriptsize}
+\psdots[dotstyle=x](-10.1,7.03)
+\rput[bl](-10.54,7.29){\large A}
+\psdots[dotstyle=x](-4.26,3.15)
+\rput[bl](-4.36,2.55){\large B}
+\psdots[dotstyle=x](-1.24,5.19)
+\rput[bl](-1.02,5.27){\large C}
+\psdots[dotstyle=x](-9.14,4.93)
+\rput[bl](-9.2,5.17){\large H}
+\psdots[dotstyle=x](-12.6,0.95)
+\rput[bl](-12.94,0.75){\large I}
+\psdots[dotstyle=x](-2.34,0.93)
+\rput[bl](-2.06,0.79){\large J}
+\end{scriptsize}
+\end{pspicture*}
+        \end{center}
+    \end{tasks}}{2}
+\end{exop}
+
+\begin{resolu}{Les trois médianes}{\begin{tasks}[after-item-skip = 0.4em]%Mediane1
+    \task Trace, en bleu, la médiane relative au côté BC issue de A.
+    \task Trace, en vert, la médiane relative au côté AC issue de B.
+        \task Trace, en rouge, la médiane relative au côté AB issue de C.
+        \begin{center}
+            \newrgbcolor{qqwuqq}{0 0.39215686274509803 0}
+\newrgbcolor{ccqqqq}{0.8 0 0}
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-14.88,-0.17)(-0.42,8.47)
+\psline[linewidth=2pt](-7.02,6.91)(-13.26,1.33)
+\psline[linewidth=2pt](-13.26,1.33)(-2.54,1.21)
+\psline[linewidth=2pt](-2.54,1.21)(-7.02,6.91)
+\psline[linewidth=3.2pt,linecolor=blue](-7.02,6.91)(-7.9,1.27)
+\psline[linewidth=3.2pt,linecolor=green](-13.26,1.33)(-4.78,4.06)
+\psline[linewidth=3.2pt,linecolor=ccqqqq](-2.54,1.21)(-10.14,4.12)
+\begin{scriptsize}
+\psdots[dotstyle=x](-7.02,6.91)
+\rput[bl](-7.04,7.23){\large A}
+\psdots[dotstyle=x](-13.26,1.33)
+\rput[bl](-13.8,1.13){\large B}
+\psdots[dotstyle=x](-2.54,1.21)
+\rput[bl](-2.38,0.99){\large C}
+\psdots[dotstyle=x,linecolor=darkgray](-10.14,4.12)
+\psdots[dotstyle=x,linecolor=darkgray](-7.9,1.27)
+\psdots[dotstyle=x,linecolor=darkgray](-4.78,4.06)
+\psdots[dotstyle=x,linecolor=blue](-7.606666666666667,3.15)
+\rput[bl](-7.44,3.43){\blue{\large G}}
+\end{scriptsize}
+\end{pspicture*}
+        \end{center}
+    \task Place le point G à l'intersection des trois médianes.
+    \task Comment nomme-t-on le point d'intersection des trois médianes du triangle ABC.
+
+    {\color{blue} {\bf Réponse :} On nomme le point d'intersection des trois médianes le centre de gravité.}
+\end{tasks}}{2}
+\end{resolu}
+
+\begin{exop}
+{Trace les trois médianes du triangle ABC ci-dessous.
+\begin{center}  % Triangle 1 
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=x,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](1.6,6.54)(-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](1.6,6.54)(-3.64,1.68)
+\psline[linewidth=2.pt](-3.64,1.68)(7.02,2.84)
+\psline[linewidth=2.pt](7.02,2.84)(1.6,6.54)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.6,6.54)
+\rput[bl](1.08,6.6){\large A}
+\psdots[dotstyle=x](-3.64,1.68)
+\rput[bl](-3.8,1.1){ \large B}
+\psdots[dotstyle=x](7.02,2.84)
+\rput[bl](6.9,2.3){\large  C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médianes du triangle ABC ci-dessous.
+\begin{center}  % Triangle 2
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\pspolygon[linewidth=2.pt](6.,6.)(-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,6.)(-3.,2.)
+\psline[linewidth=2.pt](-3.,2.)(6.,2.)
+\psline[linewidth=2.pt](6.,2.)(6.,6.)
+\begin{scriptsize}
+\psdots[dotstyle=x](6.,6.)
+\rput[bl](5.88,6.3){\large  A}
+\psdots[dotstyle=x](-3.,2.)
+\rput[bl](-3.16,1.45){\large B}
+\psdots[dotstyle=x](6.,2.)
+\rput[bl](5.86,1.4){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médianes du triangle ABC ci-dessous.
+\begin{center}  % Triangle 3
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,0.88)(7.18,6.92)
+\psline[linewidth=2.pt](-1.92,4.34)(6.32,1.24)
+\psline[linewidth=2.pt](-1.92,4.34)(6.594706034255406,6.577717844191843)
+\psline[linewidth=2.pt](6.32,1.24)(6.594706034255406,6.577717844191843)
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.92,4.34)
+\rput[bl](-1.84,4.6){\large A}
+\psdots[dotstyle=x](6.32,1.24)
+\rput[bl](6.56,1.24){\large B}
+\psdots[dotstyle=x](6.594706034255406,6.577717844191843)
+\rput[bl](6.84,6.44){\large C}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}}{1}
+\end{exop}
+
+\begin{exop}
+{Trace les trois médianes du triangle ABC ci-dessous.
+\begin{center}  % Triangle 4
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.26,3.32)(7.18,6.92)
+\psline[linewidth=2.pt](1.2,6.38)(-3.8,4.18)
+\psline[linewidth=2.pt](1.2,6.38)(6.127998501498274,4.023131151457347)
+\psline[linewidth=2.pt](-3.8,4.18)(6.127998501498274,4.023131151457347)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.2,6.38)
+\rput[bl](1.28,6.58){\large A}
+\psdots[dotstyle=x](-3.8,4.18)
+\rput[bl](-3.86,3.6){\large B}
+\psdots[dotstyle=x](6.127998501498274,4.023131151457347)
+\rput[bl](6.14,3.5){\large C}
+\end{scriptsize}
+\end{pspicture}
+\end{center}}{1}
+\end{exop}
+
+
+\begin{exop}
+{Détermine le centre de gravité du triangle ABC.
+\begin{center} % Triangle 6
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-2.26)(7.78,6.92)
+\pspolygon[linewidth=2.pt](2.76,6.24)(-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](2.76,6.24)(-3.,4.46)
+\psline[linewidth=2.pt](-3.,4.46)(5.06,2.32)
+\psline[linewidth=2.pt](5.06,2.32)(2.76,6.24)
+%\pscircle[linewidth=2.pt](0.7784618268524212,2.442617908612391){4.283293625194562}
+\psdots[dotstyle=x](2.76,6.24)
+\rput[bl](2.64,6.6){A}
+\psdots[dotstyle=x](-3.,4.46)
+\rput[bl](-3.44,4.04){B}
+\psdots[dotstyle=x](5.06,2.32)
+\rput[bl](5.14,1.86){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\begin{exop}
+{Détermine le centre de gravité du triangle ABC.
+\begin{center} % Triangle 7
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=10pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.26,-5.68)(8.2,6.92)
+\pspolygon[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](0.66,6.22)(-3.5,-1.68)
+\psline[linewidth=2.pt](-3.5,-1.68)(7.12,3.52)
+\psline[linewidth=2.pt](7.12,3.52)(0.66,6.22)
+\psdots[dotstyle=x](0.66,6.22)
+\rput[bl](0.54,6.6){A}
+\psdots[dotstyle=x](-3.5,-1.68)
+\rput[bl](-3.94,-2.1){B}
+\psdots[dotstyle=x](7.12,3.52)
+\rput[bl](7.2,3.06){C}
+\end{pspicture*}
+\end{center}}{2}
+\end{exop}
+
+\exof{ES56}{108}{2}
+
+\exof{ES61}{126}{2}
+
+\exol{ES62}{109}{2}
+
+\exol{ES63}{109}{2}
+
+\end{document}

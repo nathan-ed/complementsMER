@@ -1,0 +1,247 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage{array}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+\setlist[enumerate,1]{label = \roman*),
+ref
+= \theenumii.\roman*}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Puissances}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Ordre croissant et ordre décroissant (page 11)
+\item Puissance d'exposant positif (page 32)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}{Tableau et puissances}{Complète le tableau ci-dessous : 
+\begin{center}
+{\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{|m{4.6cm}|m{4.6cm}|m{4.6cm}|}\hline
+Écriture en puissance    & Décomposition en produit de facteurs  & Écriture décimale\\\hline
+\multicolumn{1}{|c|}{ $2^4$}    & \multicolumn{1}{c|}{\color{blue}$2\cdot 2 \cdot 2 \cdot 2$} &  \multicolumn{1}{c|}{\color{blue}$16$} \\\hline
+ \multicolumn{1}{|c|}{\color{blue} $3^0$} & \multicolumn{1}{c|}{$1$} & \multicolumn{1}{c|}{\color{blue}$1$} \\\hline
+\multicolumn{1}{|c|}{\color{blue}$6^2$} & \multicolumn{1}{c|}{\color{blue}$6 \cdot 6$} & \multicolumn{1}{c|}{$36$}\\\hline
+\multicolumn{1}{|c|}{$5^3$} & \multicolumn{1}{c|}{\color{blue} $ 5\cdot 5 \cdot 5$} & \multicolumn{1}{c|}{\color{blue}$125$} \\\hline
+\multicolumn{1}{|c|}{\color{blue}$8^2$} & \multicolumn{1}{c|}{$8\cdot 8 $} & \multicolumn{1}{c|}{\color{blue}$64 $} \\\hline
+\multicolumn{1}{|c|}{\color{blue}$10^3 $} & \multicolumn{1}{c|}{\color{blue} $10\cdot 10 \cdot 10 $} & \multicolumn{1}{c|}{$1000 $} \\\hline
+\multicolumn{1}{|c|}{$6^3$} & \multicolumn{1}{c|}{\color{blue} $ 6\cdot 6 \cdot 6$} & \multicolumn{1}{c|}{\color{blue}$216$} \\\hline
+\multicolumn{1}{|c|}{\color{blue}$1^5$} & \multicolumn{1}{c|}{$1\cdot 1\cdot 1\cdot 1\cdot 1 $} & \multicolumn{1}{c|}{\color{blue}$1 $} \\\hline
+\multicolumn{1}{|c|}{\color{blue}$2^3 $} & \multicolumn{1}{c|}{\color{blue} $2\cdot 2 \cdot 2 $} & \multicolumn{1}{c|}{$8$} \\\hline
+\multicolumn{1}{|c|}{$0^4$} & \multicolumn{1}{c|}{\color{blue} $ 0\cdot 0 \cdot 0 \cdot 0$} & \multicolumn{1}{c|}{\color{blue}$0$} \\\hline
+\end{tabular}}
+\end{center}}{1}
+\end{resolu}
+
+\begin{exop}{
+Complète le tableau ci-dessous : 
+\begin{center}
+{\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|m{4.6cm}|m{4.6cm}|m{4.6cm}|}\hline
+Écriture en puissances    & Décomposition en produit de facteurs  & Écriture décimale\\\hline
+& & \multicolumn{1}{c|}{$144$} \\\hline
+ & \multicolumn{1}{c|}{$2\cdot 2 \cdot 2 \cdot 2 \cdot 2$} & \\\hline
+\multicolumn{1}{|c|}{$10^6$} & & \\\hline
+& & \multicolumn{1}{c|}{$121$} \\\hline
+  & \multicolumn{1}{c|}{$4 \cdot 4 \cdot 4$} & \\\hline
+\multicolumn{1}{|c|}{$4^0$} & & \\\hline
+& & \multicolumn{1}{c|}{$81$} \\\hline
+ & \multicolumn{1}{c|}{$3\cdot 3 \cdot 3 \cdot 3 $} & \\\hline
+\multicolumn{1}{|c|}{$2^6$} & & \\\hline
+& & \multicolumn{1}{c|}{$100$} \\\hline
+ & \multicolumn{1}{c|}{$0\cdot 0 \cdot 0 \cdot 0 \cdot 0 \cdot 0 \cdot 0 \cdot 0$} & \\\hline
+\multicolumn{1}{|c|}{$7^2$} & & \\\hline
+ & \multicolumn{1}{c|}{$2\cdot 2 $} & \\\hline
+\multicolumn{1}{|c|}{$3^3$} & & \\\hline
+\end{tabular}}
+\end{center}}{1}
+\end{exop}
+
+
+\begin{exop}{
+Pour chaque puissance entoure la bonne réponse. 
+\begin{tasks}
+\task {$2^4=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $8$
+\item $2$
+\item $16$
+\end{multicols}
+\end{enumerate}
+\task {$5^2=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $25$
+\item $10$
+\item $7$
+\end{multicols}
+\end{enumerate}
+\item {$1^{12}=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $12$
+\item $1$
+\item $13$
+\end{multicols}
+\end{enumerate}
+\task {$7^0=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $0$
+\item $7$
+\item $1$
+\end{multicols}
+\end{enumerate}
+\task {$10^5=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $50$
+\item $10'000$
+\item $100'000$
+\end{multicols}
+\end{enumerate}
+\end{tasks}}{1}
+\end{exop}
+
+
+\begin{exop}{
+Pour chaque puissance entoure la bonne réponse. 
+\begin{tasks}
+\task {$6^2=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $8$
+\item $36$
+\item $12$
+\end{multicols}
+\end{enumerate}
+\task {$2^5=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $32$
+\item $10$
+\item $7$
+\end{multicols}
+\end{enumerate}
+\task {$1^{119}=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $120$
+\item $119$
+\item $1$
+\end{multicols}
+\end{enumerate}
+\task {$1'000^0=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $1$
+\item $1000$
+\item $0$
+\end{multicols}
+\end{enumerate}
+\task {$10^6=$}
+\begin{enumerate}
+\begin{multicols}{3}
+\item $1'000'000$
+\item $60$
+\item $100'000$
+\end{multicols}
+\end{enumerate}
+\end{tasks}}{1}
+\end{exop}
+
+
+
+\begin{exop}{
+Calcule les puissances suivantes. 
+\begin{tasks}(3)
+\task $2^3=$ 
+\task $3^2=$
+\task $4^1=$
+\task $3^3=$
+\task $9^2=$
+\task $2^6=$
+\task $3^4=$
+\task $1^{23}=$
+\task $8^0=$
+\task $10^2=$
+\task $10^4=$
+\task $10^9=$
+\end{tasks}
+}{1}
+\end{exop}
+
+
+
+
+\begin{exop}{
+Calcule les puissances suivantes. 
+\begin{tasks}(3)
+\task $7^2=$ 
+\task $11^2=$
+\task $8^1=$
+\task $4^3=$
+\task $8^2=$
+\task $2^7=$
+\task $5^3=$
+\task $1^{10}=$
+\task $19^0=$
+\task $10^3=$
+\task $10^{12}=$
+\task $10^6=$ 
+\end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}{
+Classe les puissances par ordre croissant (de la plus petite à la plus grande).
+\begin{tasks}
+\task $3^8\;;\;3^4\;;\;3^3\;;\;3^2\;;\;3^5\;;\;3^1$ \\ \\
+\makebox[6.2in]{\dotfill}
+\task $4^6\;;\;7^6\;;\;2^6\;;\;5^6\;;\;1^6\;;\;9^6$ \\ \\
+\makebox[6.2in]{\dotfill}
+\task $7^1\;;\;2^5\;;\;3^2\;;\;2^3\;;\;4^2\;;\;1^{17}$ \\ \\
+\makebox[6.2in]{\dotfill}
+
+\end{tasks}}{1}
+\end{exop}
+
+
+\exof{NO63}{21}{1}
+
+\exof{NO62}{21}{1}
+
+\exof{NO64}{22}{1}
+\exof{NO65}{23}{1}
+
+\exol{NO67}{24}{1}
+
+\end{document}

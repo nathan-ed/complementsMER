@@ -1,0 +1,319 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Espace}
+\newcommand{\serieName}{Construction des quadrilatères}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Tracer la droite perpendiculaire à une droite donnée passant par un point donné (page 93)
+\item Tracer la droite parallèle à une droite donnée passant par un point donné (page 95)
+\item Quadrilatère (page 123)
+\item Quadrilatères particuliers (pages 123-124)
+}
+\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{exo}{
+Les dessins suivants sont des croquis. Construis-les en respectant les mesures et les codages indiqués.
+\begin{tasks}(2)
+    \task ~\\ \input{media/es-02/tikz/croquis-rectangle.tex}
+    \task ~\\ \input{media/es-02/tikz/croquis-carre.tex}
+\end{tasks}
+}{1}
+\end{exo}
+
+
+
+\begin{exof}{ES79}{134}{1}
+\end{exof}
+\begin{exof}{ES80}{135}{1}
+\end{exof}
+
+
+\begin{exop}{
+Termine la construction des quadrilatères ci-dessous. Utilise tes instruments de géométrie.
+\begin{tasks}(2)
+    \task parallélogramme \vspace{1cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=10]
+            \draw (0,0) -- (4,0) -- (5,2) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+    \task trapèze isocèle \vspace{1cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=-10]
+            \draw (0,0) -- (5,0) -- (4,2) ;
+        \end{scope}
+        \end{tikzpicture}
+    
+    \task losange \vspace{2.4cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=10]
+            \draw (-3,1) -- (0,0) -- (3,1) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+    \task rectangle \vspace{1cm}\\
+
+        \begin{tikzpicture}
+        \begin{scope}[rotate=170]
+            \draw (0,0) -- (3,0) -- (3,-2) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+\end{tasks}
+}{1}
+\end{exop}
+
+
+\begin{exop}{
+Termine la construction des quadrilatères ci-dessous. Utilise tes instruments de géométrie.
+\begin{tasks}(2)
+    \task parallélogramme \vspace{0.5cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=190]
+            \draw (0,0) -- (3,0) -- (5,2) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+    \task trapèze isocèle \vspace{0.5cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=-190]
+            \draw (0,0) -- (4,0) -- (3,3) ;
+        \end{scope}
+        \end{tikzpicture}
+    
+    \task losange \vspace{1cm}\\
+    
+        \begin{tikzpicture}
+        \begin{scope}[rotate=10]
+            \draw (3,1) -- (0,0) -- (3,-1) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+    \task rectangle \vspace{1cm}\\
+
+        \begin{tikzpicture}
+        \begin{scope}[rotate=250]
+            \draw (0,0) -- (5,0) -- (5,-2) ;
+        \end{scope}
+        \end{tikzpicture}
+        
+\end{tasks}
+}{1}
+\end{exop}
+
+
+
+\begin{exop}{
+Construis les carrés dont voici les diagonales. Utilise tes instruments de géométrie.
+
+\begin{tasks}(2)
+    \task ~\vspace{2cm} \\
+    
+        \begin{tikzpicture}
+        \draw (0,0) -- (3,1) ;
+        \end{tikzpicture}
+    
+    \task ~\vspace{1cm} \\
+    
+        \hspace{3cm}
+        \begin{tikzpicture}
+        \draw (0,0) -- (0,4) ;
+        \end{tikzpicture}
+\end{tasks}
+%\begin{center}
+%\begin{tikzpicture}
+%    \draw (0,0) -- (3,1) ;
+%\end{tikzpicture}
+%\end{center}
+
+\vspace{2cm}
+
+}{1}
+\end{exop}
+
+
+\begin{exop}{
+\begin{tasks}(2)
+\task Construis le rectangle $MNOP$ tel que le côté $MN$ mesure le triple du côté $PM$. \vspace{1cm} \\
+        \begin{tikzpicture}
+            \draw (0,0) -- (1,2) ;
+            \node at (-0.4,-0.4) {$M$} ;
+            \node at (0.6,2.2) {$P$} ;
+        \end{tikzpicture}
+\vspace{3cm}
+
+\task Construis le rectangle $ABCD$ tel que le côté $AD$ mesure le double du côté $AB$. \vspace{1cm} \\
+        \begin{tikzpicture}
+            \draw (0,0) -- (6,1) ;
+            \node[above left] at (0,0) {$A$} ;
+            \node[above right] at (6,1) {$D$} ;
+        \end{tikzpicture}
+\vspace{3cm}
+\end{tasks}
+}{1}
+\end{exop}
+
+
+
+\begin{exo}{
+Construis un losange dont les diagonales mesurent\ldots
+\begin{tasks}(2)
+    \task \ldots \tunit{5}{\cm} et \tunit{7}{\cm}.
+    \task \ldots \tunit{3}{\cm} et \tunit{4}{\cm}.
+    \task \ldots \tunit{3,1}{\cm} et \tunit{8,6}{\cm}.
+    \task \ldots \tunit{9,5}{\cm} et \tunit{9,5}{\cm}.
+\end{tasks}
+}{1}
+\end{exo}
+
+
+%\begin{exo}{
+%Place trois points $R$, $E$ et $V$ non alignés. Trace à main levée tous les parallélogrammes ayant $R$, $E$ et $V$ comme sommets.
+%}{2}
+%\end{exo}
+
+
+\begin{exo}{
+Construis les parallélogrammes en respectant les mesures et les codages indiqués sur le croquis. Utilise tes instruments de géométrie.
+\begin{tasks}(2)
+    \task \input{media/es-02/tikz/croquis-para.tex}
+
+    \task  \input{media/es-02/tikz/croquis-para2.tex}
+
+    \task \input{media/es-02/tikz/croquis-para3.tex}
+
+    \task  \input{media/es-02/tikz/croquis-para4.tex}
+    
+\end{tasks}
+
+}{1}
+\end{exo}
+
+\newpage
+\begin{exo}{
+Construis les trapèzes isocèles en respectant les mesures et les codages indiqués sur le croquis. Utilise tes instruments de géométrie.
+
+\begin{tasks}(2)
+    \task ~\\ \input{media/es-02/tikz/croquis-trapeze.tex}
+    \task ~\\ \input{media/es-02/tikz/croquis-trapeze2.tex}
+\end{tasks}
+
+
+}{1}
+\end{exo}
+
+
+\begin{exo}{
+Après avoir réalisé un croquis, construis, à l'aide de tes instruments de géométrie, les figures décrites ci-dessous.
+\begin{tasks}[after-item-skip = 0.5em]
+	\task Un rectangle $MIRO$ tel que $MI = \tunit{7,8}{cm}$ et $MO = \tunit{3,5}{\cm}$.
+	\task Un carré $PLAN$ tel que $PL =  \tunit{3}{\cm}$.
+	\task Un parallélogramme $LOUP$ tel que $LP = \tunit{3}{\cm} ; LO = \tunit{2,5}{\cm}$ et $\widehat{PLO}=~\ang{50}$.
+	\task Un rectangle $CLAP$ tel que $CL =  \tunit{6}{\cm}$ et $LP = \tunit{7}{\cm}$.
+	\task Un losange $TRAP$ tel que $TP = \tunit{3,5}{\cm}$ et $TA = \tunit{4}{\cm}$.
+	\task Un carré $HOUX$ tel que $HU = \tunit{4}{\cm}$.
+	\task Un parallélogramme $UILK$ tel que  $UI = \tunit{4,5}{\cm}, IL = \tunit{3}{\cm}$ et $UIL=~\ang{140}$.
+	\task Un rectangle $PLOT$ de centre $G$ tel que $PL = \tunit{8}{\cm}$ et $\widehat{PGL} = \ang{110}$.
+\end{tasks}
+}{1}
+\end{exo}
+
+
+
+
+\begin{exo}{
+Construis le losange $EFGH$ sachant que le point $G$ est sur la droite $d$.
+\begin{center}
+    \begin{tikzpicture}
+    \draw (0,0) -- (1,-3) ;
+    \node at (0,0) {$\times$} ;
+    \node[above] at (0,0) {E} ;
+    \node at (1,-3) {$\times$} ;
+    \node[right] at (1,-3) {H} ;
+    
+    \draw (-5,-8) -- (1,-3) ;
+    \node at (-5,-8.5) {d} ;
+    \end{tikzpicture}
+\end{center}
+}{1}
+\end{exo}
+
+
+\begin{exo}{
+Livio était absent au cours de mathématiques. Explique-lui en une phrase les deux figures suivantes qui sont à tracer pour le prochain cours. Rédige ce que tu lui dis.
+\begin{center}
+\input{media/es-02/tikz/croquis-carre-rect.tex} 
+\end{center}
+}{2}
+\end{exo}
+
+%\begin{exo}{
+%$MNOP$ est un rectangle et $QRST$ est un carré. Reproduis la figure avec tes instruments de géométrie en respectant les mesures.
+%}{0}
+%\end{exo}
+
+\begin{exof}{ES81}{136}{1}
+\end{exof}
+	\begin{exol}{ES83}{112}{1}
+	\end{exol}
+		\begin{exol}{ES84}{113}{1}
+		\end{exol}
+			\begin{exol}{ES85}{113}{1}
+			\end{exol}
+				\begin{exol}{ES86}{113}{1}
+				\end{exol}
+					\begin{exol}{ES87}{113}{1}
+					\end{exol}
+						\begin{exol}{ES88}{113}{1}
+						\end{exol}
+							\begin{exol}{ES89}{114}{3}
+							\end{exol}
+								\begin{exof}{ES91}{140}{1}
+								\end{exof}
+									\begin{exof}{ES92}{141}{1}
+									\end{exof}
+										\begin{exol}{ES96}{115}{1}
+										\end{exol}
+
+										\begin{FLP}{137}{1}
+\end{FLP}
+
+\end{document}
+

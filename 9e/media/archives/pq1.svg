@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="41.453907mm"
+   height="16.446178mm"
+   viewBox="0 0 41.453907 16.446178"
+   version="1.1"
+   id="svg3488"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="pq1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3490"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="310.68347"
+     inkscape:cy="588.58125"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3485" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-22.645787,7.396942)">
+    <polygon
+       class="cls-3"
+       points="14.6,83.27 102.02,82.44 130.15,63.77 "
+       id="polygon3294"
+       style="fill:#dcddde"
+       transform="matrix(0.35261979,0,0,0.35261979,17.673772,-20.489723)" />
+    <polygon
+       class="cls-4"
+       points="14.6,83.27 102.02,83.27 131.16,63.07 131.16,37.63 "
+       id="polygon3296"
+       style="fill:none;stroke:#000000;stroke-linejoin:round"
+       transform="matrix(0.35261979,0,0,0.35261979,17.673772,-20.489723)" />
+    <polyline
+       class="cls-4"
+       points="102.02 83.27 102.02 56.84 131.16 37.63"
+       id="polyline3298"
+       style="fill:none;stroke:#000000;stroke-linejoin:round"
+       transform="matrix(0.35261979,0,0,0.35261979,17.673772,-20.489723)" />
+    <line
+       class="cls-4"
+       x1="22.822021"
+       y1="8.8729258"
+       x2="53.644516"
+       y2="-0.44681409"
+       id="line3300"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round" />
+    <line
+       class="cls-5"
+       x1="63.923386"
+       y1="1.750007"
+       x2="22.822021"
+       y2="8.8729258"
+       id="line3302"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round;stroke-dasharray:1.05786, 0.70524" />
+  </g>
+</svg>

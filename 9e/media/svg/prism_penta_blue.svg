@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="77.708122mm"
+   height="104.32521mm"
+   viewBox="0 0 77.708122 104.32521"
+   version="1.1"
+   id="svg1430"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="prism_penta_blue.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1432"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="106.94381"
+     inkscape:cy="683.03527"
+     inkscape:window-width="1723"
+     inkscape:window-height="999"
+     inkscape:window-x="212"
+     inkscape:window-y="448"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1427" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-76.789675,58.163573)">
+    <g
+       id="g111"
+       transform="matrix(0.26458333,0,0,0.26458333,-184.69803,-187.57128)">
+      <polygon
+         fill="#c8e9fb"
+         points="1198.4,877.8 1198.4,777.6 1155.1,752.5 1033.4,774.5 1033.4,855.2 "
+         id="polygon91" />
+      <polygon
+         fill="#c8e9fb"
+         points="1198.4,625.4 1158.3,619.9 1158.3,748.1 1198.4,771.4 "
+         id="polygon93" />
+      <polygon
+         fill="#c8e9fb"
+         points="1033.4,602.8 1033.4,769 1152.9,747.4 1152.9,619.1 "
+         id="polygon95" />
+      <polygon
+         fill="#c8e9fb"
+         points="1200.4,620.2 1274.5,563.8 1158.3,496.4 1158.3,614.4 "
+         id="polygon97" />
+      <polygon
+         fill="#c8e9fb"
+         points="1032.5,597.2 1152.9,613.7 1152.9,495 995.1,523.5 "
+         id="polygon99" />
+      <polygon
+         fill="#c8e9fb"
+         points="1274.5,821.7 1203.8,780.7 1203.8,875.5 "
+         id="polygon101" />
+      <polygon
+         fill="#c8e9fb"
+         points="1276.6,568.9 1203.8,624.3 1203.8,774.5 1276.6,816.7 "
+         id="polygon103" />
+      <polygon
+         fill="#c8e9fb"
+         points="1028,775.4 995.1,781.4 1028,846.4 "
+         id="polygon105" />
+      <polygon
+         fill="#c8e9fb"
+         points="1028,600.3 993.7,532.7 993.7,776.2 1028,770 "
+         id="polygon107" />
+      <path
+         fill="#6b91ae"
+         d="m 1282,563.3 c 0,-0.1 -0.1,-0.2 -0.1,-0.3 0,-0.3 -0.1,-0.6 -0.3,-0.8 -0.1,-0.1 -0.1,-0.2 -0.2,-0.3 -0.2,-0.2 -0.4,-0.4 -0.6,-0.6 -0.1,-0.1 -0.1,-0.1 -0.2,-0.2 l -123.7,-71.7 c -0.1,0 -0.1,0 -0.2,-0.1 -0.1,-0.1 -0.2,-0.1 -0.4,-0.1 -0.2,-0.1 -0.4,-0.1 -0.6,-0.1 -0.1,0 -0.1,0 -0.2,0 -0.1,0 -0.1,0 -0.2,0 -0.1,0 -0.2,0 -0.3,0 l -164.5,29.7 c -0.1,0 -0.2,0.1 -0.2,0.1 -0.2,0.1 -0.5,0.2 -0.7,0.3 -0.1,0.1 -0.2,0.1 -0.3,0.2 -0.2,0.2 -0.4,0.4 -0.5,0.6 0,0.1 -0.1,0.1 -0.2,0.2 0,0 0,0 0,0.1 -0.2,0.3 -0.3,0.7 -0.3,1.1 v 257.9 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0.4 0.1,0.7 0.3,1.1 0,0 0,0.1 0,0.1 l 39.7,78.2 c 0,0.1 0.1,0.1 0.2,0.2 0.2,0.2 0.3,0.4 0.5,0.6 0.1,0.1 0.2,0.2 0.3,0.2 0.2,0.1 0.5,0.2 0.7,0.3 0.1,0 0.2,0.1 0.3,0.1 l 170.4,23.3 c 0.1,0 0.2,0 0.4,0 0.3,0 0.7,-0.1 1,-0.2 0.1,0 0.2,-0.1 0.3,-0.1 0.1,-0.1 0.3,-0.1 0.4,-0.2 l 78.2,-59.5 c 0,0 0.1,-0.1 0.1,-0.1 0.2,-0.2 0.4,-0.5 0.6,-0.8 0,-0.1 0.1,-0.1 0.1,-0.2 0.1,-0.3 0.2,-0.7 0.2,-1.1 V 563.5 c 0,0 -0.1,-0.1 0,-0.2 -0.1,0.1 0,0.1 0,0 z m -254,283.1 -33,-65 33,-6 z m 0,-76.4 -34.3,6.2 V 532.7 l 34.3,67.6 z M 995.1,523.5 1152.9,495 v 118.7 l -120.4,-16.5 z m 157.8,95.6 V 747.4 L 1033.4,769 V 602.8 Z m 45.5,258.7 -165,-22.6 v -80.8 l 121.7,-22 43.3,25.1 z m 0,-106.4 -40.1,-23.3 V 619.9 l 40.1,5.5 z m 2,-151.2 -42.1,-5.8 v -118 l 116.2,67.4 z m 3.4,255.3 v -94.8 l 70.7,41 z m 72.8,-58.8 -72.8,-42.2 V 624.3 l 72.8,-55.4 z"
+         id="path109" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+
+\begin{scope}[rotate=190]
+{\scriptsize
+\coordinate[](A) at (1,0);
+\coordinate[](B) at (4,0);
+\coordinate[](C) at (5,3);
+\coordinate[](D) at (0,3);
+
+\node[above right] at (A) {$A$};
+\node[above left] at (B) {$B$};
+\node[below left] at (C) {$C$};
+\node[below right] at (D) {$D$};
+
+\pic [draw, -, "$\ang{120}$", angle eccentricity=1.5]{angle = C--B--A};
+
+\draw (A)-- (B) -- (C) -- (D) -- cycle;
+
+\draw[dotted] (A) -- ++(0,-0.5) ;
+\draw[dotted] (B) -- ++(0,-0.5) ;
+\draw[<->, >=latex] (1,-0.5) --node[above]{$\tunit{2}{\cm}$} (4,-0.5);
+
+\draw[dotted] (C) -- ++(0,0.5) ;
+\draw[dotted] (D) -- ++(0,0.5) ;
+\draw[<->, >=latex] (5,3.5) --node[below]{$\tunit{6,5}{\cm}$} (0,3.5);
+
+\draw[dotted] (A) -- ++(-0.5,0) ;
+\draw[dotted] (D) -- ++(-0.5,0) ;
+\draw[<->, >=latex] (0.5,0) --node[right]{$\tunit{1,5}{\cm}$} (-0.5,3) ;
+
+}
+\end{scope}
+\end{tikzpicture}
+

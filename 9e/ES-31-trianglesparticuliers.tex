@@ -1,0 +1,421 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+%\usepackage{pst-all}
+%\usepackage{pst-eucl}
+%\usepackage[pspdf={-dNOSAFER -dALLOWPSTRANSPARENCY}]{auto-pst-pdf}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Espace}
+\newcommand{\serieName}{Les triangles particuliers}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Triangles particuliers (page 114)
+\item Classement des triangles (page 115)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{resolu}{Triangles particuliers}{
+Pour chaque type de triangle ci-dessous, complète le tableau ci-dessous :
+\begin{tasks}
+\task Triangle équilatéral
+
+\smallskip
+\begin{tabular}[c]{|c|p{2.8cm}|p{2.8cm}|p{2.8cm}|}\hline
+Figure & Côtés & Angles & Symétries \\\hline
+\newrgbcolor{zzttqq}{0.6 0.2 0.}
+\newrgbcolor{sqsqsq}{0.12549019607843137 0.12549019607843137 0.12549019607843137}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.68,0.94)(1.22,5.48)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq](-1.22,5.06)(-3.16,1.66)(0.754486372867091,1.6799107166581881)
+\psline[linewidth=2.pt,linecolor=zzttqq](-1.22,5.06)(-3.16,1.66)
+\psline[linewidth=2.pt,linecolor=zzttqq](-2.0609936836070872,3.3439572343178714)(-2.269447454253853,3.462898503451614)
+\psline[linewidth=2.pt,linecolor=zzttqq](-2.1105525457461467,3.257101496548386)(-2.3190063163929127,3.376042765682129)
+\psline[linewidth=2.pt,linecolor=zzttqq](-3.16,1.66)(0.754486372867091,1.6799107166581881)
+\psline[linewidth=2.pt,linecolor=zzttqq](-1.2533665291352263,1.7896994884150743)(-1.2521458044400269,1.5497025929534485)
+\psline[linewidth=2.pt,linecolor=zzttqq](-1.153367822692882,1.7902081237047403)(-1.1521470979976827,1.5502112282431146)
+\psline[linewidth=2.pt,linecolor=zzttqq](0.754486372867091,1.6799107166581881)(-1.22,5.06)
+\psline[linewidth=2.pt,linecolor=zzttqq](-0.31115341439059546,3.266253993925243)(-0.10392036843902933,3.387309620253126)
+\psline[linewidth=2.pt,linecolor=zzttqq](-0.36159325869388015,3.3526010964050625)(-0.15436021274231398,3.473656722732945)
+\psplot[linewidth=0.4pt,linecolor=blue]{-3.68}{1.22}{(--4.674925148607417--3.914486372867091*x)/-0.01991071665818822}
+\psplot[linewidth=0.4pt,linecolor=blue]{-3.68}{1.22}{(--7.1754-1.94*x)/3.4}
+\psplot[linewidth=0.4pt,linecolor=blue]{-3.68}{1.22}{(-11.850325148607414-1.974486372867091*x)/-3.3800892833418112}
+\pscustom[linewidth=2.pt,linecolor=sqsqsq]{
+\parametricplot{-2.0893087275647813}{-1.0421111763681836}{0.6*cos(t)+-1.22|0.6*sin(t)+5.06}
+\lineto(-1.22,5.06)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{-2.0893087275647813}{-1.0421111763681836}{0.6*cos(t)+-1.22|0.6*sin(t)+5.06}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{-2.0893087275647813}{-1.0421111763681836}{0.47*cos(t)+-1.22|0.47*sin(t)+5.06}
+\pscustom[linewidth=2.pt,linecolor=sqsqsq]{
+\parametricplot{2.0994814772216097}{3.146679028418207}{0.6*cos(t)+0.754486372867091|0.6*sin(t)+1.6799107166581881}
+\lineto(0.754486372867091,1.6799107166581881)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{2.0994814772216097}{3.146679028418207}{0.6*cos(t)+0.754486372867091|0.6*sin(t)+1.6799107166581881}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{2.0994814772216097}{3.146679028418207}{0.47*cos(t)+0.754486372867091|0.47*sin(t)+1.6799107166581881}
+\pscustom[linewidth=2.pt,linecolor=sqsqsq]{
+\parametricplot{0.005086374828414335}{1.052283926025012}{0.6*cos(t)+-3.16|0.6*sin(t)+1.66}
+\lineto(-3.16,1.66)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{0.005086374828414335}{1.052283926025012}{0.6*cos(t)+-3.16|0.6*sin(t)+1.66}
+\parametricplot[linewidth=2.pt,linecolor=sqsqsq]{0.005086374828414335}{1.052283926025012}{0.47*cos(t)+-3.16|0.47*sin(t)+1.66}
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.22,5.06)
+\rput[bl](-1.66,4.98){$A$}
+\psdots[dotstyle=x](-3.16,1.66)
+\rput[bl](-3.42,1.14){$B$}
+\psdots[dotstyle=x](0.754486372867091,1.6799107166581881)
+\rput[bl](0.8,1.16){$C$}
+\rput[bl](-1.16,3.88){\sqsqsq{$60\textrm{\degre}$}}
+\rput[bl](-0.38,1.72){\sqsqsq{$60\textrm{\degre}$}}
+\rput[bl](-2.52,1.7){\sqsqsq{$60\textrm{\degre}$}}
+\end{scriptsize}
+\end{pspicture*}& {\color{blue} 3} côtés isométriques & {\color{blue} 3} angles isométriques &  {\color{blue} 3} axes de symétrie \\\hline
+\end{tabular}
+\task Triangle isocèle
+
+\smallskip
+\begin{tabular}{|c|m{2.8cm}|m{2.8cm}|m{2.8cm}|}\hline
+Figure & Côtés & Angles & Symétries \\\hline
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,2.16)(1.66,6.3)
+\psline[linewidth=2.pt](-1.78,5.72)(-3.64,2.54)
+\psline[linewidth=2.pt](-2.581173321872574,4.112573382351916)(-2.788338346623631,4.233745377961025)
+\psline[linewidth=2.pt](-2.6316616533763697,4.026254622038976)(-2.8388266781274267,4.147426617648084)
+\psline[linewidth=2.pt](-1.78,5.72)(1.2579825914135079,3.636094586055196)
+\psline[linewidth=2.pt](-0.23436131034424804,4.805286895336498)(-0.3701199004885044,4.607373769945473)
+\psline[linewidth=2.pt](-0.15189750809798785,4.748720816109724)(-0.2876560982422442,4.550807690718699)
+\psline[linewidth=2.pt](1.2579825914135079,3.636094586055196)(-3.64,2.54)
+\psplot[linewidth=0.4pt,linecolor=blue]{-4.3}{1.66}{(-2.4487479804803245-4.897982591413508*x)/1.0960945860551958}
+\pscustom[linewidth=2.pt,linecolor=qqwuqq]{
+\parametricplot{0.22015760024594777}{1.0415495459630517}{0.6*cos(t)+-3.64|0.6*sin(t)+2.54}
+\lineto(-3.64,2.54)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=qqwuqq]{0.22015760024594777}{1.0415495459630517}{0.6*cos(t)+-3.64|0.6*sin(t)+2.54}
+\parametricplot[linewidth=2.pt,linecolor=qqwuqq]{0.22015760024594777}{1.0415495459630517}{0.47*cos(t)+-3.64|0.47*sin(t)+2.54}
+\pscustom[linewidth=2.pt,linecolor=qqwuqq]{
+\parametricplot{2.540358308118637}{3.361750253835741}{0.6*cos(t)+1.2579825914135079|0.6*sin(t)+3.636094586055196}
+\lineto(1.2579825914135079,3.636094586055196)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=qqwuqq]{2.540358308118637}{3.361750253835741}{0.6*cos(t)+1.2579825914135079|0.6*sin(t)+3.636094586055196}
+\parametricplot[linewidth=2.pt,linecolor=qqwuqq]{2.540358308118637}{3.361750253835741}{0.47*cos(t)+1.2579825914135079|0.47*sin(t)+3.636094586055196}
+\begin{scriptsize}
+\psdots[dotstyle=x](-1.78,5.72)
+\rput[bl](-1.7,5.92){$A$}
+\psdots[dotstyle=x](-3.64,2.54)
+\rput[bl](-3.82,2.76){$B$}
+\psdots[dotstyle=x](1.2579825914135079,3.636094586055196)
+\rput[bl](1.34,3.84){$C$}
+\end{scriptsize}
+\end{pspicture*}& Au moins {\color{blue} 2} côtés isométriques & Au moins {\color{blue} 2} angles isométriques & Au moins {\color{blue} 1} axe de symétrie \\\hline
+\end{tabular}
+\task Triangle rectangle
+
+\smallskip
+\begin{tabular}{|c|m{2.5cm}|m{2.5cm}|m{2.5cm}|}\hline
+Figure & Côtés & Angles & Symétries \\\hline
+
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture}%(-4.32,2.26)(0.82,5.8)
+\pspolygon[linewidth=2.pt,linecolor=qqwuqq](-2.3241942370526676,3.0327671365761635)(-2.476961373628831,3.4285728995234956)(-2.8727671365761633,3.2758057629473325)(-2.72,2.88)
+\psline[linewidth=2.pt](-3.6,5.16)(-2.72,2.88)
+\psline[linewidth=2.pt,linecolor=red](-3.6,5.16)(0.3115510313420846,4.050072327886419)
+\psline[linewidth=2.pt](-2.72,2.88)(0.3115510313420846,4.050072327886419)
+
+\begin{scriptsize}
+\psdots[dotstyle=x](-3.6,5.16)
+\rput[bl](-3.52,5.36){$A$}
+\psdots[dotstyle=x](-2.72,2.88)
+\rput[bl](-2.92,2.34){$B$}
+\psdots[dotstyle=x](0.3115510313420846,4.050072327886419)
+\rput[bl](0.4,4.26){$C$}
+\rput[bl](-2.54,3.58){\qqwuqq{$90\textrm{\degre}$}}
+ \psset{shortput=nab,linestyle=none,nrot=:U}
+\pcline(-3.6,5.16)(0.3115510313420846,4.050072327886419)^{\red{hypoténuse}}
+\end{scriptsize}
+\end{pspicture} & {\color{blue} 2} côtés perpendiculaires & {\color{blue} 1} angle droit &  {\color{blue} Pas de symétrie} \\\hline
+\end{tabular}
+\end{tasks}
+
+}{1}
+\end{resolu}
+
+
+\begin{exo}
+{Réponds aux questions suivantes en indiquant de quel type de triangle il s'agit.
+
+\begin{tasks}
+\task Qui suis-je ? Je suis un triangle avec deux angles isométriques qui mesurent 45$^{\circ}$.
+\task Qui suis-je ? Je suis un triangle avec deux angles isométriques qui mesurent 60$^{\circ}$.
+\task Qui suis-je ? Je suis un triangle avec deux angles isométriques qui mesurent 30$^{\circ}$.
+\end{tasks}
+}{1}
+\end{exo}
+
+
+\exol{ES49}{107}{1}
+\exol{ES53}{107}{1}
+\exol{ES54}{108}{1}
+\exol{ES55}{108}{2}
+
+
+\begin{resolu}{Equilatéral}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+Construis en vraie grandeur un triangle équilatéral $ABC$ dont les côtés mesurent $4\,\text{cm}$.
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+	\psset{xunit=0.5cm,yunit=0.5cm}
+\begin{pspicture}(0,0)(8,6)
+    \psdots[dotstyle=x](1,1)(7,1)(4,5.6)
+    \pspolygon(1,1)(7,1)(4,5.6)
+    \uput[-135](1,1){$A$}
+    \uput[-45](7,1){$B$}
+    \uput[90](4,5.6){$C$}
+ \psset{shortput=nab,linestyle=none,nrot=:U}
+ \pcline(1,1)(7,1)_{$\tunit{4}{cm}$}
+\pcline(1,1)(4,5.6)^{$\tunit{4}{cm}$}
+\pcline(4,5.6)(7,1)^{$\tunit{4}{cm}$}
+ \end{pspicture}
+\end{center}
+
+}
+\end{minipage}
+\begin{minipage}[t]{0.6\textwidth}{
+\vspace{0pt}
+{\bf\blue Programme de construction}
+{\blue\begin{tasks}[after-item-skip = 0.3em]
+\task Trace un segment AB de 4 cm.
+\task Trace un arc de cercle en plantant ton compas sur A et en l'ouvrant à 4 cm.
+\task Trace un arc de cercle  en plantant ton compas sur B et en l'ouvrant à 4 cm.
+\task L'intersection des deux arcs de cercle correspond au sommet C.
+\task Pour terminer la construction du triangle ABC, trace les segments AC et BC.
+\end{tasks}}
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{2cm}
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.28,-0.78)(5.7,4.64)
+\pspolygon[linewidth=2.pt,linecolor=blue](0.94,-0.14)(4.765252391102405,1.0293776739639484)(1.8399154232800674,3.757454583563825)
+\psline[linewidth=2.pt,linecolor=blue](0.94,-0.14)(4.765252391102405,1.0293776739639484)
+\psline[linewidth=2.pt,linecolor=blue](4.765252391102405,1.0293776739639484)(1.8399154232800674,3.757454583563825)
+\psline[linewidth=2.pt,linecolor=blue](1.8399154232800674,3.757454583563825)(0.94,-0.14)
+\parametricplot[linewidth=1.2pt]{1.1115539756409014}{1.5757714101257507}{1.*4.*cos(t)+0.*4.*sin(t)+0.94|0.*4.*cos(t)+1.*4.*sin(t)+-0.14}
+\parametricplot[linewidth=1.2pt]{2.1969112835661986}{2.5672534893900587}{1.*4.*cos(t)+0.*4.*sin(t)+4.765252391102405|0.*4.*cos(t)+1.*4.*sin(t)+1.0293776739639484}
+\begin{scriptsize}
+\psdots[dotstyle=x,linecolor=blue](0.94,-0.14)
+\rput[bl](0.72,-0.56){\blue{$A$}}
+\psdots[dotstyle=x,linecolor=blue](4.765252391102405,1.0293776739639484)
+\rput[bl](5.,0.78){\blue{$B$}}
+\psdots[dotstyle=x,linecolor=blue](1.8399154232800674,3.757454583563825)
+\rput[bl](1.6,3.98){\blue{$C$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+}
+\end{minipage}
+
+
+}{1}
+\end{resolu}
+
+
+
+\begin{exo}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+Construis en vraie grandeur un triangle équilatéral $XYZ$ dont les côtés mesurent $6{,}5\,\text{cm}$.
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+\psset{xunit=0.5cm,yunit=0.5cm}
+\begin{pspicture}(0,0)(8,6)
+    \pstGeonode[CurveType=polygon,PosAngle={180,-90,0}, PointSymbol=x](1,1){X}(7,1){Y}(4,5.6){Z}
+    \psdots[dotstyle=x](1,1)(7,1)(4,5.6)
+  \psset{shortput=nab,linestyle=none,nrot=:U}
+\pcline(X)(Y)_{$\tunit{6,5}{cm}$}
+    \pcline(X)(Z)^{$\tunit{6,5}{cm}$}
+    \pcline(Z)(Y)^{$\tunit{6,5}{cm}$}
+      % \psline[linewidth=0.5pt,linestyle=dashed](4.4,4.4)(4.8,4.8)
+    %\psline[linewidth=0.5pt,linestyle=dashed](3.6,4.4)(3.2,4.8)
+    %\psline[linewidth=0.5pt,linestyle=dashed](1.6,1.4)(1.2,1.8)
+    %\psline[linewidth=0.5pt,linestyle=dashed](6.4,1.4)(6.8,1.8)
+\end{pspicture}
+\end{center}
+}
+\end{minipage}
+}{1}
+\end{exo}
+
+
+\exol{ES50}{107}{1}%équilatéral
+
+\begin{resolu}{Rectangle}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+	Construis en vraie grandeur un triangle rectangle $ABC$ en A dont on connaît les longueurs des côtés adjacents à l'angle droit. Les valeurs données sont les suivantes : $AB = 4\,\text{cm}$ et $AC = 5\,\text{cm.}$
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm}
+\begin{pspicture}(0,0)(9,7)
+    \psdots[dotstyle=x](1,1)(7,1)(1,5)
+    \pspolygon(1,1)(7,1)(1,5)
+    \uput[-135](1,1){$A$}
+    \uput[-45](7,1){$B$}
+    \uput[135](1,5){$C$}
+
+  \psset{shortput=nab,linestyle=none,nrot=:U}
+    \pcline(1,1)(7,1)_{$4\,\text{cm}$}
+    \pcline(1,1)(1,5)^{$5\,\text{cm}$}
+    \pspolygon[fillstyle=solid,fillcolor=black](1,1)(1,1.2)(1.2,1.2)(1.2,1)
+\end{pspicture}
+\end{center}
+}
+\end{minipage}
+
+\vspace{10pt}
+{\bf\blue Programme de construction}
+{\blue\begin{tasks}
+\task Trace un segment AB de 4 cm.
+\task Trace un perpendiculaire au segment AB passant par le point A.
+\task Place un point C sur la perpendiculaire à 5 cm de A.
+\task Trace le segment BC pour fermer le triangle.
+\end{tasks}}
+	}{1}
+\end{resolu}
+
+
+\begin{exo}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+		Construis en vraie grandeur un triangle rectangle $ABC$ en A dont on connaît les longueurs des côtés adjacents à l'angle droit. Les valeurs données sont les suivantes : $AB = 6\,\text{cm}$ et  $AC = 8\,\text{cm.}$
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm}
+\begin{pspicture}(0,0)(9,7)
+    \psdots[dotstyle=x](1,1)(7,1)(1,5)
+    \pspolygon(1,1)(7,1)(1,5)
+    \uput[-135](1,1){$A$}
+    \uput[-45](7,1){$B$}
+    \uput[135](1,5){$C$}
+  \psset{shortput=nab,linestyle=none,nrot=:U}
+    \pcline(1,1)(7,1)_{$6\,\text{cm}$}
+    \pcline(1,1)(1,5)^{$8\,\text{cm}$}
+    \pspolygon[fillstyle=solid,fillcolor=black](1,1)(1,1.2)(1.2,1.2)(1.2,1)
+\end{pspicture}
+\end{center}
+}
+\end{minipage}
+}{1}
+\end{exo}
+
+
+
+\exol{ES51}{107}{1}%rectangle
+
+\newpage
+\begin{exo}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+Construis en vraie grandeur un triangle  $ABC$ isocèle en $C$ dont on connaît la longueur de la base $AB$ et celle des côtés isométriques $BC = AC$. Les valeurs données sont les suivantes : $AB = 5\,\text{cm}$ et $BC = AC = 7\,\text{cm}$.
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm}
+\begin{pspicture}(0,0)(6,8)
+    \psdots[dotstyle=x](1,1)(5,1)(3,6)
+    \pspolygon(1,1)(5,1)(3,6)
+    \uput[-135](1,1){$A$}
+    \uput[-45](5,1){$B$}
+    \uput[90](3,6){$C$}
+  \psset{shortput=nab,linestyle=none,nrot=:U}
+    \pcline(1,1)(5,1)_{$5\,\text{cm}$}
+    \pcline(1,1)(3,6)^{$7\,\text{cm}$}
+    \pcline(3,6)(5,1)^{$7\,\text{cm}$}
+    %\psline[linewidth=0.5pt,linestyle=dashed](2.8,5.4)(3.2,5.4)
+\end{pspicture}
+\end{center}
+}
+\end{minipage}
+}{1}
+\end{exo}
+
+\begin{exo}{
+\begin{minipage}[t]{0.5\textwidth}{
+\vspace{0pt}
+Construis en vraie grandeur un triangle $DEF$ isocèle en $F$ dont on connaît la longueur de la base $DE$ et les angles isométriques $\widehat{DEF}$ et $\widehat{FDE}$. Les valeurs données sont les suivantes : $DE = 6\,\text{cm}$ et $\widehat{DEF} = \widehat{FDE} = 30^\circ$.
+}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}{
+\vspace{0pt}
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm}
+\begin{pspicture}(0,0)(7,6)
+    \psdots[dotstyle=x](1,1)(7,1)(4,5)
+    \pspolygon(1,1)(7,1)(4,5)
+    \uput[-135](1,1){$D$}
+    \uput[-45](7,1){$E$}
+    \uput[90](4,5){$F$}
+    \pcline[linestyle=none,offset=-12pt](1,1)(7,1)\ncput{$6\,\text{cm}$}
+    \psarc(1,1){0.8}{0}{52}
+    \uput{0.8cm}[15](1,1){$30^\circ$}
+    \psarc(7,1){0.8}{128}{180}
+    \uput{0.8cm}[165](7,1){$30^\circ$}
+\end{pspicture}
+\end{center}
+}
+\end{minipage}
+}{1}
+\end{exo}
+
+
+
+\exol{ES52}{107}{1} %isocèle
+
+
+\end{document}

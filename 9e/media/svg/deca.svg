@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg5"
+   version="1.1"
+   viewBox="0 0 52.578781 31.63275"
+   height="31.63275mm"
+   width="52.578781mm"
+   sodipodi:docname="deca.svg"
+   inkscape:export-filename="C:\Users\Nathan\deca.png"
+   inkscape:export-xdpi="32.759998"
+   inkscape:export-ydpi="32.759998"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0006519"
+     inkscape:cx="72.976214"
+     inkscape:cy="99.967416"
+     inkscape:window-width="1920"
+     inkscape:window-height="998"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1389" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-70.05371,-136.00463)">
+    <g
+       inkscape:label="my decagonal prism:x0.00:x0.00:x0.00:x0.00:x0.00:x0.00"
+       transform="matrix(0.264583,0,0,0.264583,96.3431,151.821)"
+       id="g1389">
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:1.62142;stroke-linecap:round;stroke-miterlimit:5.5;stroke-dasharray:4.86426, 4.86426;stroke-dashoffset:4.70212"
+         inkscape:label="Edge1-2"
+         d="M 0,0 H 59.0484"
+         id="path1329" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge1-3"
+         d="M 0,0 -5.63862,-58.7785"
+         id="path1331" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:1.62142;stroke-linecap:round;stroke-miterlimit:5.5;stroke-dasharray:4.86426, 4.86426;stroke-dashoffset:4.70212"
+         inkscape:label="Edge1-4"
+         d="M 0,0 -57.9715,11.2257"
+         id="path1333" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge2-5"
+         d="M 59.0484,0 53.4097,-58.7785"
+         id="path1335" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:1.62142;stroke-linecap:round;stroke-miterlimit:5.5;stroke-dasharray:4.86426, 4.86426;stroke-dashoffset:4.70212"
+         inkscape:label="Edge2-6"
+         d="M 59.0484,0 96.6191,11.2257"
+         id="path1337" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge3-5"
+         d="M -5.63862,-58.7785 H 53.4097"
+         id="path1339" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge3-7"
+         d="M -5.63862,-58.7785 -63.6101,-47.5528"
+         id="path1341" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge4-7"
+         d="m -57.9715,11.2257 -5.6386,-58.7785"
+         id="path1343" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:1.62142;stroke-linecap:round;stroke-miterlimit:5.5;stroke-dasharray:4.86426, 4.86426;stroke-dashoffset:4.70212"
+         inkscape:label="Edge4-8"
+         d="M -57.9715,11.2257 -92.7229,29.3893"
+         id="path1345" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge5-9"
+         d="m 53.4097,-58.7785 37.5708,11.2257"
+         id="path1347" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge6-9"
+         d="M 96.6191,11.2257 90.9805,-47.5528"
+         id="path1349" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge6-10"
+         d="m 96.6191,11.2257 1.7425,18.1636"
+         id="path1351" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge7-11"
+         d="m -63.6101,-47.5528 -34.7515,18.1635"
+         id="path1353" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge8-11"
+         d="m -92.7229,29.3893 -5.6387,-58.7786"
+         id="path1355" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge8-12"
+         d="m -92.7229,29.3893 1.7424,18.1635"
+         id="path1357" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge9-13"
+         d="m 90.9805,-47.5528 1.7424,18.1635"
+         id="path1359" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge10-13"
+         d="M 98.3616,29.3893 92.7229,-29.3893"
+         id="path1361" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge10-14"
+         d="M 98.3616,29.3893 63.6101,47.5528"
+         id="path1363" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge11-15"
+         d="m -98.3616,-29.3893 1.7425,18.1636"
+         id="path1365" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge12-15"
+         d="m -90.9805,47.5528 -5.6386,-58.7785"
+         id="path1367" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge12-16"
+         d="m -90.9805,47.5528 37.5708,11.2257"
+         id="path1369" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge13-17"
+         d="M 92.7229,-29.3893 57.9715,-11.2257"
+         id="path1371" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge14-17"
+         d="M 63.6101,47.5528 57.9715,-11.2257"
+         id="path1373" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge14-18"
+         d="M 63.6101,47.5528 5.63862,58.7785"
+         id="path1375" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge15-19"
+         d="M -96.6191,-11.2257 -59.0484,0"
+         id="path1377" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge16-18"
+         d="M -53.4097,58.7785 H 5.63862"
+         id="path1379" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge16-19"
+         d="M -53.4097,58.7785 -59.0484,0"
+         id="path1381" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge17-20"
+         d="M 57.9715,-11.2257 0,0"
+         id="path1383" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge18-20"
+         d="M 5.63862,58.7785 0,0"
+         id="path1385" />
+      <path
+         style="fill:#ff0000;stroke:#000000;stroke-width:2;stroke-linecap:round"
+         inkscape:label="Edge19-20"
+         d="M -59.0484,0 H 0"
+         id="path1387" />
+    </g>
+  </g>
+</svg>

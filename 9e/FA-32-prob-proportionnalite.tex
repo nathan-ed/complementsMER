@@ -1,0 +1,699 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+% \usepackage{pst-circ,pstricks-add}
+% \usepackage{pst-eucl}
+% \usepackage{psfrag}
+% \usepackage{auto-pst-pdf}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Fonctions et algèbre}
+\newcommand{\serieName}{Problèmes de proportionnalité}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Résoudre un problème de proportionnalité (page 57)}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%% Quantité-Quantité %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{resolu}{Au marché}
+	{Dans un marché, j'ai payé \tunit{7,80}{\fr} pour \tunit{3}{\kg} de pommes de terre. Combien vais-je payer pour \tunit{2,5}{\kg} de pommes de terre~?
+
+{\color{blue} Pour répondre à cette question, on peut faire un tableau de proportionnalité. 
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+	Pommes de terre (\tunit{}{\kg}) & 3 & 2,5  & $\quad$ \\\hline
+	Prix à payer (\tunit{}{\fr}) & 7,8 & $\quad$ & $\quad$ \\\hline
+\end{tabular}
+\end{center}
+
+Ensuite, on peut utiliser la méthode du retour à l'unité pour savoir combien coûte \tunit{1}{\kg} de pommes de terre. Ainsi, on calcule~:
+
+$$7,8 \div 3 =2,6  $$
+
+
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+	Pommes de terre (\tunit{}{\kg}) & 3  & 2,5 & 1    \\\hline
+	Prix à payer (\tunit{}{\fr}) & 7,8 & $\quad$ & 2,6   \\\hline
+\end{tabular}
+\end{center}
+
+$$2,6 \cdot 2,5 = 6,5$$
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+	Pommes de terre (\tunit{}{\kg}) & 3   & 2,5 & 1 \\\hline
+	Prix à payer (\tunit{}{\fr}) & 7,8  & 6,5 & 2,6 \\\hline
+\end{tabular}
+\end{center}  }
+
+{\bf Réponse~:} Pour \tunit{2,5}{\kg} de pommes de terre, je vais payer \tunit{6,5}{\fr}
+}
+{1}
+\end{resolu}
+
+\begin{exo}%Exercice 1
+{Si 5 pommes coûtent 4 francs suisses, combien coûteront 10 pommes~?
+}{1}
+\end{exo}
+
+\begin{exo} % Exercice 4
+{Si 3 mètres de tissu coûtent 24 francs suisses, combien coûtera 10 mètres de tissu~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 6
+{Si 8 litres de lait coûtent 12 francs suisses, combien coûteront 12 litres de lait~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 8
+{Si 6 bouteilles d'eau coûtent 9 francs suisses, combien coûteront 10 bouteilles d'eau~?
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 11
+{Si 100 mètres de tuyau coûtent 25 francs suisses, combien coûteront 500 mètres de tuyau~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 12
+	{Pour faire une tarte, il faut 2 œufs et \tunit{200}{\g} de farine. Combien d'œufs et de farine faudra-t-il pour faire 5 tartes~?}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 13
+	{Pour faire une recette de brownies, il faut \tunit{100}{\g} de sucre et \tunit{200}{\g} de chocolat. Combien de sucre et de chocolat faudra-t-il pour faire 4 fois cette recette de brownies~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 14
+{Pour faire une salade de fruits pour 6 personnes, il faut 3 bananes et 2 pommes. Combien de bananes et de pommes faudra-t-il pour faire cette salade de fruits pour 20 personnes~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 15
+{Pour faire une soupe pour 4 personnes, il faut 1 carotte et 1 poireau. Combien de carottes et de poireaux faudra-t-il pour faire une soupe pour 12 personnes~? Et pour 15 personnes~?
+}{1}
+\end{exo}
+
+\begin{exo} % %Exercice 16
+	{Pour faire 12 crêpes, il faut 2 œufs et \tunit{250}{\milli\liter} de lait. Combien d'œufs et de lait faudra-t-il pour faire 20 crêpes de la même taille~?
+}{1}
+\end{exo}
+
+\begin{exo}%Exercice 3
+{12 travailleurs peuvent construire un mur en 6 jours pour 3 000 francs suisses. Combien de travailleurs faudra-t-il pour construire le mur en 4 jours~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 7
+{30 ouvriers peuvent construire une maison en 60 jours pour 500 000 francs suisses. Combien de jours faudra-t-il pour construire la maison avec 20 ouvriers~?}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 2
+{Pour faire 4 gâteaux, il faut 1 litre de lait à 2 francs suisses. Combien de francs suisses faudra-t-il pour faire 8 gâteaux~?
+}{1}
+\end{exo}
+
+
+
+
+\begin{exo} %Exercice 5
+	{Pour peindre une pièce de \tunit{20}{\square\m}, il faut 2 litres de peinture à 15 francs suisses le litre. Combien de francs suisses faudra-t-il pour peindre une pièce de \tunit{30}{\square\m}~?}{1}
+\end{exo}
+
+
+
+
+
+
+\begin{exo} %Exercice 9
+{Pour 15 sacs de ciment, il faut 3 tonnes de sable à 200 francs suisses la tonne. Combien coûtent 45 sacs de ciment~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 10
+{Si 4 personnes mangent une pizza entière en 20 minutes pour 40 francs suisses, combien de temps faudra-t-il pour que 8 personnes mangent 2 pizzas entières~?
+}{1}
+\end{exo}
+
+
+
+%Exercice 48
+\begin{exo}{
+		Pour fabriquer \tunit{6}{\liter} de jus de pomme, on utilise \tunit{10}{\kg} de pommes. Recopie et complète le tableau.
+
+		\begin{center}
+{\renewcommand{\arraystretch}{1.5}\setlength{\tabcolsep}{.75cm}
+\begin{tabular}{|l|c|c|c|}\hline
+	Quantité de pommes (\tunit{}{\kg}) & 10 & 7 &  \\\hline
+	Quantité de jus de pomme (en \tunit{}{\liter}) & & & 1 \\\hline
+\end{tabular}}
+\end{center}
+\vspace{-0.5cm}
+}{1}\end{exo}
+
+
+%Exercice 49
+\begin{exo}{
+ Huit musiciens mettent une heure et 30 minutes pour jouer une partition de musique.
+Combien de temps mettront 16 musiciens pour exécuter le même morceau~?
+}{1}\end{exo}
+
+%Exercice 50
+\begin{exo}{
+Dans une cantine scolaire, la masse de viande
+utilisée chaque jour est proportionnelle au
+nombre de repas préparés. Pour la préparation
+de 20 repas, 4 \tunit{}{\kg} de viande sont utilisés. Recopie et complète le tableau.
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.5}\setlength{\tabcolsep}{1cm}
+\begin{tabular}{|l|c|c|c|}\hline
+Nombre de repas & 20 & 150 &  \\\hline
+Quantité de viande (\tunit{}{\kg}) & & & 10 \\\hline
+\end{tabular}}
+\end{center}
+\vspace{-0.3cm}
+}{1}\end{exo}
+
+
+%Exercice 51
+\begin{exo}{
+Lors d'une braderie, un disquaire vend tous les
+CD au même prix. Pour deux CD, Nicolas a payé
+\tunit{13,50}{\fr}
+Trace un tableau de proportionnalité et réponds.
+\vspace{-0.3cm}
+\begin{tasks}[after-item-skip = 0.2em]
+\task  Quel prix Caroline va-t-elle payer si elle
+achète quatre CD~?
+\task  Quel prix Patrick va-t-il payer s'il achète trois
+CD~?
+\task Anne a payé \tunit{47,25}{\fr} Combien de CD
+a-t-elle achetés~?
+\end{tasks}
+\vspace{-0.3cm}
+}{1}\end{exo}
+
+
+%Exercice 52
+\begin{exo}{
+Pour faire un gâteau pour six personnes, il faut
+\tunit{240}{\g} de farine et 3 oeufs. Quelle quantité de
+farine et combien d'oeufs faut-il pour faire ce
+gâteau pour quatre personnes~?
+\vspace{-0.1cm}
+}{1}\end{exo}
+
+
+%Exercice 53
+\begin{exo}{
+Pour obtenir un verre de sirop, on a versé
+\tunit{8}{\centi\liter} de grenadine dans \tunit{30}{\centi\liter} d'eau.
+Quelle quantité de grenadine faut-il mettre dans
+\tunit{45}{\centi\liter} d'eau pour obtenir exactement le même
+goût~?
+\vspace{-0.1cm}
+}{1}\end{exo}
+
+
+%Exercice 54
+\begin{exo}{
+		Une moto consomme \tunit{4}{\liter} de carburant pour faire \tunit{100}{\km}.
+\vspace{-0.3cm}
+\begin{tasks}[after-item-skip = 0.2em]
+\task  Quelle est la consommation de cette moto
+	pour faire \tunit{350}{\km}~?
+\task Avec \tunit{9}{\liter} de carburant, quelle distance peut-elle parcourir~?
+\end{tasks}
+\vspace{-0.3cm}
+}{1}\end{exo}
+
+%Exercice 55
+\begin{exo}{
+		Pour \tunit{4,25}{\fr}, j'ai acheté cinq baguettes de
+		pain. Pour \tunit{5,95}{\fr}, j'aurais eu sept baguettes.
+Le prix payé est proportionnel au nombre de
+baguettes.
+Sans calculer le prix d'une baguette, calcule~:
+\vspace{-0.4cm}
+\begin{tasks}(2)[after-item-skip = 0.2em]
+\task le prix de douze baguettes ;
+\task le prix de deux baguettes ;
+\task le prix de trois baguettes ;
+\task le prix de quinze baguettes.
+\end{tasks}
+\vspace{-0.3cm}
+}{1}\end{exo}
+
+
+%Exercice 56
+\begin{exo}{
+Une chaîne d'embouteillage produit 1 200 bouteilles en 3 heures.
+\begin{tasks}[after-item-skip = 0.2em]
+\task Combien de bouteilles produit-elle en une heure~? En deux heures~?
+\task Combien de temps faut-il pour produire 6 000 bouteilles~?
+\end{tasks}
+}{1}\end{exo}
+
+
+
+\exol{FA20}{70}{1} % Problème prix/ quantité de marchandise (choco) recherche de la 4è proportionnelle
+
+\exol{FA22}{71}{1} % Recette 4è proportionnelle
+
+
+\exol{FA24}{71}{1}  % Prix /quantité 4è proportionnelle
+
+\exol{FA26}{72}{1} % Taux de change multiple !!!!!
+
+
+\exol{FA28}{72}{1} % Changement d'unité, retour à l'unité
+
+\exol{FA32}{73}{1} % Double proportionnalité. On cherche d'abord, la quantité d'essence qu'il a acheté, puis ensuite il on divise les 620 km par cette quantité d'essence.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Agrandissements %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resolu}
+	{Un agrandissement}{Un rectangle a une longueur de \tunit{8}{\cm} et une largeur de \tunit{6}{\cm}. Si on l'agrandit avec un coefficient de proportionnalité (facteur d'agrandissement) de 2,5,  quelles seront les dimensions de cet agrandissement du rectangle~?
+
+{\color{blue}
+Pour trouver les nouvelles dimensions du rectangles, il suffit de multiplier par le facteur d'agrandissement de 2,5 les dimensions initiales.
+
+\begin{tasks}(2)
+	\task $8\cdot 2,5= \tunit{20}{cm}$
+	\task $6\cdot 2,5=\tunit{15}{cm}$.
+\end{tasks}
+
+
+Ainsi les dimensions du nouveau rectangle sont \tunit{15}{\cm} pour la largeur et \tunit{20}{\cm} pour la longueur.
+}
+}{1}
+\end{resolu}
+
+\begin{exo} %Exercice17
+	{Un carré a une longueur de côté de \tunit{5}{\cm}. Si on l'agrandit avec un coefficient de proportionnalité de 2, quelle sera la nouvelle mesure de son côté~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 18
+	{Un carré a une longueur de côté de \tunit{8}{\cm}. Si on l'agrandit avec un coefficient de proportionnalité de 1,25, quelle sera sa nouvelle aire~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 19
+	{Un triangle a une base de \tunit{6}{\cm} et une hauteur de \tunit{8}{\cm}. Si on l'agrandit avec un coefficient  de proportionnalité de 3, quelle sera sa nouvelle aire~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 20
+	{Un rectangle a une longueur de \tunit{12}{\cm} et une largeur de \tunit{8}{\cm}. Si on l'agrandit avec un coefficient de proportionnalité de 1,5, quelle sera sa nouvelle longueur, sa nouvelle largeur et sa nouvelle aire~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 21
+	{Un trapèze a une grande base de \tunit{10}{\cm}, une petite base de \tunit{6}{\cm} et une hauteur de \tunit{4}{\cm}. Si on l'agrandit avec un coefficient de proportionnalité de 2, quelle sera sa nouvelle hauteur et sa nouvelle aire~?}{1}
+\end{exo}
+
+%\begin{resolu} 
+%	{Deux rectangles}{Les dimensions d'un rectangle sont de \tunit{6}{\cm} de longueur et \tunit{4}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{12}{\cm} et une largeur de \tunit{8}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+%
+%\begin{flushleft}
+%\psset{unit=0.6cm}
+%\begin{pspicture}(0,0)(16,12)
+%    % dessiner le premier rectangle
+%    \psframe(1,1)(7,5)
+%    % ajouter les dimensions sur les côtés
+%    \rput(0,3){\tunit{4}{\cm}}
+%    \rput(4,0.5){\tunit{6}{\cm}}
+%    % dessiner le deuxième rectangle
+%    \psframe(9,2)(21,10)
+%    % ajouter les dimensions sur les côtés
+%    \rput(7.9,6){\tunit{8}{\cm}}
+%    \rput(15,1.5){\tunit{12}{\cm}}
+%\end{pspicture}
+%\end{flushleft}
+%
+%{\color{blue}
+%Pour déterminer si le deuxième rectangle est un agrandissement du premier, il faut vérifier si les rapports des longueurs et des largeurs sont égaux. On a~:
+%
+%\[
+%	\frac{\tunit{12}{\cm}}{\tunit{6}{\cm}} = 2 \text{ et }
+%\frac{\tunit{8}{\cm}}{\tunit{4}{\cm}} = 2
+%\]
+%
+%Les rapports sont égaux et valent 2. Par conséquent, le deuxième rectangle est bien un agrandissement du premier.
+%
+%
+%}
+%
+%}{1}
+%\end{resolu}
+%
+%\begin{exo}
+%{Les dimensions du premier rectangle (en bleu) sont-elles proportionnelles aux dimensions du second rectangle (en rouge)~? Justifie ta réponse.
+%\begin{center}
+%\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+%\begin{pspicture*}(-4.46,-0.42)(10.3,4.84)
+%\pspolygon[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)(1.2,0.)(1.2,3.)
+%\pspolygon[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)(10.,4.)(10.,0.)
+%\psline[linewidth=2.pt,linecolor=blue](-2.8,3.)(-2.8,0.)
+%\psline[linewidth=2.pt,linecolor=blue](-2.8,0.)(1.2,0.)
+%\psline[linewidth=2.pt,linecolor=blue](1.2,0.)(1.2,3.)
+%\psline[linewidth=2.pt,linecolor=blue](1.2,3.)(-2.8,3.)
+%\psline[linewidth=2.pt,linecolor=red](4.,0.)(4.,4.)
+%\psline[linewidth=2.pt,linecolor=red](4.,4.)(10.,4.)
+%\psline[linewidth=2.pt,linecolor=red](10.,4.)(10.,0.)
+%\psline[linewidth=2.pt,linecolor=red](10.,0.)(4.,0.)
+%\rput[tl](-1.1,3.54){\blue{\tunit{4}{\cm}}}
+%\rput[tl](-4.4,1.64){\blue{\tunit{3,5}{\cm}}}
+%\rput[tl](6.62,4.46){\red{\tunit{6}{\cm}}}
+%\rput[tl](2.3,2.14){\red{\tunit{4,5}{cm}}}
+%\end{pspicture*}
+%\end{center}
+%}{1}
+%\end{exo}
+%
+%
+%\begin{exo} %Exercice 22
+%	{Les dimensions d'un rectangle sont de \tunit{5}{\cm} de longueur et \tunit{3}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{15}{\cm} et une largeur de \tunit{9}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+%}{1}
+%\end{exo}
+%
+%\begin{exo} %Exercice 23
+%	{Les dimensions d'un rectangle sont de \tunit{8}{\cm} de longueur et \tunit{5}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{40}{\cm} et une largeur de \tunit{25}{\cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+%
+%}{1}
+%\end{exo}
+%
+%\begin{exo} %Exercice 24
+%	{Les dimensions d'un rectangle sont de \tunit{9}{\cm} de longueur et \tunit{3}{\cm} de largeur. Un deuxième rectangle a une longueur de \tunit{18}{\cm} et une largeur de \tunit{9 }{cm}. Le deuxième rectangle est-il un agrandissement du premier~?
+%
+%}{1}
+%\end{exo}
+%
+%
+%\begin{exo} %Exercice 25
+%	{Les dimensions d'un triangle rectangle sont \tunit{3 }{cm}, \tunit{4}{cm} et \tunit{5}{cm} pour les côtés. Un deuxième triangle rectangle a des côtés mesurant \tunit{6}{\cm}, \tunit{8}{\cm} et \tunit{10}{\cm}. Le deuxième triangle est-il un agrandissement du premier~?
+%}{1}
+%\end{exo}
+%
+%
+%\begin{exo} %Exercice 26
+%	{Les dimensions d'un triangle rectangle sont \tunit{5}{\cm}, \tunit{12}{\cm} et \tunit{13}{\cm} pour les côtés. Un deuxième triangle rectangle a des côtés mesurant \tunit{10}{\cm}, \tunit{24}{\cm} et \tunit{28}{\cm}. Le deuxième triangle est-il un agrandissement du premier~?
+%}{1}
+%\end{exo}
+%
+%\exol{FA29}{73}{1} % Image non déformation 4e proportionnel
+%\exol{FA30}{73}{1} % Image non déformation 4e proportionnel
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%% Taux de change %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resolu}{Taux de change}
+{Si le taux de change entre l'euro et le dollar est de 1 euro pour 1,20 dollars, combien de dollars pouvez-vous obtenir en échange de 500 euros~?
+
+{\color{blue}
+
+Pour trouver le nombre de dollars qu'on obtient en échangeant des euros, on multiplie la quantité d'euros par le taux de change, ainsi~:
+$$ 500 \cdot 1,2 = 600$$}
+Donc, on obtient 600 dollars pour 500 euros.
+}{1}
+\end{resolu}
+
+
+
+\begin{exo} %Exercice 28
+{Si le taux de change entre la livre sterling et le dollar est de 1 livre sterling pour 0,75 dollar, combien de dollars pouvez-vous obtenir en échange de 200 livres sterling~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 29
+{Si le taux de change entre le dollar canadien et le dollar américain est de 1 dollar canadien pour 0,80 dollar américain, combien de dollars canadiens pouvez-vous obtenir en échange de 100 dollars américains~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 30
+{Si le taux de change entre le rand sud-africain et l'euro est de 1 rand sud-africain pour 18 euro, combien de rands pouvez-vous obtenir en échange de 150 euros~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 27
+{Si le taux de change entre le yen japonais et l'euro est de  1 euro pour 130 yens japonais, combien de yens pouvez-vous obtenir en échange de 50 euros~?}{1}
+\end{exo}
+
+\newpage
+\begin{exo} %Exercice 31
+{Si vous partez en vacances aux États-Unis et que vous voulez changer 1000 euros en dollars américains, combien de dollars obtiendrez-vous si le taux de change est de 1 euro pour 1,15 dollars~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 32
+{Si vous partez en vacances au Japon et que vous voulez changer 500 euros en yens japonais, combien de yens obtiendrez-vous si le taux de change est de 1 euro pour 130 yens japonais?
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 33
+{Si vous partez en vacances en Australie et que vous voulez changer 200 euros en dollars australiens, combien de dollars obtiendrez-vous si le taux de change est de 1 euro pour  1,60 dollars australiens~?
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 34
+{Si vous partez en vacances en Thaïlande et que vous voulez changer 300 euros en bahts thaïlandais, combien de bahts obtiendrez-vous si le taux de change est de 1 euro pour  38 bahts thaïlandais~?
+\vspace{-0.1cm}
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 35
+{Si vous partez en vacances en Grande-Bretagne et que vous voulez changer 1500 euros en livres sterling, combien de livres sterling obtiendrez-vous si le taux de change est de 1 euro pour 0,85 livres sterlings~?
+\vspace{-0.1cm}
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 36
+{Si vous partez en vacances au Canada et que vous voulez changer 400 euros en dollars canadiens, combien de dollars canadiens obtiendrez-vous si le taux de change est de  1 euro pour 1,45 dollars canadiens~?
+	\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+\begin{resolu}
+{Voyage de Leonardo}{Lors d'un voyage à Paris, Leonardo a changé 300 francs suisses à la banque. On lui a donné 285 euros. Quel est le taux de change entre le franc suisse et l'euro.
+
+{\color{blue}Pour déterminer le taux de change obtenu par Leonardo entre les francs suisses et les euros, nous pouvons utiliser le tableau de proportionnalité suivant.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Francs suisse (\tunit{}{\fr}) & Euros  \\ \hline
+300 & 285 \\ \hline
+1 & x \\ \hline
+\end{tabular}
+\end{center}
+
+En divisant 285 par 300, on obtient ainsi le taux de change entre les francs suisses et les euros. Dans cette banque, on donne pour 1 franc suisse 0,95 euros. 
+\vspace{-0.2cm}
+}
+
+
+}{1}
+\end{resolu}
+
+
+
+\begin{exo} %Exercice 37
+{Vous partez en voyage aux États-Unis et changez 250 euros en dollars américains. Vous obtenez 325 dollars en échange. Quel est le taux de change entre l'euro et le dollar américain~?
+\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 38
+{Vous êtes en vacances à Londres et vous voulez changer 100 livres sterling en euros. Vous obtenez 140 euros en échange. Quel est le taux de change entre la livre sterling et l'euro~?
+\vspace{-0.2cm}
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 39
+{Vous partez en voyage au Canada et vous voulez changer 400 dollars canadiens en euros. Vous obtenez 300 euros en échange. Quel est le taux de change entre le dollar canadien et l'euro~?
+\vspace{-0.2cm}
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 40
+{Vous êtes en vacances en Australie et vous voulez changer 75 euros en dollars australiens. Vous obtenez 100 dollars australiens en échange. Quel est le taux de change entre l'euro et le dollar australien~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 41
+{Vous partez en voyage au Japon et vous voulez changer 200 euros en yens japonais. Vous obtenez 22 000 yens japonais en échange. Quel est le taux de change entre l'euro et le yen japonais~?
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 42
+{Vous êtes en vacances au Mexique et vous voulez changer 500 pesos mexicains en livres sterling. Vous obtenez 25 livres sterling en échange. Quel est le taux de change entre le peso mexicain et la livre sterling~?
+}{1}
+\end{exo}
+
+
+\begin{resolu}
+{Voyage de Gabriella}{Lors d'un voyage à Londres, Gabriella a changé 270 francs suisses à la banque. On lui a donné 243 livres sterling. Avec cet argent, elle s'achète une jupe et un T-shirt pour 81 livres sterling. Combien a-t-elle dépensé en francs suisses~?
+
+
+{\color{blue}Pour déterminer combien Gabriella a dépensé en francs suisses, nous pouvons utiliser un tableau de proportionnalité pour calculer le taux de change entre les francs suisses et les livres sterling. Ensuite, nous pouvons utiliser ce taux pour convertir les 81 livres sterling dépensées en francs suisses.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Francs suisse (\tunit{}{\fr}) & Livres sterling (\tunit{}{GBP}) \\ \hline
+270 & 243 \\ \hline
+x & 81 \\ \hline
+\end{tabular}
+\end{center}}
+
+
+{\color{blue}
+Le coefficient de proportionnalité est le suivant~:
+\[
+k = \frac{\tunit{270}{\fr}}{\tunit{243}{GBP}}
+\]
+
+On peut maintenant utiliser ce coefficient pour convertir les 81 livres sterling en francs suisses~:
+\[
+x = 81\,\text{GBP} \cdot k
+\]
+\vspace{-0.3cm}
+En substituant la valeur de $k$~:
+\[
+	x = \tunit{81}{GBP} \cdot \frac{\tunit{270}{\fr}}{\tunit{243}{GBP}}
+\]
+
+En faisant le calcul, on obtient~:
+\vspace{-0.3cm}
+\[
+x = \tunit{90}{\fr}
+\]
+\vspace{-0.3cm}
+Gabriella a donc dépensé 90 francs suisses pour la jupe et le T-shirt.
+}
+
+
+ }{1}
+\end{resolu}
+
+\begin{exo} %Exercice 43
+{Lors d'un voyage en Espagne, Michel a changé 450 dollars américains à la banque. On lui a donné 360 euros. Avec cet argent, il s'achète un sac à main pour 90 euros. Combien a-t-il dépensé en dollars américains~?}{1}
+\end{exo}
+
+\begin{exo} %Exercice 44
+{Lors d'un voyage en Thaïlande, Marie a changé 900 euros à la banque. On lui a donné 40 500 bahts. Avec cet argent, elle s'achète un collier et une bague pour 14 700 bahts. Combien a-t-elle dépensé en euros~?
+\vspace{-0.5cm}
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 45
+{Lors d'un voyage en Australie, Lucas a changé 800 francs suisses à la banque. On lui a donné 600 dollars australiens. Avec cet argent, il s'achète une paire de chaussures pour 120 dollars australiens. Combien a-t-il dépensé en francs suisses~?
+\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+\begin{exo} %Exercice 46
+{Lors d'un voyage aux États-Unis, Sofia a changé 1000 livres sterling à la banque. On lui a donné 1200 dollars américains. Avec cet argent, elle s'achète une robe pour 180 dollars américains. Combien a-t-elle dépensé en livres sterling~?
+\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+
+\begin{exo} %Exercice 47
+{Lors d'un voyage au Japon, Pierre a changé 100 euros à la banque. On lui a donné 15000 yens. Avec cet argent, il s'achète une chemise pour 4000 yens. Combien a-t-il dépensé en euros~?
+\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+
+\exol{FA23}{71}{1} % Taux de change 4è proportionnelle
+
+\exol{FA31}{73}{1} % Trouver le taux de change, puis faire le change inverse
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+\exol{FA33}{74}{1} % Enfin une situation où la proportionnalité ne s'applique pas
+\exol{FA34}{74}{2} % Il faut trouver le total d'heure pour faire ensuite le calcul proportionnel. 
+
+\begin{exo}{
+Chaque jour sur le chemin de l'école, Karine et Sophie s'arrêtent dans un kiosque pour acheter une vignette auto-collante chacune.
+
+Karine ayant commencé sa collection la dernière, elle ne possède actuellement que 8 vignettes, alors que Sophie en possède déjà 24.
+
+Lorsque Karine possèdera 32 vignettes, combien en possédera Sophie~?
+\vspace{-0.3cm}
+}{1}
+\end{exo}
+
+\begin{exo}{
+		Dans une première bouteille, je verse \tunit{60}{\centi\liter} d'eau et \tunit{15}{\centi\liter} de sirop.
+
+		Dans une deuxième bouteille, je verse \tunit{90}{\centi\liter} d'eau et \tunit{45}{\centi\liter} de sirop.
+
+L'un des deux mélanges est-il plus sucré que l'autre~? Si oui, lequel~?}{1}
+\end{exo}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\exol{FA21}{71}{1} % Prix quantité 4è proportionnelle
+
+
+\exol{FA25}{72}{1} % Recette de crêpe, vérifier si le coefficient de proportionnalité est le même.
+\exol{FA27}{72}{1} % Comparaison de taux de change
+
+
+\end{document}

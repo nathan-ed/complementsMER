@@ -1,0 +1,87 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=true]{packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Espace}
+\newcommand{\serieName}{Représentation de solides}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Représentation d’un objet dans l’espace (page 142).
+\item Prisme droit (page 145).
+\item Parallélépipède rectangle ou pavé droit (page 146).
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+\begin{resolu}{Titre de l'exercice résolu}
+{Une consigne 
+\begin{enumerate}
+\item 75 et 234 sont des {\color{blue}nombres}.
+\end{enumerate}}{2}
+\end{resolu}
+
+\begin{exo}{
+Un exercice à faire dans le cahier.
+Pose et effectue les calculs suivants :
+\begin{enumerate}
+\begin{multicols}{2}
+\item $64,3+46,9+84,5 =$
+\item $1'059,3-774,6=$
+\item $4,73\cdot 24,7 =$
+\item $70,04 : 1,2 =$
+\end{multicols}
+\end{enumerate}
+\smallskip}{0}
+\end{exo}
+
+\begin{exoc}{
+	test
+}
+\end{exoc}
+
+\begin{exop}{
+Un exercice à faire sur la série.
+Pose et effectue les calculs suivants :
+\begin{enumerate}
+\begin{multicols}{2}
+\item $64,3+46,9+84,5 =$
+\item $1'059,3-774,6=$
+\item $4,73\cdot 24,7 =$
+\item $70,04 : 1,2 =$
+\end{multicols}
+\end{enumerate}
+\smallskip}{0}
+\end{exop}
+
+\begin{exof}{NO numéro}{33}{0}
+\end{exof}
+
+\begin{exol}{NO numéro}{38}{0}
+\end{exol}
+
+\begin{FLP}{67}{0}
+\end{FLP}
+
+\begin{QSJ}{78}{0}
+\end{QSJ}
+
+
+\end{document}

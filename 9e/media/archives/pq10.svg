@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.653179mm"
+   height="24.239019mm"
+   viewBox="0 0 30.653178 24.239018"
+   version="1.1"
+   id="svg3488"
+   sodipodi:docname="pq10.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3490"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="36.688752"
+     inkscape:cy="250.57637"
+     inkscape:window-width="1723"
+     inkscape:window-height="999"
+     inkscape:window-x="518"
+     inkscape:window-y="234"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3485" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.1881719,-14.434163)">
+    <polygon
+       class="cls-3"
+       points="344.55,183.72 375.64,170.95 416.29,170.95 384.93,183.72 "
+       id="polygon3174"
+       style="fill:#dcddde"
+       transform="matrix(0.35261979,0,0,0.35261979,-116.1307,-26.286436)" />
+    <polygon
+       class="cls-4"
+       points="344.55,183.72 384.93,183.72 430.48,115.98 "
+       id="polygon3176"
+       style="fill:none;stroke:#000000;stroke-linejoin:round"
+       transform="matrix(0.35261979,0,0,0.35261979,-116.1307,-26.286436)" />
+    <polygon
+       class="cls-4"
+       points="430.48,115.98 384.93,183.72 416.29,170.95 "
+       id="polygon3178"
+       style="fill:none;stroke:#000000;stroke-linejoin:round"
+       transform="matrix(0.35261979,0,0,0.35261979,-116.1307,-26.286436)" />
+    <line
+       class="cls-4"
+       x1="35.66507"
+       y1="14.610409"
+       x2="35.291294"
+       y2="14.984184"
+       id="line3180"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round" />
+    <line
+       class="cls-6"
+       x1="34.808197"
+       y1="15.467275"
+       x2="16.944489"
+       y2="33.376831"
+       id="line3182"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round;stroke-dasharray:1.02612, 0.684082" />
+    <polyline
+       class="cls-4"
+       points="376.7 169.88 375.64 170.95 377.14 170.95"
+       id="polyline3184"
+       style="fill:none;stroke:#000000;stroke-linejoin:round"
+       transform="matrix(0.35261979,0,0,0.35261979,-116.1307,-26.286436)" />
+    <line
+       class="cls-7"
+       x1="17.57567"
+       y1="33.993916"
+       x2="29.772787"
+       y2="33.993916"
+       id="line3186"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round;stroke-dasharray:1.07549, 0.715818" />
+    <line
+       class="cls-4"
+       x1="30.132465"
+       y1="33.993916"
+       x2="30.661396"
+       y2="33.993916"
+       id="line3188"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round" />
+    <line
+       class="cls-4"
+       x1="5.3609257"
+       y1="38.496872"
+       x2="5.8510613"
+       y2="38.295876"
+       id="line3190"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round" />
+    <line
+       class="cls-8"
+       x1="6.4752054"
+       y1="38.038464"
+       x2="15.526949"
+       y2="34.321854"
+       id="line3192"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round;stroke-dasharray:1.01202, 0.673504" />
+    <line
+       class="cls-4"
+       x1="15.837256"
+       y1="34.194912"
+       x2="16.327404"
+       y2="33.993916"
+       id="line3194"
+       style="fill:none;stroke:#000000;stroke-width:0.35262;stroke-linejoin:round" />
+  </g>
+</svg>

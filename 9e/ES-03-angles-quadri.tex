@@ -1,0 +1,567 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Espace}
+\newcommand{\serieName}{Somme des angles d'un quadrilatère}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Somme des angles d'un triangle (page 116)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{exo}{
+Pour chaque triangle, calcule la valeur de l'angle manquant désigné par une lettre grecque.
+\begin{tasks}(2)
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,0) ;
+                \coordinate (C) at (3,2) ;
+                \pic [draw, -, "$\alpha$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\ang{30}$", angle eccentricity=1.9]{angle = B--A--C};
+                \pic [draw, -, "$\ang{50}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+    
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,-1) ;
+                \coordinate (C) at (3,1) ;
+                \pic [draw, -, "$\ang{72}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\beta$", angle eccentricity=1.5]{angle = B--A--C};
+                \pic [draw, -, "$\ang{32}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+    
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (3,0) ;
+                \coordinate (C) at (4,2) ;
+                \pic [draw, -, "$\ang{110}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\ang{9}$", angle eccentricity=1.9]{angle = B--A--C};
+                \pic [draw, -, "$\gamma$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,-1) ;
+                \coordinate (B) at (4,0) ;
+                \coordinate (C) at (0,2) ;
+                \pic [draw, -, "$\delta$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\ang{90}$", angle eccentricity=1.5]{angle = B--A--C};
+                \pic [draw, -, "$\ang{45}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,2) ;
+                \coordinate (B) at (4,2) ;
+                \coordinate (C) at (3,0) ;
+                \pic [draw, -, "$\epsilon$", angle eccentricity=1.5]{angle = A--B--C};
+                \pic [draw, -, "$\ang{17}$", angle eccentricity=1.8]{angle = C--A--B};
+                \pic [draw, -, "$\ang{35}$", angle eccentricity=1.5]{angle = B--C--A};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+    
+    \task ~\\
+    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,-1) ;
+                \coordinate (C) at (1,2
+                 ) ;
+                \pic [draw, -, "$\ang{23}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\lambda$", angle eccentricity=1.5]{angle = B--A--C};
+                \pic [draw, -, "$\ang{102}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+\end{tasks}
+}{1} 
+\end{exo}
+
+\newpage
+
+\begin{exo}{
+Pour chaque triangle, calcule la valeur du ou des angle(s) manquant(s).
+\begin{tasks}(2)
+    \task ~\\    
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,0) ;
+                \coordinate (C) at (4,2) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+                \tkzMarkRightAngle(C,B,A) ;
+                %\pic [draw, -, "$\alpha$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$?$", angle eccentricity=2]{angle = B--A--C};
+                \pic [draw, -, "$\ang{50}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture} 
+            
+        %$\widehat{BAC}=\ligne{3}$
+    
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,2) ;
+                \coordinate (B) at (4,0) ;
+                \coordinate (C) at (4,2) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+                %\tkzMarkRightAngle(A,C,B) ;
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = A--C--B};
+                \pic [draw, -, "$\ang{45}$", angle eccentricity=1.8]{angle = B--A--C};
+                \pic [draw, -, "$\ang{45}$", angle eccentricity=1.5]{angle = C--B--A};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+            
+        %$\widehat{ACB}=\ligne{3}$
+
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,0) ;
+                \coordinate (C) at (0,2) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+                \tkzMarkRightAngle(B,A,C) ;
+                \pic [draw, -, "$?$", angle eccentricity=2]{angle = C--B--A};
+                \pic [draw, -, "$\ang{50}$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)-- (B) -- (C) -- cycle;
+            }
+            \end{tikzpicture}
+            
+        %$\widehat{CBA}=\ligne{3}$
+
+     \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (3,0) ;
+                \coordinate (C) at (4,2) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+                \pic [draw, -, "$\ang{110}$", angle eccentricity=1.3]{angle = C--B--A};
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = B--A--C};
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)--node[sloped]{$||$} (B) --node[sloped]{$||$} (C) -- cycle;
+            }
+            \end{tikzpicture}
+            
+        %$\widehat{BAC}=\ligne{3}$ \\ et $\widehat{ACB}=\ligne{3}$
+            
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (3,-1) ;
+                \coordinate (C) at (1,3) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+                \tkzMarkRightAngle(B,A,C) ;
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = C--B--A};
+                %\pic [draw, -, "$\beta$", angle eccentricity=1.5]{angle = B--A--C};
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = A--C--B};
+                \draw (A)--node[sloped]{$||$} (B) -- (C) --node[sloped]{$||$} cycle;
+            }
+            \end{tikzpicture}
+            
+
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0.5,2) ;
+                \coordinate (B) at (4.5,0) ;
+                \coordinate (C) at (4,3) ;
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above right] at (C) {C};
+
+                %\tkzMarkRightAngle(A,C,B) ;
+                \pic [draw, -, "$?$", angle eccentricity=1.5]{angle = A--C--B};
+                \pic [draw, -, "$\ang{10}$", angle eccentricity=1.8]{angle = B--A--C};
+                %\pic [draw, -, "", angle eccentricity=1.5]{angle = C--B--A};
+                \draw (A)-- (B) --node[sloped]{$||$} (C) --node[sloped]{$||$} cycle;
+            }
+            \end{tikzpicture}
+            
+\end{tasks}
+}{1}
+\end{exo}
+
+
+\begin{exof}{ES90}{139}{2}
+\end{exof}
+
+\begin{exol}{ES93}{114}{1}
+\end{exol}
+
+\newpage
+
+\begin{resolu}{Calcul de l'angle manquant d'un quadrilatère}
+{Trouve la mesure de l'angle $\alpha$ du quadrilatère ci-dessous. \\
+
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+	{\scriptsize
+    \draw (0,0) -- (1,-3) -- (5,2) -- (1,1) -- cycle ;
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (1,-3);
+    \coordinate (C) at (5,2);
+    \coordinate (D) at (1,1);
+
+	\pic [draw, -, "$\ang{45}$", angle eccentricity=1.8]{angle = C--B--A};
+	\pic [draw, -, "$\ang{120}$", angle eccentricity=2]{angle = B--A--D};
+	\pic [draw, -, "$\alpha$", angle eccentricity=1.5]{angle = A--D--C};
+	\pic [draw, -, "$\ang{30}$", angle eccentricity=1.8]{angle = D--C--B};
+    }
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+{\color{blue} Puisque la somme des angles d'un quadrilatère convexe vaut $360^\circ$, alors : 
+\begin{align*}
+    45^\circ+30^\circ+120^\circ+\alpha&=360^\circ \\
+    195^\circ+\alpha&=360^\circ \\
+    \alpha&=360^\circ-195^\circ\\
+    \alpha&=165^\circ
+\end{align*}}
+\end{minipage}
+}{0}
+\end{resolu}
+
+
+
+\begin{exo}{
+Pour chaque quadrilatère, calcule la valeur de l'angle manquant.
+\begin{tasks}(2)
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,0) ;
+                \coordinate (B) at (4,0.1) ;
+                \coordinate (C) at (3,1.8) ;
+                \coordinate (D) at (0.5,2) ;
+                \node[below left ] at (A) {A} ;
+                \node[below right] at (B) {B} ;
+                \node[above right] at (C) {C} ;
+                \node[above left] at (D) {D} ;
+                \pic [draw, -, "$\alpha$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\ang{90}$", angle eccentricity=1.5]{angle = D--C--B};
+                \pic [draw, -, "$\ang{15}$", angle eccentricity=1.5]{angle = A--D--C};
+                \pic [draw, -, "$\ang{25}$", angle eccentricity=1.5]{angle = B--A--D};
+                \draw (A)-- (B) -- (C) -- (D) -- cycle;
+            }
+            \end{tikzpicture}
+            
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,-1) ;
+                \coordinate (B) at (4,0.1) ;
+                \coordinate (C) at (3,2) ;
+                \coordinate (D) at (0.5,2) ;
+                \node[below left ] at (A) {A} ;
+                \node[below right] at (B) {B} ;
+                \node[above right] at (C) {C} ;
+                \node[above left] at (D) {D} ;
+                \pic [draw, -, "$\ang{37}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\beta$", angle eccentricity=1.5]{angle = D--C--B};
+                \pic [draw, -, "$\ang{53}$", angle eccentricity=1.5]{angle = A--D--C};
+                \pic [draw, -, "$\ang{19}$", angle eccentricity=1.5]{angle = B--A--D};
+                \draw (A)-- (B) -- (C) -- (D) -- cycle;
+            }
+            \end{tikzpicture}
+            
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (-1,0) ;
+                \coordinate (B) at (4,0.1) ;
+                \coordinate (C) at (3,2) ;
+                \coordinate (D) at (-0.5,1.8) ;
+                \node[below left ] at (A) {A} ;
+                \node[below right] at (B) {B} ;
+                \node[above right] at (C) {C} ;
+                \node[above left] at (D) {D} ;
+                \pic [draw, -, "$\ang{81}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\ang{12}$", angle eccentricity=1.5]{angle = D--C--B};
+                \pic [draw, -, "$\gamma$", angle eccentricity=1.5]{angle = A--D--C};
+                \pic [draw, -, "$\ang{50}$", angle eccentricity=1.5]{angle = B--A--D};
+                \draw (A)-- (B) -- (C) -- (D) -- cycle;
+            }
+            \end{tikzpicture}
+            
+    \task ~\\
+            \begin{tikzpicture}
+            {\scriptsize
+                \coordinate (A) at (0,1) ;
+                \coordinate (B) at (4,0.1) ;
+                \coordinate (C) at (3,1.8) ;
+                \coordinate (D) at (0,2.5) ;
+                \node[below left ] at (A) {A} ;
+                \node[below right] at (B) {B} ;
+                \node[above right] at (C) {C} ;
+                \node[above left] at (D) {D} ;
+                \pic [draw, -, "$\ang{17}$", angle eccentricity=1.5]{angle = C--B--A};
+                \pic [draw, -, "$\delta$", angle eccentricity=1.5]{angle = D--C--B};
+                \pic [draw, -, "$\ang{23}$", angle eccentricity=1.5]{angle = A--D--C};
+                \pic [draw, -, "$\ang{70}$", angle eccentricity=1.5]{angle = B--A--D};
+                \draw (A)-- (B) -- (C) -- (D) -- cycle;
+            }
+            \end{tikzpicture}
+\end{tasks}
+}{1} 
+\end{exo}
+
+
+\begin{exol}{ES94}{114}{2}
+\end{exol}
+
+
+\begin{exol}{ES95}{115}{1}
+\end{exol}
+
+
+\begin{exo}{
+$ABCD$ est un parallélogramme. Dans chaque cas, calcule la mesure de l'angle demandé (indiqué par une lettre grecque).
+\begin{tasks}(2)
+    \task %$\alpha=?$
+
+	    \begin{tikzpicture}[scale=1.2]
+        {\scriptsize
+        \coordinate (A) at (0,-0.5) ;
+        \coordinate (B) at (3,-0.5) ;
+        \coordinate (C) at (4,2) ;
+        \coordinate (D) at (1,2) ;
+        
+        \draw (A) node[below left]{A} ;
+        \draw (B) node[below]{B} ;
+        \draw (C) node[above right]{C} ;
+        \draw (D) node[above]{D} ;
+
+        \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+        \draw[dashed] (B) -- (D) ;
+
+	\pic [draw, -, "$\alpha$", angle eccentricity=1.5]{angle = B--A--D};
+        
+\pic [draw, -, "$\ang{78}$", angle eccentricity=1.5]{angle = C--B--D};
+
+\pic [draw, -, "$\ang{44}$", angle eccentricity=1.7]{angle = B--D--C};
+
+        }
+    \end{tikzpicture}
+
+    \task %$\beta=?$
+
+	    \begin{tikzpicture}[scale=1.5]
+        {\scriptsize
+        \coordinate (A) at (0,0) ;
+        \coordinate (B) at (3,0) ;
+        \coordinate (C) at (4,2) ;
+        \coordinate (D) at (1,2) ;
+        \coordinate (E) at (2,4) ;
+        
+        \draw (A) node[below left]{A} ;
+        \draw (B) node[below]{B} ;
+        \draw (C) node[above right]{C} ;
+        \draw (D) node[left]{D} ;
+        \draw (E) node[above]{E} ;
+        
+        \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+        \draw[] (C) -- (E) -- (D) ;
+        
+\pic [draw, -, "$\beta$", angle eccentricity=1.5]{angle = C--B--A};
+\pic [draw, -, "$\ang{33}$", angle eccentricity=1.6]{angle = E--C--D};
+\pic [draw, -, "$\ang{79}$", angle eccentricity=1.7]{angle = C--D--E};
+        }
+    \end{tikzpicture}
+
+    \task %$\gamma=?$
+
+	    \begin{tikzpicture}[scale=1.5]
+        {\scriptsize
+        \coordinate (A) at (0,-1) ;
+        \coordinate (B) at (3,-1) ;
+        \coordinate (C) at (2,1) ;
+        \coordinate (D) at (-1,1) ;
+        %\coordinate (E) at (2,4) ;
+        
+        \draw (A) node[below left]{A} ;
+        \draw (B) node[below right]{B} ;
+        \draw (C) node[above right]{C} ;
+        \draw (D) node[above left]{D} ;
+        %\draw (E) node[above]{E} ;
+        
+        \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+        \draw[dashed] (D) -- (B) ;
+        
+\pic [draw, -, "$\gamma$", angle eccentricity=1.5]{angle = C--B--D};
+\pic [draw, -, "$\ang{26}$", angle eccentricity=2.2]{angle = B--D--C};
+\pic [draw, -, "$\ang{65}$", angle eccentricity=1.6]{angle = B--A--D};
+        }
+    \end{tikzpicture} \vspace{6mm} \\
+
+    \task %$\delta=?$
+
+	    \begin{tikzpicture}[scale=1.5]
+        {\scriptsize
+        \coordinate (A) at (0,0) ;
+        \coordinate (B) at (2,0) ;
+        \coordinate (C) at (3,3) ;
+        \coordinate (D) at (1,3) ;
+        %\coordinate (E) at (2,4) ;
+        
+        \draw (A) node[below left]{A} ;
+        \draw (B) node[below right]{B} ;
+        \draw (C) node[above right]{C} ;
+        \draw (D) node[above left]{D} ;
+        %\draw (E) node[above]{E} ;
+        
+        \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+        \draw[dashed] (D) -- (B) ;
+        \draw (2.4,1.6) -- (2.6,1.5) ;
+        \draw (2.45,1.7) -- (2.65,1.6) ;
+
+        \draw (1.4,1.4) -- (1.6,1.5) ;
+        \draw (1.4,1.5) -- (1.6,1.6) ;
+        
+	\pic [draw, -, "$\ang{20}$", angle eccentricity=2.1]{angle = C--B--D};
+\pic [draw, -, "$\delta$", angle eccentricity=1.5]{angle = B--A--D};
+        }
+    \end{tikzpicture}
+    
+\end{tasks}
+}{2}
+\end{exo}
+
+\newpage
+\begin{exo}{Calcule la mesure de l'angle $\alpha$. \\
+\begin{center}
+	\begin{tikzpicture}[scale=1.5]
+        {\scriptsize
+\coordinate (A) at (0,0) ;
+\coordinate (B) at (5,0) ;
+\coordinate (C) at (3,2) ;
+\coordinate (D) at (0,2) ;
+
+\draw (A) node[below]{A} ;
+\draw (B) node[below]{B} ;
+\draw (C) node[above]{C} ;
+\draw (D) node[above]{D} ;
+
+    \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+    \draw[dashed] (A) -- (C) ;
+    \draw (0.2,0) -- (0.2,0.2) -- (0,0.2) ;
+    \draw (0,1.8) -- (0.2,1.8) -- (0.2,2) ;
+	\pic [draw, -, "$\ang{40}$", angle eccentricity=1.8]{angle = C--B--A};
+	\pic [draw, -, "$\ang{106}$", angle eccentricity=1.8]{angle = A--C--B};
+	\pic [draw, -, "$\alpha$", angle eccentricity=2.1]{angle = D--C--A};
+}
+\end{tikzpicture}
+\end{center}
+
+
+}{2}
+\end{exo}
+
+
+\begin{exo}{
+Calcule la mesure de l'angle $\beta$. \\
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+	{\scriptsize
+    \coordinate (A) at (0,0) ;
+    \coordinate (B) at (2,-1) ;
+    \coordinate (C) at (6,0) ;
+    \coordinate (D) at (3,2) ;
+    \coordinate (E) at (10,1) ;
+    \coordinate (F) at (9,-2) ;
+    
+    %\draw (A) node[below]{A} ;
+    %\draw (B) node[below]{B} ;
+    %\draw (C) node[above]{C} ;
+    %\draw (D) node[above]{D} ;
+    %\draw (E) node{E} ;
+    %\draw (F) node{F} ;
+    
+    \draw (A) -- (B) -- (C) -- (D) -- cycle ;
+    \draw (C) -- (E) -- (F) -- cycle ;
+    
+	\pic [draw, -, "$\beta$", angle eccentricity=1.7]{angle = B--A--D};
+	\pic [draw, -, "$\ang{132}$", angle eccentricity=1.7]{angle = C--B--A};
+	\pic [draw, -, "$\ang{113}$", angle eccentricity=1.7]{angle = A--D--C};
+	\pic [draw, -, "$\ang{63}$", angle eccentricity=1.8]{angle = F--C--E};
+} 
+\end{tikzpicture}
+\end{center}
+}{2}
+\end{exo}
+
+
+
+
+\end{document}
+

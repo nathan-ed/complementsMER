@@ -1,0 +1,331 @@
+ \documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{ppmc et pgdc}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Multiple commun, ppmc (page 15)
+\item Diviseur commun, pgdc (page 16)
+
+}
+\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exol}{NO54}{21}{2}
+\end{exol}
+\begin{exol}{NO55}{22}{2}
+\end{exol}
+\begin{exol}{NO56}{22}{3}
+\end{exol}
+\begin{exol}{NO57}{22}{2}
+\end{exol}
+\begin{exol}{NO58}{22}{2}
+\end{exol}
+\begin{exol}{NO59}{22}{3}
+\end{exol}
+
+
+%----------------------------------------------------------------
+
+	\begin{qmoodle}{pgdc et ppmc -- rappel}{2}{
+	\begin{center}	
+		Q-pgdc
+
+\includegraphics[scale=1]{media/qr/nepgdc1}
+
+\tiny{{https://edu.ge.ch/qr/nepgdc1}}
+
+\end{center}
+	\begin{center}	
+		Q-ppmc
+
+\includegraphics[scale=1]{media/qr/neppmc1}
+
+\tiny{{https://edu.ge.ch/qr/neppmc1}}
+\end{center}
+}
+\end{qmoodle}
+
+\begin{exo}{
+    Voici les listes des diviseurs et des premiers multiples de 63 et de 84.  
+    
+    \hspace*{1cm} $M_{63}=\{0~;~63~;~126~;~189~;~252~;~315~;~378~;~441~etc.\}$ 
+
+    \hspace*{1cm} $M_{84}=\{0~;~84~;~168~;~252~;~336~;~420~;~504~;~588~etc.\}$ 
+
+    \hspace*{1cm} $D_{63}=\{1~;~3~;~7~;~9~;~21~;~63\}$
+
+    \hspace*{1cm} $D_{84}=\{1~;~2~;~3~;~4~;~6~;~7~;~12~;~14~;~21~;~28~;~42~;~84\}$ 
+
+    En t'aidant des listes ci-dessus, résous les problèmes suivants. Indique si tu utilises le ppmc ou le pgdc.
+    
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+	    \task Un charpentier a deux poutres, l'une de \tunit{84}{\m} et l'autre de \tunit{63}{\m}. Il veut les partager en morceaux aussi longs que possible, tous de même longueur et dont la mesure est un nombre entier de centimètres.
+
+		    Quelle sera la longueur des morceaux~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Les morceaux mesureront \ligne{2} mètres. 
+
+    
+        \task Vous devez ranger un lot de cartes postales en paquets.  Quand vous faites des paquets de 84 ou de 63 cartes postales, il ne reste aucune carte.  Quel est le plus petit nombre possible de cartes postales dans ce lot~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Il y a au minimum \ligne{2} cartes postales dans ce lot.
+
+    \end{tasks} 
+}{2}\end{exo}
+
+
+
+
+\begin{exo}{
+    Voici les listes des diviseurs et des premiers multiples de 24 et de 30. 
+    
+    \hspace*{1cm} $M_{24}=\{0~;~24~;~48~;~72~;~96~;~120~;~144~;~168~etc.\}$ 
+
+    \hspace*{1cm} $M_{30}=\{0~;~30~;~60~;~90~;~120~;~150~;~180~;~210~etc.\}$
+
+    \hspace*{1cm} $D_{24}=\{1~;~2~;~3~;~4~;~6~;~8~;~12~;~24\}$ 
+
+    \hspace*{1cm} $D_{30}=\{1~;~2~;~3~;~5~;~6~;~10~;~15~;~30\}$ 
+
+    En t'aidant des listes ci-dessus, résous les problèmes suivants. Indique si tu utilises le ppmc ou le pgdc. 
+    
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Fanny et Laure sont dans deux classes différentes. Le professeur de Laure donne toujours des examens avec 30 questions, tandis que le professeur de Fanny donne toujours des examens avec 24 questions. Même si les deux classes ont un nombre différent d'examens, leurs professeurs leur ont dit que le nombre total de questions d'examens par an est le même pour les deux classes.
+
+		Quel est le nombre minimal de questions d'examens que Fanny et Laure doivent s'attendre à avoir par an~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Elles auront au minimum \ligne{2} questions par an.
+    
+        \task Shadya a acheté un paquet de 24 cahiers, ainsi que 30 crayons. Elle veut utiliser tous les cahiers et tous les crayons pour composer des paquets identiques de fourniture pour ses camarades de classe. 
+
+		Quel est le plus grand nombre de paquets identiques qu'elle peut faire avec toutes ces fournitures~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Elle peut faire au maximum \ligne{2} paquets identiques contenant chacun \ligne{2} cahiers et \ligne{2} crayons.
+
+    \end{tasks} 
+}{2}\end{exo}
+
+
+\begin{exo}{ %pgdc
+    Un fleuriste dispose de 144 tulipes et 120 roses. Il veut constituer le maximum de bouquets identiques en utilisant toutes ses fleurs.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quel est le nombre de bouquets qu'il pourra constituer~?
+        \task Quelle est la composition de chaque bouquet~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+\vfill
+
+
+\begin{exo}{ %ppmc
+    Nicole joue au volleyball tous les 6 jours et Gauthier tous les 7 jours. 
+
+    Si Nicole et Gauthier sont allés au volleyball ensemble aujourd'hui, dans combien de temps vont-ils de nouveau jouer au volleyball le même jour~? 
+}{1}\end{exo}
+
+\vfill
+
+
+\begin{exo}{ %pgdc
+    Pour la fête d'Halloween, Esaïe a acheté 200 bonbons et 300 chocolats. Il veux répartir toutes ses friandises également dans le plus grand nombre de sacs possibles.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task De combien de sacs aura-t-il besoin~?
+        \task Combien de friandises de chaque sorte y aura-t-il dans chaque sac~?
+    \end{tasks}
+}{2}\end{exo}
+
+
+\vfill
+\begin{exo}{ %pgdc
+    Dalia a un champ rectangulaire qu'elle veut clôturer. Les dimensions du champ sont 39 m sur 135 m. Elle veut planter des poteaux à une distance régulière supérieure à 2 m et mesurée par un nombre entier de mètres. De plus, elle place un poteau à chaque coin.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quelle est la distance entre deux poteaux~?
+        \task  Combien de poteaux doit-elle planter~?
+    \end{tasks}
+
+}{3}\end{exo}
+\vfill
+
+
+\newpage
+
+\begin{exo}{ %ppmc
+    Votre station de radio préférée organise son grand jeu annuel dans lequel on peut gagner des téléphones portables et des places de concerts. Pendant une minute, elle offre un téléphone tous les 5 appels et des places de concert tous les 7 appels. 
+
+    Vous êtes le premier auditeur à gagner un téléphone portable et des places de concerts lors du même appel ! 
+
+    En quelle position avez-vous appelé~? 
+}{1}\end{exo}
+
+
+
+
+
+
+
+
+\begin{exo}{ %ppmc
+    La maman de Isaïah achète des saucisses et des pains à hot-dogs pour le pique-nique. Les saucisses sont vendues par paquets de 12 et les pains par paquets de 9.
+
+    Le magasin ne vend que des paquets complets et la maman de Isaïah veut acheter autant de saucisses que de pains.
+
+    Combien de saucisses au minimum la maman de Isaïah doit-elle acheter~? 
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %pgdc
+    Darell a 108 billes rouges et 135 billes noires. Il veut faire des paquets de billes de sorte que tous les paquets contiennent le même nombre de billes rouges et noires.
+    De plus, toutes les billes rouges et toutes les billes noires doivent être utilisées.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quel nombre maximal de paquets pourra t-il réaliser~?
+        \task Combien y aura t-il de billes rouges et de billes noires dans chaque paquet~?
+    \end{tasks}
+}{2}\end{exo}
+
+
+\begin{exo}{ %pgdc
+    On répartit en paquets un lot de 161 crayons rouges et un lot de 133 crayons noirs de façon que tous les paquets contiennent le même nombre de crayons et que tous les crayons soient répartis.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Combien y a t-il de crayons dans chaque paquet~?
+        \task Quel est le nombre de paquets de crayons de chaque couleur~?
+    \end{tasks}
+}{2}\end{exo}
+
+
+
+\begin{exo}{  %pgdc
+    Une pièce rectangulaire de 5,40 m de long et de 3 m de large est recouverte  par des dalles de moquette carrées, toutes identiques et sans découpe.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quelle est la mesure du côté de chacune des dalles, sachant que l'on veut le moins de dalles possible~?
+        \task Calcule alors le nombre de dalles utilisées.
+    \end{tasks}
+}{3}\end{exo}
+
+
+\begin{exo}{ %ppmc
+    Charlotte et Malika jouent au bowling avec des quilles en plastique dans le salon de Charlotte. 
+
+    De façon étonnante, Charlotte fait tomber 8 quilles par tir et Malika 9 quilles par tir. A la fin du jeu, elles ont fait tomber le même nombre de quilles.
+
+    Combien de quilles chacune ont-elles fait tomber au total~? 
+}{1}\end{exo}
+
+
+\begin{exo}{ %ppmc
+    Simon et Lénaïc ont fait leur lessive aujourd'hui. Or Simon fait sa lessive tous les 6 jours et Lénaïc tous les 9 jours. 
+
+    Combien se passera-t-il de jours avant que Simon et Lénaïc ne refassent leur lessive le même jour~? 
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %pgdc
+    Il y a $32$ attaquants et $80$ défenseurs dans le club de basketball de Kingudi . 
+
+     Elle doit répartir tous les joueurs en équipes qui comprennent le même nombre d'attaquants et le même nombre de défenseurs. 
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quel est le nombre maximal d'équipes que peut former Kingudi~?
+        \task Combien d'attaquants et de défenseurs y aura-t-il dans chaque équipe~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{  %pgdc
+    Pour les fêtes de Pâques, un chocolatier veut confectionner des boîtes contenant le même nombre de truffes   de différentes variétés de chocolat. 
+
+    Il dispose de 630 truffes au chocolat noir, 180 truffes à la noisette, 135 truffes au caramel et 225 truffes à la praline. 
+
+    Quel est le nombre maximum de boîtes qu'il peut réaliser~?
+}{2}\end{exo}
+
+
+
+
+\begin{exo}{ %ppmc
+    Deux des lampes du stade local clignotent. Elles viennent tout juste de clignoter au même moment. Une des lampes s'allume toutes les  6 secondes et l'autre s'allume toutes les 7 secondes.
+
+    Combien de secondes doit-on attendre pour que les deux lampes s'allument de nouveau au même moment~? 
+}{1}\end{exo}
+
+
+
+\begin{exo}{ %pgdc
+		Un artiste dispose d'une toile de \tunit{60}{\cm} sur \tunit{48}{\cm}. Il veut y peindre un pavage composé de carrés identiques mais de couleurs différentes. La longueur du côté de ces carrés est un nombre entier. 
+
+    Quelle est la plus grande longueur possible pour ces côtés (en cm)~?
+}{1}\end{exo}
+
+
+
+\begin{exo}{ %pgdc
+		Carine décide de carreler son couloir de \tunit{5,18}{\m} sur \tunit{1,85}{\m} avec des carreaux de forme carrée. Carine souhaite poser des carreaux les plus grand possible, sans les découper.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Quelle sera la mesure d'un carreau~?
+        \task Combien devra-t-elle en poser au total~?
+    \end{tasks}
+}{3}\end{exo}
+
+
+
+
+
+
+
+\begin{exo}{ %ppmc
+    La sirène du village est déclenchée tous les 15 jours pour vérifier son bon fonctionnement. 
+
+    Les cloches de l'église du village sonnent tous les 7 jours, le dimanche. 
+
+    La sirène de la caserne des pompiers émet 3 bips tous les 21 jours. Ces trois évènements ont eu lieu ce dimanche. 
+
+    Au bout de combien de jours se reproduiront-ils le même jour~?
+}{2}\end{exo}
+
+
+\begin{exo}{ %pgdc
+    Un philatéliste possède 1631 timbres suisses et 932 timbres étrangers. Il souhaite vendre toute sa collection en réalisant des lots identiques, c'est à dire comportant le même nombre de timbres suisses et le même nombre de timbres étrangers.
+    \begin{tasks}[label-width = 1em ,item-indent = 2em ,before-skip = -0.4em, after-skip = -0.4em , label-offset=0.666em,after-item-skip = 0.3em]
+        \task Calcule le nombre maximum de lots qu'il pourra réaliser.
+        \task Combien y-aura-t-il, dans ce cas, de timbres suisses et étrangers par lot~?
+    \end{tasks}
+}{3}\end{exo}
+
+
+
+\end{document}
+

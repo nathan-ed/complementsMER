@@ -1,0 +1,491 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%\usepackage{arev}
+%\usepackage{sansmathfonts}
+% - Simplification et amplification de fractions
+% - Fractions irréductibles
+% - Ecriture décimale à fraction irréductible
+% - Fractions équivalentes
+% - Comparaison de fractions
+
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Fractions équivalentes}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Définition d'une fraction (page 27)
+\item Passage d'une écriture fractionnaire à une écriture décimale (page 28)
+\item Passer d'une écriture décimale à une écriture fractionnaire (page 28)
+	\item Amplification et simplification d'une fraction (page 29)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{exop}{
+Complète en fonction des représentations graphiques.
+
+\vspace{-1cm}
+\begin{tasks}[after-item-skip = -0.4em](3)
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{3}{4} && \vfracrect[xscale=3]{9}{12}\\
+	\emptyfrac&=&\emptyfrac 
+\end{matrix}$
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{10}{20} && \vfracrect[xscale=3]{1}{2}\\
+	\emptyfrac&=&\emptyfrac 
+\end{matrix}$
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{3}{9} && \vfracrect[xscale=3]{1}{3}\\
+	\emptyfrac&=&\emptyfrac 
+\end{matrix}$
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{4}{4} && \vfracrect[xscale=3]{16}{16}\\
+	\emptyfrac&=&\emptyfrac
+\end{matrix}$
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{1}{5} && \vfracrect[xscale=3]{3}{15}\\
+	\emptyfrac&=&\emptyfrac
+\end{matrix}$
+	\task $\begin{matrix}[2]\vfracrect[xscale=3]{6}{24} && \vfracrect[xscale=3]{1}{4}\\
+	\emptyfrac&=&\emptyfrac 
+\end{matrix}$
+\end{tasks}
+}{1}\end{exop}
+
+
+
+\begin{exof}{NO173}{59}{1}
+\end{exof}
+\begin{exof}{NO174}{60}{1}
+\end{exof}
+
+\begin{exop}{
+Complète afin d'obtenir une égalité.
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1em](3)
+    \task $\dfrac{2}{7}=\dfrac{\ldots\ldots}{14}$\\
+    \task $\dfrac{6}{8}=\dfrac{24}{\ldots\ldots}$\\
+    \task $\dfrac{11}{10}=\dfrac{\ldots\ldots}{70}$\\
+    \task $\dfrac{45}{30}=\dfrac{15}{\ldots\ldots}$\\
+    \task $\dfrac{33}{11}=\dfrac{\ldots\ldots}{1}$\\
+    \task $\dfrac{21}{8}=\dfrac{42}{\ldots\ldots}$\\
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Complète afin d'obtenir une égalité.
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-1em](3)
+    \task $\dfrac{5}{4}=\dfrac{\ldots\ldots}{72}$\\
+    \task $\dfrac{105}{30}=\dfrac{21}{\ldots\ldots}$\\
+    \task $\dfrac{26}{10}=\dfrac{\ldots\ldots}{15}$\\
+    \task $\dfrac{14}{28}=\dfrac{35}{\ldots\ldots}$\\
+    \task $\dfrac{16}{24}=\dfrac{\ldots\ldots}{9}$\\
+    \task $\dfrac{51}{17}=\dfrac{15}{\ldots\ldots}$\\
+\end{tasks}
+}{3}\end{exop}
+
+
+\begin{exof}{NO181}{65}{1}
+\end{exof}
+\begin{exof}{NO182}{65}{2}
+\end{exof}
+
+
+\begin{exo}{
+Ecris quatre fractions équivalentes à:
+\begin{tasks}[after-item-skip = 0.2em, after-skip=-0.5em](5)
+\task $\dfrac{1}{4}$
+\task $\dfrac{2}{5}$
+\task $\dfrac{3}{4}$
+\task $\dfrac{1}{2}$
+\task $\dfrac{6}{10}$
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\begin{exo}{
+Parmi les fractions suivantes, lesquelles sont équivalentes à $\dfrac{2}{3}$ ?
+\begin{tasks}[after-item-skip = 0.2em](4)
+\task $\dfrac{8}{12}$
+\task $\dfrac{12}{18}$
+\task $\dfrac{5}{9}$
+\task $\dfrac{9}{12}$
+\task $\dfrac{6}{9}$
+\task $\dfrac{14}{21}$
+\task $\dfrac{14}{24}$
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\begin{exo}{
+Parmi les fractions suivantes, lesquelles sont équivalentes à $\dfrac{1}{2} ?$
+\begin{tasks}(3)
+\task $\dfrac{6}{12}$
+\task $\dfrac{48}{96}$
+\task $\dfrac{52}{102}$
+\task $\dfrac{70}{140}$
+\task $\dfrac{2048}{4096}$
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\begin{exo}{
+Parmi les fractions suivantes, lesquelles sont équivalentes à $\dfrac{1}{5}$ ?
+\begin{tasks}(3)
+\task $\dfrac{3}{15}$
+\task $\dfrac{4}{25}$
+\task $\dfrac{100}{500}$
+\task $\dfrac{50}{250}$
+\task $\dfrac{6}{30}$
+\task $\dfrac{24}{120}$
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\begin{exo}{
+Parmi les fractions suivantes, lesquelles sont équivalentes à $\dfrac{3}{9}$ ?
+\begin{tasks}(4)
+\task $\dfrac{2}{6}$
+\task $\dfrac{8}{21}$
+\task $\dfrac{6}{18}$
+\task $\dfrac{5}{25}$
+\task $\dfrac{8}{24}$
+\task $\dfrac{12}{36}$
+\task $\dfrac{10}{30}$
+\end{tasks}
+ \vspace{1pt}
+}{2}\end{exo}
+
+\begin{exop}{
+Identifie, parmi les fractions suivantes, les fractions équivalentes.
+\vspace{10pt}
+\begin{itemize}
+    \item[] à $\dfrac{1}{2}:\hrulefill$\\
+    \item[] à $\dfrac{2}{3}:\hrulefill$\\
+    \item[] à $\dfrac{3}{2}:\hrulefill$\\
+\end{itemize}
+\vspace{0.5cm}
+
+ \begin{center}
+\begin{tabular}{cccccccc}
+     $\dfrac{20}{30}$;&$\dfrac{6}{2}$;&$\dfrac{6}{8}$;&$\dfrac{10}{5}$;&$\dfrac{4}{8}$;&$\dfrac{70}{105}$;&$\dfrac{12}{9}$;&$\dfrac{7}{14}$;\\
+		      &&&&&&&\\
+     $\dfrac{18}{9}$;&$\dfrac{41}{82}$;&$\dfrac{8}{16}$;&$\dfrac{25}{5}$;&$\dfrac{15}{10}$;&$\dfrac{72}{48}$;&$\dfrac{21}{7}$;& $\dfrac{15}{5}$\\
+\end{tabular}
+\end{center}
+}{2}\end{exop}
+
+
+\begin{exol}{NO180}{51}{1}
+\end{exol}
+
+\begin{exop}{
+Simplifie les fractions suivantes par le nombre indiqué.
+\begin{tasks}(2)
+    \task $\dfrac{4}{10}$ simplifiée par $2: \hrulefill$
+    \task $\dfrac{15}{21}$ simplifiée par $3: \hrulefill$
+    \task $\dfrac{32}{12}$ simplifiée par $2: \hrulefill$
+    \task $\dfrac{9}{81}$ simplifiée par $9: \hrulefill$
+    \task $\dfrac{50}{25}$ simplifiée par $5: \hrulefill$
+    \task $\dfrac{300}{500}$ simplifiée par $10: \hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{1}\end{exop}
+
+\begin{exop}{
+Simplifie les fractions suivantes par le nombre indiqué.
+\begin{tasks}(2)
+    \task $\dfrac{8}{20}$ simplifiée par $4: \hrulefill$
+    \task $\dfrac{60}{40}$ simplifiée par $20: \hrulefill$
+    \task $\dfrac{49}{147}$ simplifiée par $7: \hrulefill$
+    \task $\dfrac{125}{500}$ simplifiée par $25: \hrulefill$
+    \task $\dfrac{39}{169}$ simplifiée par $13: \hrulefill$
+    \task $\dfrac{126}{252}$ simplifiée par $9: \hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{1}\end{exop}
+
+\begin{exop}{
+Amplifie les fractions suivantes par le nombre indiqué.
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+    \task $\dfrac{10}{5}$ amplifiée par $5: \hrulefill$
+    \task $\dfrac{7}{1}$ amplifiée par $7: \hrulefill$
+    \task $\dfrac{4}{6}$ amplifiée par $3: \hrulefill$
+    \task $\dfrac{3}{7}$ amplifiée par $2: \hrulefill$
+    \task $\dfrac{3}{8}$ amplifiée par $5: \hrulefill$
+    \task $\dfrac{9}{4}$ amplifiée par $11: \hrulefill$
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Amplifie les fractions suivantes par le nombre indiqué.
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+    \task $\dfrac{2}{7}$ amplifiée par $9: \hrulefill$
+    \task $\dfrac{4}{9}$ amplifiée par $12: \hrulefill$
+    \task $\dfrac{5}{3}$ amplifiée par $6: \hrulefill$
+    \task $\dfrac{10}{12}$ amplifiée par $8: \hrulefill$
+    \task $\dfrac{7}{4}$ amplifiée par $15: \hrulefill$
+    \task $\dfrac{6}{2}$ amplifiée par $16: \hrulefill$
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Rends les fractions suivantes irréductibles.
+\begin{tasks}[after-item-skip = 0.4em, after-skip=-0.5em](3)
+    \task $\dfrac{5}{15}$
+    \task $\dfrac{20}{35}$
+    \task $\dfrac{98}{28}$
+    \task $\dfrac{32}{12}$
+    \task $\dfrac{16}{28}$
+    \task $\dfrac{54}{108}$
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Rends les fractions suivantes irréductibles.
+\begin{tasks}[after-item-skip = 0.4em, after-skip=-0.5em](3)
+    \task $\dfrac{144}{135}$
+    \task $\dfrac{120}{280}$
+    \task $\dfrac{82}{205}$
+    \task $\dfrac{68}{76}$
+    \task $\dfrac{51}{93}$
+    \task $\dfrac{363}{66}$
+\end{tasks}
+}{2}\end{exop}
+
+\begin{exo}{
+Rends les fractions suivantes irréductibles.
+\begin{tasks}[after-item-skip = 0.4em, after-skip=-0.5em](5)
+\task $\dfrac{17}{68}$
+\task $\dfrac{26}{65}$
+\task $\dfrac{72}{24}$
+\task $\dfrac{3}{51}$
+\task $\dfrac{18}{81}$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Rends les fractions suivantes irréductibles.
+\begin{tasks}[after-item-skip = 0.4em, after-skip=-0.5em](5)
+\task $\dfrac{63}{84}$
+\task $\dfrac{25}{75}$
+\task $\dfrac{46}{69}$
+\task $\dfrac{101}{63}$
+\task $\dfrac{77}{121}$
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exof}{NO183}{66}{1}
+\end{exof}
+\begin{exof}{NO184}{67}{2}
+\end{exof}
+
+\begin{exo}{
+Écris les nombres suivants sous forme d'un entier ou d'une fraction irréductible.
+\begin{tasks}(6)
+	\task $4,5$
+	\task $0,1$
+	\task $0,3$
+	\task $67$
+	\task $3,2$
+	\task $12,5$
+	\task $4$
+	\task $1,7$
+	\task $1,5$
+	\task $0,\overline{6}$
+	\task $0,\overline{1}$
+	\task $0,\overline{8}$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Écris les nombres suivants sous forme d'un entier ou d'une fraction irréductible.
+\begin{tasks}(6)
+	\task $5,42$
+	\task $6,50$
+	\task $0,44$
+	\task $65,1$
+	\task $301,2$
+	\task $10,04$
+	\task $41,45$
+	\task $2,75$
+	\task $0,25$
+	\task $0,\overline{2}$
+	\task $0,\overline{3}$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Écris les nombres suivants sous forme d'un entier ou d'une fraction irréductible.
+\begin{tasks}(3)
+	\task $3,25$
+	\task $0,062$
+	\task $34,65$
+	\task $1,364$
+	\task $0,02$
+	\task $9$
+\end{tasks}
+}{2}\end{exo}
+
+
+\begin{exol}{NO193}{53}{1}
+\end{exol}
+\begin{exol}{NO194}{53}{2}
+\end{exol}
+\begin{exol}{NO195}{53}{3}
+\end{exol}
+\begin{exof}{NO201}{70}{1}
+\end{exof}
+\begin{exof}{NO205}{72}{1}
+\end{exof}
+
+\begin{resolu}{Comparaison de fractions}{Laquelle des deux fractions est la plus grand? Justifie ta réponse.
+
+	{\color{blue} Il y a deux méthodes pour résoudre cet exercice:\begin{enumerate}
+			\item[1.] Afin de comparer des fractions, on doit les mettre sur un dénominateur commun. La fraction qui a ensuite le plus grand numérateur est la plus grande.
+			\item[2.] On transforme la fraction en nombre décimal et on compare les deux nombres obtenus.
+\end{enumerate}}
+\begingroup
+\setlength{\lineskip}{4pt}
+\begin{tasks}(1)
+	\task $\dfrac{1}{4}$ ou $\dfrac{3}{4}$? Les deux fractions ont le même dénominateur. On compare les numérateurs et on a que $\dfrac{1}{4}<\dfrac{3}{4}$.
+	\task $\dfrac{3}{5}$ ou $\dfrac{3}{7}$? Le plus petit commun multiple de $5$ et $7$ est $\text{ppmc}(5;7)=35$. Il faut donc amplifier $\dfrac{3}{5}$ par $7$ pour obtenir $\dfrac{21}{35}$ et amplifier $\dfrac{3}{7}$ par $5$ pour obtenir $\dfrac{15}{35}$. $\dfrac{3}{5}=\dfrac{21}{35}$ et $\dfrac{3}{7}=\dfrac{15}{35}$, donc $\dfrac{3}{5}>\dfrac{3}{7}$.
+	\task $\dfrac{5}{6}$ ou $\dfrac{2}{4}$? En utilisant la deuxième méthode, $\dfrac{5}{6}=0,8\overline{3}$ et $\dfrac{2}{4}=0,5$. Ainsi $\dfrac{5}{6}>\dfrac{2}{4}$.
+\end{tasks}
+\endgroup
+}{1}
+\end{resolu}
+
+\newpage
+
+\begin{exo}{
+Laquelle des deux fractions est la plus grande? Justifie ta réponse.
+\begin{tasks}(3)
+\task $\dfrac{1}{8}$ ou $\dfrac{1}{6}$
+\task $\dfrac{7}{4}$ ou $\dfrac{5}{4}$
+\task $\dfrac{1}{2}$ ou $\dfrac{2}{3}$
+\task $\dfrac{2}{5}$ ou $\dfrac{3}{5}$
+\task $\dfrac{2}{5}$ ou $\dfrac{2}{7}$
+\task $\dfrac{3}{5}$ ou $\dfrac{3}{4}$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Laquelle des deux fractions est la plus petite? Justifie ta réponse.
+
+\begin{tasks}(3)
+\task $\dfrac{5}{12}$ ou $\dfrac{7}{12}$
+\task $\dfrac{1}{2}$ ou $\dfrac{6}{11}$
+\task $\dfrac{6}{5}$ ou $\dfrac{11}{10}$
+\task $\dfrac{8}{7}$ ou $\dfrac{4}{3}$
+\task $\dfrac{3}{7}$ ou $\dfrac{9}{21}$
+\task $\dfrac{4}{6}$ ou $\dfrac{6}{9}$
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exof}{NO185}{68}{1}
+\end{exof}
+\begin{exol}{NO178}{51}{1}
+\end{exol}
+\begin{exol}{NO179}{51}{2}
+\end{exol}
+
+\begin{exo}{
+Ecris les nombres suivants par ordre croissant.
+\begin{tasks}(2)
+\task $\dfrac{1}{2} ;\quad \dfrac{1}{3} ;\quad \dfrac{1}{4} ;\quad \dfrac{1}{5} ;\quad \dfrac{1}{6}$
+\task $\dfrac{2}{5} ;\quad \dfrac{5}{2} ;\quad \dfrac{2}{3} ;\quad \dfrac{3}{2}$
+\task $\dfrac{1}{5} ;\quad \dfrac{2}{5} ;\quad \dfrac{3}{5} ;\quad \dfrac{4}{5} ;\quad \dfrac{5}{5}$
+\task $\dfrac{3}{8} ;\quad \dfrac{8}{3} ;\quad \dfrac{1}{5} ;\quad \dfrac{5}{2}$
+\end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{
+Ecris les nombres suivants par ordre décroissant.
+\begin{tasks}(3)
+\task $\dfrac{1}{3} ;\quad 0,3 ;\quad 0,4$
+\task $\dfrac{1}{3} ;\quad 0,33 ;\quad 0,34$
+\task $\dfrac{1}{3} ;\quad 0,333 ;\quad 0,05$
+\end{tasks}
+}{2}\end{exo}
+
+
+\exol{NO196}{53}{2}
+
+\begin{exo}{
+Ecris les nombres suivants par ordre croissant.
+	\begin{tasks}(3)
+\task $1,04 ;\quad 1,044 ;\quad \dfrac{7}{5}$
+\task $6,20 ;\quad \dfrac{25}{4} ;\quad 6,3$
+\task $0,04 ;\quad \dfrac{3}{100} ;\quad 0,05$
+\end{tasks}
+}{2}
+\end{exo}
+%\exol{NO197}{53}{1}
+
+
+
+
+\begin{qmoodle}{Fractions équivalentes
+}{3}{
+	\begin{center}	
+		Q1
+
+\includegraphics[scale=1]{media/qr/feq1}
+
+\tiny{{https://edu.ge.ch/qr/feq1}}
+\end{center}
+	\begin{center}	
+		Q2
+
+\includegraphics[scale=1]{media/qr/feq2}
+
+\tiny{{https://edu.ge.ch/qr/feq2}}
+\end{center}
+	\begin{center}	
+		Q3
+
+\includegraphics[scale=1]{media/qr/feq3}
+
+\tiny{{https://edu.ge.ch/qr/feq3}}
+\end{center}
+}
+\end{qmoodle}
+
+
+%\begin{exopn}
+%Une consigne {\cursive{{\color{blue}un texte}}}
+%\begin{enumerate}
+%\medskip\item Le $\;$\hrulefill$\;$ 432 est composé des $\;$\hrulefill$\;$ 2, 3 et 4.
+%\end{enumerate}
+%\end{exopn}
+
+%\begin{exop}{
+%Consigne
+%}{0}\end{exop}
+
+
+\end{document}

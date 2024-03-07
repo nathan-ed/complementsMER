@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.9]
+            \draw (-3,-3) rectangle (3,3) ;
+            \draw[<->, >=latex] (-3,-3.5)  --node[midway,below]{$12$} (-2,-3.5) ;
+            \draw[<->, >=latex] (-2,-3.5)  --node[midway,below]{$48$} (2,-3.5) ;
+            \draw[<->, >=latex] (2,-3.5)  --node[midway,below]{$12$} (3,-3.5) ;
+            \draw[dotted] (-3,-3) -- (-3,-3.5) ;
+            \draw[dotted] (-2,-3) -- (-2,-3.5) ;
+            \draw[dotted] (2,-3) -- (2,-3.5) ;
+            \draw[dotted] (3,-3) -- (3,-3.5) ;
+            
+            \draw[<->, >=latex] (-3.5,-3)  --node[midway,above, sloped]{$12$} (-3.5,-2) ;
+            \draw[<->, >=latex] (-3.5,-2)  --node[midway,above, sloped]{$48$} (-3.5,2) ;
+            \draw[<->, >=latex] (-3.5,2)  --node[midway,above, sloped]{$12$} (-3.5,3) ;
+            \draw[dotted] (-3,-3) -- (-3.5,-3) ;
+            \draw[dotted] (-3,-2) -- (-3.5,-2) ;
+            \draw[dotted] (-3,2) -- (-3.5,2) ;
+            \draw[dotted] (-3,3) -- (-3.5,3) ;
+            \draw[fill=blue!20] (0,0) -- (2,-3) -- (2,-2) -- (3,-2) -- cycle ;
+            \begin{scope}[rotate=90]
+                \draw[fill=blue!20] (0,0) -- (2,-3) -- (2,-2) -- (3,-2) -- cycle ;
+            \end{scope}
+            \begin{scope}[rotate=180]
+                \draw[fill=blue!20] (0,0) -- (2,-3) -- (2,-2) -- (3,-2) -- cycle ;
+            \end{scope}
+            \begin{scope}[rotate=-90]
+                \draw[fill=blue!20] (0,0) -- (2,-3) -- (2,-2) -- (3,-2) -- cycle ;
+            \end{scope}
+        \end{tikzpicture}

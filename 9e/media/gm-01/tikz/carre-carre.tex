@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+\draw (0,0) rectangle (4,2) ;
+\draw[fill=blue!20] (0,0) -- (4,1) -- (4,2) -- (2,1) -- (2,2) -- cycle ;
+\draw[dotted] (0,1) -- (4,1) ;
+\draw[dotted] (2,0) -- (2,2) ;
+\node[below left] at (0,0) {$\mathrm{A}$} ;
+\node[below right] at (4,0) {$\mathrm{D}$} ;
+\node[above left] at (0,2) {$\mathrm{B}$} ;
+\node[above right] at (4,2) {$\mathrm{C}$} ;
+
+\draw[<->, >=latex] (0,-0.3) --node[below]{$405\un{m}$} (4,-0.3) ;
+
+\draw[<->, >=latex] (-0.3,0) --node[left]{$135\un{m}$} (-0.3,2) ;
+
+
+\begin{scope}[xshift=8cm]
+\draw (0,0) rectangle (4,2) ;
+\draw[fill=blue!20] (0,2) -- (2,0) -- (4,2) -- (2,1) -- cycle ;
+\draw[dotted] (0,1) -- (4,1) ;
+\draw[dotted] (2,0) -- (2,2) ;
+\node[below left] at (0,0) {$\mathrm{E}$} ;
+\node[below right] at (4,0) {$\mathrm{H}$} ;
+\node[above left] at (0,2) {$\mathrm{F}$} ;
+\node[above right] at (4,2) {$\mathrm{G}$} ;
+
+\draw[<->, >=latex] (0,-0.3) --node[below]{$12,5\un{m}$} (4,-0.3) ;
+
+\draw[<->, >=latex] (-0.3,0) --node[left]{$4\un{m}$} (-0.3,2) ;
+
+\end{scope}
+\end{tikzpicture}

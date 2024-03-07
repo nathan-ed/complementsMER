@@ -1,0 +1,813 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et Opérations}
+\newcommand{\serieName}{Opérations avec des nombres relatifs}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Distance à zéro (page 17)
+\item Nombres opposés (page 17)
+\item Addition de nombres relatifs (page 18)
+\item Soustraction de nombres relatifs (page 18)
+\item Ecriture simplifiée d'une somme ou d'une différence de nombres relatifs (page 19)
+\item Effectuer un calcul comportant des sommes et des différences de nombres relatifs (page 19)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}{Un jeu de billes}
+{
+\newcommand{\bverte}{\includegraphics[scale=.04]{media/no-37/smileyHappy.pdf}}
+\newcommand{\brouge}{\includegraphics[scale=.04]{media/no-37/smileyAngry.pdf}}
+Il y a deux armées: les billes positives \bverte et les billes négatives \brouge .
+\begin{itemize}
+\item[$\bullet$] Les billes d'une  même armée se rassemblent.
+\item[$\bullet$] Deux billes d'armées différentes se neutralisent.
+\end{itemize}
+\begin{tasks}
+\task Traduis les situations suivantes par un calcul puis trouve la réponse.
+
+\vspace*{.5cm}
+
+\bverte\bverte\bverte\bverte$\quad$ rencontrent $\quad$\brouge\brouge\brouge \hfill $(+4)+(-3) = {\color{blue}(+1)}$
+
+\vspace*{.5cm}
+
+\bverte\bverte$\quad$ rencontrent $\quad$\brouge\brouge\brouge\brouge \hfill $(+2)+(-4) = {\color{blue}(-2)}$
+
+\vspace*{.5cm}
+
+\brouge\brouge\brouge\brouge\brouge$\quad$ rencontrent $\quad$\bverte\bverte \hfill $({\color{blue}-5})+({\color{blue}+2}) = {\color{blue}(-3)}$
+
+\vspace*{.5cm}
+
+\brouge\brouge\brouge$\quad$ rencontrent $\quad$ \brouge\brouge\brouge \hfill $({\color{blue}-3})+({\color{blue}-3}) = {\color{blue}(-6)}$
+
+\vspace*{.5cm}
+
+\bverte\bverte\bverte$\quad$ rencontrent $\quad$\brouge\brouge\brouge \hfill $({\color{blue}+3})+({\color{blue}-3}) = {\color{blue}0}$
+
+\vspace*{.5cm}
+
+\brouge\brouge$\quad$ rencontrent $\quad$ \bverte\bverte\bverte\bverte\bverte \hfill $({\color{blue}-2})+({\color{blue}+5}) = {\color{blue}+3}$
+
+\vspace*{.5cm}
+
+7 positifs rencontrent 20 négatifs \hfill $({\color{blue}+7})+({\color{blue}-20}) = {\color{blue}-13}$
+
+\vspace*{.5cm}
+
+\task Calcule les sommes suivantes:
+\begin{multicols}{2}
+\begin{enumerate}
+\item $(+3)+(+8)={\color{blue} +11 }$
+\item $(-2)+(+3)={\color{blue}  +1}$
+\item $(-2)+(-4)={\color{blue}  -6}$
+\item $(+7)+(+10)={\color{blue} +17 }$
+\item $(-1)+(-4)= {\color{blue}  -5}$
+\item $(+7)+(-5)={\color{blue}  +2}$
+\item $(+5)+(-1)={\color{blue}  +4}$
+\item $(+15)+(+3)={\color{blue}  +18}$
+\item $(-6)+(-5)={\color{blue}  -11}$
+\item $(-3)+(+1)={\color{blue}  -2}$
+\item $(+4)+(-6)={\color{blue}  -2}$
+\item $(-2)+(+8)={\color{blue}  +6}$
+\end{enumerate}
+\end{multicols}
+\item Complète le texte.
+\begin{enumerate}
+\item[$\bullet$] Pour additionner des nombres de même signe:
+\begin{enumerate}
+\item[$\rightarrow$] on {\color{blue}additionne} les distances à zéro des nombres~;
+\item[$\rightarrow$] on met devant le résultat le signe {\color{blue}d'un des deux nombres}.
+\end{enumerate}
+\item[$\bullet$] Pour additionner des nombres de signes différents~:
+\begin{enumerate}
+\item[$\rightarrow$] on {\color{blue}soustrait} la plus petite distance à zéro à la plus grande;
+\item[$\rightarrow$] on met devant le résultat le signe {\color{blue}du nombre qui a la plus grande distance à zéro}.
+\end{enumerate}
+\end{enumerate}
+\end{tasks}
+}{2}
+\end{resolu}
+
+\begin{exop}
+{Additionne les nombres relatifs de mêmes signes.
+\begin{tasks}(2)
+\task $(-9)+(-16)=$
+\task $(-28)+(-4)=$
+\task $(+15)+(+12)=$
+\task $(-45)+(-14)=$
+\end{tasks}}{2}
+\end{exop}
+
+\begin{exop}
+{Additionne les nombres relatifs de signes différents en répondant aux questions ci-dessous.
+\begin{tasks}[after-item-skip=0.2em]
+\task $(-15)+(+3)$
+
+Dans l'addition ci-dessus,
+
+Quel est le signe du nombre qui a la plus grande distance à zéro~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 15 et le 3~? \hrulefill
+
+Donc $(-15)+(+3)=$ \hrulefill 
+
+\task $(+17)+(-20)$
+
+Dans l'addition ci-dessus,
+
+Quel est le signe du nombre qui a la plus grande distance à zéro~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 17 et le 20~? \hrulefill
+
+Donc $(+17)+(-20)=$ \hrulefill 
+
+\task $(-11)+(+18)$
+
+Dans l'addition ci-dessus,
+
+Quel est le signe du nombre qui a la plus grande distance à zéro~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 11 et le 18~? \hrulefill
+
+Donc $(-11)+(+18)=$ \hrulefill 
+
+\task $(-17)+(+9)$
+
+Dans l'addition ci-dessus,
+
+Quel est le signe du nombre qui a la plus grande distance à zéro~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 17 et le 9~? \hrulefill
+
+Donc $(-17)+(+9)=$ \hrulefill 
+
+\end{tasks}
+
+}{2}
+\end{exop}
+
+\begin{exop}{
+Additionne les nombres relatifs de signes différents suivants.
+\begin{tasks}(2)
+\task $(+13)+(-11)=$
+\task $(-10)+(+9)=$
+\task $(-53)+(+62)=$
+\task $(+15)+(-5)=$
+\task $(+21)+(-15)=$
+\end{tasks}}{2}
+\end{exop}
+
+\begin{exop}
+{
+Additionne les nombres relatifs suivants en répondant aux questions ci-dessous.
+\begin{tasks}[after-item-skip=0.2em]
+\task $(-15)+(-3)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 15 et le 3~? \hrulefill
+
+Donc $(-15)+(-3)=$ \hrulefill
+
+\task $(-16)+(+4)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 16 et le 4~? \hrulefill
+
+Donc $(-16)+(+4)=$ \hrulefill
+
+\task $(-4)+(+12)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 4 et le 12~? \hrulefill
+
+Donc $(-4)+(+12)=$ \hrulefill
+
+\task $(-25)+(-18)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 25 et le 18~? \hrulefill
+
+Donc $(-25)+(-18)=$ \hrulefill
+
+\task $(+8)+(-25)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~? \hrulefill
+
+Quelle opération dois-je faire avec le 8 et le 25~? \hrulefill
+
+Donc $(+8)+(-25)=$ \hrulefill
+
+\task $(-40)+(+52)$
+
+Dans l'addition ci-dessous,
+
+Les deux nombres sont-ils de même signe~? \hrulefill
+
+Si non, quel est le signe du nombre qui a la plus grande distance à 0~? \hrulefill
+
+Quel sera le signe du résultat~?
+
+Quelle opération dois-je faire avec le 40 et le 52~? \hrulefill
+
+Donc $(-40)+(+52)=$ \hrulefill
+\end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}{
+Complète les égalités suivantes avec le nombre qui convient:
+\begin{tasks}(2)
+\task $(+7)+(\ligne{1.5})=(+11)$
+\task $(+8)+(\ligne{1.5})=(+5)$
+\task $(+13)+(\ligne{1.5})=0$
+\task $(+5)+(\ligne{1.5})=(-3)$
+\task $(-7)+(\ligne{1.5})=(+11)$
+\task $(-13)+(\ligne{1.5})=0$
+\task $(-4)+(\ligne{1.5})=(-9)$
+\task $(+3)+(\ligne{1.5})=(-3)$
+\end{tasks}
+}{2}\end{exop}
+
+\begin{resolu}
+{Températures}{Résous les problèmes suivants.
+\begin{tasks}
+	\task La température relevée un matin d'hiver est de \tunit{-8}{\degreeCelsius}. Le lendemain, la température a augmenté de \tunit{5}{\degreeCelsius}. Quelle est alors cette température~?
+
+{\bf Réponse :} On traduit l'énoncé par le calcul suivant : $(-8)+(+5)=(-3).$ 
+
+La température du lendemain est de \tunit{-3}{\degreeCelsius}.
+
+\task Ma cave fait \tunit{22}{\degreeCelsius} de plus que mon congélateur qui affiche \tunit{-20}{\degreeCelsius}. Elle a aussi \tunit{17}{\degreeCelsius} de moins que mon appartement. Quelle est la température de mon appartement~?
+
+{\bf Réponse :} On traduit l'énoncé par les calculs suivants : $$(-20)+(+22)=(+2) \qquad (+2)+(+17)= (+19).$$
+
+La température de mon appartement est de \tunit{19}{\degreeCelsius}.
+\end{tasks}
+
+}{2}
+\end{resolu}
+
+\begin{exo}
+{Résous les problèmes suivants.
+\begin{tasks}
+\task La température relevée un matin d'hiver est de \tunit{-5}{\degreeCelsius}. Le lendemain, la température a augmenté de \tunit{3}{\degreeCelsius}. Quelle est alors cette température~?
+\task Ma cave fait \tunit{20}{\degreeCelsius} de plus que mon congélateur qui affiche \tunit{-18}{\degreeCelsius}. Elle a aussi \tunit{15}{\degreeCelsius} de moins que mon appartement. Quelle est la température de mon appartement~?
+\end{tasks}
+}{2}
+\end{exo}
+
+\begin{resolu}{Regrouper}
+{Calcule les expressions suivantes après avoir regroupé les positifs et les négatifs.
+\begin{tasks}
+\task $A=(-2)+(+3)+(-4)+(+5)=$
+
+$A=(-2)+(-4)+(+3)+(+5)=(-6)+(+8)=(+2)$
+\task $B=(-7)+(+9)+(-13)+(+11)=$
+
+$B=(-7)+(-13)+(+9)+(+11)=(-20)+(+20)=0$
+\task $C=(-15)+(-6)+(+9)+(-11)+(+17)=$
+
+$C=(-15)+(-6)+(-11)+(+9)+(+17)=(-32)+(+26)=(-6)$
+\end{tasks}
+}{2}
+\end{resolu}
+
+
+\begin{exo}
+{Calcule les expressions suivantes après avoir regroupé les positifs et les négatifs.
+\begin{tasks}
+\task $A=(-5)+(+8)+(-11)+(+13)$
+\task $B=(-16)+(-4)+(+7)+(-13)+(+15)$
+\task $C=(-1)+(+2)+(-3)+(+4)+(-5)$
+\task $D=(-4,5)+(+11,\!7)+(+9,\!3)+(-5,\!8)$
+\end{tasks}
+}{2}
+\end{exo}
+
+\begin{exo}
+{Peux-tu trouver $\ldots$
+\begin{tasks}
+\task $\ldots$ deux nombres négatifs dont la somme vaut $-13$~?
+\task $\ldots$ deux nombres égaux dont la somme vaut $-16$~?
+\task $\ldots$ deux nombres de signes contraires dont la somme vaut $-13$~?
+\task $\ldots$ trois nombres relatifs dont la somme vaut $-13$~?
+\task $\ldots$ deux nombres positifs dont la somme vaut $-13$~?
+\end{tasks}
+}{2}
+\end{exo}
+
+\exof{NO120}{42}{2}
+\exof{NO121}{42}{3}
+
+\begin{resolu}{Soustraction avec les relatifs}{
+Observe les exemples suivants:
+
+\bigskip
+
+$\begin{array}{|ccccc|}\hline
+(+8)&{\color{magenta}-}&({\color{red}+}5)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(+8)&{\color{magenta}+}&({\color{red}-}5)&=&(+3)\\\hline
+\end{array}$ 
+\hfill 
+$\begin{array}{|ccccc|}\hline
+(-8)&{\color{magenta}-}&({\color{red}+}5)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(-8)&{\color{magenta}+}&({\color{red}-}5)&=&(-13)\\\hline
+\end{array}$ 
+
+\bigskip
+
+$\begin{array}{|ccccc|}\hline
+(+8)&{\color{magenta}-}&({\color{red}-}5)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(+8)&{\color{magenta}+}&({\color{red}+}5)&=&(+13)\\\hline
+\end{array}$ 
+\hfill 
+$\begin{array}{|ccccc|}\hline
+(-8)&{\color{magenta}-}&({\color{red}-}5)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(-8)&{\color{magenta}+}&({\color{red}+}5)&=&(-3)\\\hline
+\end{array}$ 
+
+\bigskip
+
+Complète le texte avec les mots proposés:
+
+\begin{center}
+\fbox{addition} $\quad$ \fbox{soustraction} $\quad$ \fbox{deuxième} $\quad$ \fbox{positif} $\quad$ \fbox{négatif} 
+\end{center}
+
+Pour soustraire deux nombres relatifs, il faut:\begin{itemize}
+\item[{\color{magenta}$\rightarrow$}] {\color{magenta} Transformer la {\color{blue} soustraction} en {\color{blue} addition}.}
+\item[{\color{red}$\rightarrow$}] {\color{red} Prendre l'opposé du {\color{blue} deuxième} terme.
+
+C'est-à-dire qu'un terme {\color{blue} négatif} devient {\color{blue} positif} et inversement.}
+\end{itemize}
+}{2}
+\end{resolu}
+
+
+\begin{exop}
+{Effectue les soustractions suivantes.
+\begin{tasks}(2)
+\task $\begin{array}{|ccccc|}\hline
+(+24)&{\color{magenta}-}&({\color{red}-}17)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(\ligne{1})&{\color{magenta}\ligne{.5}}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(+8)&{\color{magenta}-}&({\color{red}+}5)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(\ligne{1})&{\color{magenta}\ligne{.5}}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(-18)&{\color{magenta}-}&({\color{red}+}29)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(\ligne{1})&{\color{magenta}\ligne{.5}}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(-35)&{\color{magenta}-}&({\color{red}+}21)&= & \\
+& {\color{magenta}\downarrow}&{\color{red}\downarrow} & & \\
+(\ligne{1})&{\color{magenta}\ligne{.5}}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}
+{Effectue les soustractions suivantes.
+\begin{tasks}(2)
+\task $\begin{array}{|ccccc|}\hline
+(+5)&{\color{magenta}-}&({\color{red}-}1)&= & \\
+(\ligne{1})&{\color{magenta}+}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(-5)&{\color{magenta}-}&({\color{red}+}3)&= & \\
+(\ligne{1})&{\color{magenta}+}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(+4)&{\color{magenta}-}&({\color{red}-}8)&= & \\
+(\ligne{1})&{\color{magenta}+}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\task $\begin{array}{|ccccc|}\hline
+(+4)&{\color{magenta}-}&({\color{red}+}1)&= & \\
+(\ligne{1})&{\color{magenta}+}&(\ligne{1})&=&(\ligne{1})\\\hline
+\end{array}$ 
+\end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}
+{Effectue les soustractions suivantes.
+\begin{tasks}(2)
+\task $(-5)-(+8)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(+2)-(+2)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(+10)-(+3)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(-10)-(+6)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(+8)-(-8)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(-25)-(+35)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(-7)-(+17)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\task $(-9)-(-8)=$
+
+\bigskip\ligne{4} $=$ \ligne{1}
+
+\end{tasks}
+}{2}
+\end{exop}
+
+\begin{exo}
+{Effectue les soustractions suivantes.
+\begin{tasks}(2)
+\task $(-9)-(+6)$
+\task $(+7)-(-8)$
+\task $(-12)-(+5)$
+\task $(+13)-(+4)$
+\task $(-25)-(-30)$
+\end{tasks}}{2}
+\end{exo}
+
+\begin{exo}
+{Effectue les soustractions suivantes.
+\begin{tasks}(2)
+\task $(+15,\!1)-(+18,\!1)$
+\task $(-14,\!05)-(-19,\!9)$
+\task $(-204)-(+170)$
+\task $(-41,\!48)-(+42,\!28)$
+\task $(+14)-(-12,\!14)$
+\end{tasks}}{3}
+\end{exo}
+
+\begin{exop}
+{Parmi les écritures suivantes encadre celles qui sont exactes:
+\begin{tasks}(2)
+\task $(+1673)-(+1622)=(+51)$
+\task $(+121)-(+180)=(+59)$
+\task $(-30)-(-69)=(+39)$
+\task $(-69)-(-30)=(+39)$
+\task $(-63)-(-14)=(+77)$
+\task $(+14)-(-63)=(+77)$
+\task $(-44)-(-101)=(+57)$
+\task $(-10)-(+54)=(+64)$
+\end{tasks}
+}{3}
+\end{exop}
+
+
+\begin{exo}
+{Calcule les chaines d'opérations suivantes:
+\begin{tasks}(2)
+\task $A=(+20)+(+11)+(-18)=$
+\task $B=(-5)+(+6)-(-7)=$
+\task $C=(+8)-(+12)+(-21)=$
+\task $D=(+9)+(-12)-(-6)=$
+\end{tasks}
+}{2}
+\end{exo}
+
+\begin{exo}
+{Calcule les chaines d'opérations suivantes:
+\begin{tasks}
+\task $A=(+6)-(+5)+(-9)+(+8)+(-10)-(-5)=$
+\task $B=(+12)+(-15)-(-7)+(-27)-(+4)=$
+\task $C=(-7)+(+5)-(+3)+(-8)-(+7)+(+5)=$
+\task $D=(+2)-(-1)+(+9)-(+6)+(-3)=$
+\end{tasks}
+}{2}
+\end{exo}
+
+\begin{exo}
+{Calcule les chaines d'opérations suivantes:
+\begin{tasks}
+\task $A=(-2,\!5)+(+6)-(-7)+(+2,\!5)+(+11)+(-18)=$
+\task $B=(+8,\!3)-(-12)+(-21)+(+9,\!2)+(+12)-(-6)=$
+\task $C=(-6,\!7)-(+5)+(-9,\!3)+(+3,\!8)+(-10,\!7)+(+5)=$
+\task $D=(+0,\!12)+(-1,\!5)+(+0,\!7)+(-2,\!74)+(+1,\!24)=$
+\end{tasks}
+}{3}
+\end{exo}
+
+\exof{NO127}{44}{2}
+\exof{NO128}{44}{2}
+\exof{NO129}{44}{3}
+
+\begin{resolu}{Simplification d'écriture}{Observe les exemples suivants:
+
+\bigskip
+
+$\begin{array}{|ccccc|}\hline
+(+5)&{\color{olive}\ovalbox{\color{black}$+(+$}}3)&=&(+8)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+5 & +3 & = & 8 & \\\hline
+\end{array}$
+\hfill
+$\begin{array}{|ccccc|}\hline
+(-5)&{\color{olive}\ovalbox{\color{black}$+(-$}}3)&=&(-8)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+-5 & -3 & = & -8 & \\\hline
+\end{array}$
+
+$\begin{array}{|ccccc|}\hline
+(+5)&{\color{olive}\ovalbox{\color{black}$+(-$}}3)&=&(+2)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+5 & -3 & = & 2 & \\\hline
+\end{array}$
+\hfill
+$\begin{array}{|ccccc|}\hline
+(-5)&{\color{olive}\ovalbox{\color{black}$-(+$}}3)&=&(-8)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+-5 & -3 & = & -8 & \\\hline
+\end{array}$
+
+$\begin{array}{|ccccc|}\hline
+(-5)&{\color{olive}\ovalbox{\color{black}$+(+$}}3)&=&(-2)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+-5 & +3 & = & -2 & \\\hline
+\end{array}$
+\hfill
+$\begin{array}{|ccccc|}\hline
+(-5)&{\color{olive}\ovalbox{\color{black}$-(-$}}3)&=&(-2)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & {\color{violet}\downarrow} & \\
+-5 & +3 & = & -2 & \\\hline
+\end{array}$
+
+\bigskip
+
+Complète le texte avec les mots proposés:
+
+\begin{center}
+\fbox{signe} $\quad$ \fbox{plus} $\quad$ \fbox{positif} $\quad$ \fbox{négatif} $\quad$ \fbox{moins} $\quad$ \fbox{parenthèses} 
+\end{center}
+
+Pour simplifier une écriture de nombres relatifs, il faut:
+
+\begin{tasks}
+\task[{\color{black}$\rightarrow$}] Enlever toutes les {\color{blue}parathèses}.
+\task[{\color{violet}$\rightarrow$}] {\color{violet} Si le premier nombre est {\color{blue} positif}, on enlève le {\color{blue} signe plus}}.
+\task[{\color{violet}$\rightarrow$}] {\color{violet} Si le premier nombre est {\color{blue} négatif}, on laisse le {\color{blue} signe moins}}.
+\task[{\color{olive}$\rightarrow$}] {\color{olive}Deux signes consécutifs sont remplacés par un seul en suivant la règle suivante:
+\begin{align*}
+++\quad\quad   \text{ et }\quad \quad -- \quad\quad \implies \quad \quad {\color{blue} +}\\
++-\quad\quad   \text{ et }\quad \quad -+ \quad\quad \implies \quad \quad {\color{blue} -}
+\end{align*}}
+\end{tasks}
+
+}{3}
+\end{resolu}
+
+\begin{exop}
+{Simplifie les écritures suivantes, puis effectue le calcul.
+
+\bigskip
+
+\begin{tasks}(2)
+\task $\begin{array}{cccc}
+(+17)&{\color{olive}\ovalbox{\color{black}$+(-$}}19)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $\begin{array}{cccc}
+(+10)&{\color{olive}\ovalbox{\color{black}$-(-$}}10)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $\begin{array}{cccc}
+(-19)&{\color{olive}\ovalbox{\color{black}$-(+$}}3)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $\begin{array}{cccc}
+(+36)&{\color{olive}\ovalbox{\color{black}$+(+$}}14)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $\begin{array}{cccc}
+(-18)&{\color{olive}\ovalbox{\color{black}$-(+$}}1)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $\begin{array}{cccc}
+(-30)&{\color{olive}\ovalbox{\color{black}$-(+$}}21)& \mbox{devient} \\
+{\color{violet}\downarrow}&{\color{olive}\downarrow}& & \\
+\end{array}$
+
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\end{tasks}
+
+}{2}
+\end{exop}
+
+
+\begin{exop}
+{Simplifie les écritures suivantes. Puis effectue le calcul.
+
+\begin{tasks}(2)
+\task $(+13)+(-15)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $(+9)-(-3)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $(-17)-(+23)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $(+35)+(+24)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $(-14)-(+2)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+\task $(+40)-(+21)$ devient
+
+\vspace*{.7cm}\ligne{3.2} $=$\ligne{1}
+
+
+\end{tasks}
+}{2}
+\end{exop}
+
+\begin{exo}
+{Simplifie l'écriture, puis calcule:
+
+\begin{tasks}
+\task $(+3)+(-6)-(+4)+(-7)-(-6)+(-3)$
+\task $(+2)+(-5)-(-3)+(-4)+(+6)+(-3)$
+\task $(-12)+(+27)+(-5)-(-4)+(+12)-(-17)$
+\task $(-6)+(-12)-(+3)+(-4)-(-5)-(+3)$
+\task $(+14)+(-15)-(+14)+(-6)-(-3)+(+15)$
+\task $(+3)+(-12)-(+4)+(-6)-(-7)-(+4)$
+\end{tasks}
+}{2}
+\end{exo}
+
+\begin{exop}
+{Parmi les écitures suivantes, entoure celle(s) qui représente(nt) le même nombre que $A$~?
+
+$$A=(-3)+(-5)-(-5)+(+2)$$
+
+\begin{tasks}(1)
+	\task[] $B=-3-5-(4-5)+2$
+
+	\task[] $C=-(+3)+(-5)-(+4)+(-5)+(+2)$
+
+	\task[] $D=-3-(+5)-4-(+5)-(-2)$
+
+	\task[] $E=(-3)-(-5)+(-4)-5+(+2)$
+\end{tasks}
+}{3}
+\end{exop}
+
+
+\exof{NO132}{46}{2}
+\exof{NO133}{46}{2}
+\exof{NO130}{45}{2}
+\exof{NO135}{47}{2}
+\exof{NO136}{47}{2}
+\exof{NO137}{48}{2}
+\exol{NO139}{41}{2}
+\exol{NO140}{42}{2}
+
+	\begin{qmoodle}{Addition et soustraction de relatifs -- deux termes}{3}{
+	\begin{center}	
+		Q-1
+
+\includegraphics[scale=1]{media/qr/nerop1}
+
+\tiny{{https://edu.ge.ch/qr/nerop1}}
+\end{center}
+	\begin{center}	
+		Q-2
+
+\includegraphics[scale=1]{media/qr/nerop2}
+
+\tiny{{https://edu.ge.ch/qr/nerop2}}
+\end{center}
+	\begin{center}	
+		Q-3
+
+\includegraphics[scale=1]{media/qr/nerop3}
+
+\tiny{{https://edu.ge.ch/qr/nerop3}}
+\end{center}
+}
+\end{qmoodle}
+
+\begin{qmun}{Addition et soustraction de relatifs}{
+		\begin{center}
+\includegraphics[scale=1]{media/qr/nerop4}
+
+\tiny{{https://edu.ge.ch/qr/nerop4}}
+		\end{center}
+	}
+\end{qmun}
+
+\end{document}

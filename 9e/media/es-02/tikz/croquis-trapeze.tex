@@ -1,0 +1,40 @@
+
+
+
+\begin{tikzpicture}
+
+{\scriptsize
+\coordinate[](A) at (1,0);
+\coordinate[](B) at (4,0);
+\coordinate[](C) at (5,3);
+\coordinate[](D) at (0,3);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\pic [draw, -, "$\ang{60}$", angle eccentricity=1.5]{angle = D--C--B};
+
+
+\draw (A)-- (B) -- (C) -- (D) -- cycle;
+
+\draw[dotted] (A) -- ++(0,-0.5) ;
+\draw[dotted] (B) -- ++(0,-0.5) ;
+\draw[<->, >=latex] (1,-0.5) --node[below]{$\tunit{2,5}{\cm}$} (4,-0.5);
+
+\draw[dotted] (C) -- ++(0,0.5) ;
+\draw[dotted] (D) -- ++(0,0.5) ;
+\draw[<->, >=latex] (5,3.5) --node[above]{$\tunit{5,5}{\cm}$} (0,3.5);
+
+\draw[dotted] (A) -- ++(-0.5,0) ;
+\draw[dotted] (D) -- ++(-0.5,0) ;
+\draw[<->, >=latex] (0.5,0) --node[left]{$\tunit{3,5}{\cm}$} (-0.5,3) ;
+
+
+
+
+}
+
+\end{tikzpicture}
+

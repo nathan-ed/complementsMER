@@ -1,0 +1,475 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+%\usepackage{pst-all}
+%\usepackage[pspdf={-dNOSAFER -dALLOWPSTRANSPARENCY}]{auto-pst-pdf}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Espace}
+\newcommand{\serieName}{Angles}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Angle (page 101)
+\item Mesurer un angle à l'aide d'un rapporteur (page 102)
+\item Classement des angles (page 103)
+\item Angles adjacents (page 104)
+\item Angles complémentaires (page 104)
+\item Angles supplémentaires (pages 104)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}{Vocabulaire}{Complète les phrases suivantes avec le vocabulaire adéquat :
+\begin{tasks}
+\task Un angle qui mesure 67$^{\circ}$ est un angle {\color{blue} aigu}.
+\task Un angle qui mesure 0$^{\circ}$ est un angle {\color{blue} nul}.
+\task Un angle qui mesure 180$^{\circ}$ est un angle {\color{blue} plat}.
+\task Un angle qui mesure 105$^{\circ}$ est un angle {\color{blue} obtus}.
+\task Un angle qui mesure 90$^{\circ}$ est un angle {\color{blue} droit}.
+\task Un angle qui mesure 360$^{\circ}$ est un angle {\color{blue} plein}.
+\task Un angle qui mesure 290$^{\circ}$ est un angle {\color{blue} rentrant}.
+
+\end{tasks}
+}{1}
+\end{resolu}
+
+\begin{exop}{
+Complète les phrases suivantes avec le vocabulaire adéquat :
+\begin{tasks}
+\task Un angle qui mesure 360$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 17$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 89$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 95$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 129$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 250$^{\circ}$ est un angle \hrulefill
+\end{tasks}}{1}
+\end{exop}
+
+\begin{exop}{
+Complète les phrases suivantes avec le vocabulaire adéquat :
+\begin{tasks}
+\task Un angle qui mesure 90$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 175$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 185$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 270$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 360$^{\circ}$ est un angle \hrulefill
+\task Un angle qui mesure 30$^{\circ}$ est un angle \hrulefill
+\end{tasks}}{1}
+\end{exop}
+
+\begin{resolu}
+{Encore du vocabulaire}{Observe le dessin ci-dessous et complète les phrases ci-dessous à l'aide du vocabulaire adéquat.
+
+\begin{minipage}{0.35\textwidth}
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.386869976228512,-2.5309053341215244)(2.657751576087641,6.481646935238407)
+\psline[linewidth=2.pt](-2.,1.)(0.,5.)
+\psline[linewidth=2.pt](-2.,1.)(2.,3.)
+\psline[linewidth=2.pt](-2.,1.)(2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(-2.,-2.)
+\psline[linewidth=2.pt](-2.,1.)(1.,-2.)
+\psline[linewidth=2.pt](-2.,1.)(-2.,6.)
+\psline[linewidth=2.pt](-2.,1.)(-4.,-1.)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{0.0}{0.4636476090008061}{0.8556220508886017*cos(t)+-2.|0.8556220508886017*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{0.4636476090008061}{1.1071487177940904}{1.2834330763329025*cos(t)+-2.|1.2834330763329025*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{1.1071487177940904}{1.5707963267948966}{0.8556220508886017*cos(t)+-2.|0.8556220508886017*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{1.5707963267948966}{3.9269908169872414}{1.4260367514810026*cos(t)+-2.|1.4260367514810026*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-2.356194490192345}{-1.5707963267948966}{0.8556220508886017*cos(t)+-2.|0.8556220508886017*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-1.5707963267948966}{-0.7853981633974483}{1.4260367514810026*cos(t)+-2.|1.4260367514810026*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-0.7853981633974483}{0.0}{1.9964514520734038*cos(t)+-2.|1.9964514520734038*sin(t)+1.}
+\lineto(-2.,1.)\closepath}
+\begin{scriptsize}
+\rput[bl](-0.992902507703726,1.1197487496698404){\blue{$\alpha$}}
+\rput[bl](-1.021423242733346,2.0038915355880618){\blue{$\beta$}}
+\rput[bl](-1.7914830885330875,2.260578150854642){\blue{$\gamma$}}
+\rput[bl](-3.8449760106657314,1.4334768349956608){\blue{$\delta$}}
+\rput[bl](-2.647105139421689,-0.36332947187040143){\blue{$\epsilon$}}
+\rput[bl](-1.3351513280591667,-0.9052234374331821){\blue{$\zeta$}}
+\rput[bl](0.06236468839221604,0.007440083514659037){\blue{$\eta$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.6\textwidth}
+\begin{tasks}
+\task Les angles $\alpha$ et $\beta$ sont {\color{blue} adjacents}.
+\task Les angles $\zeta$ et $\eta$ sont {\color{blue} complémentaires} et {\color{blue} adjacents}.
+\task Les angles $\alpha$ , $\beta$ et $\gamma$ sont {\color{blue} complémentaires}.
+\task Les angles $\delta$ et $\epsilon$ sont {\color{blue} supplémentaires}.
+\end{tasks}
+\end{minipage}
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Observe le dessin ci-dessous et complète les phrases ci-dessous à l'aide du vocabulaire adéquat.
+
+\begin{minipage}{0.25\textwidth}
+\begin{center}
+
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.3840805830374143,-0.6041712343427507)(3.3834458340635294,3.921118723690304)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{0.015871682991789985}{0.6267369211898055}{0.3802764670616007*cos(t)+0.09088542342183609|0.3802764670616007*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{0.6267369211898055}{1.4121350845872538}{0.6337941117693345*cos(t)+0.09088542342183609|0.6337941117693345*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{1.4121350845872536}{2.372066173184135}{0.3802764670616007*cos(t)+0.09088542342183609|0.3802764670616007*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{2.372066173184135}{4.553727738177047}{0.6337941117693345*cos(t)+0.09088542342183609|0.6337941117693345*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-1.7294575690025396}{-0.9440594056050914}{0.3802764670616007*cos(t)+0.09088542342183609|0.3802764670616007*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-0.9440594056050914}{0.01587168299178998}{0.6337941117693345*cos(t)+0.09088542342183609|0.6337941117693345*sin(t)+1.519039040084521}
+\lineto(0.09088542342183609,1.519039040084521)\closepath}
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(1.8876917302878995,1.547559775114141)
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(1.5463841613221236,2.57300761679398)
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(0.3748101232507987,3.293500395411068)
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(-1.199815705785783,2.7694057590044023)
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(-0.19303927640712643,-0.25542231524202585)
+\psline[linewidth=2.pt](0.09088542342183609,1.519039040084521)(1.1448540001312948,0.06354030218423334)
+\begin{scriptsize}
+\psdots[dotstyle=x](1.8876917302878995,1.547559775114141)
+\psdots[dotstyle=x](0.09088542342183609,1.519039040084521)
+\psdots[dotstyle=x](1.5463841613221236,2.57300761679398)
+\rput[bl](0.5693999778076844,1.6521358035560834){\blue{$\alpha$}}
+\psdots[dotstyle=x](0.3748101232507987,3.293500395411068)
+\rput[bl](0.4933446843953643,2.1084675640300046){\blue{$\beta$}}
+\psdots[dotstyle=x](-1.199815705785783,2.7694057590044023)
+\rput[bl](-0.15312530960935686,1.9817087416761376){\blue{$\gamma$}}
+\psdots[dotstyle=x](-0.19303927640712643,-0.25542231524202585)
+\rput[bl](-0.7474847167894378,1.2211558075529352){\blue{$\delta$}}
+\psdots[dotstyle=x](1.1448540001312948,0.06354030218423334)
+\rput[bl](0.1130682173337636,0.9169346339036543){\blue{$\epsilon$}}
+\psdots[dotstyle=x](1.8876917302879,1.547559775114141)
+\rput[bl](0.7215105646323247,1.056369338492908){\blue{$\zeta$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.72\textwidth}
+\begin{tasks}
+\task Les angles $\gamma$ et $\beta$ sont \hrulefill .
+\task Les angles $\alpha$ et $\zeta$ sont \hrulefill .
+\task Les angles $\gamma$ et $\delta$ sont \hrulefill .
+\task Les angles $\delta$ et $\epsilon$ sont \hrulefill.
+\end{tasks}
+\end{minipage}
+}{1}
+\end{exop}
+
+\begin{exop}{
+\begin{center}
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.9,-1.66)(10.9,6.34)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{0.03470827822527495}{1.0947269964721353}{0.6*cos(t)+-2.2|0.6*sin(t)+3.02}
+\lineto(-2.2,3.02)\closepath}
+\psline(0.68,3.12)(-2.2,3.02)
+\psline(-2.2,3.02)(-0.88,5.58)
+\psline(5.46,4.58)(4.02,4.48)
+\psline(3.3,3.26)(4.02,4.48)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{0.06933313368820833}{4.179233274877061}{0.6*cos(t)+4.02|0.6*sin(t)+4.48}
+\lineto(4.02,4.48)\closepath}
+\psline(10.56,3.92)(7.24,3.86)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{0.01807032202622425}{3.1596629756160173}{0.6*cos(t)+9.140463631416653|0.6*sin(t)+3.8943457282786142}
+\lineto(9.140463631416653,3.8943457282786142)\closepath}
+\psline(0.66,-1.)(-1.88,1.04)
+\psline(-1.88,1.04)(-2.12,-1.34)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{-0.6766584854150051}{4.61188838133006}{0.6*cos(t)+-1.88|0.6*sin(t)+1.04}
+\lineto(-1.88,1.04)\closepath}
+\psline(2.78,-1.)(3.56,1.54)
+\psline(3.56,1.54)(4.82,-0.86)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{-1.868741855006469}{-1.0873493252276976}{0.6*cos(t)+3.56|0.6*sin(t)+1.54}
+\lineto(3.56,1.54)\closepath}
+\psline(7.16,1.82)(7.22,-0.54)
+\psline(7.22,-0.54)(9.78,-0.84)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{-0.11665543544106934}{1.5962145800539722}{0.6*cos(t)+7.22|0.6*sin(t)+-0.54}
+\lineto(7.22,-0.54)\closepath}
+\begin{scriptsize}
+\rput[bl](-1.52,3.44){\qqwuqq{$\alpha$}}
+\rput[bl](3.48,5.14){\qqwuqq{$\beta$}}
+\rput[bl](9.,4.7){\qqwuqq{$\gamma$}}
+\rput[bl](-2.22,1.78){\qqwuqq{$\delta$}}
+\rput[bl](3.54,0.6){\qqwuqq{$\varepsilon$}}
+\rput[bl](7.84,-0.1){\qqwuqq{$\zeta$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+Observe et sans mesurer, indique de que type d'angle il s'agit.
+\begin{tasks}[after-item-skip = 0.4em](2)
+\task $\alpha$ est un angle \hrulefill
+\task $\beta$  est un angle \hrulefill
+\task $\gamma$ est un angle \hrulefill
+\task $\delta$ est un angle \hrulefill
+\task $\varepsilon$ est un angle \hrulefill
+\task $\zeta$ est un angle \hrulefill
+\end{tasks}
+}{1}
+\end{exop}
+
+\newpage
+
+\begin{exop}{
+\begin{center}
+
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=0.9cm,yunit=0.9cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.9,-1.66)(10.9,6.34)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{0.03470827822527495}{0.5350963566334186}{0.6*cos(t)+-2.28|0.6*sin(t)+3.}
+\lineto(-2.28,3.)\closepath}
+\psline(0.6,3.1)(-2.28,3.)
+\psline(-2.28,3.)(1.6,5.3)
+\psline(5.38,4.56)(3.94,4.46)
+\psline(3.,5.34)(3.94,4.46)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{0.06933313368820834}{2.389149587806643}{0.6*cos(t)+3.94|0.6*sin(t)+4.46}
+\lineto(3.94,4.46)\closepath}
+\psline(-1.34,1.5)(0.88,-1.4)
+\psline(0.88,-1.4)(-2.2,-1.36)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{2.224154728577706}{3.1286063706696208}{0.6*cos(t)+0.88|0.6*sin(t)+-1.4}
+\lineto(0.88,-1.4)\closepath}
+\psline(1.58,2.32)(3.48,1.52)
+\psline(3.48,1.52)(4.74,-0.88)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{2.743070207923373}{5.195835981951889}{0.6*cos(t)+3.48|0.6*sin(t)+1.52}
+\lineto(3.48,1.52)\closepath}
+\psline(8.98,1.98)(7.14,-0.56)
+\psline(7.14,-0.56)(9.7,-0.86)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{-0.11665543544106934}{0.9438753311957058}{0.6*cos(t)+7.14|0.6*sin(t)+-0.56}
+\lineto(7.14,-0.56)\closepath}
+\psline(10.48,3.9)(7.74,4.)
+\pscustom[linecolor=qqwuqq]{
+\parametricplot{-0.03648015912294973}{6.079924711941082}{0.6*cos(t)+7.74|0.6*sin(t)+4.}
+\lineto(7.74,4.)\closepath}
+\psline(10.36,3.46)(7.74,4.)
+\begin{scriptsize}
+\rput[bl](-1.08,3.36){\qqwuqq{$\alpha$}}
+\rput[bl](3.7,5.14){\qqwuqq{$\beta$}}
+\rput[bl](-0.08,-1.18){\qqwuqq{$\delta$}}
+\rput[bl](3.2,0.68){\qqwuqq{$\varepsilon$}}
+\rput[bl](7.82,-0.2){\qqwuqq{$\zeta$}}
+\rput[bl](7.14,4.68){\qqwuqq{$\gamma$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+Observe et sans mesurer, indique de que type d'angle il s'agit.
+\begin{tasks}[after-item-skip = 0.4em](2)
+\task $\alpha$ est un angle \hrulefill
+\task $\beta$  est un angle \hrulefill
+\task $\gamma$ est un angle \hrulefill
+\task $\delta$ est un angle \hrulefill
+\task $\varepsilon$ est un angle \hrulefill
+\task $\zeta$ est un angle \hrulefill
+\end{tasks}
+}{1}
+\end{exop}
+
+
+\begin{resolu}{Mesurer un angle}{
+Mesure à l'aide de ton rapporteur les angles suivants : 
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=0.6cm,yunit=0.6cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.76,-2.72)(10.02,7.26)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-0.47224338582675685}{0.7494870905692738}{0.6*cos(t)+-2.46|0.6*sin(t)+2.26}
+\lineto(-2.46,2.26)\closepath}
+\psplot[linewidth=2.pt]{-2.46}{10.02}{(--2.7896-1.42*x)/2.78}
+\psplot[linewidth=2.pt]{-2.46}{10.02}{(--10.39613084547809--2.126676882262375*x)/2.285179519961349}
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-1.6188362596426593}{0.6500917679499691}{0.6*cos(t)+6.16|0.6*sin(t)+3.12}
+\lineto(6.16,3.12)\closepath}
+\psline[linewidth=2.pt](5.96,-1.04)(6.16,3.12)
+\psline[linewidth=2.pt](6.16,3.12)(9.475302405312256,5.640787567672208)
+\pscustom[linewidth=2.pt,linecolor=xfqqff]{
+\parametricplot{2.0791471786853037}{7.576934322467442}{0.6*cos(t)+3.72|0.6*sin(t)+0.84}
+\lineto(3.72,0.84)\closepath}
+\psline[linewidth=2.pt](1.584537520816626,4.672518754031087)(3.72,0.84)
+\psline[linewidth=2.pt](3.72,0.84)(4.92,5.06)
+\begin{scriptsize}
+\rput[bl](-1.62,2.26){\blue{$\alpha$}}
+\psdots[dotstyle=x](5.96,-1.04)
+\psdots[dotstyle=x](6.16,3.12)
+\psdots[dotstyle=x](9.475302405312256,5.640787567672208)
+\rput[bl](6.92,2.66){\blue{$\beta$}}
+\psdots[dotstyle=x](4.92,5.06)
+\psdots[dotstyle=x](3.72,0.84)
+\psdots[dotstyle=x](1.584537520816626,4.672518754031087)
+\rput[bl](3.84,-0.12){\xfqqff{$\gamma$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+
+\vspace{-0.5cm}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$\quad\alpha =\quad{\color{blue}70^{\circ}}$ & $\quad\beta =\quad{\color{blue}130^{\circ}}$ & $\quad\gamma =\quad{\color{blue}315^{\circ}}$ \\\hline
+\end{tabular}
+\end{center}
+\vspace{-0.8cm}
+}{1}
+\end{resolu}
+
+\begin{exop}{
+Mesure à l'aide de ton rapporteur les angles suivants : 
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.98,-3.46)(7.62,7.44)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{0.3217505543966422}{1.6307474933923893}{0.6*cos(t)+0.46|0.6*sin(t)+2.44}
+\lineto(0.46,2.44)\closepath}
+\psline[linewidth=2.pt](4.78,3.88)(0.46,2.44)
+\psline[linewidth=2.pt](0.46,2.44)(0.18716508498663137,6.985498994516405)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{1.9156020475902746}{7.675188579171562}{0.6*cos(t)+-1.74|0.6*sin(t)+-2.48}
+\lineto(-1.74,-2.48)\closepath}
+\psline[linewidth=2.pt](-0.84,2.5)(-1.74,-2.48)
+\psline[linewidth=2.pt](-1.74,-2.48)(-3.450577136594008,2.282806510846504)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-0.07063699891190219}{1.8492251782818605}{0.6*cos(t)+3.12|0.6*sin(t)+-2.88}
+\lineto(3.12,-2.88)\closepath}
+\psline[linewidth=2.pt](7.36,-3.18)(3.12,-2.88)
+\psline[linewidth=2.pt](3.12,-2.88)(1.9517423785349375,1.2069027551299527)
+\begin{scriptsize}
+\rput[bl](0.86,3.04){\blue{$\alpha$}}
+\rput[bl](-2.78,-2.84){\blue{$\beta$}}
+\rput[bl](3.64,-2.36){\blue{$\gamma$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+
+\vspace{-0.5cm}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$\quad\alpha =\quad\ligne{3}$ & $\quad\beta =\quad\ligne{3}$ & $\quad\gamma =\quad\ligne{3}$ \\\hline
+\end{tabular}
+\end{center}
+\vspace{-0.8cm}
+}{1}
+\end{exop}
+
+\begin{exop}{
+Mesure à l'aide de ton rapporteur les angles suivants : 
+
+\begin{center}
+
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.94,-1.74)(8.66,9.16)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-2.5990898229999497}{2.11329915738474}{0.6*cos(t)+1.12|0.6*sin(t)+5.72}
+\lineto(1.12,5.72)\closepath}
+\psline[linewidth=2.pt](-1.7,4.02)(1.12,5.72)
+\psline[linewidth=2.pt](1.12,5.72)(-0.58,8.54)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{-0.6124634829443664}{0.5220005308519479}{0.6*cos(t)+3.74|0.6*sin(t)+5.86}
+\lineto(3.74,5.86)\closepath}
+\psline[linewidth=2.pt](8.26,8.46)(3.74,5.86)
+\psline[linewidth=2.pt](3.74,5.86)(8.006634789363252,2.8622962831201617)
+\pscustom[linewidth=2.pt,linecolor=blue]{
+\parametricplot{2.9064234365098898}{5.786216702300534}{0.6*cos(t)+3.5|0.6*sin(t)+1.5}
+\lineto(3.5,1.5)\closepath}
+\psline[linewidth=2.pt](8.22,-1.06)(3.5,1.5)
+\psline[linewidth=2.pt](3.5,1.5)(-1.7217466555468564,2.751144222416115)
+\begin{scriptsize}
+\rput[bl](1.82,5.34){\blue{$\alpha$}}
+\rput[bl](4.52,5.68){\blue{$\beta$}}
+\rput[bl](3.12,0.46){\blue{$\gamma$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$\quad\alpha =\quad\ligne{3}$ & $\quad\beta =\quad\ligne{3}$ & $\quad\gamma =\quad\ligne{3}$ \\\hline
+\end{tabular}
+\end{center}
+\vspace{-0.8cm}
+}{1}
+\end{exop}
+
+
+\begin{exo}{
+Construis avec ton rapporteur les angles ci-dessous, puis écris sous ton dessin de quel type d'angle il s'agit.
+\begin{tasks}(3)
+\task 55$^{\circ}$ \task 72$^{\circ}$ \task 160$^{\circ}$ \task 175$^{\circ}$ \task 95$^{\circ}$ \task 85$^{\circ}$
+\end{tasks}
+
+}{1}
+\end{exo}
+
+
+\begin{exo}{
+Construis avec ton rapporteur les angles ci-dessous, puis écris sous ton dessin de quel type d'angle il s'agit.
+\begin{tasks}(3)
+\task 35$^{\circ}$ \task 360$^{\circ}$ \task 140$^{\circ}$ \task 260$^{\circ}$ \task 197$^{\circ}$ \task 305$^{\circ}$
+\end{tasks}
+}{1}
+\end{exo}
+
+\exof{ES12}{110}{1}
+\exof{ES14}{111}{1}
+\exof{ES15}{112}{1}
+\exof{ES19}{113}{2}
+
+
+\end{document}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="78.925209mm"
+   height="101.75875mm"
+   viewBox="0 0 78.925209 101.75875"
+   version="1.1"
+   id="svg1430"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="prism_hexa_blue.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1432"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="139.7295"
+     inkscape:cy="601.85165"
+     inkscape:window-width="1723"
+     inkscape:window-height="999"
+     inkscape:window-x="212"
+     inkscape:window-y="448"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1427" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-68.140256,10.957857)">
+    <g
+       id="g89"
+       transform="matrix(0.26458333,0,0,0.26458333,35.279006,-147.87973)">
+      <polygon
+         fill="#c8e9fb"
+         points="417.1,821.1 417.1,583.4 385.2,630.4 385.2,799.7 "
+         id="polygon61" />
+      <polygon
+         fill="#c8e9fb"
+         points="385.2,872.2 416.1,826.8 385.2,806.2 "
+         id="polygon63" />
+      <polygon
+         fill="#c8e9fb"
+         points="343.6,638.5 268.5,650.5 268.5,771.1 343.6,774.3 "
+         id="polygon65" />
+      <polygon
+         fill="#c8e9fb"
+         points="215.3,638.9 156.4,624.8 156.4,796 215.3,769.9 "
+         id="polygon67" />
+      <polygon
+         fill="#c8e9fb"
+         points="156.4,870.6 263.1,896.2 263.1,776.2 218.5,774.3 156.4,801.9 "
+         id="polygon69" />
+      <polygon
+         fill="#c8e9fb"
+         points="130.5,562.1 155.7,619.1 215.3,633.4 215.3,524.4 "
+         id="polygon71" />
+      <polygon
+         fill="#c8e9fb"
+         points="151.1,798.4 151.1,621.9 129.6,573.4 129.6,807.9 "
+         id="polygon73" />
+      <polygon
+         fill="#c8e9fb"
+         points="151.1,860 151.1,804.3 130.5,813.4 "
+         id="polygon75" />
+      <polygon
+         fill="#c8e9fb"
+         points="220.6,523 220.6,634.6 265.9,645.5 343.6,633 343.6,528.3 "
+         id="polygon77" />
+      <polygon
+         fill="#c8e9fb"
+         points="379.8,796.2 379.8,632.7 349,637.6 349,775.6 "
+         id="polygon79" />
+      <polygon
+         fill="#c8e9fb"
+         points="268.5,896.4 379.8,878.6 379.8,802.6 345.4,779.7 268.5,776.4 "
+         id="polygon81" />
+      <polygon
+         fill="#c8e9fb"
+         points="349,632.2 380.9,627.1 416.1,575.4 349,530.7 "
+         id="polygon83" />
+      <polygon
+         fill="#c8e9fb"
+         points="263.1,770.8 263.1,650.3 220.6,640.2 220.6,769 "
+         id="polygon85" />
+      <path
+         fill="#6b91ae"
+         d="m 422.5,574.2 c 0,-0.1 -0.1,-0.2 -0.1,-0.3 -0.1,-0.2 -0.1,-0.3 -0.2,-0.5 -0.1,-0.1 -0.2,-0.3 -0.3,-0.4 -0.1,-0.1 -0.2,-0.3 -0.4,-0.4 -0.1,-0.1 -0.1,-0.1 -0.2,-0.2 l -73.5,-49 c -0.1,0 -0.1,0 -0.2,-0.1 -0.3,-0.2 -0.7,-0.3 -1,-0.3 -0.1,0 -0.1,0 -0.2,-0.1 L 218,517.5 c 0,0 0,0 -0.1,0 0,0 0,0 0,0 0,0 0,0 -0.1,0 -0.3,0 -0.7,0.1 -1,0.2 0,0 0,0 0,0 0,0 0,0 0,0 l -91,40.5 c -0.1,0.1 -0.2,0.2 -0.3,0.2 -0.2,0.1 -0.4,0.2 -0.5,0.4 -0.1,0.1 -0.2,0.3 -0.3,0.4 -0.1,0.1 -0.2,0.3 -0.3,0.4 -0.1,0.2 -0.1,0.4 -0.1,0.7 0,0.1 -0.1,0.2 -0.1,0.3 v 0 c 0,0 0,0 0,0 v 251.3 c 0,0 0,0 0,0 0,0.2 0.1,0.4 0.1,0.6 0,0.2 0,0.3 0.1,0.5 0,0 0,0 0,0 l 26.8,60.7 c 0,0.1 0.1,0.1 0.1,0.1 0.1,0.3 0.3,0.5 0.6,0.8 0.1,0.1 0.2,0.1 0.3,0.2 0.2,0.1 0.4,0.3 0.7,0.3 0.1,0 0.1,0.1 0.2,0.1 l 112,26.8 c 0.2,0.1 0.4,0.1 0.6,0.1 0.1,0 0.3,0 0.4,0 l 116.7,-18.7 c 0.1,0 0.2,-0.1 0.3,-0.1 0.2,-0.1 0.4,-0.1 0.5,-0.2 0.1,-0.1 0.3,-0.2 0.4,-0.3 0.2,-0.1 0.3,-0.2 0.4,-0.4 0.1,-0.1 0.1,-0.1 0.2,-0.2 l 37.3,-54.8 c 0,-0.1 0.1,-0.2 0.1,-0.2 0.1,-0.2 0.2,-0.3 0.2,-0.5 0.1,-0.2 0.1,-0.3 0.1,-0.5 0,-0.1 0.1,-0.2 0.1,-0.3 V 574.7 c 0,-0.1 0,-0.2 -0.1,-0.3 0.1,0 0.2,-0.1 0.2,-0.2 z M 151.1,860 l -20.6,-46.6 20.6,-9.2 z m 0,-61.6 -21.5,9.5 V 573.4 l 21.5,48.6 z m -20.6,-236.3 84.8,-37.7 v 109 l -59.6,-14.3 z m 84.8,76.8 v 131 L 156.4,796 V 624.8 Z m 47.8,257.3 -106.7,-25.6 v -68.8 l 62,-27.6 44.6,1.9 v 120.1 z m 0,-125.4 -42.5,-1.8 V 640.2 l 42.5,10.2 z m 2.8,-125.3 -45.3,-10.8 V 523 l 123,5.2 V 633 Z m 77.7,-7 v 135.8 l -75.2,-3.2 V 650.5 Z m 36.2,240.1 -111.3,17.8 v -120 l 77,3.3 34.4,22.9 v 76 z m 0,-82.4 -30.8,-20.6 v -138 l 30.8,-4.9 z m 1.1,-169.1 -31.9,5.1 V 530.7 l 67.1,44.7 z m 4.3,245.1 v -66 l 30.9,20.6 z m 31.9,-51.1 -32,-21.3 V 630.4 l 32,-47 z"
+         id="path87" />
+    </g>
+  </g>
+</svg>

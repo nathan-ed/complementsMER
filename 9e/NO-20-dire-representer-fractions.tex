@@ -1,0 +1,555 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+
+% \newcount\segmentsleft
+% \tikzset{pics/.cd,
+%   circle fraction/.style args={#1/#2}{code={%
+% \segmentsleft=#1\relax
+% \pgfmathloop
+% \ifnum\segmentsleft<1\else
+% \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
+% \begin{scope}[shift={(\pgfmathcounter*0.85,0)}]
+% \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
+%   \fill[fill=gray!70] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
+% \draw circle [radius=3/8];
+% \ifnum#2>1
+%   \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
+%     \draw (0,0) -- (90+\a:3/8);
+% \fi
+% \end{scope}
+% \advance\segmentsleft by-#2
+% \repeatpgfmathloop
+%   }}
+% }
+
+
+
+    
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Dire, écrire et représenter les fractions}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Définition d'une fraction (page 27)
+\item Passage d'une écriture fractionnaire à une écriture décimale (page 28)
+\item Passer d'une écriture décimale à une écriture fractionnaire (page 28)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exop}{
+	Détermine à quelle fraction correspond chacune des parties grisées.
+		\begin{tasks}(3)
+		\task 
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={3/4}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={9/13}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={7/10}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={2/3}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={5/8}};
+\end{tikzpicture}}
+
+\smallskip
+
+\hrulefill
+
+		\task
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={4/5}};
+\end{tikzpicture}}
+
+
+\vspace{2pt} 
+
+\hrulefill
+\end{tasks}
+}{1}\end{exop}
+
+
+\begin{exop}{
+	Détermine à quelle fraction correspond chacune des parties grisées.
+		\begin{tasks}(2)
+		\task 
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={9/5}};
+\end{tikzpicture}}
+
+\hrulefill
+
+		\task 
+
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={7/3}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+		\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={6/2}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={11/10}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={3/1}};
+\end{tikzpicture}}
+
+\hrulefill
+		\task 
+
+			\scalebox{2.5}{
+				\begin{tikzpicture}
+  %\node at (-1/2,0) {$\ldots\ldots\ldots$};
+  \pic  at (0, 0) {circle fraction={7/4}};
+\end{tikzpicture}}
+
+\hrulefill
+	\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+	Détermine la fraction représentée par les parties grisées.
+	\begin{tasks}(2)
+		\task 
+			
+			$\fracrect[xscale=4]{3}{4}$
+
+			\hrulefill
+
+		\task 
+			
+			$\fracrect[xscale=4]{5}{8}$
+
+\hrulefill
+
+		\task 
+			
+			$\fracrect[xscale=4]{6}{6}$	
+			\vspace{2pt}
+
+		\hspace{24pt}$\fracrect[xscale=4]{4}{6}$
+
+\hrulefill
+
+		\task 
+			
+			$\fracrect[xscale=4]{7}{11}$
+
+\hrulefill
+
+		\task 
+			
+			$\fracrect[xscale=4]{3}{10}$
+
+\hrulefill
+
+		\task 
+			
+			$\emptyfracrect[xscale=4]{9}$
+
+\hrulefill
+
+\vspace{1cm}
+\phantom{test}
+
+	\end{tasks}
+}{1}\end{exop}
+
+
+\begin{exol}{NO168}{50}{1}
+\end{exol}
+\begin{exof}{NO175}{62}{1}
+\end{exof}
+\begin{exof}{NO176}{63}{3}
+\end{exof}
+\vfill
+\begin{exof}{NO177}{64}{2}
+\end{exof}
+\vfill
+\begin{exol}{NO164}{48}{1}
+\end{exol}
+\vfill
+\begin{exol}{NO165}{49}{1}
+\end{exol}
+\vfill
+\begin{exol}{NO166}{49}{2}
+\end{exol}
+
+\vfill
+\begin{exo}{
+Représente graphiquement les fractions suivantes.
+	\begin{tasks}(3)
+		\task $\dfrac{3}{4}$
+		\task $\dfrac{5}{6}$
+		\task $\dfrac{4}{10}$
+		\task $\dfrac{2}{5}$
+		\task $\dfrac{7}{9}$
+		\task $\dfrac{1}{3}$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\vfill
+\begin{exo}{
+Représente graphiquement les fractions suivantes.
+	\begin{tasks}(3)
+		\task $\dfrac{3}{2}$
+		\task $\dfrac{12}{20}$
+		\task $\dfrac{3}{7}$
+		\task $\dfrac{14}{15}$
+		\task $\dfrac{20}{9}$
+		\task $\dfrac{13}{18}$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\vfill
+\begin{exol}{NO172}{50}{1}
+\end{exol}
+\vfill
+\begin{exol}{NO167}{49}{1}
+\end{exol}
+\vfill
+\begin{exol}{NO212}{55}{1}
+\end{exol}
+\vfill
+\begin{exol}{NO213}{56}{2}
+\end{exol}
+
+\newpage
+\begin{exop}{
+Écris les nombres suivants sous forme de fraction.
+\begin{tasks}(2)
+    \task un quart: \hrulefill
+    \task trois huitièmes: \hrulefill
+    \task neuf cinquièmes: \hrulefill
+    \task deux tiers: \hrulefill
+    \task six demis: \hrulefill
+    \task quarante centièmes: \hrulefill
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exop}
+
+
+\begin{exop}{
+Écris les nombres suivants sous forme de fraction.
+\begin{tasks}(2)
+    \task dix-neuf vingtièmes: \hrulefill
+    \task deux: \hrulefill
+    \task vingt quarts: \hrulefill
+    \task cinq tiers: \hrulefill
+    \task sept: \hrulefill
+    \task huit demis: \hrulefill
+\end{tasks}
+ \vspace{1pt}
+}{1}\end{exop}
+
+\begin{exop}{
+Écris les nombres suivants en lettres.
+\begin{tasks}(2)
+    \task $\dfrac{13}{7}$: \hrulefill
+    \task $\dfrac{3}{2}$: \hrulefill
+    \task $\dfrac{4}{5}$: \hrulefill
+    \task $\dfrac{2}{4}$: \hrulefill
+    \task $\dfrac{7}{3}$: \hrulefill
+    \task $\dfrac{9}{10}$: \hrulefill
+\end{tasks}
+ \vspace{1pt}
+
+}{1}\end{exop}
+
+\begin{exop}{
+Écris les nombres suivants en lettres.
+\begin{tasks}(2)
+    \task $\dfrac{9}{5}$: \hrulefill
+    \task $\dfrac{10}{8}$: \hrulefill
+    \task $\dfrac{1}{2}$: \hrulefill
+    \task $\dfrac{3}{4}$: \hrulefill
+    \task $\dfrac{6}{9}$: \hrulefill
+    \task $\dfrac{5}{3}$: \hrulefill
+\end{tasks}
+ \vspace{1pt}
+
+}{1}\end{exop}
+
+\vfill
+
+\begin{exo}{
+	Détermine le nombre décimal correspondant aux fractions suivantes.
+	\begin{tasks}(3)
+		\task $\dfrac{3}{10}$
+		\task $\dfrac{4}{100}$
+		\task $\dfrac{56}{10}$
+		\task $\dfrac{82}{100}$
+		\task $\dfrac{7}{1}$
+		\task $\dfrac{403}{100}$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+
+\vfill
+
+
+\begin{exol}{NO190}{52}{2}
+\end{exol}
+
+
+\vfill
+
+\begin{exo}{
+	Détermine le nombre décimal correspondant aux fractions suivantes.
+	\begin{tasks}(3)
+		\task $\dfrac{370}{10}$
+		\task $\dfrac{91}{1000}$
+		\task $\dfrac{218}{10000}$
+		\task $\dfrac{111}{10}$
+		\task $\dfrac{2020}{10}$
+		\task $\dfrac{35311}{100000}$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+
+\vfill
+
+\begin{qmun}{De l'écriture fractionnaire à l'écriture décimale}{
+		\begin{center}
+\includegraphics[scale=1]{media/qr/derfq1}
+
+\tiny{{https://edu.ge.ch/qr/derfq1}}
+		\end{center}
+	}
+\end{qmun}
+
+
+\vfill
+
+\newpage
+
+\begin{exo}{
+	Détermine la fraction décimale correspondant aux nombres suivants.
+	\begin{tasks}[after-item-skip=0.2em, after-skip=-0.5em](3)
+		\task $0,13$
+		\task $0,4$
+		\task $0,752$
+		\task $0,5353$
+		\task $0,14$
+		\task $0,33$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+
+\begin{exo}{
+	Détermine la fraction décimale correspondant aux nombres suivants.
+	\begin{tasks}[after-item-skip=0.2em](3)
+		\task $7,942$
+		\task $1,32$
+		\task $11,7$
+		\task $980,01$
+		\task $97,361$
+		\task $0,920101$
+	\end{tasks}
+ \vspace{1pt}
+}{2}\end{exo}
+
+\begin{resolu}{De l'écriture fractionnaire à décimale}
+{Écris les nombres suivants sous forme décimale.
+
+{\color{blue} Afin de déterminer l'écriture décimale d'une fraction, il faut calculer le quotient de la fraction.}
+
+\begin{tasks}(2)
+    \task $\dfrac{3}{4}={{\color{blue}3\div 4=0,75}}$
+    \task $\dfrac{5}{10}={{\color{blue}5\div 10=0,5}}$
+    \task $\dfrac{10}{8}={{\color{blue}10\div 8=1,25}}$
+    \task $\dfrac{8}{5}={{\color{blue}8\div 5=1,6}}$
+\end{tasks}
+ \vspace{1pt}
+}{1}
+\end{resolu}
+
+\begin{exop}{
+Écris les nombres suivants sous forme décimale.
+\begin{tasks}(2)
+	\task $\dfrac{4}{5}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{30}{25}=\hrulefill$
+    \task $\dfrac{1}{2}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{8}{10}=\hrulefill$
+    \task $\dfrac{3}{15}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{8}{5}=\hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{1}\end{exop}
+
+\begin{exo}{
+Écris les nombres suivants dans leur forme périodique.
+\begin{tasks}(2)
+    \task $\dfrac{2}{3}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{2}{9}=\hrulefill$
+    \task $\dfrac{7}{11}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{5}{9}=\hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{2}\end{exo}
+
+\begin{exo}{
+Écris les nombres suivants sous forme décimale ou périodique.
+\begin{tasks}(2)
+    \task $\dfrac{1}{3}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{5}{2}=\hrulefill$
+    \task $\dfrac{6}{100}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{10}{4}=\hrulefill$
+    \task $\dfrac{8}{9}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{9}{7}=\hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{3}\end{exo}
+
+
+\begin{exol}{NO192}{53}{1}
+\end{exol}
+
+\begin{exo}{
+	Détermine la longueur de la période et la période des nombres périodiques suivants.
+	\begin{tasks}[after-item-skip=0.2em, after-skip=-0.5em](3)
+		\task $0,\overline{3}$
+		\task $0,\overline{32}$
+		\task $0,\overline{63717171}$
+		\task $1,3\overline{4}$
+		\task $2,346346346\ldots$
+		\task $5,1\overline{5}$
+	\end{tasks}
+ \vspace{1pt}
+}{1}\end{exo}
+
+\begin{exo}{
+	Détermine si les nombres suivants sont périodiques. Si c'est le cas, indique la longueur de la période et la période du nombre en question.
+	\begin{tasks}[after-item-skip=0.2em, after-skip=-0.5em](3)
+		\task $14,12\overline{1}$
+		\task $134,875875875$
+		\task $76,\overline{54}$
+		\task $1,434343\ldots$
+		\task $0,3333333$
+		\task $1,\overline{43}$
+	\end{tasks}
+ \vspace{1pt}
+}{2}\end{exo}
+
+
+
+\begin{exop}{
+Détermine l'écriture décimale des nombres suivants.
+\begin{tasks}(2)
+    \task $\dfrac{7}{3}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{8}{9}=\hrulefill$
+    \task $\dfrac{4}{11}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{11}{15}=\hrulefill$
+    \task $\dfrac{19}{33}=\hrulefill$\hspace{0.5cm}
+    \task $\dfrac{3}{7}=\hrulefill$
+\end{tasks}
+ \vspace{1pt}
+
+}{3}\end{exop}
+
+
+\begin{qmun}{De l'écriture décimale à l'écriture fractionnaire}{
+		\begin{center}
+\includegraphics[scale=1]{media/qr/derfq2}
+
+\tiny{{https://edu.ge.ch/qr/derfq2}}
+		\end{center}
+	}
+\end{qmun}
+
+%\exof{NO169}{58}{1}
+%\exof{NO170}{58}{2}
+%\exof{NO171}{59}{1}
+
+\end{document}

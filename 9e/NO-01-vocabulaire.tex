@@ -1,0 +1,205 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%\usepackage{mathptmx}
+%\usepackage{textcomp}
+%\renewcommand{\rmdefault}{ptm}
+%\usepackage{cmbright}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{20pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Multiples et diviseurs: Vocabulaire}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Multiple, diviseur (page 12)
+\item Vocabulaire des opérations (pages 22 à 24)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exop}{
+Complète par {\color{blue} \textbf{est multiple de}} ou  {\color{blue} \textbf{est diviseur de}}.
+
+\begin{tasks}(2)
+    \task 86 \hrulefill~ 860. \quad~
+    \task 24 \hrulefill~ 24. \quad~
+    \task 65 \hrulefill~ 5. \quad~
+    \task 31 \hrulefill~ 1. \quad~
+    \task ~7 \hrulefill~ 0. \quad~
+    \task ~1 \hrulefill~ 36. \quad~
+    \task 23 \hrulefill~ 460. \quad~
+    \task 770 \hrulefill~ 77. \quad~
+    \task 0 \hrulefill~ 3. \quad~
+    \task 5 \hrulefill~ 45. \quad~
+\end{tasks}
+\smallskip
+}{1}\end{exop}
+
+
+
+
+
+\begin{exop}{
+Complète par {\color{blue} \textbf{multiple}} ou  {\color{blue} \textbf{diviseur}}.
+\begin{tasks}(2)
+    \task 35 est un \hrulefill~ de 385. \quad~
+    \task 45 a pour \hrulefill~ 90. \quad~
+    \task 75 est un \hrulefill~ de 5. \quad~
+    \task 42 est un \hrulefill~ de 42. \quad~
+    \task 48 a pour \hrulefill~ 12. \quad~
+    \task 30 est un \hrulefill~ de 6. \quad~
+    \task 0 a pour \hrulefill~ 7. \quad~
+    \task 6 a pour \hrulefill~ 54. \quad~
+    \task 144 a pour \hrulefill~ 12. \quad~
+    \task 13 est un \hrulefill~ 1. \quad~
+\end{tasks}
+\smallskip
+}{1}\end{exop}
+
+
+
+\begin{exo}{
+    Les phrases suivantes sont-elles {\color{blue}\textbf{vraies}} ou {\color{blue}\textbf{fausses}}~? Corrige les phrases erronnées.
+\begin{tasks}(2)
+    \task 3 divise 41.
+    \task 0 est un diviseur de 15.
+    \task 143 est un multiple de 11.
+    \task 1 est un diviseur de 0. 
+    \task 8 a pour diviseur 24. 
+    \task 1 est un multiple de 73.
+    \task 40 a pour diviseur 10.
+    \task 11 a pour multiple 55. 
+    \task 753 est un multiple de 3.
+    \task 9 divise 0. 
+    \task 526 divise 2.
+    \task 53 est un multiple de 1.
+\end{tasks}
+\smallskip
+}{2}\end{exo}
+
+
+\begin{exop}{
+    Sachant que $8\cdot52=104$, dire, parmi les phrases suivantes, celles qui sont exactes. Corrige-les le cas échéant.
+    \begin{tasks}
+        \task $104$ est un diviseur de $8$. \hrulefill
+        \task $8$ est un diviseur de $104$. \hrulefill
+        \task $104$ est un multiple de $13$. \hrulefill
+    \end{tasks}
+\smallskip
+}{2}\end{exop}
+
+
+\begin{exop}{
+   Sachant que $17\cdot23=391$, indique quelles phrases sont exactes. \\ Corrige celles qui sont erronnées.
+\begin{tasks}
+    \task $391$ est un diviseur de $23$. \hrulefill
+    \task $17$ est un diviseur de $391$. \hrulefill
+    \task $391$ est un multiple de $17$. \hrulefill
+    \task $23$ divise $391$. \hrulefill
+\end{tasks}
+\smallskip
+}{2}\end{exop}
+
+
+
+
+\begin{exop}{
+    En sachant que $258\cdot52=13416$, dire, parmi les phrases suivantes, celles qui sont exactes. Corrige-les le cas échéant.
+    \begin{tasks}[after-item-skip=0.2em]
+        \task $13416$ est un diviseur de $258$. \hrulefill
+        \task $258$ est un diviseur de $13416$. \hrulefill
+        \task $13416$ est un multiple de $52$. \hrulefill
+    \end{tasks}
+\smallskip
+}{2}\end{exop}
+
+
+
+
+\begin{exo}{
+    Réponds aux questions ci-après.
+\begin{tasks}[after-item-skip=0.2em]
+    \task Quel est le plus petit nombre possédant 2 diviseurs distincts~?
+    \task Quel est le plus petit nombre possédant 3 diviseurs distincts~?
+    \task Quels sont les nombres qui ont un nombre impair de diviseurs~?
+\end{tasks}
+}{3}\end{exo}
+
+
+
+
+
+\begin{exo}{
+Les phrases suivantes sont-elles {\color{blue}\textbf{vraies}} ou {\color{blue}\textbf{fausses}}~? Donne un contre-exemple à chaque phrase erronnée.
+\begin{tasks}[after-item-skip=0.2em]
+    \task Plus un nombre est grand, plus il a de diviseurs.
+    \task La somme de deux multiples de 9 est toujours un multiple de 9.
+    \task La somme de deux diviseurs d'un nombre est toujours un diviseur de ce nombre.
+    \task Le produit de deux multiples de 5 est toujours un multiple de 5.
+    \task Le produit de deux diviseurs d'un nombre est toujours un diviseur de ce nombre.
+\end{tasks}
+}{3}\end{exo}
+
+
+
+
+\begin{exo}{
+$a$ et $n$ sont des nombres entiers non nuls. Les phrases suivantes sont-elles vraies ou fausses~?
+\begin{tasks}
+    \task Si $a=3\cdot n$ alors $3$ est un diviseur de $a$.
+    \task Si $a=10\cdot n$ alors $2$ est un diviseur de $a$.
+\end{tasks}
+}{3}\end{exo}
+
+%
+%
+%
+%
+%\begin{exo}{
+%    Deux nombres sont dits {\color{blue}\textbf{amiables}} si la somme des diviseurs de l'un, à l'exception de lui-même, est égale à l'autre et réciproquement.
+%\begin{tasks}
+%    \task 220 et 284 sont-ils des nombres amiables~?
+%    \task 1184 et 1210 sont-ils des nombres amiables~?
+%\end{tasks}
+%}{3}\end{exo}
+%
+%
+%
+%
+%\begin{exo}{
+%    Un nombre est dit {\color{blue}\textbf{parfait}} s'il est égal à la somme de ses diviseurs à l'exception de lui-même. \\ Vérifie que 6; 28 et 496 sont des nombres parfaits.    
+%}{3}\end{exo}
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,236 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false]{../packages/coursclasse}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Comparaison de nombres décimaux}
+
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Ordre croissant et ordre décroissant (page 11)
+}
+\end{amL}
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+\thispagestyle{firstPage}
+
+
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill
+
+\begin{resolu}{Comparaison de nombres entiers}{Complète par l'un des symboles suivants : < ; > ou $=$
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+\task 75 $\quad${\color{blue} >}$\quad$ 57
+\task 90 $\quad${\color{blue} <} $\quad$ 900
+\task 8600 $\quad${\color{blue} >} $\quad$ 860
+\task 21 $\quad${\color{blue} =} $\quad$ 21,0
+\task 120 $\quad${\color{blue} >} $\quad$ 119
+\task 120 $\quad${\color{blue} <} $\quad$ 121
+\task 89,0 $\quad${\color{blue} <} $\quad$ 98,0
+\task 10,0 $\quad${\color{blue} <} $\quad$ 100
+\task 999,0 $\quad${\color{blue} =} $\quad$ 999,00
+\task 7,5 $\quad${\color{blue} >}$\quad$ 5,7
+\task 9,00 $\quad${\color{blue} <} $\quad$ 90,0
+\task 9,21 $\quad${\color{blue} <} $\quad$ 9,3
+\task  4,55 $\quad${\color{blue} >} $\quad$ 4,505
+\task 12 $\quad${\color{blue} >} $\quad$ 11,9
+\task 12,01 $\quad${\color{blue} <} $\quad$ 12,1
+\task 89,9 $\quad${\color{blue} <} $\quad$ 98,9
+\task 99,909 $\quad${\color{blue} <} $\quad$ 99,99
+\task 5,4 $\quad${\color{blue} =} $\quad$ 5,40
+\end{tasks}
+}{1}
+\end{resolu}
+
+
+\vfill
+
+\begin{exop}
+{Complète par l'un des symboles suivants : < ; > ou $=$.
+\begin{tasks}[after-item-skip = 0.4em, after-skip=-0.5em](2)
+\task 45 $\quad\ldots\ldots\ldots\quad$ 4,5
+\task 54 $\quad\ldots\ldots\ldots\quad$ 54,4
+\task 6,01 $\quad\ldots\ldots\ldots\quad$ 6,1
+\task 8,8 $\quad\ldots\ldots\ldots\quad$ 8,88
+\task 5,3 $\quad\ldots\ldots\ldots\quad$ 53,0
+\task 3,15 $\quad\ldots\ldots\ldots\quad$ 3,25
+\task 4,2 $\quad\ldots\ldots\ldots\quad$ 4,002
+\task 7,01 $\quad\ldots\ldots\ldots\quad$ 7
+\end{tasks}
+}{1}\end{exop}
+
+
+\vfill
+
+\newpage 
+
+\begin{exo}
+{Pierre dit que : " 9,752 $<$ 9,43 "
+
+Lorsque son professeur lui demande de justifier sa réponse, il dit: 
+ 
+ " On a des millièmes contre des centièmes, ce sont donc les centièmes les plus grand~! "
+ 
+ Pierre a-t-il raison~? Explique ta réponse.
+}{1}
+\end{exo}
+
+
+
+\begin{exop}{
+Complète avec le signe $=$ ou $\not =$.
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+\task  0,4 $\; \ldots\;$ 4 dixièmes 
+\task 85 dixièmes $\; \ldots\;$ 8,5
+\task  5,10 $\; \ldots\;$ 5 dixièmes
+\task 7 millièmes $\; \ldots\;$ 0,700
+\end{tasks}
+}{1}\end{exop}
+
+\begin{exop}{
+Complète avec le signe $=$ ou $\not =$.
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+\task  0,7 $\; \ldots\;$ 7 dixièmes 
+\task 34 dixièmes $\; \ldots\;$ 0,34
+\task  6,100 $\; \ldots\;$ 6 centièmes
+\task 1 millièmes $\; \ldots\;$ 0,001
+\end{tasks}
+
+
+}{1}\end{exop}
+
+
+\begin{exop}{
+Compare les nombres suivants  en utilisant le symbole adéquat:
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+\task 14,2 $\ldots$ 14,02
+\task 9,01 $\ldots$ 9,10 
+\task 145,45 $\ldots$ 145,405
+\task 7,909 $\ldots$ 7,099
+\task 6,3612 $\ldots$ 6,3612
+\task 3,2 $\ldots$ 3,200
+\task 11,1 $\ldots$ 11,11
+\task 2,75 $\ldots$ 2,8
+\end{tasks}
+
+}{1}\end{exop}
+
+
+
+
+\newpage
+
+\begin{exo}{
+Compare les nombres suivants :
+\begin{tasks}[after-item-skip = 0.5em, after-skip=-0.5em](2)
+\task 15,1 et 15,09
+\task 7 dixièmes et 7,10 
+\task 132,45 et 123,46
+\task 7,101 et 7,011
+\task 5,1236 et 5,12360
+\task 1,9 et 1,09
+\task 6,048 et 6,15
+\task 8,75 et 8,9
+\end{tasks}
+
+}{1}\end{exo}
+
+\begin{exo}{Dans une famille, trois enfants, Kévin est  l'aîné, Caroline est la cadette et Marc est le benjamin. Leur père remarque que Caroline est moins grande que Kévin mais plus riche que Marc en taille. Sachant que les enfants mesurent respectivement 1,5 m, 1,47 m et 1,2 m, quelle est la taille de chaque enfant ?
+
+}{1}\end{exo}
+
+\begin{exo}{
+Loïs dit que :  "12,355 $>$ 12,45 "
+ 
+Loïs a-t-il raison~? Justifie  ta réponse.
+
+
+}{1}\end{exo}
+
+
+\begin{resolu}{Ordre croissant}{
+Range les nombres suivants dans l'ordre croissant. Utilise le symbole adéquat entre chaque nombre.
+\[2,5 \quad  \quad 2,51 \quad \quad 2,501 \quad \quad 2,409 \quad  \quad 2,49 \quad  \quad 2,4\] 
+Réponse : 
+\[2,4 < 2,409 < 2,49 < 2,5 < 2,501 < 2,51\]
+}{1}
+\end{resolu}
+
+\begin{exo}{
+Range les nombres suivants dans l'ordre croissant.
+\[5 \quad  \quad 4,99 \quad  \quad 4,9 \quad  \quad 4,88 \quad  \quad 5,0001 \quad  \quad 4,909 \quad  \quad 4,879 \]
+
+}{1}\end{exo}
+
+\begin{resolu}{Ordre décroissant}{
+Range les nombres suivants dans l'ordre décroissant. Utilise le symbole adéquat entre chaque nombre.
+\[4,3 \quad  \quad 4,35 \quad \quad 4,25 \quad \quad 4,205 \quad  \quad 4,31 \quad  \quad 4,26 \]
+
+Réponse : 
+\[4,35 > 4,31 > 4,3 > 4,26 > 4,25 > 4,205\]
+}{1}
+\end{resolu}
+
+
+
+
+
+\begin{exop}{
+Range les nombres suivants dans l'ordre décroissant en utilisant le symbole adéquat.
+\[3,3 \quad  \quad  3 \quad  \quad 3,303  \quad  \quad 3,033  \quad  \quad 3,333 \]
+
+Réponse :\hrulefill
+}{1}\end{exop}
+
+\begin{exop}{
+Range les nombres suivants dans l'ordre décroissant en utilisant le symbole adéquat.
+\[4,6 \quad  \quad 45 \quad  \quad 46 \quad  \quad 4,5 \quad  \quad 4,59 \quad  \quad 4,61 \quad  \quad 4,601 \]
+Réponse : \hrulefill
+}{1}\end{exop}
+
+
+
+\begin{exo}{
+Range les nombres suivants dans l'ordre décroissant.
+\begin{center}
+120 \quad  \quad 119,\!999 \quad  \quad 120,0001 \quad  \quad 120,101 \quad  \quad 119,9 \quad  \quad 119  \quad  \quad 119,9909 \quad  \quad 120,1001 \quad  \quad 102,01 \quad  \quad 120,1 
+\end{center}
+}{1}\end{exo}
+
+\begin{exo}{
+Voici les diamètres des planètes du système solaire (en milliers de kilomètres).
+
+\begin{center}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}\hline
+Jupiter : 143 & Mars 6,8 & Saturne : 120,5 \\\hline
+Neptune : 49,2 & Uranus : 50,7 & Vénus : 12,1 \\\hline
+Terre : 12,7 & Mercure 4,9 & \\\hline
+\end{tabular}
+\end{center}
+Donne le nom des planètes dans l'ordre décroissant de leur taille.
+
+}{1}\end{exo}
+
+
+
+
+
+\end{document}
