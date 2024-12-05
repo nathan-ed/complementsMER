@@ -1,0 +1,305 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Multiplications et divisions de  relatifs}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Distance à zéro (page 17)
+\item Multiplication de nombres relatifs (page 20)
+\item Division de nombres relatifs (page 20)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resolu{Multiplication de deux nombres relatifs}{Observe les 8 multiplications suivantes de deux nombres relatifs afin de pouvoir proposer une règle de calcul.
+
+\begin{tasks}(2)
+\task $(+5)\cdot(+7)=+35$
+\task $(-5)\cdot(-7)=+35$
+\task $(+5)\cdot(-7)=-35$
+\task $(-5)\cdot(+7)=-35$
+\task $(+6)\cdot(+9)=+54$
+\task $(-6)\cdot(-9)=+54$
+\task $(+6)\cdot(-9)=-54$
+\task $(-6)\cdot(+9)=-54$
+\end{tasks}
+
+{\bf  Règle de de calcul pour la multiplication de deux nombres relatifs :} Pour multiplier deux nombres relatifs, on multiplie leurs distances à zéro et on donne au produit:
+ \begin{itemize}
+\item le signe $+$ si les deux nombres sont de même signe. 
+\item le signe $-$ si les deux nombres sont de signes différents.
+ \end{itemize}
+}{2}
+
+
+\exop{Observe les 8 multiplications suivantes de deux nombres relatifs afin de pouvoir compléter la règle de calcul.
+
+\begin{tasks}(2)
+\task $(+11)\cdot(+12)=+132$
+\task $(-11)\cdot(-12)=+132$
+\task $(+11)\cdot(-12)=-132$
+\task $(-11)\cdot(+12)=-132$
+\task $(+7)\cdot(+8)=+56$
+\task $(-7)\cdot(-8)=+56$
+\task $(+7)\cdot(-8)=-56$
+\task $(-7)\cdot(+8)=-56$
+\end{tasks}
+
+{\bf Règle de de calcul pour la multiplication de deux nombres relatifs :} Pour multiplier deux nombres relatifs, on multiplie leurs \ligne{6} et on donne au \ligne{5}:
+\begin{itemize}
+\item le signe \ligne{1} si les deux nombres sont de \ligne{5}. 
+\item le signe \ligne{1} si les deux nombres sont de \ligne{5}.
+\end{itemize}
+}{2}
+
+\exop{Effectue les multiplications de nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(-3) \cdot (-4) = $
+\task $(+7) \cdot (+2) = $
+\task $(-5) \cdot (-3) = $
+\task $(+6) \cdot (+1) = $
+\task $(-4) \cdot (-5) = $
+\task $(+2) \cdot (+6) = $
+\end{tasks}
+}{2}
+
+\exop{Calcule les produits de nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(+8) \cdot (-3) = $
+\task $(-7) \cdot (+2) = $
+\task $(+6) \cdot (-5) = $
+\task $(-4) \cdot (+1) = $
+\task $(+3) \cdot (-2) = $
+\task $(-10) \cdot (+4) = $
+\end{tasks}
+}{2}
+
+
+\exop{Complète par un entier relatif.
+\begin{tasks}(2)
+\task $(+8) \cdot \ligne{2}= -32$
+\task $\ligne{2} \cdot (+2) = -14$
+\task $(-6) \cdot \ligne{2} =  -42$
+\task $\ligne{2} \cdot (+11) = -77$
+\task $(+3) \cdot \ligne{2} =+21$
+\task $\ligne{2} \cdot (-4) = -20$
+\end{tasks}
+}{2}
+
+\exop{Complète par un entier relatif.
+\begin{tasks}(2)
+\task $(+6) \cdot \ligne{2} = -36$
+\task $\ligne{2} \cdot (-3) = 12$
+\task $(-5) \cdot \ligne{2} =  50$
+\task $\ligne{2} \cdot (+7) = -21$
+\task $(+4) \cdot \ligne{2} = -28$
+\task $\ligne{2} \cdot (-2) = 10$
+\end{tasks}
+}{2}
+
+\exop{Complète par un entier relatif.
+\begin{tasks}(2)
+\task $(+7) \cdot \ligne{2} = \phantom{-}63$
+\task $\ligne{2} \cdot (-5) = \phantom{-}35$
+\task $(-9) \cdot \ligne{2} = -99$
+\task $\ligne{2} \cdot (+6) = -66$
+\task $(+12) \cdot \ligne{2} = -84$
+\task $\ligne{2} \cdot (-8) = \phantom{-}56$
+\end{tasks}
+}{2}
+
+\exol{NO65}{27}{2}
+\exol{NO66}{27}{2}
+\exof{NO67}{20}{2}
+\exof{NO68}{20}{2}
+
+\resolu{Division de deux nombres relatifs}{
+\begin{enumerate}
+\item Calcule chaque quotient ci-dessous en t'aidant de la multiplication d'à côté.
+
+\begin{tabular}{clcl}
+a) & $(+45) : (+3) = +15 $ & car &  $(+3) \cdot (+15) = (+45)$. \\
+b) & $(-45) : (-3) = +15 $ & car &  $(-3) \cdot (+15) = (-45)$. \\
+c) & $(-45) : (+3) = -15 $ & car &  $(+3) \cdot (-15) = (-45)$. \\
+d) & $(+45) : (-3) = -15 $ & car &  $(-3) \cdot (-15) = (+45)$.
+\end{tabular}
+
+\item Propose une règle de calcul pour la division de deux nombres relatifs.
+
+{\bf  Règle de de calcul pour la division de deux nombres relatifs :} Pour diviser deux nombres relatifs, on divise leurs distances à zéro et on donne au quotient:
+ \begin{enumerate}
+\item le signe $+$ si les deux nombres sont de même signe. 
+\item le signe $-$ si les deux nombres sont de signes différents.
+ \end{enumerate}
+\end{enumerate}}{2}
+
+
+\exop{
+\begin{enumerate}
+\item Calcule chaque quotient ci-dessous en t'aidant de la multiplication d'à côté.
+
+\begin{tabular}{clcl}
+a) & $(+65) : (+5) =$ \ligne{2} & car &  $(+5) \cdot (+13) = (+65)$. \\
+b) & $(-65) : (-5) =$ \ligne{2} & car &  $(-5) \cdot (+13) = (-65)$. \\
+c) & $(-65) : (+5) =$ \ligne{2} & car &  $(+5) \cdot (-13) = (-65)$. \\
+d) & $(+65) : (-5) =$ \ligne{2} & car &  $(-5) \cdot (-13) = (+65)$.
+\end{tabular}
+\item Complète la règle de calcul pour la division de deux nombres relatifs.
+
+{\bf  Règle de de calcul pour la division de deux nombres relatifs :} Pour diviser deux nombres relatifs, on divise leurs \ligne{6} et on donne au \ligne{4}:
+ \begin{enumerate}
+\item le signe \ligne{1} si les deux nombres sont de \ligne{5}. 
+\item le signe \ligne{1} si les deux nombres sont de \ligne{5}.
+ \end{enumerate}
+\end{enumerate}}{2}
+
+\exop{Calcule chaque quotient ci-dessous en t'aidant de la multiplication d'à côté. 
+
+%\begin{flushleft}
+\begin{tabular}{clcl}
+a) & $(-99) : (+11) =$ \ligne{2} & car &  $(+11) \cdot (-9) = (-99)$. \\
+b) & $(+77) : (-7) =$ \ligne{2} & car &  $(-7) \cdot (-11) = (+77)$. \\
+c) & $(+48) : (+6) =$ \ligne{2} & car &  $(+6) \cdot (+8) = (+48)$. \\
+d) & $(-84) : (-12) =$ \ligne{2} & car &  $(-12) \cdot (+7) = (-84)$. \\
+e) & $(-63) : (+9) =$ \ligne{2} & car &  $(+9) \cdot (-7) = (-63)$. \\
+f) & $(+30) : (-5) =$ \ligne{2} & car &  $(-5) \cdot (-6) = (+30)$.
+\end{tabular}
+%\end{flushleft}
+
+}{2}
+
+\exop{Effectue les divisions de deux nombres relatifs ci-dessous. 
+
+\begin{tasks}(2)
+\task $(-35) : (-7) =$
+\task $(-88) : (+11) =$
+\task $(+40) : (-5) =$
+\task $(+120) : (-12) =$
+\task $(-49) : (+7) =$
+\task $(-64) : (-8) =$
+\end{tasks}
+}{2}
+
+\exop{Effectue les divisions de deux nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(-28) : (+4) =$
+\task $(+63) : (-9) =$
+\task $(-72) : (-8) =$
+\task $(+90) : (+10) =$
+\task $(-56) : (+8) =$
+\task $(+36) : (-6) =$
+\end{tasks}
+}{2}
+
+
+\exop{Effectue les divisions de deux nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(-45) : (-9) =$
+\task $(+77) : (+11) =$
+\task $(+56) : (-7) =$
+\task $(-96) : (+8) =$
+\task $(-63) : (-3) =$
+\task $(+30) : (-6) =$
+\end{tasks}
+}{2}
+
+\exop{Effectue les divisions de deux nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(-27) : (-3) =$
+\task $(+55) : (-11) =$
+\task $(-36) : (-6) =$
+\task $(+72) : (+8) =$
+\task $(-42) : (+7) =$
+\task $(+45) : (-5) =$
+\end{tasks}
+}{2}
+
+\exop{Effectue les divisions de deux nombres relatifs ci-dessous.
+\begin{tasks}(2)
+\task $(-2,4) : (-3) =$
+\task $(+3,5) : (-7) =$
+\task $(-4,8) : (-8) =$
+\task $(+5,4) : (+9) =$
+\task $(-2,8) : (+0,4) =$
+\task $(+4,5) : (-0,5) =$
+\end{tasks}
+}{3}
+
+\exop{Complète par un entier relatifs
+\begin{tasks}(2)
+\task $(-18) : \ligne{2} = 6$
+\task $(+55) : \ligne{2} = -11$
+\task $\ligne{2} : (-8) = -4$
+\task $\ligne{2} : (+8) = -8$
+\task $\ligne{2} : (+10) = -5$
+\task $(+36) : \ligne{2} = (-6)$
+\end{tasks}
+}{2}
+
+\exop{Complète par un entier relatif.
+\begin{tasks}(2)
+\task $(-27) : \ligne{2} = 9$
+\task $(+66) : \ligne{2} = -22$
+\task $\ligne{2} : (-6) = 4$
+\task $\ligne{2} : (+2) = 8$
+\task $\ligne{2} : (+6) = -5$
+\task $(+48) : \ligne{2} = 6$
+\end{tasks}
+}{2}
+
+\exop{Complète par un entier relatif.
+\begin{tasks}(2)
+\task $\ligne{2} : (-3) = 7$
+\task $66 : \ligne{2} = -6$
+\task $(-48) : \ligne{2} = -8$
+\task $(-72) : \ligne{2} = -8$
+\task $(-45) : \ligne{2} = -5$
+\task $(+54) : \ligne{2} = -6$
+\end{tasks}
+}{2}
+
+\exol{NO69}{27}{2}
+\exol{NO70}{28}{2}
+\exol{NO71}{28}{2}
+\exof{NO72}{20}{2}
+\exof{NO73}{20}{2}
+\resolu{Quel est le signe ?}{Pour déterminer le signe quand on multiplie plusieurs nombres relatifs différents de zéro :
+\begin{enumerate}
+\item si le nombre de facteurs négatifs est pair, le produit est positif ;
+\item si le nombre de facteurs négatifs est impair, le produit est négatif.
+\end{enumerate}
+Le nombre de facteurs positifs n'influence pas le signe du produit.
+A l'aide de cette règle, détermine le signe des produits suivants en justifiant ta réponse.
+\begin{tasks}(1)
+\task $(+5)\cdot(+4)\cdot(+3)=+60$ car le nombre de facteurs négatifs (0) est pair. 
+\task $(+5)\cdot(-4)\cdot(+3)=-60$ car le nombre de facteurs négatifs (1) est impair.
+\task $(-5)\cdot(-4)\cdot(+3)=+60$ car le nombre de facteurs négatifs (2) est pair.
+\task $(-5)\cdot(-4)\cdot(-3)=-60$ car le nombre de facteurs négatifs (3) est impair.
+\task $(+5)\cdot(+4)\cdot(+3)\cdot(+2)=+120$ car le nombre de facteurs négatifs (0) est pair.
+\end{tasks}
+}{2}
+
+
+\end{document}

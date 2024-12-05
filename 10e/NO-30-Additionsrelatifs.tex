@@ -1,0 +1,379 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Additions de nombres relatifs}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Distance à zéro (page17)
+\item Addition de nombres relatifs (page 18)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}
+{De même signe}{Observe les 8 additions suivantes et rédige une règle permettant d'additionner deux nombres relatifs de même signe.
+\begin{tasks}(2)
+\task $(+5)+(+3)= +8$
+\task $(-5)+(-3)= -8$
+\task $(+13)+(+19)= +32$
+\task $(-13)+(-19)= -32$
+\task $(+27)+(+30)= +57$
+\task $(-27)+(-30)= -57$
+\task $(+18)+(+9)= +27$
+\task $(-18)+(-9)= -27$
+\end{tasks}
+
+{\bf Règle pour l'addition de deux nombres relatifs de même signe:} Pour additionner deux nombres de même signe, on additionne les distances à zéro et on donne au résultat le signe commun.
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Observe les 8 additions suivantes et rédige une règle permettant d'additionner deux nombres relatifs de même signe.
+\begin{tasks}(2)
+\task $(+8)+(+4)= +12$
+\task $(-8)+(-4)= -12$
+\task $(+15)+(+16)= +31$
+\task $(-15)+(-16)= -31$
+\task $(+23)+(+40)= +63$
+\task $(-23)+(-40)= -63$
+\task $(+16)+(+8)= +24$
+\task $(-16)+(-8)= -24$
+\end{tasks}
+
+{\bf Règle pour l'addition de deux nombres relatifs de même signe:} 
+
+\hrulefill
+
+\hrulefill
+
+}{1}
+\end{exop}
+
+
+\exo{Effectue les additions suivantes de deux nombres relatifs de même signe.
+
+\begin{tasks}(2)
+\task $(-3)+(-7)=$
+\task $(-12)+(-18)=$
+\task $(-9)+(-6)=$
+\task $(+3)+(+7)=$
+\task $(+13)+(+12)=$
+\task $(+10)+(+14)=$
+\task $(+4)+(+11)=$
+\task $(-6)+(-4)=$
+\task $(-8)+(-8)=$
+\task $(+5)+(+17)=$
+\end{tasks}}{1}
+
+
+
+\begin{resolu}
+{De signes différents}{Observe les 8 additions suivantes et rédige une règle permettant d'additionner deux nombres relatifs de signes différents.
+\begin{tasks}(2)
+\task $(+5)+(-3)= +2$
+\task $(-5)+(+3)= -2$
+\task $(+13)+(-19)= -6$
+\task $(-13)+(+19)= +6$
+\task $(+27)+(-30)= -3$
+\task $(-27)+(+30)= +3$
+\task $(+18)+(-9)= +9$
+\task $(-18)+(+9)= -9$
+\end{tasks}
+
+{\bf Règle pour l'addition de deux nombres relatifs de signes différents:} Pour additionner deux nombres de signes différents, on soustrait la plus petite distance à zéro de la plus grande et on donne au résultat le signe du nombre qui a la plus grande distance à zéro.
+}{1}
+\end{resolu}
+
+\begin{exop}
+{Observe les 8 additions suivantes et rédige une règle permettant d'additionner deux nombres relatifs de signes différents.
+\begin{tasks}(2)
+\task $(+8)+(-4)= +4$
+\task $(-8)+(+4)= -4$
+\task $(-15)+(+16)= +1$
+\task $(+15)+(-16)= -1$
+\task $(-23)+(+40)= +17$
+\task $(+23)+(-40)= -17$
+\task $(-16)+(+8)= -8$
+\task $(+16)+(-8)= +8$
+\end{tasks}
+
+{\bf Règle pour l'addition de deux nombres relatifs de signes différents:} 
+
+\hrulefill
+
+\hrulefill
+
+}{1}
+\end{exop}
+
+
+
+\exop{Effectue les additions suivantes de deux nombres relatifs de signes différents.
+
+\begin{tasks}(2)
+\task $(-3)+(+7)=$
+\task $(+12)+(-18)=$
+\task $(+9)+(-6)=$
+\task $(+3)+(-7)=$
+\task $(+13)+(-12)=$
+\task $(-10)+(+14)=$
+\task $(-4)+(+11)=$
+\task $(-6)+(+4)=$
+\task $(-8)+(+9)=$
+\task $(+5)+(-17)=$
+\end{tasks}}{1}
+
+
+\resolu{Additionner les opposés}{Observe les additions suivantes et complète la phrase :
+\begin{tasks}(2)
+\task $(-5)+(+5) = 0$
+\task $(+7)+(-7) = 0$
+\task $(-13)+(+13) = 0$
+\task $(+18)+(-18) = 0$
+\task $(-24)+(+24) = 0$
+\task $(+32)+(-32) = 0$
+\task $(-55)+(+55) = 0$
+\task $(+72)+(-72) = 0$
+\end{tasks}
+Lorsqu'on additionne un nombre et son opposé, la somme vaudra toujours \bf{zéro}.
+}{1}
+
+\exop{Observe les additions suivantes et complète la phrase :
+\begin{tasks}(2)
+\task $(-4)+(+4) = 0$
+\task $(+8)+(-8) = 0$
+\task $(-12)+(+12) = 0$
+\task $(+15)+(-15) = 0$
+\task $(-22)+(+22) = 0$
+\task $(+42)+(-42) = 0$
+\task $(-59)+(+59) = 0$
+\task $(+77)+(-77) = 0$
+\end{tasks}
+Lorsqu'on additionne un nombre et son opposé, la somme vaudra toujours \ligne{2}.}{1}
+
+\resolu{Même signe ?}{Indique si les deux nombres qu'on souhaite additionner ont le même signe ou sont de signes différents, puis effectue cette addition.
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{|l|l|l|}\hline
+Addition & Même signe ? & Calcul \\\hline
+$(+2)+(+6)$ & Même signe & $(+2)+(+6)=+8$ \\\hline
+$(-8)+(+6)$ & Signes différents & $(-8)+(+6)=-2$ \\\hline
+$(+2)+(-8)$ & Signes différents & $(+2)+(-8)=-6$ \\\hline
+$(+10)+(+5)$ & Même signe & $(+10)+(+5)=+15$ \\\hline
+$(-11)+(-7)$ & Même signe & $(-11)+(-7)=-18$ \\\hline
+$(-7)+(+11)$ & Signes différents & $(-7)+(+11)=+4$ \\\hline
+\end{tabular}}
+\end{center}
+}{1}
+
+\exop{Indique si les deux nombres qu'on souhaite additionner ont le même signe ou sont de signes différents, puis effectue cette addition.
+\begin{center}
+{\renewcommand{\arraystretch}{2}
+\begin{tabular}{|l|p{5cm}|p{5cm}|}\hline
+Addition & Même signe ? & Calcul \\\hline
+$(-7)+(+9)$ &  & $(-7)+(+9)=$ \\\hline
+$(+3)+(+11)$ &  & $(+3)+(+11)=$  \\\hline
+$(-4)+(-15)$ &  & $(-4)+(-15)=$  \\\hline
+$(-11)+(+16)$ &  & $(-11)+(+16)=$  \\\hline
+$(+17)+(-4)$ &  & $(+17)+(-4)=$ \\\hline
+$(+13)+(+9)$ & & $(+13)+(+9)=$ \\\hline
+\end{tabular}}
+\end{center}
+}{1}
+
+\exo{Effectue les additions de deux nombres relatifs ci-dessous. Pense à vérifier si les deux nombres ont le même signe.
+\begin{tasks}(2)
+\task $(-11)+(+7) = $
+\task $(+13)+(-9) = $
+\task $(-4)+(-4) = $
+\task $(+15)+(+8) = $
+\task $(-19)+(-11) =$
+\task $(+21)+(-19)=$
+\task $(+23)+(+19)=$
+\task $(+14)+(-13)=$
+\end{tasks}
+}{1}
+
+\exo{Effectue les additions de deux nombres relatifs ci-dessous. Pense à vérifier si les deux nombres ont le même signe.
+\begin{tasks}(2)
+\task $(-7)+(+5) = $
+\task $(+6)+(-8) = $
+\task $(-10)+(-3) = $
+\task $(+14)+(+9) = $
+\task $(-17)+(-10) = $
+\task $(+20)+(-15) = $
+\task $(-23)+(+20) = $
+\task $(+12)+(-11) =$
+\task $(-4)+(+2) = $
+\task $(+16)+(-14) = $
+\task $(-9)+(+7) = $
+\task $(+11)+(-13) = $
+\end{tasks}
+}{1}
+
+\exo{Effectue les additions de deux nombres relatifs ci-dessous. Pense à vérifier si les deux nombres ont le même signe.
+\begin{tasks}(2)
+\task $(-4)+(+2) = $
+\task $(-14)+(+5) = $
+\task $(+16)+(-14) = $
+\task $(-24)+(+12) = $
+\task $(-9)+(+7) = $
+\task $(-9)+(+9) = $
+\task $(+11)+(-13) = $
+\task $(-32)+(+13) = $
+\end{tasks}
+}{1}
+
+\exo{Effectue les additions de deux nombres relatifs ci-dessous. Pense à vérifier si les deux nombres ont le même signe.
+\begin{tasks}(2)
+\task $(-37)+(+42) = $
+\task $(+45)+(-31) = $
+\task $(-33)+(-40) = $
+\task $(+30)+(+48) = $
+\task $(-50)+(-36) = $
+\task $(+40)+(-35) = $
+\task $(+44)+(+31) = $
+\task $(-38)+(+44) =$
+\end{tasks}
+}{1}
+
+\exo{Effectue les additions de deux nombres relatifs ci-dessous. Pense à vérifier si les deux nombres ont le même signe.
+\begin{tasks}(2)
+\task $(-25)+(+62) = $
+\task $(+33)+(-41) = $
+\task $(-70)+(-38) = $
+\task $(+50)+(+27) = $
+\task $(-20)+(-40) = $
+\task $(+60)+(-35) = $
+\task $(+44)+(+21) = $
+\task $(-28)+(+65) =$
+\end{tasks}
+}{1}
+
+
+\resolu{3 ou 4 nombres}{Effectue l'addition des nombres relatifs ci-dessous.
+\begin{tasks}(1)
+\task $(+5)+(-3)+(+12)=\underbrace{(+5)+(+12)}_{\mbox{même signe}}+(-3)=(+17)+(-3)=(+14)$
+\task $(-5)+(+8)+(-14)=(+8)+\underbrace{(-5)+(-14)}_{\mbox{même signe}}=(+8)+(-19)=(-11)$
+\task $(+17)+(-13)+(+7)+(-21)=\underbrace{(+17)+(+7)}_{\mbox{même signe}}+\underbrace{(-13)+(-21)}_{\mbox{même signe}}=(+24)+(-34)=(-10)$
+\task $(-6)+(+11)+(+8)+(-20)=\underbrace{(+11)+(+8)}_{\mbox{même signe}}+\underbrace{(-6)+(-20)}_{\mbox{même signe}}=(+19)+(-26)=(-7)$
+\end{tasks}
+}{1}
+
+\exo{Effectue l'addition des nombres relatifs ci-dessous.
+\begin{tasks}(1)
+\task $(+8) + (-5) + (+12) = $
+\task $(-10) + (-3) + (+18) = $
+\task $(+15) + (+1) + (-9) = $
+\task $(-7) + (+6) + (-14) = $
+\task $(+4) + (+11) + (-2) = $
+\task $(-16) + (-8) + (+19) = $
+\end{tasks}
+}{1}
+
+\exo{Effectue l'addition des nombres relatifs ci-dessous.
+\begin{tasks}(1)
+\task $(+25) + (-30) + (-12) + (+18) = $
+\task $(-10) + (+20) + (-35) + (+30) = $
+\task $(-30) + (-12) + (+15) + (-18) = $
+\task $(+18) + (+22) + (-10) + (-35) = $
+\task $(+30) + (-10) + (-35) + (+22) = $
+\task $(-40) + (+10) + (-12) + (+15) = $
+\end{tasks}
+}{1}
+
+
+\exo{Effectue l'addition des nombres relatifs ci-dessous.
+\begin{tasks}(1)
+\task $(+20) + (-15) + (+10) + (-12) + (+18) = $
+\task $(-10) + (+30) + (+25) + (-35) + (-20) = $
+\task $(-30) + (-12) + (+15) + (+25) + (-18) = $
+\task $(+25) + (-20) + (+35) + (-30) + (-12) = $
+\task $(+18) + (+22) + (-10) + (-35) + (+30) = $
+\task $(-40) + (+10) + (-12) + (-25) + (+15) = $
+\end{tasks}
+}{1}
+
+
+\exol{NO42}{22}{1}
+\exol{NO43}{22}{1}
+\exol{NO44}{23}{1}
+\exof{NO45}{14}{1}
+\exof{NO46}{14}{1}
+\exof{NO47}{15}{1}
+
+\resolu{Un ascenseur}{Dans un immeuble de 9 étages et 4 sous-sols, il y a un ascenseur. Il monte de 3 étages, descend ensuite de 4 étages, remonte de 9 étages, et finalement redescend de 7 étages. Après ces quatre mouvements, l'ascenseur se retrouve au deuxième sous-sol. À partir de quel étage l'ascenseur a-t-il commencé son trajet?
+
+A l'aide des nombres relatifs, on peut traduire l'énoncé par le calcul suivant, où le premier nombre n'est pas connu : 
+\begin{center}
+$($ \ligne{1} $)+(+3)+(-4)+(+9)+(-7)=(-2)$
+\end{center}
+
+En calculant le membre de gauche de l'égalité, on obtient : 
+\begin{center}
+$($\ligne{1} $)+(+1)=(-2) $
+\end{center}
+Ainsi, on trouve : $\bf{(-3)} +(+1)=(-2)$
+
+Donc on peut conclure que l'ascenseur a commencé son trajet depuis le troisième sous-sol.
+}{1}
+
+\exo{Dans un immeuble de 12 étages et 6 sous-sols, il y a un ascenseur. Il monte de 4 étages, descend ensuite de 3 étages, remonte de 8 étages, et finalement redescend de 5 étages. Après ces quatre mouvements, l'ascenseur se retrouve au troisième sous-sol. À partir de quel étage l'ascenseur a-t-il commencé son trajet?}{1}
+
+
+\begin{exo}
+{Genève connaît des variations de température au cours d'une semaine. Le lundi, la température monte de 5$^{o}$C, le mardi elle descend de 3 $^{o}$C, le mercredi elle remonte de 8 $^{o}$C, et le jeudi elle redescend de 6 $^{o}$C. Après ces quatre fluctuations de température, la semaine se termine avec une température finale de 18 $^{o}$C. Quelle était la température de départ le lundi?}{1}
+\end{exo}
+
+\exo{Vernier connaît des fluctuations de température au cours d'une semaine hivernale. Le lundi, la température chute de 7$^{o}$C, le mardi elle remonte de 4 $^{o}$C, le mercredi elle plonge de nouveau de 9 $^{o}$C, et le jeudi elle remonte de 5 $^{o}$C. Après ces quatre changements de température, la semaine se termine avec une température finale de -3$^{o}$C. Quelle était la température de départ le lundi?}{1}
+
+\exo{Une région connaît des fluctuations de température au cours d'une semaine froide. Le lundi, la température chute de 9$^{o}$C, le mardi elle remonte de 7$^{o}$C, le mercredi elle plonge de nouveau de 8$^{o}$C, et le jeudi elle remonte de 3$^{o}$C. Après ces quatre changements de température, la semaine se termine avec une température finale de -5$^{o}$C. Quelle était la température de départ le lundi?}{1}
+
+\exo{\begin{tasks}(1)
+\task Lundi, Iris a joué deux parties de billes. A la première partie, elle a perdu 6 billes. En tout, elle a perdu 9 billes.
+Que s'est-il passé à la deuxième partie ?
+\task Mardi, Iris a joué deux parties de billes. A la première partie, elle a gagné 9 billes. En tout, elle a gagné 2 billes.
+Que s'est-il passé à la deuxième partie ?
+\task Mercredi, Iris a joué deux parties de billes. A la deuxième partie, elle a gagné 3 billes.
+En tout, elle a gagné 8 billes.
+Que s'est-il passé à la première partie ?
+\task Jeudi, Iris a joué deux parties de billes. A la première partie, elle a perdu 12 billes.
+En tout, elle a perdu 3 billes.
+Que s'est-il passé à la deuxième partie ?
+\task Vendredi, Iris a joué deux parties de billes. A la deuxième partie, elle a gagné 4 billes.
+En tout, elle a perdu 5 billes.
+Que s'est-il passé à la première partie ?
+\task Samedi, Iris a encore joué deux parties de billes. A la première partie, elle a perdu 4 billes.
+En tout, elle a gagné 5 billes.
+Que s'est-il passé à la deuxième partie ?
+Combien de billes Iris a-t-elle perdues ou gagnées au cours de la semaine ?
+\end{tasks}}{1}
+
+
+\exol{NO48}{24}{1}
+\exol{NO49}{24}{1}
+
+\end{document}
