@@ -1,0 +1,564 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Fonctions et Algèbre}
+\newcommand{\serieName}{Les équations}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+
+\begin{amL}{\serieName}{
+\item Expression littéral (page 67)
+\item Égalité de deux expressions littérales (page 68)
+\item Calculer la valeur numérique d'une expression littérale connaissant la valeur de la lettre (page 74)
+\item Équation (page 76)
+\item Équations équivalentes (page 76)
+\item Équation du premier degré à une inconnue (page 76)
+\item Règles d'équivalence (page 77)
+\item Résoudre une équation du premier degré à une inconnue (page 77)
+
+}
+\end{amL}
+
+
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{QSJ}{118}{2}
+\end{QSJ}
+
+%intro
+\begin{exol}{FA180}{116}{2}
+\end{exol}
+
+\begin{exof}{FA181}{119}{2}
+\end{exof}
+
+\begin{resolu}
+{Intuition}
+    {Détermine la longueur d'un triangle équilatéral ABC dont le périmètre vaut 12cm.
+    \newline
+
+   Dans un triangle équilatéral, les 3 côtés sont isométriques. Ainsi le périmètre se calcule par la formule suivante:
+\[3*\text{côté}=\text{périmètre}
+\]
+Ainsi, périmètre/3=côté. 12/3=4.\\
+Le côté mesure 4 cm.
+    }
+    {2}
+\end{resolu}
+
+\begin{exo}
+{Le périmètre d'un losange ABCD est 36 cm. Quelle est la longueur de son côté?}
+    {2}
+\end{exo}
+
+
+%solution d'une équation 
+
+\begin{resolu}
+    {Est solution de?}
+    {Est-ce que 5 est solution de l'équation:
+    \[4x+3=12
+    \]
+    \newline
+\begin{solve}
+    4*5&+3&\text{on substitue}\\
+ 20&+3 &\text{on calcule}\\
+ 23&\neq 12
+\end{solve}
+23 n'est pas égale à 12 donc 5 n'est pas solution de l'équation.    }
+{2}
+\end{resolu}
+
+
+\begin{exo}
+{Est-ce que 4 est solution de l'équation suivante?
+\[
+2x+5=3x-1
+\]}
+    {2}
+\end{exo}
+
+\begin{exo}
+{Est-ce que 2 est solution de l'équation suivante?
+\[
+10+3x=14+x
+\]}
+    {2}
+\end{exo}
+
+\begin{exo}
+{Est-ce que -5 est solution de l'équation suivante?
+\[
+7x-3=3x-1
+\]}
+    {2}
+\end{exo}
+
+\begin{exo}
+{Est-ce que 0 est solution de l'équation suivante?
+\[
+2x^2+5x-\dfrac{3}{4}=2x^2-1
+\]}
+    {3}
+\end{exo}
+
+\begin{exo}
+{Est-ce que $\dfrac{1}{2}$ est solution de l'équation suivante?
+\[
+4x+\dfrac{1}{2}=\dfrac{1}{4}x-1
+\]}
+    {3}
+\end{exo}
+
+\begin{exol}{FA193}{118}{2}
+\end{exol}
+%résolution 
+
+\begin{resolu}{Résolution d'équations}{Résous les équations suivantes: 
+\begin{enumerate}
+    \item $x-2=4$
+    \begin{solve}
+     x-2& =4& +2\\
+     x& = 6
+     
+\end{solve}
+
+\item $x+1 = -2$
+
+\[\begin{array}{rrcr}
+    x+1 & = -2 \\
+  -1 & -1 \\ \hline\\
+   x&  = -3
+    
+    
+\end{array}
+\]
+\end{enumerate}
+}
+{2}
+\end{resolu}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la présentation de ton choix.
+\begin{tasks}(3)
+\task $x+8=-4$
+\task $x+7=3$
+\task $x-11=10$
+\task $x-9=10$
+\task $x+5=-3$
+\task $x+7=-7$
+\end{tasks} }
+{2}
+\end{exo}
+
+\begin{exo}
+    {Résous les équations suivantes: 
+\begin{tasks}(3)
+\task $x+\dfrac{1}{2}=4$
+\task $x+\dfrac{1}{3}=\dfrac{4}{5}$
+\task $x-1+4=4$
+\task $x-\dfrac{3}{2}=10$
+\task $x-1+\dfrac{1}{2}=4$
+\task $x-\dfrac{1}{2}+\dfrac{3}{4}=\dfrac{1}{4}$
+
+\end{tasks} }
+{3}
+\end{exo}
+
+\begin{resolu}{Résolution d'équations}{Résous les équations suivantes: 
+\begin{enumerate}
+    \item $2x=4$
+    \begin{solve}
+     2x& =4& \div 2\\
+     x& = 2
+     
+\end{solve}
+
+\item $3x = -2$
+
+\[\begin{array}{rcr}
+    3x & = -2 \\
+  \div3& \div3\\ \hline\\
+   x&  = \dfrac{-2}{3}
+    
+    
+\end{array}
+\]
+\end{enumerate}
+}
+{2}
+\end{resolu}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la présentation de ton choix.
+\begin{tasks}(3)
+\task $3x=15$
+\task $6x=42$
+\task $14x=28$
+\task $-5x=-15$
+\task $-2x=8$
+\task $12x=0$
+\end{tasks} }
+{2}
+\end{exo}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la méthode de ton choix.
+\begin{tasks}(3)
+\task $\dfrac{1}{3}x=15$
+\task $6x=\dfrac{4}{5}$
+\task $\dfrac{2}{6}x=\dfrac{5}{2}$
+\task $-\dfrac{5}{4}x=-15$
+\task $-2x=0$
+\task $\dfrac{9}{7}x=0$
+\end{tasks} }
+{3}
+\end{exo}
+
+\begin{resolu}{Résolution d'équations}{Résous les équations suivantes: 
+\begin{enumerate}
+    \item $2x+1=4$
+    \begin{solve}
+     2x+1&=4&-1\\
+     2x& =3& \div 2\\
+     x& = \dfrac{3}{2}
+     
+\end{solve}
+
+\item $3x  +5  = -2x-2$
+
+\[\begin{array}{rrcr}
+    3x & +5 & = -2 \\
+    & -5 & =  &-5\\ \hline\\
+    3x& & =    -7\\ 
+  \div3& & \div3\\ \hline\\
+   x&&  = \dfrac{-7}{3}
+    
+    
+\end{array}
+\]
+\end{enumerate}
+}
+{2}
+\end{resolu}
+
+\begin{exo}
+    {Résout les équations suivantes en utilisant la méthode de ton choix.
+\begin{tasks}(3)
+\task $2x+8=-4$
+\task $5x+7=3$
+\task $12x-11=10$
+\task $3x-9=10$
+\task $2x+5=-3$
+\task $7x+7=-7$
+\task $15x+3=-27$
+\task $2x-5=7$
+\task $6x+9=14$
+\end{tasks} }
+{2}
+\end{exo}
+
+\begin{exo}
+    {Résout les équations suivantes en utilisant la méthode de ton choix.
+\begin{tasks}(3)
+\task $x+\dfrac{1}{2}=4$
+\task $\dfrac{3}{4}x+2=3$
+\task $12x-11=-11$
+\task $\dfrac{2}{3}x-\dfrac{1}{6}=\dfrac{5}{2}$
+\task $x+\dfrac{1}{3}=-3$
+\task $7x+7=-\dfrac{1}{7}$
+\task $\dfrac{2}{15}x+\dfrac{2}{5}=-\dfrac{1}{3}$
+\task $\dfrac{2}{4}x-\dfrac{1}{2}=4$
+\task $6x+\dfrac{2}{7}=14$
+\end{tasks} }
+{2}
+\end{exo}
+
+
+\begin{resolu}{Résolution d'équations}{Résous les équations suivantes: 
+\begin{enumerate}
+    \item $2x+1=4-3x$
+    \begin{solve}
+     2x+1&=4-3x&-1\\
+     2x& =3-3x& +3x\\
+     5x& = 3& \div5\\
+     x&=\dfrac{3}{5}
+     
+\end{solve}
+
+\item $3x  +5  = -2x-2$
+
+\[\begin{array}{rrcrr}
+    3x & +5 & = -2x &-2 \\
+    & -5  & &-5\\ \hline\\
+    3x& & =   -2x& -7\\ 
+    +2x&& +2x&\\ \hline\\
+    5x & &=-7\\
+  \div5& & \div5\\ \hline\\
+   x&&  = \dfrac{-7}{5}   
+\end{array}
+\]
+\end{enumerate}
+}
+{2}
+\end{resolu}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la présentation de ton choix.
+\begin{tasks}(3)
+\task $8x-11=2x+5$
+\task $18+2x=10x-22$
+\task $3x+7=2x+5$
+\task $4x+8=8+10x$
+\task $13-10x=21-8x$
+\task $12x+5=3x-4$
+\task $3-5x=-2-3x$
+\task $6x+13=-7x-5$
+\task $-7-9x=-4-5x$
+\end{tasks} }
+{2}
+\end{exo}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la présentation de ton choix.
+\begin{tasks}(2)
+\task $2x-11=2x+5$
+\task $18+2x=10x+18$
+\task $\dfrac{1}{3}x+7=x+5$
+\task $\dfrac{2}{3}x+\dfrac{1}{3}=\dfrac{5}{3}+x$
+\task $1-\dfrac{1}{2}x=1-8x$
+\task $12x+5+3x=3x-4-6$
+\task $3-\dfrac{1}{5}x=-\dfrac{1}{25}-3x$
+\task $\dfrac{6}{3}x+\dfrac{36}{2}=-24x-12$
+\task $-\dfrac{2}{7}-\dfrac{35}{49}x=-4-x$
+\end{tasks} }
+{3}
+\end{exo}
+
+\begin{exo}
+    {Résous les équations suivantes en utilisant la présentation de ton choix.
+\begin{tasks}(2)
+\task $2(x-11)=9$
+\task $-5(3x+7)=5x-3$
+\task $\dfrac{1}{3}(x-4)=3x$
+\task $-5(x-4)=6(x+2)$
+\task $1-(4-2x)=2-(2-x)$
+\task $2x+2=x-(3-x)$
+\task $5+(x+2)=(4+1)+2$
+\task $3(x+2)=4(x+3)$
+\task $x-(7x-2)=5(2-x)$
+\end{tasks} }
+{3}
+\end{exo}
+
+\begin{exof}{FA196}{122}{2}  
+\end{exof}
+
+\begin{exof}{FA201}{123}{2}
+\end{exof}
+
+
+\begin{exol}{FA190}{117}{2}
+\end{exol}
+
+\begin{exol}{FA197}{119}{2}
+\end{exol}
+
+\begin{exol}{FA198}{120}{2}
+\end{exol}
+\begin{exol}{FA199}{120}{2}
+\end{exol}
+
+%mise en équation
+
+\begin{resolu}{Mise en équation}{Marie et Nathan ont dépensé 45,50.- en bonbons. Sachant que Marie a acheté pour 15.- de bonbons, combien a dépensé Nathan? 
+Exprime la dépense de Nathan en fonction de celle de Marie, puis résous l'équation.\\
+
+\begin{enumerate}
+    \item $x$ est l'inconnue et représente la dépense de Nathan.
+    \item On met en équation. $x+15=45,50$.
+    \item On résout. $45,50-15=x$\\
+    $30,50=x$
+    \item La solution: Nathan a dépensé 30,50.-
+    \item On vérifie: $15 + 30,50=45,50$. La réponse est correcte
+\end{enumerate}
+}
+{2}
+\end{resolu}
+
+\begin{exol}{FA187}{117}{2}
+\end{exol}
+
+\begin{exo}
+  {Je pense à un nombre. Je le multiplie par 3 puis lui ajoute 4. Le résultat me donne 40. Quel est mon nombre de départ?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Pose une équation te permettant de résoudre le problème.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}
+}
+ {2} 
+\end{exo}
+
+\begin{exo}
+  {Je pense à un nombre. Je lui ajoute 6, puis multiplie le résultat par 4. Je trouve 124. Quel est mon nombre de départ?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Pose une équation te permettant de résoudre le problème.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}
+}
+ {2} 
+\end{exo}
+
+\begin{exol}{FA204}{121}{2}
+\end{exol}
+\begin{exol}{FA207}{122}{2}
+\end{exol}
+\begin{exol}{FA208}{122}{2}
+\end{exol}
+\begin{exol}{FA209}{122}{2}
+\end{exol}
+\begin{exol}{FA210}{123}{2}
+\end{exol}
+\begin{exol}{FA211}{123}{2}
+\end{exol}
+\begin{exol}{FA212}{123}{2}
+\end{exol}
+\begin{exol}{FA213}{124}{2}
+\end{exol}
+\begin{exol}{FA214}{124}{2}
+\end{exol}
+\begin{exol}{FA215}{124}{2}
+\end{exol}
+\begin{exol}{FA216}{124}{2}
+\end{exol}
+\begin{exol}{FA217}{124}{2}
+\end{exol}
+\begin{exol}{FA218}{124}{2}
+\end{exol}
+\begin{exol}{FA219}{124}{2}
+\end{exol}
+
+
+\begin{exo}
+{L'aire du rectangle EFGH est 50 $cm^2$. Sachant que sa longueur est deux fois plus grande que sa largeur, quelles sont les mesures de ses côtés?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+  {2}
+\end{exo}
+
+\begin{exo}
+{Le carré EFGH à un périmètre égal à son aire. Quelle est la longueur de son côté?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+ {2}
+\end{exo}
+
+\begin{exo}
+{ Je choisis un nombre. Je lui ajoute son triple. J'obtiens 44. Quel est ce nombre?\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+{2}
+\end{exo}
+
+\begin{exo}
+{ Je pense à un nombre. J’ajoute 21 au double de ce nombre. Je trouve le même résultat qu’en retranchant 16 au triple de ce nombre. A quel nombre je pense ?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+{3}
+\end{exo}
+
+\begin{exo}
+{ Je fais la somme de 3 nombres entiers consécutifs. J'obtiens 2424. Quels sont ces trois nombres?\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+{3}
+\end{exo}
+
+\begin{exo}
+{Je prends 3 nombres entiers consécutifs. Si je fais la somme du triple du premier, du deuxième et du double du troisième j'obtiens 125. Quels sont ces 3 nombres?\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}}
+{3}
+\end{exo}
+
+\begin{exo}
+  {Avec 25 pièces, toutes de 1 franc et 2 francs, j'ai une somme de 38 francs.
+Combien ai-je de pièces de chaque sorte ?
+\begin{enumerate}
+    \item Quelle est l'inconnue?
+    \item Exprime le nombre de pièces de 2.- en fonction du nombre de pièces de 1.-
+    \item utilise le point b) pour poser une équation te permettant de résoudre le problème.
+    \item Résous l'équation.
+\end{enumerate}
+
+}
+ {3} 
+\end{exo}
+
+
+\begin{exo}
+  {Manu a deux filles, Audrey et Chrisitne. Manu décide de donner de l'argent de poche pour les vacances à ses filles. Comme Christine est plus âgée, elle recevra le double d'Audrey. De plus, pour la récompenser de son aide précieuse dans les tâches ménagères, Christine recevra 5.- de plus d'argent de poche. 
+  La somme totale est de 65.-
+  Quelle somme Audrey et Christine ont-elles reçu?
+\begin{enumerate}
+ \item Quelle est l'inconnue?
+    \item Détermine l'équation.
+    \item Résous l'équation.
+    \item Vérifie ta réponse.
+\end{enumerate}
+
+}
+ {3} 
+\end{exo}
+
+
+%problèmes:
+
+\end{document}
+
