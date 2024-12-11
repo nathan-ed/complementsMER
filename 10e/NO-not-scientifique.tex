@@ -1,0 +1,647 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\usepackage{numprint}
+%\usepackage{tabularx}
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{La notation scientifique}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Puissance d'exposant positif (page 32)
+\item Puissance d'exposant négatif (page 33)
+\item Puissance de dix (page 33)
+\item Propriétés des puissance (page 34)
+\item Notation scientifique (page 35)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%PER
+
+%Comparaison, approximation, encadrement, représentation sur une droite et ordre de grandeur de nombres écrits sous la forme de notation scientifique $a\cdot10^n$ avec $n$ dans $\mathbb{Z}$. (1s dans $\mathbb{N}$)-2-3
+
+
+%Puissance de 10
+
+%- signe
+
+%Notation scientifique
+
+%- exprimer quantité (million, milliard)
+
+%- transformer
+
+%- ordonner
+
+%- OPERATIONS ???!?!!?!?
+
+%- calculatrice ?
+
+
+\begin{exol}{NO210}{54}{2} %déf puissance de 10
+\end{exol}
+
+\begin{exof}{NO212}{62}{2} %déf puissance de 10
+\end{exof}
+
+\begin{exof}{NO211}{61}{2} %calcul 10^x à l'aide des prop
+\end{exof}
+
+\begin{resolu}{Calculer avec des puissances de 10}{
+Calcule. Donne ta réponse sous la forme d'une puissance de 10.
+
+     \begin{tasks}(1)
+         \task $\numprint{100000}\cdot0,01=\underline{~10^5\cdot10^{-2}=10^{5+(-2)}=10^3~}$
+         \task $0,001:100=\underline{~10^{-3}:10^2=10^{-3-2}=10^{-5}~}$
+         \task $\dfrac{\numprint{10000}}{0,1}=\underline{~\dfrac{10^4}{10^{-1}}=10^{4-(-1)}=10^5~}$
+     \end{tasks}
+
+}{2}    
+\end{resolu}
+
+\begin{exo}{
+    Calcule. Donne ta réponse sous la forme d'une puissance de 10.
+
+     \begin{tasks}(2)
+         \task $100\cdot\numprint{100000}\cdot0,01$
+         \task $\numprint{0,00001}\cdot\numprint{1000000}$
+         \task $\dfrac{\numprint{0,0001}\cdot0,001}{\numprint{1000}}$
+         \task $100:(\numprint{0,000001}\cdot100)$
+         
+         \task $\numprint{1000000}:0,001\cdot\numprint{1000}$
+         \task $\dfrac{\numprint{0,0001}}{(\numprint{1000}\cdot0,01)}$
+     \end{tasks}
+}{2}
+\end{exo}
+
+
+\begin{exof}{NO189}{58}{1} %mult-div par puissance de 10
+\end{exof}
+
+\begin{exol}{NO213}{55}{2} %situation problème neurones
+\end{exol}
+
+\begin{exol}{NO214}{55}{2} %notation calculatrice
+\end{exol}
+
+%\begin{exop}{ %ajouter puissance négative !
+%Détermine si le résultat sera positif ($>0$) ou négatif ($<0)$.
+
+%Exemple : $(-2)^3\underline{~<0~}$
+
+%\begin{tasks}(2)
+%    \task $(-5)^2$ \ligne{1.5}~
+%    \task $(-7)^3$ \ligne{1.5}~
+%    \task $-1^6$ \ligne{1.5}~
+%    \task $-1,5^{17}$ \ligne{1.5}~
+%    \task $(-6)^{22}$ \ligne{1.5}~
+%    \task $-5^1$ \ligne{1.5}~
+%\end{tasks}
+% }{2}
+%\end{exop}
+
+%\begin{exop}{ %ajouter puissance négative !
+%Détermine si le résultat sera positif ($>0$) ou négatif ($<0)$.
+
+%Exemple : $(+2)^{-7}\underline{~>0~}$
+
+%\begin{tasks}(2)
+%    \task $(+6)^2$ \ligne{1.5}~
+%    \task $(-5)^3$ \ligne{1.5}~
+%    \task $-1^9$ \ligne{1.5}~
+%    \task $-1,5^{-8}$ \ligne{1.5}~
+%    \task $(-4)^{-2}$ \ligne{1.5}~
+%    \task $-7^1$ \ligne{1.5}~
+%\end{tasks}
+% }{2}
+%\end{exop}
+
+
+
+
+
+\begin{exop}{
+Donne l'écriture décimale et la notation scientifique des années données ci-dessous (en années).
+
+Range les événements dans l'ordre chronologique, du plus ancien ($1$) au plus récent ($10$). \\
+
+\rotatebox{90}{
+{\small
+\begin{tabular}{|p{5.1cm}|p{2.8cm}|*{4}{p{2.8cm}|}}
+\hline
+    \textbf{Événement} & \textbf{Il y a...} & \textbf{Écriture} \newline \textbf{décimale} & \textbf{Notation} \newline \textbf{scientifique} & \textbf{Ordre de} \newline \textbf{grandeur} & \textbf{Classement} \\ \hline
+    
+    La disparition des \newline dinosaures & $65$ millions \newline d'années & $\numprint{65000000}$ & $6,5\cdot10^7$ & $10^7$ & \\ \hline
+    
+    La naissance de \newline l'univers & $15$ milliards \newline d'années &  &  &  & \\ \hline
+    
+    Le règne du pharaon \newline égyptien Ramsès II & $3300$ ans &  &  &  & \\ \hline
+
+    Les dernières élections \newline au Conseil d'Etat & $2$ ans &  &  &  & \\ \hline
+
+    La domestication du feu & $\numprint{600000}$ ans &  &  &  & \\ \hline
+
+    L'apparition de l'Homme \newline de Cro-magnon & $\numprint{30000}$ ans &  &  &  & \\ \hline
+
+    La naissance de la Terre & $4,5$ milliards \newline d'années &  &  &  & \\ \hline
+
+    Le premier pas de \newline l'Homme sur la lune & $56$ ans &  &  &  & \\ \hline
+
+    La prise de Constantinople par les Ottomans  & $572$ ans &  &  &  & \\ \hline
+
+    La naissance du soleil & $5$ milliards \newline d'années &  &  &  & \\ \hline
+    
+\end{tabular}}
+}
+}{2}    
+\end{exop}
+
+
+\begin{exop}{
+Donne l'écriture décimale et la notation scientifique des années données ci-dessous (en mètres).
+
+Range les événements dans l'ordre croissant, du plus petit ($1$) au plus grand ($8$). \\
+
+\rotatebox{90}{
+{\small
+\begin{tabular}{|p{4.5cm}|p{3.5cm}|*{4}{p{2.8cm}|}}
+\hline
+     \textbf{Objet} & \textbf{Dimension} & \textbf{Écriture} \newline \textbf{décimale (en mètres)} & \textbf{Notation} \newline \textbf{scientifique} & \textbf{Ordre de} \newline \textbf{grandeur} & \textbf{Classement} \\ \hline
+    
+    L'épaisseur d'une feuille de papier & $\dfrac{1}{\numprint{10000}}$ de mètres & $\numprint{0,0001}$ & $1\cdot10^{-4}$ & $10^{-4}$ & \\ \hline
+    
+    Le diamètre d'un virus & $0,005$ millimètres &  &  &  & \\ \hline
+    
+    L'épaisseur d'une vitre & $0,005$ mètres &  &  &  & \\ \hline
+
+    La hauteur d'une table & $70$ centimètres &  &  &  & \\ \hline
+
+    Le diamètre d'une cellule & deux centièmes de millimètre &  &  &  & \\ \hline
+
+    Le diamètre d'un atome & $\numprint{0,0000002}$ millimètre &  &  &  & \\ \hline
+
+    La taille d'une puce & un demi millimètre &  &  &  & \\ \hline
+
+    L'épaisseur d'un \newline cheveu & $0,08$ mm &  &  &  & \\ \hline
+  
+\end{tabular}}
+}
+}{2}    
+\end{exop}
+
+
+
+
+
+
+
+
+\begin{resolu}{Écrire un nombre décimal ($>1$) en notation scientifique}{
+    Écris en notation scientifique. 
+    \begin{tasks}(1)
+        \task $\numprint{1234} = 1,234\cdot\numprint{1000}=1,234\cdot10^3$
+        \task $\numprint{56000000} = 5,6\cdot\numprint{10000000}=5,6\cdot10^7$
+        \task $432\cdot10^4 =\underbrace{4,32\cdot100}_{=432}\cdot10^4=4,32\cdot10^2\cdot10^4=4,32\cdot10^6$
+    \end{tasks}
+}{2}
+\end{resolu}
+
+\begin{resolu}{Écrire un nombre décimal ($<1$) en notation scientifique}{
+    Écris en notation scientifique. 
+    \begin{tasks}(1)
+        \task $\numprint{0,01234} = 1,234\cdot0,01=\numprint{1,234}\cdot10^{-2}$
+        \task $\numprint{0,00000056} = 5,6\cdot\numprint{0,0000001}=5,6\cdot10^{-7}$
+        \task $432\cdot10^{-4} =\underbrace{4,32\cdot100}_{=432}\cdot10^{-4}=4,32\cdot10^2\cdot10^{-4}=4,32\cdot10^{-2}$
+        %\task $432\cdot10^{-4} =\underbrace{4,32\cdot100}_{=432}\cdot10^{-4}=4,32\cdot10^2\cdot10^{-4}=4,32\cdot10{-2}$
+    \end{tasks}
+}{2}
+\end{resolu}
+
+\begin{exop}{
+    Écris en notation scientifique. 
+    \begin{tasks}(2)
+        \task $\numprint{59600} =$
+        \task $401 =$
+        \task $\numprint{29000} =$
+        \task $\numprint{200000} =$
+        \task $\numprint{84500000} =$
+        \task $\numprint{684700000} =$
+        \task $\numprint{41000000000} =$
+        \task $\numprint{2601} =$
+    \end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+    Écris en notation scientifique. 
+    \begin{tasks}(2)
+        \task $\numprint{86000} =$
+        \task $\numprint{3930000} =$
+        \task $\numprint{3680000} =$
+        \task $\numprint{58000} =$
+        \task $\numprint{75800} =$
+        \task $\numprint{360000} =$
+        \task $\numprint{4850} =$
+        \task $\numprint{69240000}=$
+    \end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+    Écris en notation scientifique. 
+
+    \begin{tasks}(2)
+        \task $\numprint{0,005} =$
+        \task $\numprint{8647} =$
+        \task $\numprint{0,00147} =$
+        \task $\numprint{0,8074} =$
+        \task $\numprint{391000} =$
+        \task $\numprint{8500000} =$
+        \task $\numprint{610000} =$
+        \task $\numprint{0,9807} =$
+    \end{tasks}
+}{2}    
+\end{exop}
+
+
+\begin{exop}{
+    Écris en notation scientifique. 
+
+    \begin{tasks}(2)
+        \task $\numprint{0,0008} =$
+        \task $\numprint{4230000} =$
+        \task $\numprint{0,02} =$
+        \task $\numprint{0,00000589} =$
+        \task $\numprint{8000000} =$
+        \task $\numprint{44000} =$
+        \task $\numprint{1300000} =$
+        \task $\numprint{784000} =$
+    \end{tasks}
+}{2}    
+\end{exop}
+
+
+\begin{exop}{
+    Écris en notation scientifique. 
+
+    \begin{tasks}(2)
+        \task $75\cdot10^4=$ \hrulefill~
+        \task $282\cdot10^6=$ \hrulefill~
+        \task $124\cdot10^{-2}=$ \hrulefill~
+        \task $375,1\cdot10^2=$ \hrulefill~
+        \task $876\cdot10^{-4}=$ \hrulefill~
+        \task $\numprint{0,3902}\cdot10^7=$ \hrulefill~
+        \task $0,049\cdot10^{-8}=$ \hrulefill~
+        \task $10,5\cdot10^{-1}=$ \hrulefill~
+    \end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+    Écris en notation scientifique. 
+
+    \begin{tasks}(2)
+        \task $\numprint{4987}\cdot10^6=$ \hrulefill~
+        \task $\numprint{35844}\cdot10^2=$ \hrulefill~
+        \task $125,94\cdot10^{-9}=$ \hrulefill~
+        \task $\numprint{0,0388}\cdot10^2=$ \hrulefill~
+        \task $\numprint{0,000587}\cdot10^{-1}=$ \hrulefill~
+        \task $0,012\cdot10^2=$ \hrulefill~
+        \task $28\cdot10^{-11}=$ \hrulefill~
+        \task $106,45\cdot10^{-1}=$ \hrulefill~
+    \end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exo}{
+    Exprime en notation scientifique.
+
+    \begin{tasks}(2)
+        \task $24$ milliards =
+        \task $4,3$ millions =
+        \task $6$ mille milliards =
+        \task $0,63$ millions =
+        \task $8,7$ mille =
+        \task $600$ millions de milliards =
+        \task $810$ mille =
+        \task $20$ mille milliards =
+        \task $476$ milliards =
+        \task $46,8$ mille millions =
+    \end{tasks}
+}{2}
+\end{exo}
+
+\begin{exo}{
+    Exprime en notation scientifique.
+
+    \begin{tasks}(2)
+        \task $300$ millions =
+        \task $4$ mille =
+        \task $517$ milliards =
+        \task $800$ millions de milliards =
+        \task $9167$ mille =
+        \task $0,576$ millions =
+        \task $0,03$ mille millions =
+        \task $24$ mille milliards =
+        \task $246$ mille millions =
+        \task $82,5$ millions =
+    \end{tasks}
+}{2}
+\end{exo}
+
+\begin{exol}{NO218}{55}{2} %écrire en notation scientifique
+\end{exol}
+
+\begin{exof}{NO215}{62}{2} %écrire en notation scientifique
+\end{exof}
+
+\begin{exof}{NO217}{64}{2} %écrire en notation scientifique
+\end{exof}
+
+\begin{exol}{NO222}{56}{2} %exprime en not sci, chgmt unité (kg-tonne)
+\end{exol}
+
+
+\begin{resolu}{Exprimer en notation décimale un nombre écrit en notation scientifique}{
+Écris en notation décimale.
+\begin{tasks}(1)
+    \task $1,234\cdot10^3=1,234\cdot1000=1234$
+    \task $5,6\cdot10^{-7}=5,6\cdot\numprint{0,0000001}=\numprint{0,00000056}$
+    \task $4,32\cdot10^{-2}=4,32\cdot0,01=\numprint{0,0432}$
+\end{tasks}
+}{2}
+\end{resolu}
+
+
+\begin{exop}{
+Écris en notation décimale.
+
+\begin{tasks}(2)
+        \task $4,96\cdot10^5=$ \hrulefill~
+        \task $2,09\cdot10^3=$ \hrulefill~
+        \task $2,03\cdot10^{-4}=$ \hrulefill~
+        \task $9,8\cdot10^{-1}=$ \hrulefill~
+        \task $3,5\cdot10^{7}=$ \hrulefill~
+        \task $2,78\cdot10^8=$ \hrulefill~
+        \task $8,4\cdot10^{-2}=$ \hrulefill~
+        \task $2,163\cdot10^{2}=$ \hrulefill~
+    \end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}{
+Écris en notation décimale.
+
+\begin{tasks}(2)
+        \task $3,563\cdot10^{-4}=$ \hrulefill~
+        \task $5,63\cdot10^{-6}=$ \hrulefill~
+        \task $4,78\cdot10^{-3}=$ \hrulefill~
+        \task $3,2\cdot10^{-5}=$ \hrulefill~
+        \task $1,95\cdot10^{6}=$ \hrulefill~
+        \task $9,1\cdot10^{-3}=$ \hrulefill~
+        \task $6,42\cdot10^{0}=$ \hrulefill~
+        \task $3,631\cdot10^{-7}=$ \hrulefill~
+    \end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}{
+Écris en notation décimale.
+
+\begin{tasks}(2)
+        \task $3,09\cdot10^{-1}=$ \hrulefill~
+        \task $-2,9\cdot10^{5}=$ \hrulefill~
+        \task $1\cdot10^{4}=$ \hrulefill~
+        \task $2\cdot10^{-5}=$ \hrulefill~
+        \task $-5,31\cdot10^{-2}=$ \hrulefill~
+        \task $7,64\cdot10^{8}=$ \hrulefill~
+        \task $7\cdot10^{0}=$ \hrulefill~
+        \task $-1,643\cdot10^{3}=$ \hrulefill~
+    \end{tasks}
+}{2}
+\end{exop}
+
+\begin{exop}{
+Écris en notation décimale.
+
+\begin{tasks}(2)
+        \task $-8,3\cdot10^{6}=$ \hrulefill~
+        \task $-1\cdot10^{-5}=$ \hrulefill~
+        \task $4,263\cdot10^{2}=$ \hrulefill~
+        \task $-6,32\cdot10^{-3}=$ \hrulefill~
+        \task $7,86\cdot10^{-5}=$ \hrulefill~
+        \task $1,532\cdot10^{8}=$ \hrulefill~
+        \task $-7,23\cdot10^{1}=$ \hrulefill~
+        \task $-2\cdot10^{-2}=$ \hrulefill~
+    \end{tasks}
+}{2}
+\end{exop}
+
+\begin{exof}{NO216}{63}{2} %écrire en décimal, ordonner, ordre de grandeur
+\end{exof}
+
+\begin{exof}{NO219}{64}{2} %not sci <-> décimale
+\end{exof}
+
+\begin{exol}{NO220}{56}{2} %nb tours par minute
+\end{exol}
+
+\begin{exol}{NO221}{56}{2} %vitesse lumière, proportionnalité
+\end{exol}
+
+
+
+\begin{resolu}{Multiplier des nombres exprimés en notation scientifique}{
+Effectue les multiplications en utilisant la notation scientifique.
+\begin{tasks}(2)
+    \task \addtolength{\jot}{3mm}    
+            \begin{align*}
+            &(0,6\cdot10^5)\cdot(0,3\cdot10^{-9})\\
+            &=0,6\cdot0,3\cdot10^5\cdot10^{-9}\\
+            &=0,18\cdot10^{-4}=1,8\cdot10^{-5}\\
+            \end{align*}
+            
+            %$(0,6\cdot10^5)\cdot(0,3\cdot10^{-9})=0,6\cdot0,3\cdot10^5\cdot10^{-9}=0,18\cdot10^{-4}=1,8\cdot10^{-5}$
+    
+    \task \addtolength{\jot}{3mm}    
+            \begin{align*}
+            &\numprint{53000000}\cdot0,002\\
+            &=53\cdot10^6\cdot2\cdot10^{-3}\\
+            &=53\cdot2\cdot10^6\cdot10^{-3}\\
+            &=106\cdot10^3\\
+            &=1,06\cdot10^5
+            \end{align*}
+             
+\end{tasks}
+}{2}    
+\end{resolu}
+
+\begin{exo}{
+Calcule.
+\begin{tasks}(2)
+    \task $5\cdot10^8\cdot3\cdot10^5$
+    \task $\numprint{9000}\cdot\numprint{0,00000004}$
+    \task $(60\cdot10^5)\cdot(9\cdot10^{-6})$
+    \task $\numprint{200000}\cdot\numprint{0,00000015}$
+    \task $6\cdot10^{-9}\cdot4\cdot10^6$
+    \task $\numprint{0,0000011}\cdot\numprint{0,000008}$
+    \task $\numprint{250000}\cdot0,006$
+    \task $(3\cdot10^{-12})\cdot(12\cdot10^2)$
+\end{tasks}
+}{2}    
+\end{exo}
+
+\begin{exo}{
+Calcule.
+\begin{tasks}(2)
+    \task $14\cdot10^{-5}\cdot20\cdot10^8$
+    \task $752\cdot10^{-9}\cdot\numprint{200000000}$
+    \task $(8\cdot10^{-2})\cdot(5\cdot10^{-8})$
+    \task $\numprint{10000}\cdot\numprint{0,0000563}$
+    \task $\numprint{35000}\cdot10^6\cdot100$
+    \task $4,15\cdot10^2\cdot4\cdot10^{10}$
+    \task $\numprint{40000}\cdot\numprint{0,00002}\cdot\numprint{50000000}$
+    \task $\numprint{0,000075}\cdot10^6\cdot300$
+\end{tasks}
+}{2}    
+\end{exo}
+
+\begin{exo}{
+Calcule.
+\begin{tasks}(2)
+    \task $(4\cdot10^3)\cdot2\cdot10^{-3}$
+    \task $\numprint{0,00005}\cdot\numprint{7000000}$
+    \task $\numprint{1200}\cdot10^6\cdot0,003$
+    \task $(16\cdot10^3)\cdot(2\cdot10^{-11})$
+    \task $10^5\cdot4000\cdot\numprint{0,0015}$
+    \task $\numprint{1800}\cdot10^7\cdot\numprint{0,00004}$
+    \task $\numprint{0,00005}\cdot\numprint{0,0004}$
+    \task $4\cdot10^{-2}\cdot8\cdot10^5$
+\end{tasks}
+}{2}    
+\end{exo}
+
+\begin{resolu}{Diviser des nombres exprimés en notation scientifique}{
+Effectue les divisions en utilisant la notation scientifique.
+\begin{tasks}(2)
+    \task   \addtolength{\jot}{5mm}    
+            \begin{align*}
+            &(8\cdot10^{-7}):(4\cdot10^{-10})\\
+            &=\dfrac{8\cdot10^{-7}}{4\cdot10^{-10}}\\
+            &=\dfrac{8}{4}\cdot\dfrac{10^{-7}}{10^{-10}}\\
+            &=2\cdot10^{-7-(-10)}\\
+            &=2\cdot10^3
+            \end{align*}
+    
+    
+    \task   \addtolength{\jot}{5mm} 
+            \begin{align*}
+            &\dfrac{\numprint{39000000}\cdot0,002}{1300\cdot5}\\
+            &=\dfrac{39\cdot10^6\cdot2\cdot10^{-3}}{13\cdot10^2\cdot5}\\
+            &=\dfrac{39\cdot2}{13\cdot5}\cdot10^{6+(-3)-2}\\
+            &=\dfrac{6}{5}\cdot10^{1}\\
+            &=1,2\cdot10^{1}
+            \end{align*}
+\end{tasks}
+}{2}    
+\end{resolu}
+
+\begin{exo}{
+Calcule.
+\begin{tasks}(2)
+    \task $\dfrac{16\cdot10^3}{2\cdot10^1}$
+    \task $\dfrac{25\cdot10^2}{25\cdot10^3}$
+    \task $\dfrac{15\cdot10^7}{5\cdot10^2}$
+    \task $\dfrac{50\cdot10^7}{5\cdot10^{-2}}$
+    \task $\dfrac{36\cdot10^4}{9\cdot10^2}$
+    \task $\dfrac{\numprint{1000}}{\numprint{50000000}}$
+    \task $\dfrac{\numprint{120000}}{\numprint{0,000004}}$
+    \task $\dfrac{8\cdot10^{-2}}{10^3\cdot10^{-4}}$
+\end{tasks}
+}{2}    
+\end{exo}
+
+\begin{exo}{
+Calcule.
+\begin{tasks}(2)
+    \task $\dfrac{4\cdot10^8}{4\cdot10^5}$
+    \task $\dfrac{36\cdot10^{-4}}{9\cdot10^{-5}}$
+    \task $\dfrac{8\cdot10^7}{2\cdot10^{-2}}$
+    \task $\dfrac{10^6\cdot10^3}{5\cdot10^{-4}}$
+    \task $\dfrac{25\cdot10^{12}}{5\cdot10^3}$
+    \task $\dfrac{\numprint{3400000}}{\numprint{0,000005}}$
+    \task $\dfrac{\numprint{0,00036}\cdot\numprint{10000000}}{20000}$
+    \task $\dfrac{8\cdot10^{-7}\cdot10^3}{4\cdot10^{-10}\cdot10^{4}}$
+\end{tasks}
+}{2}    
+\end{exo}
+
+\begin{exol}{NO223}{56}{2} %division
+\end{exol}
+
+\begin{exol}{NO224}{56}{2} %division
+\end{exol}
+
+\begin{exol}{NO225}{57}{2} %multiplication/division
+\end{exol}
+
+\begin{exol}{NO226}{57}{2} %exprimer not sci, division
+\end{exol}
+
+\begin{exol}{NO227}{57}{2} %division
+\end{exol}
+
+\begin{FLP}{65}{2}
+\end{FLP}
+
+
+%\begin{resolu}{Utilisation de la calculatrice}{
+%    Tape sur ta calculatrice (TX-30X Plus) ces nombres. Écris le résultat qu'elle affiche, puis écris le nombre en notation scientifique 
+%    \begin{tasks}
+%    \task $\numprint{657100000000}=$ \underline{$6,571 \mathrm{E}11$} $=$ \underline{$\numprint{6,571e11}$}
+%    \task $\numprint{3518000000000000000}=$ \underline{$3,518 \mathrm{E}18$} $=$ \underline{$\numprint{3,518e18}$}
+%    \task $\numprint{0,0000000000045875}=$ \underline{$4,5875 \mathrm{E}-12$}  $=$ \underline{$\numprint{4,5875e-12}$}
+%\end{tasks}
+%}{2}
+%\end{resolu}
+
+%\begin{exop}{
+%Tape sur ta calculatrice ces nombres. Écris le résultat qu'elle affiche, puis écrit le nombre en notation scientifique.
+
+%\begin{tasks}
+%    \task $\numprint{91230000000}=$ \hrulefill
+%    \task $\numprint{164000000000000000}=$ \hrulefill
+%    \task $\numprint{0,00000000000589}=$ \hrulefill
+%\end{tasks}
+
+%}{2}    
+%\end{exop}
+
+
+%\begin{resolu}{Utilisation de la caluclatrice en mode SCI}{
+
+%}{2}    
+%\end{resolu}
+\end{document}

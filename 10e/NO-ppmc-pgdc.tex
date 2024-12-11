@@ -1,0 +1,518 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\usepackage{numprint}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Ppmc et pgdc}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Multiple, diviseur (page 12)
+\item Critères de divisibilité (page 13)
+\item Multiple commun, ppmc (page 15)
+\item Diviseur commun, pgdc (page 16)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{QSJ}{7}{1}
+\end{QSJ}
+
+\begin{exof}{NO11}{8}{1}
+\end{exof}
+
+\begin{exol}{NO12}{14}{1}
+\end{exol}
+
+\begin{exol}{NO13}{14}{1}
+\end{exol}
+
+
+\begin{exo}{
+    Énumère les multiples des entiers suivants, puis détermine leur plus petit multiple commun (ppmc).
+\begin{tasks}(4)
+    \task $3$ et $4$
+    \task $2$ et $4$
+    \task $6$ et $4$
+    \task $3$ et $8$
+    \task $6$ et $9$
+    \task $5$ et $7$
+    \task $11$ et $6$
+    \task $3$ et $10$
+\end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+    Calcule le ppmc des entiers suivants.
+
+\begin{tasks}(4)
+    \task $6$ et $12$
+    \task $8$ et $4$
+    \task $5$ et $15$
+    \task $2$ et $10$
+    \task $7$ et $14$
+    \task $8$ et $32$
+    \task $30$ et $60$
+    \task $50$ et $100$
+\end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{
+    Calcule le ppmc des entiers suivants.
+
+
+\begin{tasks}(4)
+    \task $18$ et $24$
+    \task $36$ et $60$
+    \task $50$ et $70$
+    \task $48$ et $36$
+    \task $15$ et $20$
+    \task $18$ et $20$
+    \task $20$ et $30$
+    \task $20$ et $25$
+    \task $14$ et $35$
+    \task $16$ et $6$
+    \task $32$ et $5$
+    \task $21$ et $12$
+\end{tasks}
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{
+    Calcule le ppmc des entiers suivants.
+
+
+\begin{tasks}(3)
+    \task $5$ ; $10$ et $11$
+    \task $2$ ; $4$ et $16$
+    \task $10$ ; $12$  et $16$
+    \task $7$ ; $14$ et $21$
+    \task $3$ ; $4$ ; $5$ et $6$
+    \task $2$ ; $5$ ; $8$ et $10$
+\end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+    Énumère les diviseurs des entiers suivants, puis détermine leur plus grand diviseur commun (pgdc).
+\begin{tasks}(4)
+    \task $12$ et $38$
+    \task $15$ et $9$
+    \task $4$ et $6$
+    \task $8$ et $20$
+    \task $5$ et $7$
+    \task $10$ et $15$
+    \task $2$ et $6$
+    \task $10$ ; $12$ et $16$
+\end{tasks}
+}{1}\end{exo}
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Détermine le plus grand diviseur commun (pgdc) des entiers suivants.
+\begin{tasks}(4)
+        \task $36$ et $12$
+        \task $10$ et $20$
+        \task $15$ et $60$
+        \task $450$ et $900$
+\end{tasks}
+Qu'observes-tu~?
+}{1}\end{exo}
+
+
+
+
+
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Détermine le plus grand diviseur commun (pgdc) des entiers suivants.
+\begin{tasks}(2)
+        \task $25$ et $16$
+        \task $27$ et $32$
+        \task $36$ et $35$
+        \task $75$ et $24$
+\end{tasks}
+Qu'observes-tu~?
+}{1}\end{exo}
+
+
+%------------------------------------------------------
+\begin{exo}{
+    Les nombres donnés ont-ils des diviseurs communs~?
+    \begin{tasks}(4)
+        \task 21 et 45 
+        \task 55 et 18 
+        \task 6 et 723 
+        \task 12 et 16
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+\begin{resolu}{Résolution de problème}{Un centre aéré organise une sortie à la mer pour 105 enfants accompagnés de 42 adultes. \\ Comment peut-on constituer des groupes comportant le même nombre d'enfants et d'accompagnateurs~? Décris la composition des groupes. Donne toutes les possibilités. \\
+
+{\color{blue} 
+    Concentrons-nous sur les 105 enfants. On peut constituer :
+    \begin{center}
+        \begin{multicols}{2}
+            1 groupe de 105 enfants \\
+            3 groupes de 35 enfants \\
+            5 groupes de 21 enfants \\
+            7 groupes de 15 enfants \\
+            15 groupe de 7 enfants\\
+            21 groupes de 5 enfants \\
+            35 groupes de 3 enfants \\
+            105 groupes de 1 enfant \\
+        \end{multicols}
+    \end{center}
+
+Cela revient à lister les diviseurs de 105 : 
+\[D_{105}=\{1~;~3~;~5~;~7~;~15~;~21~;~35~;~105\}\]
+
+    À présent, concentrons-nous sur les 42 adultes. On peut constituer :
+    
+    \begin{tasks}(2)
+	\task[] {\color{blue} 1 groupe de 42 adultes}
+        \task[] {\color{blue} 2 groupes de 21 adultes}
+        \task[] {\color{blue} 3 groupes de 14 adultes } 
+        \task[] {\color{blue} 6 groupes de 7 adultes}
+	\task[] {\color{blue} 7 groupe de 6 adultes}
+	\task[] {\color{blue} 14 groupes de 3 adultes}
+	  \task[] {\color{blue} 21 groupes de 2 adultes}
+	\task[] {\color{blue} 42 groupes de 1 adulte}
+    \end{tasks}
+    \bigskip
+    
+    Cela revient à lister les diviseurs de 42 : 
+    \[D_{42}=\{1~;~2~;~3~;~6~;~7~;~14~;~21~;~42\}\]
+    Si l'on compare nos résultats, on remarque que l'on peut former : 
+ \begin{tasks}
+\task[] {\color{blue} 1 groupe de 105 enfants et 42 adultes}
+\task[] {\color{blue} 3 groupes de 35 enfants et 14 adultes }
+\task[] {\color{blue} 7 groupes de 15 enfants et 6 adultes  }  
+\task[] {\color{blue} 21 groupes de 5 enfants et 2 adultes }
+\end{tasks}
+\bigskip
+    Cela revient à lister les diviseurs communs de 105 et 42.
+
+}
+
+}{1}\end{resolu}
+
+
+\begin{exo}{ %force la liste
+    Julien a fait des biscuits pour les vendre à la fête du quartier. Il a fait 72 biscuits au chocolat et 84 biscuits au sucre. Il veut les mettre dans des boîtes contenant chacune exactement les mêmes biscuits et il veut utiliser tous les biscuits. \\
+    Combien de boîtes Julien peut-il faire~? Décris le contenu des boîtes.    Donne toutes les solutions possibles.
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+		Une boulangère confectionne de la pizza sur une grande plaque rectangulaire de \tunit{90}{\cm} sur \tunit{54}{\cm}.
+
+    Pour la vente de parts individuelles, elle doit découper la pizza en carrés dont les dimensions sont des nombres entiers de centimètres. 
+    \begin{tasks}
+        \task Quelles seront les mesures d'une part de pizza~?
+        \task Combien de parts peut-elle découper sans perte~?
+        \task Y a-t-il d'autres possibilités~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+    Nedjma plante 9 plants de tomates et 12 plants de rhubarbes dans son jardin. \\ Elle voudrait planter ces plants en rangées contenant chacune le même nombre de plants de tomates et de plants de rhubarbes.
+    \begin{tasks}
+        \task Quel est le plus grand nombre de rangées que Nejma peut planter~? Réponds à l'aide d'un croquis.
+        \task Nejma décide d'augmenter sa production pour ouvrir son commerce. Elle souhaite à présent planter 63 plants de tomates et 81 plants de rhubarbes. Quel est le plus grand nombre de rangées que Nejma peut planter~?
+        \task Nejma souhaite se diversifier et augmente la taille de son terrain. Elle plante 120 plants de tomates, 360 plants de rhubarbes et 150 plants de courgettes. Quel est le plus grand nombre de rangées que Nejma peut planter~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{resolu}{Résolution de problèmes}{
+
+    Anaïs s'entraîne à la course tous les 3 jours et Clara tous les 4 jours. 
+
+    Si Anaïs et Clara sont allées à l'entraînement ensemble aujourd'hui, dans combien de temps vont-elles de nouveau courir le même jour~? 
+
+    {\color{blue}
+        Anaïs ira courir dans 3 jours, dans 6 jours, dans 9 jours, etc. 
+
+	Cela revient à lister les multiples de 3 : 
+	\[M_3=\{0~;~3~;~6~;~9~;~12~;~15~;~18~;~21~;~24~;~etc.\}\]
+        Clara ira courir dans 4 jours, dans 8 jours, dans 12 jours, etc. 
+
+	Cela revient à lister les multiples de 4 :
+	\[M_4=\{0~;~4~;~8~;~12~;~16~;~20~;~24~;~28~;~etc.\}\] 
+        Ainsi, Anaïs et Clara se retrouveront dans 12 jours et dans 24 jours. On remarque que cela se reproduira encore dans 36 jours, dans 48 jours, etc. Cela revient à lister les multiples communs de 3 et 4, soit les multiples de 12. 
+    }
+}{1}\end{resolu}
+
+\begin{exo}{
+    Taylan et Kathleya ont une fonction importante dans la chorale de l'école.  Dans la pièce de musique, Taylan frappe dans ses mains tous les 6 temps et Kathleya donne un coup de cymbales tous les 8 temps.
+    \begin{tasks}
+        \task À combien de temps, Taylan donnera-t-il un coup de cymbales en même temps que Kathleya frappera dans ses mains~?
+        \task Au bout de combien de temps, à partir du début de la pièce, cela se répétera-t-il une autre fois~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+\begin{exo}{
+    Trois bergers comptent le nombre de moutons du troupeau.
+
+    Pour le premier berger qui a l'habitude de les compter par groupes de 6, il en reste 5. 
+
+    Pour le deuxième berger qui a l'habitude de les compter par groupes de 8, il en reste 5.
+
+    Pour le troisième berger qui a l'habitude de les compter par groupes de 12, il en reste 5 aussi. 
+
+Sachant que le troupeau comporte entre 470 et 500 têtes, quel est le nombre de moutons~?
+
+}{1}\end{exo}
+
+
+\begin{exo}{
+    Voici les listes des diviseurs et des premiers multiples de 63 et de 84.  
+    
+    \hspace*{1cm} $M_{63}=\{0~;~63~;~126~;~189~;~252~;~315~;~378~;~441~etc.\}$ 
+
+    \hspace*{1cm} $M_{84}=\{0~;~84~;~168~;~252~;~336~;~420~;~504~;~588~etc.\}$ 
+
+    \hspace*{1cm} $D_{63}=\{1~;~3~;~7~;~9~;~21~;~63\}$
+
+    \hspace*{1cm} $D_{84}=\{1~;~2~;~3~;~4~;~6~;~7~;~12~;~14~;~21~;~28~;~42~;~84\}$ 
+
+    En t'aidant des listes ci-dessus, résous les problèmes suivants. Indique si tu utilises le ppmc ou le pgdc.
+    
+    \begin{tasks}
+	    \task Un charpentier a deux poutres, l'une de \tunit{84}{\m} et l'autre de \tunit{63}{\m}. Il veut les partager en morceaux aussi longs que possible, tous de même longueur et dont la mesure est un nombre entier de centimètres.
+
+		    Quelle sera la longueur des morceaux~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Les morceaux mesureront \ligne{2} mètres. 
+
+    
+        \task Vous devez ranger un lot de cartes postales en paquets.  Quand vous faites des paquets de 84 ou de 63 cartes postales, il ne reste aucune carte.  Quel est le plus petit nombre possible de cartes postales dans ce lot~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Il y a au minimum \ligne{2} cartes postales dans ce lot.
+
+    \end{tasks} 
+}{2}\end{exo}
+
+
+
+
+\begin{exo}{
+    Voici les listes des diviseurs et des premiers multiples de 24 et de 30. 
+    
+    \hspace*{1cm} $M_{24}=\{0~;~24~;~48~;~72~;~96~;~120~;~144~;~168~etc.\}$ 
+
+    \hspace*{1cm} $M_{30}=\{0~;~30~;~60~;~90~;~120~;~150~;~180~;~210~etc.\}$
+
+    \hspace*{1cm} $D_{24}=\{1~;~2~;~3~;~4~;~6~;~8~;~12~;~24\}$ 
+
+    \hspace*{1cm} $D_{30}=\{1~;~2~;~3~;~5~;~6~;~10~;~15~;~30\}$ 
+
+    En t'aidant des listes ci-dessus, résous les problèmes suivants. Indique si tu utilises le ppmc ou le pgdc. 
+    
+    \begin{tasks}
+        \task Fanny et Laure sont dans deux classes différentes. Le professeur de Laure donne toujours des examens avec 30 questions, tandis que le professeur de Fanny donne toujours des examens avec 24 questions. Même si les deux classes ont un nombre différent d'examens, leurs professeurs leur ont dit que le nombre total de questions d'examens par an est le même pour les deux classes.
+
+		Quel est le nombre minimal de questions d'examens que Fanny et Laure doivent s'attendre à avoir par an~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Elles auront au minimum \ligne{2} questions par an.
+    
+        \task Shadya a acheté un paquet de 24 cahiers, ainsi que 30 crayons. Elle veut utiliser tous les cahiers et tous les crayons pour composer des paquets identiques de fourniture pour ses camarades de classe. 
+
+		Quel est le plus grand nombre de paquets identiques qu'elle peut faire avec toutes ces fournitures~?
+        \begin{center}  $\square$ ppmc \hspace*{2cm} $\square$ pgdc     \end{center}
+        \underline{Réponse} : Elle peut faire au maximum \ligne{2} paquets identiques contenant chacun \ligne{2} cahiers et \ligne{2} crayons.
+
+    \end{tasks} 
+}{2}\end{exo}
+
+\begin{exo}{ %pgdc
+    Un fleuriste dispose de 144 tulipes et 120 roses. Il veut constituer le maximum de bouquets identiques en utilisant toutes ses fleurs.
+    \begin{tasks}
+        \task Quel est le nombre de bouquets qu'il pourra constituer~?
+        \task Quelle est la composition de chaque bouquet~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+
+
+
+\begin{exo}{ %ppmc
+    Nicole joue au volleyball tous les 6 jours et Gauthier tous les 7 jours. 
+
+    Si Nicole et Gauthier sont allés au volleyball ensemble aujourd'hui, dans combien de temps vont-ils de nouveau jouer au volleyball le même jour~? 
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %pgdc
+    Pour la fête d'Halloween, Esaïe a acheté 200 bonbons et 300 chocolats. Il veux répartir toutes ses friandises également dans le plus grand nombre de sacs possibles.
+    \begin{tasks}
+        \task De combien de sacs aura-t-il besoin~?
+        \task Combien de friandises de chaque sorte y aura-t-il dans chaque sac~?
+    \end{tasks}
+}{1}\end{exo}
+
+\begin{exo}{ %ppmc
+    Votre station de radio préférée organise son grand jeu annuel dans lequel on peut gagner des téléphones portables et des places de concerts. Pendant une minute, elle offre un téléphone tous les 5 appels et des places de concert tous les 7 appels. 
+
+    Vous êtes le premier auditeur à gagner un téléphone portable et des places de concerts lors du même appel ! 
+
+    En quelle position avez-vous appelé~? 
+}{1}\end{exo}
+
+
+
+
+
+
+
+
+\begin{exo}{ %ppmc
+    La maman de Isaïah achète des saucisses et des pains à hot-dogs pour le pique-nique. Les saucisses sont vendues par paquets de 12 et les pains par paquets de 9.
+
+    Le magasin ne vend que des paquets complets et la maman de Isaïah veut acheter autant de saucisses que de pains.
+
+    Combien de saucisses au minimum la maman de Isaïah doit-elle acheter~? 
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %pgdc
+    Darell a 108 billes rouges et 135 billes noires. Il veut faire des paquets de billes de sorte que tous les paquets contiennent le même nombre de billes rouges et noires.
+    De plus, toutes les billes rouges et toutes les billes noires doivent être utilisées.
+    \begin{tasks}
+        \task Quel nombre maximal de paquets pourra t-il réaliser~?
+        \task Combien y aura t-il de billes rouges et de billes noires dans chaque paquet~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{ %pgdc
+    On répartit en paquets un lot de 161 crayons rouges et un lot de 133 crayons noirs de façon que tous les paquets contiennent le même nombre de crayons et que tous les crayons soient répartis.
+    \begin{tasks}
+        \task Combien y a t-il de crayons dans chaque paquet~?
+        \task Quel est le nombre de paquets de crayons de chaque couleur~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+\begin{exo}{ %ppmc
+    Charlotte et Malika jouent au bowling avec des quilles en plastique dans le salon de Charlotte. 
+
+    De façon étonnante, Charlotte fait tomber 8 quilles par tir et Malika 9 quilles par tir. A la fin du jeu, elles ont fait tomber le même nombre de quilles.
+
+    Combien de quilles chacune ont-elles fait tomber au total~? 
+}{1}\end{exo}
+
+
+\begin{exo}{ %ppmc
+    Simon et Lénaïc ont fait leur lessive aujourd'hui. Or Simon fait sa lessive tous les 6 jours et Lénaïc tous les 9 jours. 
+
+    Combien se passera-t-il de jours avant que Simon et Lénaïc ne refassent leur lessive le même jour~? 
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %pgdc
+    Il y a $32$ attaquants et $80$ défenseurs dans le club de basketball de Kingudi . 
+
+     Elle doit répartir tous les joueurs en équipes qui comprennent le même nombre d'attaquants et le même nombre de défenseurs. 
+    \begin{tasks}
+        \task Quel est le nombre maximal d'équipes que peut former Kingudi~?
+        \task Combien d'attaquants et de défenseurs y aura-t-il dans chaque équipe~?
+    \end{tasks}
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{  %pgdc
+    Pour les fêtes de Pâques, un chocolatier veut confectionner des boîtes contenant le même nombre de truffes   de différentes variétés de chocolat. 
+
+    Il dispose de 630 truffes au chocolat noir, 180 truffes à la noisette, 135 truffes au caramel et 225 truffes à la praline. 
+
+    Quel est le nombre maximum de boîtes qu'il peut réaliser~?
+}{1}\end{exo}
+
+
+
+
+\begin{exo}{ %ppmc
+    Deux des lampes du stade local clignotent. Elles viennent tout juste de clignoter au même moment. Une des lampes s'allume toutes les  6 secondes et l'autre s'allume toutes les 7 secondes.
+
+    Combien de secondes doit-on attendre pour que les deux lampes s'allument de nouveau au même moment~? 
+}{1}\end{exo}
+
+
+
+\begin{exo}{ %pgdc
+		Un artiste dispose d'une toile de \tunit{60}{\cm} sur \tunit{48}{\cm}. Il veut y peindre un pavage composé de carrés identiques mais de couleurs différentes. La longueur du côté de ces carrés est un nombre entier. 
+
+    Quelle est la plus grande longueur possible pour ces côtés (en cm)~?
+}{1}\end{exo}
+
+
+\begin{exo}{ %ppmc
+    La sirène du village est déclenchée tous les 15 jours pour vérifier son bon fonctionnement. 
+
+    Les cloches de l'église du village sonnent tous les 7 jours, le dimanche. 
+
+    La sirène de la caserne des pompiers émet 3 bips tous les 21 jours. Ces trois évènements ont eu lieu ce dimanche. 
+
+    Au bout de combien de jours se reproduiront-ils le même jour~?
+}{1}\end{exo}
+
+\end{document}

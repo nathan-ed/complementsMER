@@ -1,0 +1,282 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\usepackage{numprint}
+\usepackage{tabularx}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Fonctions et algèbre}
+\newcommand{\serieName}{Proportionnalité : Les échelles}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Proportionnalité - Généralités (page 55)
+\item Résoudre un problème de proportionnalité (page 57)
+\item Échelle (page 59)
+\item Déterminer l'échelle d'une reproduction de la réalité (page 59)
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{resolu}{Calculer l'échelle d'une réduction (carte, plan, maquette...)}{
+\tunit{20}{\kilo m} en réel sont représentés sur une carte par \tunit{5}{\centi m}. Quelle est l'échelle de cette carte ?
+
+\begin{tasks}(1)
+    \task Exprime les distances dans la même unité.
+
+    $\tunit{20}{\kilo m} = \numprint{2000000}$ cm
+
+    \task Applique la formule et exprime l'échelle sous la forme d'une fraction dont le numérateur est égal à $1$.
+    
+    \begin{align*}        \textrm{Échelle}&=\dfrac{\textrm{Longueur mesurée sur la carte}}{\textrm{Longueur réelle}} \\
+    &=\dfrac{5}{\numprint{2000000}} \\
+    &=\dfrac{1}{\numprint{400000}} 
+    \end{align*}
+    
+    \task L'échelle de la carte est $1:\numprint{400000}$.
+\end{tasks}
+}{1}    
+\end{resolu}
+
+\begin{resolu}{Calculer l'échelle d'un agrandissement}{
+\tunit{2}{\milli m} en réel sont représentés sur un dessin par \tunit{14}{\centi m}. Quelle est l'échelle de ce dessin ?
+
+\begin{tasks}(1)
+    \task Exprime les distances dans la même unité.
+
+    $\tunit{14}{\centi m} = \numprint{140}$ mm
+
+    \task Applique la formule et exprime l'échelle sous la forme d'une fraction dont le dénominateur est égal à $1$.
+    
+    \begin{align*}        \textrm{Échelle}&=\dfrac{\textrm{Longueur mesurée sur le dessin}}{\textrm{Longueur réelle}} \\
+    &=\dfrac{140}{2} \\
+    &=\dfrac{70}{1} 
+    \end{align*}
+    
+    \task L'échelle de la carte est $70:1$.
+\end{tasks}
+}{1}    
+\end{resolu}
+
+
+\begin{exo}{
+\begin{tasks}(1)
+    \task Quelle est l'échelle d'une carte sur laquelle \tunit{28}{\kilo m} sont représentés par \tunit{0,56}{\kilo m} ?
+
+    \task Quelle est l'échelle d'un dessin sur laquelle \tunit{96}{\milli m} sont représentés par \tunit{576}{\milli m} ?
+
+    \task Quelle est l'échelle d'une maquette sur laquelle \tunit{42}{m} sont représentés par \tunit{0,14}{m} ?
+
+    \task Quelle est l'échelle d'une image sur laquelle \tunit{32,5}{\centi m} sont représentés par \tunit{130}{\centi m} ?
+\end{tasks}
+}{1}    
+\end{exo}
+
+\begin{exo}{
+\begin{tasks}(1)
+    \task Quelle est l'échelle d'une carte sur laquelle \tunit{35}{\kilo m} sont représentés par \tunit{2,5}{\centi m} ?
+
+    \task Quelle est l'échelle d'un dessin sur laquelle \tunit{1,5}{\milli m} sont représentés par \tunit{3,75}{\centi m} ?
+
+    \task Quelle est l'échelle d'une maquette sur laquelle \tunit{2720}{m} sont représentés par \tunit{68}{\centi m} ?
+
+    \task Quelle est l'échelle d'une image sur laquelle \tunit{12}{\centi m} sont représentés par \tunit{6}{m} ?
+\end{tasks}
+}{1}    
+\end{exo}
+
+\begin{exol}{FA53}{79}{1} % échelle coccinelle
+\end{exol}
+
+\begin{exo}{
+    Lola souhaite acheter une parcelle rectangulaire dont les dimensions sont \tunit{70}{m} par \tunit{45}{m}. Son architecte lui montre un plan mesurant \tunit{28}{\centi m} sur \tunit{18}{\centi m}.
+
+    Quelle est l'échelle de ce plan ?
+}{1}    
+\end{exo}
+
+\begin{exo}{
+    Un mille-pattes mesure \tunit{48}{\milli m}. Sur le dessin, il mesure \tunit{20,4}{\centi m}.
+
+    Quelle est l'échelle de ce dessin ?
+}{1}    
+\end{exo}
+
+\begin{resolu}{Calculer une longueur à l'aide d'une échelle (réduction)}{Sur une maquette de la ville de Genève, on indique l'échelle $1:500$.
+
+\begin{tasks}(1)
+    
+\task Calcule la distance sur la maquette entre le Musée d'Histoire des Sciences et le Musée d'ethnographie, en sachant que ces deux établissements sont éloignés de $\tunit{2,8}{\kilo m}$ en réalité.
+
+    L'échelle indique que les distances sur la maquette sont $500$ fois plus petites qu'en réalité. 
+    
+       \[2,8:500=\tunit{0,0056}{\kilo m}\]
+        
+    Convertis dans l'unité adaptée.
+
+    \[\tunit{0,0056}{\kilo m}=\tunit{5,6}{m}\]
+
+    \underline{Réponse} : Les deux musées sont éloignés de \tunit{5,6}{m} sur la maquette.
+    
+\task Sur la maquette, on mesure une distance de \tunit{6,8}{\centi m} entre l'aéroport et la gare Cornavin. Quelle distance cela représente-t-il en réalité ?
+
+    L'échelle indique que les distances en réalité sont $500$ fois plus grandes que sur la maquette. 
+    
+    \[6,8\cdot500=\tunit{3400}{m}\]
+        
+    Convertis dans l'unité adaptée.
+
+    \[\tunit{3400}{m}=\tunit{3,4}{\kilo m}\]  
+
+    \underline{Réponse} : L'aéroport et la gare Cornavin sont éloignés de \tunit{3,4}{\kilo m} en réalité.
+\end{tasks}
+}{1}    
+\end{resolu}
+
+
+
+
+
+
+
+
+\begin{resolu}{Calculer une longueur à l'aide d'une échelle (agrandissement)}{On dessine un insecte à l'échelle $20:1$.
+
+\begin{tasks}(1)
+    
+\task L'insecte mesure environ \tunit{9}{\milli m} de long.  Quelle sera la longueur du dessin de cet insecte ?
+
+    L'échelle indique que les longueurs sur le dessin sont $20$ fois plus grande qu'en réalité. 
+    
+       \[9\cdot20=\tunit{180}{\milli m}\]
+        
+    Convertis dans l'unité adaptée.
+
+    \[\tunit{180}{\milli m}=\tunit{18}{\centi m}\]
+
+    \underline{Réponse} : L'insecte mesure \tunit{18}{\centi m} sur le dessin.
+    
+\task Sur le dessin, une patte de l'insecte mesure \tunit{3,2}{\centi m}. Quelle longueur cela représente-t-il en réalité ?
+
+    L'échelle indique que les distances en réalité sont $20$ fois plus petites que sur le dessin. 
+    
+    \[3,2:20=\tunit{0,16}{\centi m}\]
+        
+    Convertis dans l'unité adaptée.
+
+    \[\tunit{0,16}{\centi m}=\tunit{1,6}{\milli m}\]
+
+    \underline{Réponse} : Cette patte mesure \tunit{1,6}{\milli m} en réalité.
+\end{tasks}
+}{0}    
+\end{resolu}
+
+
+
+\begin{exol}{FA51}{78}{1} % échelle VW
+\end{exol}
+
+\begin{exol}{FA52}{79}{1} % fermes carte
+\end{exol}
+
+\begin{exol}{FA54}{79}{1} %échelle insecte 8:1
+\end{exol}
+
+\begin{exof}{FA55}{89}{1} %vol oiseau
+\end{exof}
+
+
+\begin{exo}{
+Sur le plan d'une maison à l'échelle $1:50$, on représente des murs de \tunit{5,1}{m} et \tunit{7,2}{m} de long. Quelle est la longueur des murs sur le plan ?
+}{1}    
+\end{exo}
+
+\begin{exo}{
+Sur une carte, on indique $1:\numprint{70000}$. Tu y mesures une longueur de \tunit{17,5}{\centi m}. Que représente cette distance en réalité ?
+}{1}    
+\end{exo}
+
+\begin{exo}{
+Fanta dessine une vis à l'échelle $2,5:1$.
+\begin{tasks}
+    \task Quelle sera la longueur d'un clou sur ce même dessin s'il mesure réellement \tunit{45}{\milli m} ?
+    \task La longueur de la vis sur le dessin est de \tunit{75}{\centi m}. Quelle est sa longueur en réalité ?
+\end{tasks}
+}{1}
+\end{exo}
+
+
+
+
+
+
+
+
+
+%%%%%% AJOUTER SERIES DEXERCICES VOIR EXO RESOLU POUR UN CHANGEMENT DECHELLE
+
+\begin{exo}{
+Sur une carte au $1:\numprint{40000}$, la distance entre deux point est de \tunit{68}{\centi m}.
+
+Quelle est la distance en centimètres entre ces deux points sur une carte au $1:\numprint{1000000}$ ?
+}{2}    
+\end{exo}
+
+
+\begin{exo}{
+Deux villages sont à une distance de \tunit{15}{\kilo m}. Quelle serait la distance entre ces deux villes sur une carte à l'échelle $1:\numprint{100000}$ ?
+}{1}
+\end{exo}
+
+\begin{exo}{
+Sur un plan à l'échelle $1:50$ la longueur d'une maison est de \tunit{40}{\centi m} alors que sur un plan à l'échelle $1:100$ sa largeur est de \tunit{1,5}{\deci m}. Quelles sont les dimensions réelles de la maison ?
+}{2}
+\end{exo}
+\begin{exol}{FA56}{79}{1} %échelle carte
+\end{exol}
+
+\begin{exol}{FA57}{80}{1} % plan, maquette, à mesurer
+\end{exol}
+
+\begin{exof}{FA88}{93}{2} %dinosaure
+\end{exof}
+
+
+\begin{exol}{FA77}{87}{1} % pente + échelle
+\end{exol}
+
+
+
+\begin{exo}{
+Sur une carte, tu mesures une distance de \tunit{5}{cm} entre la station de départ d'un télésiège et la station d'arrivée. La pente moyenne de ce télésiège est de $20\%$.
+La station supérieure est à \tunit{2000}{m} d'altitude et le départ se situe à \tunit{1500}{m}.
+
+Quelle est l'échelle de cette carte ?
+}{1}
+\end{exo}
+
+
+\begin{exol}{FA75}{87}{1}
+\end{exol}
+
+\end{document}

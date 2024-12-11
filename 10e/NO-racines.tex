@@ -1,0 +1,638 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[showexo=true,showcorr=false,showdegree=true]{../packages/coursclassed}
+%Commenter ou enlever le commentaire sur la ligne suivante pour montrer le niveau
+\toggletrue{montrerNiveaux}
+%permet de gérer l'espacement entre les items des env enumerate et enumitem
+\usepackage{enumitem}
+\setlist[enumerate]{align=left,leftmargin=1cm,itemsep=10pt,parsep=0pt,topsep=0pt,rightmargin=0.5cm}
+\setlist[itemize]{align=left,labelsep=1em,leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,rightmargin=0cm}
+%permet de gerer l'espacement entre les colonnes de multicols
+\setlength\columnsep{35pt}
+
+\usepackage{numprint}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% À MODIFIER POUR CHAQUE SERIE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\chapterName}{Nombres et opérations}
+\newcommand{\serieName}{Les racines}
+
+%%%%%%%%%%%%%%%%%% PREMIERE PAGE NE PAS MODIFER %%%%%%%%%%%%%%%%%%%%%%%%
+% le chapitre en cours, ne pas changer au cours d'une série
+\chapter*{\chapterName}
+\thispagestyle{empty}
+
+%%%%% LISTE AIDE MEMOIRE %%%%%%
+\begin{amL}{\serieName}{
+\item Priorité des opérations (page 26)
+\item Racine carrée (page 36)
+\item Racine cubique (page 36)
+\item Propriétés des racines (page 37)
+
+}\end{amL}
+
+%%%%%%%%%%%%%%% DEBUT DE LA SERIE NE PAS MODIFIER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\serieName}
+\setcounter{page}{1}
+
+%%%%%%%%%%% LES EXERCICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\begin{exof}{NO205}{60}{1} %puissance à trous "révision" \end{exof}
+
+
+
+
+% \begin{exol}{NO206}{52}{2} %puissance à trous "révision" \end{exol}
+
+\begin{exop}{
+Complète comme dans l'exemple.
+
+Exemple : $\sqrt{36}=\underline{~6~}$ car $\underline{~6^2~}=36$
+
+\begin{tasks}(2)
+    \task $\sqrt[3]{64}=$\hrulefill~car~\hrulefill ~$=64$
+    %\task $\sqrt{36}=$\hrulefill~car~\hrulefill ~$=36$ 
+    \task $\sqrt[3]{27}=$\hrulefill~car~\hrulefill ~$=27$ 
+    \task $\sqrt{81}=$\hrulefill~car~\hrulefill ~$=81$ 
+    \task $\sqrt{100}=$\hrulefill~car~\hrulefill ~$=100$ 
+    \task $\sqrt{1}=$\hrulefill~car~\hrulefill ~$=1$ 
+    \task $\sqrt{144}=$\hrulefill~car~\hrulefill ~$=144$ 
+    \task $\sqrt[3]{8}=$\hrulefill~car~\hrulefill ~$=8$ 
+    \task $\sqrt{121}=$\hrulefill~car~\hrulefill ~$=121$ 
+\end{tasks}
+}{1}    
+\end{exop}
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(3)
+    \task $\sqrt[3]{125}=$
+    \task $\sqrt[3]{1000}=$
+    %\task $\sqrt[4]{16}=$
+    \task $\sqrt{9}=$
+    \task $\sqrt{16}=$
+    %\task $\sqrt[4]{\numprint{10000}}=$
+    \task $\sqrt{169}=$
+    %\task $\sqrt[4]{1}=$
+    %\task $\sqrt[7]{128}=$
+    \task $\sqrt[3]{0}=$
+\end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(3)
+    \task $\sqrt{25}=$
+    %\task $\sqrt[4]{81}=$
+    \task $\sqrt{4}=$
+    \task $\sqrt[3]{1}=$
+    \task $\sqrt{49}=$
+    \task $\sqrt{64}=$
+    \task $\sqrt{225}=$
+    %\task $\sqrt[5]{32}=$
+    %\task $\sqrt[6]{64}=$
+\end{tasks}
+}{1}
+\end{exop}
+
+\begin{exof}{NO202}{59}{1} %intro
+\end{exof}
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt{\numprint{8100}}=$
+    \task $\sqrt[3]{\numprint{125000}}=$
+    \task $\sqrt[3]{\numprint{1000000}}=$
+    \task $\sqrt{\numprint{9000000}}=$
+    \task $\sqrt{\numprint{250000}}=$
+    \task $\sqrt[3]{\numprint{64000}}=$
+    \task $\sqrt{\numprint{40000}}=$
+    \task $\sqrt{\numprint{1600}}=$
+\end{tasks}
+}{2}
+\end{exop}
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt{\numprint{360000}}=$
+    \task $\sqrt[3]{\numprint{27000}}=$
+    \task $\sqrt{\numprint{10000}}=$
+    %\task $\sqrt[4]{\numprint{810000}}=$
+    \task $\sqrt{\numprint{64000000}}=$
+    %\task $\sqrt[4]{\numprint{100000000}}=$
+    \task $\sqrt{\numprint{1210000}}=$
+    \task $\sqrt[3]{\numprint{64000000}}=$
+\end{tasks}
+}{2}
+\end{exop}
+
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    %\task $\sqrt[4]{\numprint{160000}}=$
+    \task $\sqrt{\numprint{144000000}}=$
+    %\task $\sqrt[7]{\numprint{1280000000}}=$
+    \task $\sqrt[3]{\numprint{8000000}}=$
+    \task $\sqrt{\numprint{490000}}=$
+    \task $\sqrt{\numprint{16900}}=$
+    \task $\sqrt{\numprint{225000000}}=$
+    \task $\sqrt[3]{\numprint{125000000}}=$
+    
+\end{tasks}
+}{2}
+\end{exop}
+
+
+
+
+
+\newpage
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt[3]{\numprint{0,000027}}=$
+    \task $\sqrt{\numprint{0,0081}}=$
+    \task $\sqrt{\numprint{0,01}}=$
+    \task $\sqrt[3]{\numprint{0,001}}=$
+    \task $\sqrt{\numprint{0,000049}}=$
+    \task $\sqrt{\numprint{0,00000064}}=$
+    \task $\sqrt{\numprint{0,0169}}=$
+    %\task $\sqrt[4]{\numprint{0,00000081}}=$
+    \task $\sqrt[3]{\numprint{0,008}}=$
+\end{tasks}
+}{3}
+\end{exop}
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt[3]{0,064}=$
+    \task $\sqrt{\numprint{0,09}}=$
+    %\task $\sqrt[6]{\numprint{0,000064}}=$
+    \task $\sqrt{\numprint{0,04}}=$
+    \task $\sqrt{\numprint{0,0001}}=$
+    \task $\sqrt{1,44}=$
+    %\task $\sqrt[4]{\numprint{0,0001}}=$
+    \task $\sqrt{\numprint{0,000225}}=$
+    %\task $\sqrt[4]{\numprint{0,00000001}}=$
+    
+\end{tasks}
+}{3}
+\end{exop}
+
+
+\begin{exop}{ 
+Calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt{0,36}=$
+    %\task $\sqrt[5]{\numprint{0,00032}}=$
+    \task $\sqrt[3]{\numprint{0,125}}=$
+    %\task $\sqrt[4]{\numprint{0,0016}}=$
+    %\task $\sqrt[7]{\numprint{0,0000128}}=$
+    \task $\sqrt{\numprint{0,000025}}=$
+    \task $\sqrt[3]{\numprint{0,000001}}=$
+    \task $\sqrt{\numprint{0,16}}=$
+    \task $\sqrt{\numprint{0,00000121}}=$
+\end{tasks}
+}{3}
+\end{exop}
+\newpage
+\begin{exop}{
+Complète.
+\begin{tasks}(2)
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{10000}}=10$
+    \task $\sqrt[\underline{~~~~}]{27}=3$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=10$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{0,49}=0,7$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{8}=2$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=1$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=0,4$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{100000000}}=100$
+\end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+Complète.
+\begin{tasks}(2)
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{81}}=3$
+    \task $\sqrt[\underline{~~~~}]{64}=2$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=11$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=1,2$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{1000000}}=100$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=15$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{64}=4$
+    \task $\sqrt[3]{\underline{{\color{white}XXX}}}=10$
+    
+\end{tasks}
+}{2}    
+\end{exop}
+
+
+\begin{exop}{
+Complète.
+\begin{tasks}(2)
+    %\task $\sqrt[7]{\underline{{\color{white}XXX}}}=1$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{64}}=4$
+    \task $\sqrt[\underline{~~~~}]{\numprint{10000}}=100$
+    \task $\sqrt{\underline{{\color{white}XXX}}}=13$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{\numprint{0,25}}=0,5$
+    \task $\sqrt[3]{\underline{{\color{white}XXX}}}=5$
+    \task $\sqrt[\underline{{\color{white}XXX}}]{1,21}=1,1$
+    %\task $\sqrt[5]{\underline{{\color{white}XXX}}}=3$
+    
+\end{tasks}
+}{2}    
+\end{exop}
+
+
+\begin{exop}{
+Lorsque c'est possible, calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $\sqrt[3]{-8}=$
+    \task $\sqrt{-81}=$
+    \task $-\sqrt[3]{125}=$
+    \task $-\sqrt[3]{1}=$
+    \task $\sqrt{100}=$
+    \task $\sqrt{-1}=$
+    \task $-\sqrt{16}=$
+    \task $-\sqrt[3]{-27}=$
+\end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+Lorsque c'est possible, calcule les racines suivantes.
+\begin{tasks}(2)
+    %\task $\sqrt[5]{-32}=$
+    \task $-\sqrt{25}=$
+    \task $\sqrt{-25}=$
+    \task $\sqrt[3]{-64}=$
+    %\task $\sqrt[5]{-1}=$
+    \task $-\sqrt{81}=$
+    \task $-\sqrt{-100}=$
+    \task $-\sqrt{-0,36}=$
+\end{tasks}
+}{2}    
+\end{exop}
+
+\begin{exop}{
+Lorsque c'est possible, calcule les racines suivantes.
+\begin{tasks}(2)
+    \task $-\sqrt[3]{1000}=$
+    %\task $\sqrt[8]{-1}=$
+    \task $-\sqrt[3]{-27}=$
+    \task $-\sqrt{-16}=$
+    \task $-\sqrt[3]{-8}=$
+    %\task $\sqrt[5]{-243}=$
+    \task $\sqrt{-9}=$
+    \task $\sqrt{121}=$
+\end{tasks}
+}{2}    
+\end{exop}
+
+
+
+
+
+\begin{exof}{NO203}{59}{1} %calcul avec mult. 10, décimaux, cubique, fractions
+\end{exof}
+
+\begin{exol}{NO208}{54}{1} %mix
+\end{exol}
+
+
+
+
+\begin{resolu}{Encadrer une racine par deux entiers consécutifs}{
+Pour encadrer une racine par deux entiers consécutifs, apprends les carrés parfaits et les cubes parfaits par cœur.
+\begin{tasks}
+    \task $\sqrt{64} < \sqrt{78} < \sqrt{81}$ donc 
+    \underline{~$8$~} $< \sqrt{78} <$ \underline{~$9$~}
+    \task $\sqrt{4} < \sqrt{5} < \sqrt{9}$ donc 
+    \underline{~$2$~} $< \sqrt{5} <$ \underline{~$3$~}
+\end{tasks}
+}{1}    
+\end{resolu}
+
+\begin{exop}{
+    Encadre chacun des nombres ci-dessous par deux entiers consécutifs.
+    \begin{tasks}(1)
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{54} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{54}< $ \hrulefill
+
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{23} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{23}< $ \hrulefill
+
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{17} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{17}< $ \hrulefill
+
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{91} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{91}< $ \hrulefill
+
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{135} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{135}< $ \hrulefill
+
+    \task $\sqrt{\underline{{\color{white}00000}}} ~< \sqrt{45} <~\sqrt{\underline{{\color{white}00000}}}$ ~donc~ \hrulefill $< \sqrt{45}< $ \hrulefill
+    
+
+    \end{tasks}
+}{1}    
+\end{exop}
+
+\newpage
+
+\begin{exop}{
+    Encadre chacun des nombres par deux entiers consécutifs.
+    \begin{tasks}(2)
+    \task \hrulefill $< \sqrt{14} <$ \hrulefill
+    \task \hrulefill $< \sqrt{157} <$ \hrulefill
+    \task \hrulefill $< \sqrt{28} <$ \hrulefill
+    \task \hrulefill $< \sqrt{201} <$ \hrulefill
+    \task \hrulefill $< \sqrt{61} <$ \hrulefill
+    \task \hrulefill $< \sqrt{71} <$ \hrulefill
+    \end{tasks}
+}{1}    
+\end{exop}
+
+
+\begin{exop}{
+    Encadre chacun des nombres par deux entiers consécutifs.
+    \begin{tasks}(2)
+    \task \hrulefill $< \sqrt[3]{117} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{42} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{9} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{71} <$ \hrulefill
+    \end{tasks}
+}{1}    
+\end{exop}
+
+\begin{exop}{
+    Encadre chacun des nombres par deux entiers consécutifs.
+    \begin{tasks}(2)
+    \task \hrulefill $< \sqrt[3]{13} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{60} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{104} <$ \hrulefill
+    \task \hrulefill $< \sqrt[3]{51} <$ \hrulefill
+    \end{tasks}
+}{1}    
+\end{exop}
+
+
+
+
+\begin{exof}{NO204}{60}{1} %estimation (encadrer)
+\end{exof}
+
+
+
+
+\newpage
+\begin{resolu}{Estimer une racine}{
+Pour estimer une racine, apprends les carrés parfaits et les cubes parfaits par cœur.
+\begin{tasks}(2)
+    \task $\sqrt{66}\approx$\underline{~$8$~} car \underline{~$8$}$^2=$\underline{~$64$~}
+    \task $\sqrt[3]{126}\approx$\underline{~$5$~} car \underline{~$5$}$^3=$\underline{~$125$~}
+\end{tasks}
+}{1}    
+\end{resolu}
+
+\begin{exop}{
+    Estime les nombres suivants.
+    \begin{tasks}(2)
+        \task $\sqrt{80}\approx$ \hrulefill ~car~ \hrulefill$^2=$\hrulefill
+        \task $\sqrt{401}\approx$ \hrulefill ~car~ \hrulefill$^2=$\hrulefill
+        \task $\sqrt[3]{131}\approx$ \hrulefill ~car~ \hrulefill$^3=$\hrulefill
+        \task $\sqrt{48}\approx$ \hrulefill ~car~ \hrulefill$^2=$\hrulefill
+        \task $\sqrt[3]{62}\approx$ \hrulefill ~car~ \hrulefill$^3=$\hrulefill
+        \task $\sqrt{17}\approx$ \hrulefill ~car~ \hrulefill$^2=$\hrulefill
+        \task $\sqrt{38}\approx$ \hrulefill ~car~ \hrulefill$^2=$\hrulefill
+        \task $\sqrt[3]{26}\approx$ \hrulefill ~car~ \hrulefill$^3=$\hrulefill
+    \end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}{
+    Estime les nombres suivants.
+    \begin{tasks}(2)
+        \task $\sqrt{50}\approx$
+        \task $\sqrt{99}\approx$
+        \task $\sqrt[3]{215}\approx$
+        \task $\sqrt{119}\approx$
+        \task $\sqrt[3]{63}\approx$
+        \task $\sqrt{10}\approx$
+        \task $\sqrt{142}\approx$
+        \task $\sqrt[3]{6}\approx$
+    \end{tasks}
+}{1}
+\end{exop}
+
+\begin{exop}{
+    Estime les nombres suivants.
+    \begin{tasks}(3)
+        \task $\sqrt[3]{1001}\approx$
+        \task $\sqrt{37}\approx$
+        \task $\sqrt{18}\approx$
+        \task $\sqrt{26}\approx$
+        \task $\sqrt[3]{126}\approx$
+        \task $\sqrt[3]{25}\approx$
+        \task $\sqrt{141}\approx$
+        \task $\sqrt{903}\approx$
+    \end{tasks}
+}{1}
+\end{exop}
+
+\begin{exof}{NO209}{60}{2} %approximation
+\end{exof}
+
+
+\begin{exo}{
+\begin{tasks}
+    
+\task Quelle est la mesure du côté d'un carré dont l'aire vaut $\tunit{16}{\centi m^2}$.
+
+\task Calcule le périmètre d'un carré dont l'aire vaut $\tunit{144}{\deci m^2}$.
+
+\task Quelle est la mesure de l'arête d'un cube dont le volume vaut $\tunit{125}{\deca m^3}$.
+
+\task Calcule l'aire d'une face d'un cube dont le volume vaut $\tunit{64}{\milli m^3}$.
+\end{tasks}
+}{1}
+\end{exo}
+
+\begin{exo}{
+\begin{tasks}
+    
+\task Quelle est la mesure du côté d'un carré dont l'aire vaut $\tunit{25}{\kilo m^2}$.
+
+\task Calcule le périmètre d'un carré dont l'aire vaut $\tunit{2,25}{\hecto m^2}$.
+
+\task Quelle est la mesure de l'arête d'un cube dont le volume vaut $\tunit{27}{\centi m^3}$.
+
+\task Calcule l'aire d'une face d'un cube dont le volume vaut $\tunit{8}{\deci m^3}$.
+\end{tasks}
+}{1}
+\end{exo}
+
+\begin{exol}{NO193}{50}{1} %perimetre carré dont on connaît l'aire
+\end{exol}
+
+\begin{exol}{NO207}{53}{1} %côtés du carré
+\end{exol}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{exop}{%biceps
+Calcule.
+\begin{tasks}(2)
+    \task $\sqrt{9}\cdot\sqrt{4}=$
+    \task $\sqrt{144}+6\cdot3=$
+    \task $12\cdot\sqrt[3]{125}=$
+    \task $64:\sqrt{16}=$
+    \task $8^2-\sqrt[3]{8}=$
+    \task $\sqrt{64}+\sqrt{36}=$
+    \task $5\cdot\sqrt{16}-2=$
+    \task $10^2-\sqrt{49}=$
+    \task $\sqrt[3]{125}+\sqrt{25}=$
+    \task $\sqrt{\numprint{10000}}-\sqrt{100}=$
+\end{tasks}
+}{1}    
+\end{exop}
+
+
+\begin{exop}{%biceps
+Calcule.
+\begin{tasks}(2)
+    \task $100\cdot\sqrt{1}=$
+    \task $\sqrt[3]{8}\cdot\sqrt[3]{8}=$
+    \task $\sqrt{4}+\sqrt[3]{27}=$
+    \task $\sqrt{25}\cdot\sqrt{121}=$
+    \task $\sqrt{81}-4\cdot\sqrt[3]{64}=$
+    \task $2^7-\sqrt[3]{1000}=$
+    \task $72:\sqrt{36}-1^7=$
+    \task $(\sqrt{9})^3\cdot3=$
+    \task $144\cdot\sqrt{0}=$
+    \task $(\sqrt[3]{27})^3+\sqrt{9}=$
+\end{tasks}
+}{1}    
+\end{exop}
+
+\newpage
+\begin{exop}{%biceps
+Calcule.
+\begin{tasks}(2)
+    \task $\sqrt{6^2+8^2}=$
+    \task $(\sqrt{25})^2\cdot5-5=$
+    \task $350-\sqrt[3]{125}=$
+    \task $10^3+\sqrt{100}+10^1=$
+    \task $1+\sqrt{144}:\sqrt{64}=$
+    \task $(\sqrt{1600}+3^2):10^0=$
+    \task $\sqrt{9^2:3^4}=$
+    \task $11^1\cdot12:\sqrt{4}=$
+    \task $7^2\cdot2-\sqrt{\numprint{40000}}=$
+    \task $9^2-\sqrt{49}=$
+\end{tasks}
+}{1}    
+\end{exop}
+
+
+\begin{exop}{%biceps
+Lorsque c'est possible, calcule.
+\begin{tasks}(2)
+    \task $\sqrt{-81}+3^4=$
+    \task $-\sqrt[3]{-8}\cdot(-3)^2=$
+    \task $5+(-5)\cdot\sqrt[3]{-125}=$
+    \task $10^5-(-\sqrt{100})=$
+    \task $\sqrt{25}\cdot4-(-7)^0=$
+    \task $\sqrt[3]{\numprint{125000}}\cdot(-4)^3=$
+    \task $7-\sqrt[3]{-64}=$
+    \task $3\cdot(-\sqrt[3]{-27})-3^1=$
+    \task $-(\sqrt{36})^2:3^2=$
+    \task $-\sqrt[3]{\numprint{-1000}}:2=$
+\end{tasks}
+}{2}    
+\end{exop}
+
+\newpage
+\begin{exop}{%biceps
+Lorsque c'est possible, calcule.
+\begin{tasks}(2)
+    \task $\sqrt[3]{-8}:(-4)^4=$
+    \task $\sqrt{9}-\sqrt[3]{-27}=$
+    \task $(-\sqrt{64})^2:2=$
+    \task $\sqrt{49}-(-\sqrt{49})=$
+    \task $\sqrt{4}\cdot(-12)^2=$
+    \task $-\sqrt{121}^0\cdot3^4=$
+    \task $-200:(-\sqrt{25})^2=$
+    \task $-\sqrt[3]{1}\cdot(-2)^1\cdot\sqrt{-3}=$
+    \task $50-4^2\cdot\sqrt[3]{-27}=$
+    \task $-(\sqrt{64})^2+(-8)^2=$
+\end{tasks}
+}{2}    
+\end{exop}
+
+
+
+
+
+
+
+
+
+
+
+\begin{exo}{
+    Mme Voltaire est embauchée par Mme Calvin pour carreler sa salle de bain de forme carrée. Mme Voltaire pose $\tunit{90000}{\centi m^2}$ de carrelage.
+    
+    Quelle est la longueur d'un côté de la salle de bain de Mme Calvin ?
+}{1}    
+\end{exo}
+
+\begin{exo}{
+    Momo veut acheter un nouveau tapis pour son hall d'entrée. Dans un grand magasin, il trouve un tapis carré dont l'aire vaut $\tunit{1,6}{m^2}$
+
+    \begin{tasks}
+        \task Quelle est la longueur de chaque côté du tapis ?
+        \task Combien de ces tapis sont-ils nécessaires pour couvrir $\tunit{6,4}{m^2}$ ?
+        \task Supposons que son hall est aussi carré et a une aire de $\tunit{4}{m^2}$. Sachant que Momo place son tapis au milieu de la pièce, quel espace y aura-t-il entre le tapis et le mur ?
+    \end{tasks}
+}{3}    
+\end{exo}
+
+
+\begin{exo}{
+    La famille Mezri veut construire une clôture autour de leur jardin carré qui a une aire de $\tunit{256}{m^2}$.
+
+    \begin{tasks}
+        \task Quelle est la longueur du côté du jardin ?
+        \task Si un côté du jardin est contre la maison et n'a donc pas besoin de clôture. Combien de mètres de clôture sont nécessaires ?
+    \end{tasks}
+}{1}    
+\end{exo}
+
+\begin{exo}{
+Marie souhaite placer une citerne cubique dans son jardin. Dans un catalogue en ligne, elle en trouve une d’une contenance de \tunit{1331}{litres}.
+
+Quelle surface de son jardin sera occupée par cette citerne ? Donne ta réponse en \tunit{}{\centi m^2}.
+}{3}    
+\end{exo}
+
+\end{document}
